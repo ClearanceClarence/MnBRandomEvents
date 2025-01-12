@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Bannerlord.RandomEvents.Events;
+using CryingBuffalo.RandomEvents.Events;
 using TaleWorlds.Core;
 
-namespace Bannerlord.RandomEvents
+namespace CryingBuffalo.RandomEvents
 {
     public class RandomEventGenerator 
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bannerlord.RandomEvents.Helpers
+namespace CryingBuffalo.RandomEvents.Helpers
 {
     public static class DefaultIni
     {

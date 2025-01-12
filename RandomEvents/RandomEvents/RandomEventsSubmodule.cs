@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Windows;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Settings;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
-namespace Bannerlord.RandomEvents
+namespace CryingBuffalo.RandomEvents
 {
     [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
     public class RandomEventsSubmodule : MBSubModuleBase

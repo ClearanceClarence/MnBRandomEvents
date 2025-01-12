@@ -1,9 +1,9 @@
-﻿using Bannerlord.RandomEvents.Events;
-using Bannerlord.RandomEvents.Events.BicEvents;
-using Bannerlord.RandomEvents.Events.CCEvents;
-using Bannerlord.RandomEvents.Events.CommunityEvents;
+﻿using CryingBuffalo.RandomEvents.Events;
+using CryingBuffalo.RandomEvents.Events.BicEvents;
+using CryingBuffalo.RandomEvents.Events.CCEvents;
+using CryingBuffalo.RandomEvents.Events.CommunityEvents;
 
-namespace Bannerlord.RandomEvents.Settings
+namespace CryingBuffalo.RandomEvents.Settings
 {
     internal class RandomEventSettings
     {

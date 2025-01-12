@@ -1,7 +1,7 @@
-﻿using Bannerlord.RandomEvents.Helpers;
+﻿using CryingBuffalo.RandomEvents.Helpers;
 using Ini.Net;
 
-namespace Bannerlord.RandomEvents.Settings
+namespace CryingBuffalo.RandomEvents.Settings
 {
     public abstract class GeneralSettings
     {
