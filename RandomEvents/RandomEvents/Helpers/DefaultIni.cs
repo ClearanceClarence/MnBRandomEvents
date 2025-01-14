@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bannerlord.RandomEvents.Helpers
+namespace CryingBuffalo.RandomEvents.Helpers
 {
     public static class DefaultIni
     {
@@ -32,6 +32,8 @@ MinimumRealMinutes = 5
 MaximumRealMinutes = 30
 LevelXpMultiplier = 40
 DisableSupernatural = false
+DisableSciFi = false
+DisableEvil = false
 DisableSkillChecks = false
 DistinctEventCycleLength = 5
 MaxQueueDisplayCount = 5

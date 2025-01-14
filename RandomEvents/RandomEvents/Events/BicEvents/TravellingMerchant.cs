@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using Bannerlord.RandomEvents.Helpers;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Helpers;
+using CryingBuffalo.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -11,7 +11,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Bannerlord.RandomEvents.Events.BicEvents
+namespace CryingBuffalo.RandomEvents.Events.BicEvents
 {
 	public sealed class TravellingMerchant : BaseEvent
 	{

@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Bannerlord.RandomEvents.Events;
-using Bannerlord.RandomEvents.Helpers;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Events;
+using CryingBuffalo.RandomEvents.Helpers;
+using CryingBuffalo.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace Bannerlord.RandomEvents
+namespace CryingBuffalo.RandomEvents
 {
 	public class RandomEventBehavior : CampaignBehaviorBase
 	{

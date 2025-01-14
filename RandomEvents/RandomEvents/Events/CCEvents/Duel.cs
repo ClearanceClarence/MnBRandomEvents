@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using Bannerlord.RandomEvents.Helpers;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Helpers;
+using CryingBuffalo.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Bannerlord.RandomEvents.Events.CCEvents
+namespace CryingBuffalo.RandomEvents.Events.CCEvents
 {
     public sealed class Duel : BaseEvent
     {
@@ -119,11 +119,12 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             var eventButtonText1 = new TextObject("{=Duel_Event_Button_Text_1}Choose").ToString();
             var eventButtonText2 = new TextObject("{=Duel_Event_Button_Text_2}Done").ToString();
             
-            var inquiryElements = new List<InquiryElement>();
-            
-            inquiryElements.Add(new InquiryElement("a", eventOption1, null, true, eventOption1Hover));
-            inquiryElements.Add(new InquiryElement("b", eventOption2, null, true, eventOption2Hover));
-            
+            var inquiryElements = new List<InquiryElement>
+            {
+                new InquiryElement("a", eventOption1, null, true, eventOption1Hover),
+                new InquiryElement("b", eventOption2, null, true, eventOption2Hover)
+            };
+
             if (canKillChallenger)
             {
                 inquiryElements.Add(new InquiryElement("c", eventOption3, null, true, eventOption3Hover));

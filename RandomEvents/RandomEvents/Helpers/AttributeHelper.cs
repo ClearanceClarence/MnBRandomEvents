@@ -3,7 +3,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 
-namespace Bannerlord.RandomEvents.Helpers
+namespace CryingBuffalo.RandomEvents.Helpers
 {
     public static class AttributeHelper
     {

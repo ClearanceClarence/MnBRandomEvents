@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
-using Bannerlord.RandomEvents.Helpers;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Helpers;
+using CryingBuffalo.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Bannerlord.RandomEvents.Events
+namespace CryingBuffalo.RandomEvents.Events
 {
 	public sealed class GranaryRats : BaseEvent
 	{ 

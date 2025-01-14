@@ -60,6 +60,7 @@ COPY "$(SolutionDir)..\SubModule.xml" "$(TargetDir)..\..\SubModule.xml" /Y</Post
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\AheadOfTime.cs" />
+    <Compile Include="Events\AiEvents\FleeingFate.cs" />
     <Compile Include="Events\BanditAmbush.cs" />
     <Compile Include="Events\BaseEvent.cs" />
     <Compile Include="Events\BeeKind.cs" />
@@ -83,7 +84,6 @@ COPY "$(SolutionDir)..\SubModule.xml" "$(TargetDir)..\..\SubModule.xml" /Y</Post
     <Compile Include="Events\CCEvents\Duel.cs" />
     <Compile Include="Events\CCEvents\FallenSoldierFamily.cs" />
     <Compile Include="Events\CCEvents\FishingSpot.cs" />
-    <Compile Include="Events\CCEvents\FleeingFate.cs" />
     <Compile Include="Events\CCEvents\LightsInTheSkies.cs" />
     <Compile Include="Events\CCEvents\Robbery.cs" />
     <Compile Include="Events\CCEvents\SuddenStorm.cs" />

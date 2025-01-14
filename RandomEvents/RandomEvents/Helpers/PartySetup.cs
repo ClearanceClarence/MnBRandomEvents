@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
 
-namespace Bannerlord.RandomEvents.Helpers
+namespace CryingBuffalo.RandomEvents.Helpers
 {
 	public static class PartySetup
 	{

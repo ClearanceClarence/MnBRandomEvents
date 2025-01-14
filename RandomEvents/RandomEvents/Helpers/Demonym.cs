@@ -1,6 +1,6 @@
 ﻿using TaleWorlds.Localization;
 
-namespace Bannerlord.RandomEvents.Helpers
+namespace CryingBuffalo.RandomEvents.Helpers
 {
     //In English, demonyms are always capitalized.
     //Defaults to Imperial if error

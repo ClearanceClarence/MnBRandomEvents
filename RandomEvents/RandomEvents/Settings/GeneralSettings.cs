@@ -1,7 +1,7 @@
-﻿using Bannerlord.RandomEvents.Helpers;
+﻿using CryingBuffalo.RandomEvents.Helpers;
 using Ini.Net;
 
-namespace Bannerlord.RandomEvents.Settings
+namespace CryingBuffalo.RandomEvents.Settings
 {
     public abstract class GeneralSettings
     {
@@ -26,6 +26,18 @@ namespace Bannerlord.RandomEvents.Settings
                 var SupernaturalEvents = ConfigFile.ReadBoolean("GeneralSettings", "DisableSupernatural");
 
                 return SupernaturalEvents;
+            }
+        }
+        
+        public abstract class SciFiEvents
+        {
+            public static bool IsDisabled()
+            {
+                var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());
+
+                var SciFiEvents = ConfigFile.ReadBoolean("GeneralSettings", "DisableSciFi");
+
+                return SciFiEvents;
             }
         }
         

@@ -1,7 +1,7 @@
 ﻿using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 
-namespace Bannerlord.RandomEvents.Helpers
+namespace CryingBuffalo.RandomEvents.Helpers
 {
 	public static class PlayerStatus
 	{ 

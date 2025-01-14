@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using Bannerlord.RandomEvents.Helpers;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Helpers;
+using CryingBuffalo.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace Bannerlord.RandomEvents.Events.CCEvents
+namespace CryingBuffalo.RandomEvents.Events.CCEvents
 {
     public sealed class UnexpectedWedding : BaseEvent
     {
@@ -128,11 +128,13 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             var eventButtonText1 = new TextObject("{=UnexpectedWedding_Event_Button_Text_1}Okay").ToString();
             var eventButtonText2 = new TextObject("{=UnexpectedWedding_Event_Button_Text_2}Done").ToString();
 
-            var inquiryElements = new List<InquiryElement>();
-            inquiryElements.Add(new InquiryElement("a", eventOption1, null, true, eventOption1Hover));
-            inquiryElements.Add(new InquiryElement("b", eventOption2, null, true, eventOption2Hover));
-            inquiryElements.Add(new InquiryElement("c", eventOption3, null, true, eventOption3Hover));
-            inquiryElements.Add(new InquiryElement("d", eventOption4, null, true, eventOption4Hover));
+            var inquiryElements = new List<InquiryElement>
+            {
+                new InquiryElement("a", eventOption1, null, true, eventOption1Hover),
+                new InquiryElement("b", eventOption2, null, true, eventOption2Hover),
+                new InquiryElement("c", eventOption3, null, true, eventOption3Hover),
+                new InquiryElement("d", eventOption4, null, true, eventOption4Hover)
+            };
             if (canRaidWedding)
             {
                 inquiryElements.Add(new InquiryElement("e", eventOption5, null, true, eventOption5Hover));

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using Bannerlord.RandomEvents.Helpers;
-using Bannerlord.RandomEvents.Settings;
+using CryingBuffalo.RandomEvents.Helpers;
+using CryingBuffalo.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -11,7 +11,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
 
-namespace Bannerlord.RandomEvents.Events.CommunityEvents
+namespace CryingBuffalo.RandomEvents.Events.CommunityEvents
 {
     public sealed class SecretsOfSteel : BaseEvent
     {
@@ -96,10 +96,8 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
             var eventButtonText1 = new TextObject("{=SecretsOfSteel_Event_Button_Text_1}Choose").ToString();
             var eventButtonText2 = new TextObject("{=SecretsOfSteel_Event_Button_Text_2}Done").ToString();
             
-            var inquiryElements = new List<InquiryElement>();
-            
-            inquiryElements.Add(new InquiryElement("a", eventOption1, null, true, eventOption1Hover));
-            
+            var inquiryElements = new List<InquiryElement> { new InquiryElement("a", eventOption1, null, true, eventOption1Hover) };
+
             if (canHelp)
             {
                 inquiryElements.Add(new InquiryElement("b", eventOption2, null, true, eventOption2Hover));
