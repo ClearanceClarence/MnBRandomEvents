@@ -7,7 +7,7 @@
     <ProjectGuid>{8C0F5D91-785D-41A4-A297-873142FFF613}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CryingBuffalo.RandomEvents</RootNamespace>
+    <RootNamespace>Bannerlord.RandomEvents</RootNamespace>
     <AssemblyName>RandomEvents</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -23,17 +23,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <PostBuildEvent>XCOPY "$(SolutionDir)RandomEvents\ModuleData\" "$(TargetDir)..\..\ModuleData\" /S /Y &amp;
-COPY "$(SolutionDir)..\SubModule.xml" "$(TargetDir)..\..\SubModule.xml" /Y</PostBuildEvent>
+    <WarningLevel>1</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationFramework" />
@@ -60,7 +59,11 @@ COPY "$(SolutionDir)..\SubModule.xml" "$(TargetDir)..\..\SubModule.xml" /Y</Post
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\AheadOfTime.cs" />
+    <Compile Include="Events\AiEvents\BloodToll.cs" />
+    <Compile Include="Events\AiEvents\CostOfBetrayal.cs" />
+    <Compile Include="Events\AiEvents\DesecrateAltar.cs" />
     <Compile Include="Events\AiEvents\FleeingFate.cs" />
+    <Compile Include="Events\AiEvents\PriceOfRebellion.cs" />
     <Compile Include="Events\BanditAmbush.cs" />
     <Compile Include="Events\BaseEvent.cs" />
     <Compile Include="Events\BeeKind.cs" />

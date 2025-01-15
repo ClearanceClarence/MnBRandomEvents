@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -11,7 +11,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events.CCEvents
+namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public sealed class BeggarBegging : BaseEvent
     {
@@ -86,10 +86,10 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 canOfferFood = true;
 
                 stewardAppendedText =
-                    new TextObject("{=BeggarBegging_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
+                    new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
                         .ToString();
                 rogueryAppendedText =
-                    new TextObject("{=BeggarBegging_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
+                    new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
                         .ToString();
             }
             else
@@ -99,7 +99,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                     canGiveMoreGold = true;
 
                     stewardAppendedText =
-                        new TextObject("{=BeggarBegging_Steward_Appended_Text}[Steward - lvl {minStewardLevel}]")
+                        new TextObject("{=Steward_Appended_Text}[Steward - lvl {minStewardLevel}]")
                             .SetTextVariable("minStewardLevel", minStewardLevel)
                             .ToString();
                 }
@@ -109,7 +109,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                     canOfferFood = true;
 
                     stewardAppendedText =
-                        new TextObject("{=BeggarBegging_Steward_Appended_Text}[Steward - lvl {minStewardLevel}]")
+                        new TextObject("{=Steward_Appended_Text}[Steward - lvl {minStewardLevel}]")
                             .SetTextVariable("minStewardLevel", minStewardLevel + 50)
                             .ToString();
                 }
@@ -119,7 +119,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                     canKillBeggar = true;
 
                     rogueryAppendedText =
-                        new TextObject("{=BeggarBegging_Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
+                        new TextObject("{=Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
                             .SetTextVariable("minRogueryLevel", minRogueryLevel)
                             .ToString();
                 }
@@ -356,7 +356,9 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 "{=BeggarBegging_Title_E}Alms Seeker",
                 "{=BeggarBegging_Title_F}Beggar's Request",
                 "{=BeggarBegging_Title_G}Poverty's Plea",
-                "{=BeggarBegging_Title_H}Street Beggar's Cry"
+                "{=BeggarBegging_Title_H}Street Beggar's Cry",
+                "{=BeggarBegging_Title_I}A Cry for Help",
+                "{=BeggarBegging_Title_J}The Desperate Appeal"
             };
             
             private static readonly List<string> eventDescriptions = new List<string>
@@ -398,7 +400,6 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 "ask for assistance, a reflection of the broader societal issues and the personal stories of struggle. " +
                 "You ponder how a small gesture from you could potentially add a glimmer of hope to " +
                 "{genderAssignmentAdjective} challenging journey."
-
             };
             
             private static readonly List<string> eventChoice1 = new List<string>
@@ -624,8 +625,8 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 "crushing punch that sends {genderAssignmentObjective} reeling to the ground. {genderAssignmentSubjectiveCap} " +
                 "tries in vain to defend {genderAssignmentObjective}self as you continue your merciless beating. The beggar's " +
                 "struggles gradually cease as your blows continue unabated. When the violence ends, {genderAssignmentSubjective} " +
-                "lies lifeless on the alley floor. As you step out, you're met by a group of five guards who question your actions." +
-                " Unabashedly, you confess to the murder, explaining your intention to rid the town of beggars. You then command " +
+                "lies lifeless on the alley floor. As you step out, you're met by a group of five guards who question your actions. " +
+                "Unabashedly, you confess to the murder, explaining your intention to rid the town of beggars. You then command " +
                 "the guards to remove the body, asserting your authority. The guards, visibly disturbed, follow your orders. One of " +
                 "them solemnly lifts the lifeless body, carrying it away. As you walk away from the alley, you feel an intense " +
                 "rush of power and dominance, the act of taking a life leaving a profound and dark impact on you."

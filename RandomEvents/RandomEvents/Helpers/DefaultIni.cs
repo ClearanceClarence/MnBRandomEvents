@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CryingBuffalo.RandomEvents.Helpers
+namespace Bannerlord.RandomEvents.Helpers
 {
     public static class DefaultIni
     {
@@ -305,6 +305,23 @@ MaxSoldiersToHurt = 5
 [SecretsOfSteel]
 EventDisabled = false
 
+
+
+; #######################
+; ###    AiEvents     ###
+; #######################
+[CostOfBetrayal]
+EventDisabled = false
+MinBaseMoraleLoss = 15
+MaxBaseMoraleLoss = 25
+
+[PriceOfRebellion]
+EventDisabled = false
+MinBaseMoraleLoss = 15
+MaxBaseMoraleLoss = 25
+MinRenownGain = 25
+MaxRenownGain = 75
+MinRogueryLevel = 100
 
 
 ; ####################

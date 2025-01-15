@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CryingBuffalo.RandomEvents.Events
+namespace Bannerlord.RandomEvents.Events
 {
 
     public abstract class BaseEvent
@@ -26,7 +26,7 @@ namespace CryingBuffalo.RandomEvents.Events
         public abstract void CancelEvent();
 
         /// <summary>
-        /// Determines whether all of the prerequisites have been met in order to run the event
+        /// Determines whether all the prerequisites have been met in order to run the event
         /// </summary>
         /// <returns></returns>
         public abstract bool CanExecuteEvent();

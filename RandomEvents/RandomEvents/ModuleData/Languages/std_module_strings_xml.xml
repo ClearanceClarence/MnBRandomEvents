@@ -4,7 +4,6 @@
     <tag language="English" />
   </tags>
   <strings>
-
     <!--
     ******************************************************************************
     *                                                                            *
@@ -14,14 +13,16 @@
     -->
     
     <!--AFlirtatiousEncounter Event Titles-->
-    <string id="AFlirtatiousEncounter_Title_A" text="Dusk's Desire" />
-    <string id="AFlirtatiousEncounter_Title_B" text="Twilight Temptations" />
-    <string id="AFlirtatiousEncounter_Title_C" text="Evening Enchantment" />
-    <string id="AFlirtatiousEncounter_Title_D" text="Nightfall's Whisper" />
-    <string id="AFlirtatiousEncounter_Title_E" text="Moonlit Mischief" />
-    <string id="AFlirtatiousEncounter_Title_F" text="Starry Serenade" />
-    <string id="AFlirtatiousEncounter_Title_G" text="Sundown Soirée" />
-    <string id="AFlirtatiousEncounter_Title_H" text="A Flirtatious Encounter" />
+    <string id="AFlirtatiousEncounter_Title_A" text="A Tavern’s Allure" />
+    <string id="AFlirtatiousEncounter_Title_B" text="Eyes Across the Room" />
+    <string id="AFlirtatiousEncounter_Title_C" text="An Intriguing Stranger" />
+    <string id="AFlirtatiousEncounter_Title_D" text="The Smile That Beckons" />
+    <string id="AFlirtatiousEncounter_Title_E" text="A Chance Meeting" />
+    <string id="AFlirtatiousEncounter_Title_F" text="Tavern Temptations" />
+    <string id="AFlirtatiousEncounter_Title_G" text="Whispers Over Ale" />
+    <string id="AFlirtatiousEncounter_Title_H" text="The Spark of a Stranger" />
+    <string id="AFlirtatiousEncounter_Title_I" text="An Unexpected Connection" />
+    <string id="AFlirtatiousEncounter_Title_J" text="A Night to Remember" />
     
     <!--AFlirtatiousEncounter Event Descriptions-->
     <string id="AFlirtatiousEncounter_Event_Desc_A" text="This evening you are enjoying a drink in the tavern at {currentSettlement}, just relaxing. You take a look at the various guest in the tavern. There is quite a diverse mix of people here tonight. Your eyes suddenly lock eyes with {Demonym} woman who is standing across the room. She smiles back when you notice her and starts to make her way over to you. How shall you proceed?" />
@@ -103,9 +104,9 @@
     <string id="AFlirtatiousEncounter_Event_Msg_4C" text="A serious affront was made by {heroName} towards {name}." />
     <string id="AFlirtatiousEncounter_Event_Msg_4D" text="{heroName} caused deep upset to {name} with their cutting remarks." />
     <string id="AFlirtatiousEncounter_Event_Msg_4E" text="{heroName} delivered a profound insult to {name}." />
-
-
-
+    
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -118,7 +119,9 @@
     <string id="ArmyGames_Title" text="Army Games" />
     <string id="ArmyGames_Event_Desc" text="What started as a small competition has evolved itself into a full blown tournament. {leader} has gathered all of the parties in this army for competitions to see who is the ultimate champion team. The men haven't had this much fun in quite a long time, this will surely boost morale and cohesion." />
     <string id="ArmyGames_Event_Button_Text_1" text="Done" />
-
+    
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -153,10 +156,6 @@
     <string id="BirthdayParty_Event_Option_3_Hover" text="Have some fun.\n{rogueryAppendedText}" />
     <string id="BirthdayParty_Event_Option_4" text="Move on" />
     <string id="BirthdayParty_Event_Option_4_Hover" text="You don't have time" />
-    
-    <!--Skill Check-->
-    <string id="BirthdayParty_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="BirthdayParty_Roguery_Appended_Text" text="[Roguery - lvl {minRogueryLevel}]" />
 
     <!--BirthdayParty - Event Button-->
     <string id="BirthdayParty_Event_Button_Text" text="Okay" />
@@ -217,9 +216,9 @@
     <string id="BirthdayParty_Event_Msg_4C}{heroName} looted the party, acquiring {goldLooted} gold." />
     <string id="BirthdayParty_Event_Msg_4D}{heroName} ransacked the festivity, netting {goldLooted} gold." />
     <string id="BirthdayParty_Event_Msg_4E}{heroName} commandeered the event, earning {goldLooted} gold." />
-
-
-
+    
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -227,10 +226,25 @@
     *                                                                            *
     ******************************************************************************
     -->
-    
-    <!--BeggarBegging Event-->
-    <string id="BeggarBegging_Title" text="Beggar" />
-    <string id="BeggarBegging_Event_Desc" text="While you are relaxing in {currentSettlement} you are approached by a {beggarAge} {beggarGender} beggar who asks if you can spare any gold. You wonder what you should do." />
+
+    <!--BeggarBegging Event Titles-->
+    <string id="BeggarBegging_Title_A" text="Beggar's Lament" />
+    <string id="BeggarBegging_Title_B" text="Pleading Pauper" />
+    <string id="BeggarBegging_Title_C" text="Begging Hands" />
+    <string id="BeggarBegging_Title_D" text="Street Appeal" />
+    <string id="BeggarBegging_Title_E" text="Alms Seeker" />
+    <string id="BeggarBegging_Title_F" text="Beggar's Request" />
+    <string id="BeggarBegging_Title_G" text="Poverty's Plea" />
+    <string id="BeggarBegging_Title_H" text="Street Beggar's Cry" />
+    <string id="BeggarBegging_Title_I" text="A Cry for Help" />
+    <string id="BeggarBegging_Title_J" text="The Desperate Appeal" />
+
+    <!--BeggarBegging Event Descriptions-->
+    <string id="BeggarBegging_Event_Desc_A" text="While taking a break in {currentSettlement}, you're approached by a {beggarAge} {beggarGender} beggar. The individual stands before you, {genderAssignmentSubjective} eyes conveying hope and resignation. In a humble voice, {genderAssignmentSubjective} ask if you could spare some gold. Observing {genderAssignmentSubjective}, you can't help but ponder {genderAssignmentAdjective} story and the circumstances that led {genderAssignmentObjective} to this moment. You find yourself contemplating how to respond, considering the impact of your decision on both {genderAssignmentObjective} life and yours." />
+    <string id="BeggarBegging_Event_Desc_B" text="As you relax in the bustling environment of {currentSettlement}, your attention is drawn to a {beggarAge} {beggarGender} beggar who approaches you with a hesitant step. The beggar's eyes, weary yet hopeful, meet yours as {genderAssignmentSubjective} extend a trembling hand, asking for some gold. The moment stretches out as you consider {genderAssignmentAdjective} plight, the hardships {genderAssignmentSubjective} must have faced, and the difference a simple act of kindness could make in {genderAssignmentObjective} life." />
+    <string id="BeggarBegging_Event_Desc_C" text="During your leisure time in {currentSettlement}, you are approached by a {beggarAge} {beggarGender} beggar, whose presence interrupts your thoughts. {genderAssignmentSubjectiveCap} stand there, a figure of need and desperation, softly asking for whatever gold you can spare. The encounter prompts you to reflect on {genderAssignmentAdjective} life story, the struggles {genderAssignmentSubjective} may have endured, and the moral implications of your next action." />
+    <string id="BeggarBegging_Event_Desc_D" text="While enjoying a moment of peace in {currentSettlement}, your solitude is broken by the arrival of a {beggarAge} {beggarGender} beggar. With a look that speaks volumes of {genderAssignmentAdjective} life's challenges, {genderAssignmentSubjective} ask you for some gold. This unexpected meeting makes you pause and think about the larger picture of society, the unseen struggles of its less fortunate members, and the role you play in this intricate tapestry." />
+    <string id="BeggarBegging_Event_Desc_E" text="In the midst of your relaxation in {currentSettlement}, a {beggarAge} {beggarGender} beggar timidly makes {genderAssignmentAdjective} way towards you. {genderAssignmentSubjectiveCap} ask for assistance, a reflection of the broader societal issues and the personal stories of struggle. You ponder how a small gesture from you could potentially add a glimmer of hope to {genderAssignmentAdjective} challenging journey." />
 
     <!--BeggarBegging - Event Choices-->
     <string id="BeggarBegging_Event_Option_1" text="Give {genderAssignmentObjective} nothing" />
@@ -251,31 +265,82 @@
     <string id="BeggarBegging_Beggar_Age_Middle" text="a middle-aged" />
     <string id="BeggarBegging_Beggar_Age_Old" text="an old" />
 
-    <!--BeggarBegging - Skill Check-->
-    <string id="BeggarBegging_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="BeggarBegging_Steward_Appended_Text" text="[Steward - lvl {minStewardLevel}]" />
-    <string id="BeggarBegging_Roguery_Appended_Text" text="[Roguery - lvl {minRogueryLevel}]" />
-
     <!--BeggarBegging - Event Button-->
     <string id="BeggarBegging_Event_Button_Text_1" text="Choose" />
     <string id="BeggarBegging_Event_Button_Text_2" text="Done" />
 
-    <!--BeggarBegging - Events-->
-    <string id="BeggarBegging_Event_Choice_1" text="You tell {genderAssignmentObjective} to f**ck off and that you don't have any gold to spare. {genderAssignmentSubjectiveCap} apologises for troubling you and wishes you a good day. You watch as {genderAssignmentSubjective} disappears into the crowd in search of gold." />
-    <string id="BeggarBegging_Event_Choice_2" text="You hand {genderAssignmentObjective} 5 gold from your pocket. {genderAssignmentSubjectiveCap} shakes you hand and thanks you for this humble gift and wishes you a blessed day. You watch as {genderAssignmentSubjective} disappears into the crowd in search of more gold." />
-    <string id="BeggarBegging_Event_Choice_3" text="You are feeling generous today so you hand {genderAssignmentObjective} 100 gold. {genderAssignmentSubjectiveCap} says {genderAssignmentSubjective} can't accept this, but you assure {genderAssignmentObjective} that it's okay and that you have more than enough for yourself. {genderAssignmentSubjectiveCap} begins to cry as you wrap {genderAssignmentObjective} in a hug and comforts {genderAssignmentObjective}. {genderAssignmentSubjectiveCap} tells you that {genderAssignmentSubjective} now has enough for a warm meal and a bed for a couple of days. Something {genderAssignmentSubjective} has not had for many days. {genderAssignmentSubjectiveCap} thanks you yet again before disappearing towards the tavern to get som warm food." />
-    <string id="BeggarBegging_Event_Choice_4" text="You are feeling generous today so you tell {genderAssignmentObjective} that if {genderAssignmentSubjective} wants to you will take {genderAssignmentObjective} to the tavern and buy {genderAssignmentObjective} some food and something to drink instead of giving gold. {genderAssignmentSubjectiveCap} accepts you proposal and the two of you make your way towards the tavern.\n\nOnce there you are immediately told by the owner that beggars aren't welcome. You then proceed to tell the owner that {genderAssignmentSubjective} is with you. The owner nods in agreement. Once seated you order som hot food and a large drink for yourself and the beggar. As you sit there the two of you naturally begin to chat about various subjects. You learn {genderAssignmentSubjective} story and why {genderAssignmentSubjective} is in the situation {genderAssignmentSubjective}'s currently in. After a few minutes you must depart as you have other matters to attend to. The two of you say your goodbyes and you tell the owner that the beggar is to be allowed to finish {genderAssignmentObjective} meal and you will pay so {genderAssignmentSubjective} will have one night to sleep. The owner agrees and you leave." />
-    <string id="BeggarBegging_Event_Choice_5" text="You tell {genderAssignmentObjective} that if {genderAssignmentSubjective} follows you, you will give {genderAssignmentObjective} 150 gold. {genderAssignmentSubjectiveCap} looks at you suspiciously but ultimately goes with you. You guide {genderAssignmentObjective} into a alley where you make sure that there is no one around. You then proceed to knock the beggar down with one punch. {genderAssignmentSubjectiveCap} falls to the ground and cover {genderAssignmentObjective} head. You punch, kick, drag and push {genderAssignmentObjective} around the alley for a few minutes. When you finally stop {genderAssignmentSubjective} is finally dead.\n\nYou turn to leave but 5 guards approaches you and ask what is going on. You tell the guards the truth. That you don't want filthy beggars in your town and you then order your guards to dispose of the body. The guards reluctantly agrees and one of the guards lifts the body over the shoulder. You emerge from the alley feeling the rush of just killing an innocent person." />
+    <!--BeggarBegging - Event 1-->
+    <string id="BeggarBegging_Event_Choice_1A" text="You tell {genderAssignmentObjective} to f**ck off and that you don't have any gold to spare. {genderAssignmentSubjectiveCap} apologises for troubling you and wishes you a good day. You watch as {genderAssignmentSubjective} disappears into the crowd in search of gold." />
+    <string id="BeggarBegging_Event_Choice_1B" text="You brusquely inform {genderAssignmentObjective} that you have no gold to give. {genderAssignmentSubjectiveCap} offers a quick apology and bids you farewell. You observe {genderAssignmentSubjective} as {genderAssignmentSubjective} blends back into the busy streets." />
+    <string id="BeggarBegging_Event_Choice_1C" text="You curtly reject {genderAssignmentObjective}, stating your lack of spare gold. {genderAssignmentSubjectiveCap} nods understandingly and departs quietly. You see {genderAssignmentSubjective} weaving through the crowd, continuing {genderAssignmentAdjective} quest." />
+    <string id="BeggarBegging_Event_Choice_1D" text="You dismiss {genderAssignmentObjective} harshly, claiming you have nothing to offer. {genderAssignmentSubjectiveCap} expresses regret for the disturbance and moves on. You glance as {genderAssignmentSubjective} vanishes among the bustling throng." />
+    <string id="BeggarBegging_Event_Choice_1E" text="You sharply tell {genderAssignmentObjective} that you can't help. {genderAssignmentSubjectiveCap} apologizes and leaves respectfully. Watching, you notice {genderAssignmentSubjective} merge into the sea of people, still seeking assistance." />
+
+    <!--BeggarBegging - Event 2-->
+    <string id="BeggarBegging_Event_Choice_2A" text="You hand {genderAssignmentObjective} 5 gold from your pocket. {genderAssignmentSubjectiveCap} shakes your hand and thanks you for this humble gift and wishes you a blessed day. You watch as {genderAssignmentSubjective} disappears into the crowd in search of more gold." />
+    <string id="BeggarBegging_Event_Choice_2B" text="You give {genderAssignmentObjective} 5 gold coins. {genderAssignmentSubjectiveCap} gratefully clasps your hand, expressing heartfelt thanks for your generosity and blessing your day. You see {genderAssignmentSubjective} blend into the crowd, still seeking aid." />
+    <string id="BeggarBegging_Event_Choice_2C" text="You pass 5 gold pieces to {genderAssignmentObjective}. {genderAssignmentSubjectiveCap} warmly thanks you for your kindness, offering blessings for your journey ahead. You observe {genderAssignmentSubjective} as {genderAssignmentSubjective} merges back into the throngs of people." />
+    <string id="BeggarBegging_Event_Choice_2D" text="You slip 5 gold into {genderAssignmentObjective}'s hand. {genderAssignmentSubjectiveCap} offers a thankful handshake and bestows well wishes upon you. You watch {genderAssignmentSubjective} vanish into the crowd, continuing {genderAssignmentAdjective} plight." />
+    <string id="BeggarBegging_Event_Choice_2E" text="You extend 5 gold to {genderAssignmentObjective}. {genderAssignmentSubjectiveCap} gratefully acknowledges your gift with a handshake and kind words for a good day. You glance as {genderAssignmentSubjective} fades into the bustling crowd." />
+
+    <!--BeggarBegging - Event 3-->
+    <string id="BeggarBegging_Event_Choice_3A" text="You are feeling generous today so you hand {genderAssignmentObjective} 100 gold. {genderAssignmentSubjectiveCap} says {genderAssignmentSubjective} can't accept this, but you assure {genderAssignmentObjective} that it's okay and that you have more than enough for yourself. {genderAssignmentSubjectiveCap} begins to cry as you wrap {genderAssignmentObjective} in a hug and comfort {genderAssignmentObjective}. {genderAssignmentSubjectiveCap} tells you that {genderAssignmentSubjective} now has enough for a warm meal and a bed for a couple of days. Something {genderAssignmentSubjective} has not had for many days. {genderAssignmentSubjectiveCap} thanks you yet again before disappearing towards the tavern to get some warm food." />
+    <string id="BeggarBegging_Event_Choice_3B" text="Moved by generosity, you offer {genderAssignmentObjective} 100 gold. Initially hesitant, {genderAssignmentSubjectiveCap} eventually accepts after your reassurance. Overwhelmed, {genderAssignmentSubjectiveCap} breaks down in tears. You comfort {genderAssignmentObjective} with a warm embrace. {genderAssignmentSubjectiveCap} gratefully shares how this means a hot meal and a place to sleep, luxuries {genderAssignmentSubjective} hasn't had in a while. After heartfelt thanks, {genderAssignmentSubjective} heads off to the tavern." />
+    <string id="BeggarBegging_Event_Choice_3C" text="In a generous mood, you give {genderAssignmentObjective} 100 gold. {genderAssignmentSubjectiveCap} is initially reluctant, but you insist it's no burden. Tears well up in {genderAssignmentSubjective}'s eyes as you offer a comforting hug. {genderAssignmentSubjectiveCap} explains this gift means a few days of food and shelter, a rarity for {genderAssignmentSubjective}. With renewed gratitude, {genderAssignmentSubjective} heads towards the tavern for a much-needed meal." />
+    <string id="BeggarBegging_Event_Choice_3D" text="Feeling kind, you present {genderAssignmentObjective} with 100 gold. {genderAssignmentSubjectiveCap} tries to refuse, but your reassurance prevails. {genderAssignmentSubjectiveCap} tearfully embraces you, grateful for the chance at a warm meal and shelter, things {genderAssignmentSubjective} has missed greatly. After thanking you profusely, {genderAssignmentSubjective} makes {genderAssignmentAdjective} way to the tavern." />
+    <string id="BeggarBegging_Event_Choice_3E" text="With a generous heart, you hand over 100 gold to {genderAssignmentObjective}. {genderAssignmentSubjectiveCap} hesitates, but your encouragement convinces {genderAssignmentObjective}. {genderAssignmentSubjectiveCap}'s tears flow as you give a comforting hug. {genderAssignmentSubjectiveCap} shares how this means a rare few days of comfort and food. Expressing deep gratitude, {genderAssignmentSubjective} sets off for the tavern." />
+
+    <!--BeggarBegging - Event 4-->
+    <string id="BeggarBegging_Event_Choice_4A" text="You are feeling generous today so you tell {genderAssignmentObjective} that if {genderAssignmentSubjective} wants to, you will take {genderAssignmentObjective} to the tavern and buy {genderAssignmentObjective} some food and something to drink instead of giving gold. {genderAssignmentSubjectiveCap} accepts your proposal, and the two of you make your way towards the tavern.&#10;&#10;Once there, you are immediately told by the owner that beggars aren't welcome. You then proceed to tell the owner that {genderAssignmentSubjective} is with you. The owner nods in agreement. Once seated, you order some hot food and a large drink for yourself and the beggar. As you sit there, the two of you naturally begin to chat about various subjects. You learn {genderAssignmentSubjective}'s story and why {genderAssignmentSubjective} is in the situation {genderAssignmentSubjective} is currently in. After a few minutes, you must depart as you have other matters to attend to. The two of you say your goodbyes, and you tell the owner that the beggar is to be allowed to finish {genderAssignmentObjective} meal and you will pay, so {genderAssignmentSubjective} will have one night to sleep. The owner agrees, and you leave." />
+    <string id="BeggarBegging_Event_Choice_4B" text="Feeling charitable, you offer to treat {genderAssignmentObjective} to a meal and drink at the tavern, rather than giving gold. {genderAssignmentSubjectiveCap} gratefully accepts, and together you head to the tavern.&#10;&#10;Upon arrival, the tavern owner initially objects to the beggar's presence but relents when you explain {genderAssignmentSubjective} is your guest. After ordering a hearty meal and drinks, you engage in conversation, learning about {genderAssignmentSubjective}'s life and current predicament. Time flies, and soon you have to leave for other commitments. Before departing, you ensure the tavern owner allows the beggar to complete the meal and stay the night, at your expense." />
+    <string id="BeggarBegging_Event_Choice_4C" text="Today, your generosity leads you to offer {genderAssignmentObjective} a meal at the tavern instead of gold. {genderAssignmentSubjectiveCap} happily agrees, and you both set off.&#10;&#10;At the tavern, the owner hesitates to welcome a beggar, but you assert that {genderAssignmentSubjective} is your companion. Settled in, you order warm meals and drinks, and begin to converse, uncovering {genderAssignmentSubjective}'s backstory and struggles. As time to leave nears, you instruct the tavern owner to let the beggar finish the meal and provide a night's lodging, all on your tab." />
+    <string id="BeggarBegging_Event_Choice_4D" text="In a generous mood, you suggest taking {genderAssignmentObjective} for a meal at the tavern, offering companionship over gold. {genderAssignmentSubjectiveCap} eagerly agrees, and you both go to the tavern.&#10;&#10;Initially, the tavern owner disapproves of the beggar's presence, but you persuade them that {genderAssignmentSubjective} is with you. While dining and drinking, you delve into {genderAssignmentSubjective}'s story, understanding more about {genderAssignmentSubjective}'s hardships. When it's time to leave, you arrange with the owner for the beggar to finish their meal and spend the night, assuring payment for both." />
+    <string id="BeggarBegging_Event_Choice_4E" text="With a heart full of kindness, you decide to provide {genderAssignmentObjective} with a tavern meal instead of gold. {genderAssignmentSubjectiveCap} accepts with gratitude, and you head to the local tavern.&#10;&#10;The tavern owner initially balks at a beggar's entry but acquiesces when you intervene. Over a meal and drinks, you engage in meaningful dialogue, learning about {genderAssignmentSubjective}'s circumstances. As you prepare to leave, you speak to the tavern owner, ensuring that the beggar can finish their meal and have a place to sleep for the night, all covered by you." />
+
+    <!--BeggarBegging - Event 5-->
+    <string id="BeggarBegging_Event_Choice_5A" text="You tell {genderAssignmentObjective} that following you will result in receiving 150 gold. Initially, {genderAssignmentSubjectiveCap} regards you with suspicion but eventually acquiesces, intrigued by the offer. Leading {genderAssignmentObjective} into a deserted alley, you ensure no one is around to witness what follows. With a swift and powerful punch, you knock the beggar to the ground. {genderAssignmentSubjectiveCap} curls up, trying to protect {genderAssignmentObjective}self, as you unleash a flurry of punches, kicks, and shoves. The assault is relentless and merciless, continuing for several long, brutal minutes. When you finally cease, {genderAssignmentSubjective} is lifeless. As you prepare to leave the scene, you're met by a group of five guards. They question your actions, to which you reply candidly, expressing your disdain for beggars and ordering them to dispose of the body. The guards, showing visible reluctance and discomfort, comply with your order. One of them hoists the lifeless body over their shoulder. As you step out of the alley, a sense of exhilaration from your actions courses through you, mixed with a sense of power and control." />
+    <string id="BeggarBegging_Event_Choice_5B" text="You cleverly persuade {genderAssignmentObjective} to accompany you with the promise of 150 gold coins. Despite {genderAssignmentSubjective}'s initial hesitation and suspicion, the allure of the gold sways {genderAssignmentSubjective}. You lead {genderAssignmentObjective} into a quiet, secluded alley, making sure no one is nearby to intervene. Once isolated, you launch a sudden and vicious attack on the unsuspecting beggar. {genderAssignmentSubjectiveCap} falls to the ground, struggling to defend {genderAssignmentObjective}self from your relentless and ferocious onslaught. Your fists and feet move in a blur, each blow delivered with calculated brutality. After several agonizing minutes, the beggar lies motionless on the ground, a victim of your unfettered rage. As you exit the alley, you are immediately confronted by a patrol of five guards. Without hesitation, you admit to your actions and express your desire to rid the town of beggars. You coldly command them to dispose of the body. Despite their visible discomfort and moral conflict, they obey your orders. Watching the guard carry the body away, you feel a rush of adrenaline and a sense of twisted satisfaction." />
+    <string id="BeggarBegging_Event_Choice_5C" text="You tell {genderAssignmentObjective} that following you will result in receiving 150 gold. Initially, {genderAssignmentSubjectiveCap} regards you with suspicion but eventually acquiesces, intrigued by the offer. Leading {genderAssignmentObjective} into a deserted alley, you ensure no one is around to witness what follows. With a swift and powerful punch, you knock the beggar to the ground. {genderAssignmentSubjectiveCap} curls up, trying to protect {genderAssignmentObjective}self, as you unleash a flurry of punches, kicks, and shoves. The assault is relentless and merciless, continuing for several long, brutal minutes. When you finally cease, {genderAssignmentSubjective} is lifeless. As you prepare to leave the scene, you're met by a group of five guards. They question your actions, to which you reply candidly, expressing your disdain for beggars and ordering them to dispose of the body. The guards, showing visible reluctance and discomfort, comply with your order. One of them hoists the lifeless body over their shoulder. As you step out of the alley, a sense of exhilaration from your actions courses through you, mixed with a sense of power and control." />
+    <string id="BeggarBegging_Event_Choice_5D" text="With a manipulative charm, you lure {genderAssignmentObjective} with the lucrative offer of 150 gold coins. Despite {genderAssignmentSubjective}'s initial mistrust, the prospect of such wealth proves too tempting, and {genderAssignmentSubjectiveCap} cautiously follows you. You lead {genderAssignmentObjective} to an obscure alley, far from prying eyes, where you swiftly turn violent. You strike the beggar with a powerful blow that sends {genderAssignmentObjective} crashing to the ground. As {genderAssignmentSubjectiveCap} tries to shield {genderAssignmentObjective}self, you continue your assault with an unbridled ferocity. The beggar's feeble attempts to protect {genderAssignmentObjective}self are no match for your ruthless aggression. After several minutes of continuous abuse, the beggar lies still, life extinguished by your relentless onslaught. As you exit the alley, a group of five guards confronts you, inquiring about the disturbance. You openly admit to your actions, declaring your distaste for beggars and commanding the guards to dispose of the body. Despite their apparent unease, the guards comply with your order, one of them shouldering the responsibility of carrying the deceased. You leave the alley, a complex mix of exhilaration and power washing over you, your actions leaving an indelible mark on your psyche." />
+    <string id="BeggarBegging_Event_Choice_5E" text="With a blend of cunning and generosity, you deceive {genderAssignmentObjective} with an offer of 150 gold, convincing {genderAssignmentSubjective} to follow you. {genderAssignmentSubjectiveCap} cautiously agrees, lured by the promise of the gold. You take {genderAssignmentObjective} to a remote alley, ensuring no witnesses are present. Once isolated, you unleash a brutal assault on the beggar, delivering a crushing punch that sends {genderAssignmentObjective} reeling to the ground. {genderAssignmentSubjectiveCap} tries in vain to defend {genderAssignmentObjective}self as you continue your merciless beating. The beggar's struggles gradually cease as your blows continue unabated. When the violence ends, {genderAssignmentSubjective} lies lifeless on the alley floor. As you step out, you're met by a group of five guards who question your actions. Unabashedly, you confess to the murder, explaining your intention to rid the town of beggars. You then command the guards to remove the body, asserting your authority. The guards, visibly disturbed, follow your orders. One of them solemnly lifts the lifeless body, carrying it away. As you walk away from the alley, you feel an intense rush of power and dominance, the act of taking a life leaving a profound and dark impact on you." />
+
+    <!--BeggarBegging - Log Messages - Event 1-->
+    <string id="BeggarBegging_Event_Msg_1A" text="{heroName} told a beggar to f**k off." />
+    <string id="BeggarBegging_Event_Msg_1B" text="{heroName} harshly dismissed a beggar with a curt 'f**k off.'" />
+    <string id="BeggarBegging_Event_Msg_1C" text="{heroName} bluntly sent a beggar away, telling them to f**k off." />
+    <string id="BeggarBegging_Event_Msg_1D" text="{heroName} brusquely told a beggar to f**k off, refusing any interaction." />
+    <string id="BeggarBegging_Event_Msg_1E" text="{heroName} had no patience for a beggar and curtly told them to f**k off." />
+
+    <!--BeggarBegging - Log Messages - Event 2-->
+    <string id="BeggarBegging_Event_Msg_2A" text="{heroName} gave the beggar 5 gold." />
+    <string id="BeggarBegging_Event_Msg_2B" text="{heroName} handed 5 gold to the beggar." />
+    <string id="BeggarBegging_Event_Msg_2C" text="{heroName} generously gave 5 gold coins to the beggar." />
+    <string id="BeggarBegging_Event_Msg_2D" text="{heroName} offered the beggar a gift of 5 gold." />
+    <string id="BeggarBegging_Event_Msg_2E" text="{heroName} presented 5 gold to the grateful beggar." />
+
+    <!--BeggarBegging - Log Messages - Event 3-->
+    <string id="BeggarBegging_Event_Msg_3A" text="{heroName} gave the beggar 100 gold." />
+    <string id="BeggarBegging_Event_Msg_3B" text="{heroName} generously bestowed 100 gold upon the beggar." />
+    <string id="BeggarBegging_Event_Msg_3C" text="{heroName} handed over 100 gold coins to the beggar." />
+    <string id="BeggarBegging_Event_Msg_3D" text="{heroName} presented the beggar with a sum of 100 gold." />
+    <string id="BeggarBegging_Event_Msg_3E" text="{heroName} graciously offered 100 gold to the beggar." />
+
+    <!--BeggarBegging - Log Messages - Event 4-->
+    <string id="BeggarBegging_Event_Msg_4A" text="{heroName} took the beggar to get some food." />
+    <string id="BeggarBegging_Event_Msg_4B" text="{heroName} escorted the beggar to a meal." />
+    <string id="BeggarBegging_Event_Msg_4C" text="{heroName} led the beggar to dine." />
+    <string id="BeggarBegging_Event_Msg_4D" text="{heroName} accompanied the beggar for a food treat." />
+    <string id="BeggarBegging_Event_Msg_4E" text="{heroName} guided the beggar to a place for food." />
+
+    <!--BeggarBegging - Log Messages - Event 5-->
+    <string id="BeggarBegging_Event_Msg_5A" text="{heroName} killed an innocent beggar." />
+    <string id="BeggarBegging_Event_Msg_5B" text="{heroName} took the life of a defenseless beggar." />
+    <string id="BeggarBegging_Event_Msg_5C" text="{heroName} ended the life of a hapless beggar." />
+    <string id="BeggarBegging_Event_Msg_5D" text="{heroName} fatally attacked an unsuspecting beggar." />
+    <string id="BeggarBegging_Event_Msg_5E" text="{heroName} committed the act of killing a beggar." />
     
-    <!--BeggarBegging - Log Messages-->
-    <string id="BeggarBegging_Event_Msg_1" text="{heroName} told a beggar to f**k off." />
-    <string id="BeggarBegging_Event_Msg_2" text="{heroName} gave the beggar 5 gold." />
-    <string id="BeggarBegging_Event_Msg_3" text="{heroName} gave the beggar 100 gold." />
-    <string id="BeggarBegging_Event_Msg_4" text="{heroName} took the beggar to get some food." />
-    <string id="BeggarBegging_Event_Msg_5" text="{heroName} killed an innocent beggar." />
-
-
-
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -284,14 +349,23 @@
     ******************************************************************************
     -->
     
-    <!--FallenSoldier Event-->
-    <string id="FallenSoldier_Title" text="Family of a fallen soldier" />
-    <string id="FallenSoldier_Event_Desc" text="As you are having a drink at the local tavern in {currentSettlement}, you are approached by 3 individuals. It's a woman and two young boys. They ask if they can talk to you. They explain that they are the family of a soldier who died under your command. They are here requesting compensation for his death as they are in desperate need of gold to be able to keep their farm. What do you do?" />
+    <!--FallenSoldier Event Titles-->
+    <string id="FallenSoldier_Title_A" text="The Soldier's Family" />
+    <string id="FallenSoldier_Title_B" text="Relatives of the Fallen" />
+    <string id="FallenSoldier_Title_C" text="The Bereaved Kin" />
+    <string id="FallenSoldier_Title_D" text="Household of the Lost Soldier" />
+    <string id="FallenSoldier_Title_E" text="Next of Kin: A Soldier's Story" />
+    <string id="FallenSoldier_Title_F" text="The Soldier's Descendants" />
+    <string id="FallenSoldier_Title_G" text="The Lineage of a Soldier" />
+    <string id="FallenSoldier_Title_H" text="Family Beyond the Battlefield" />
 
-    <!--FallenSoldier - Skill Check-->
-    <string id="FallenSoldier_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="FallenSoldier_Roguery_Appended_Text" text="[Roguery - lvl {minRogueryLevel}]" />
-    
+    <!--FallenSoldier Event Descriptions-->
+    <string id="FallenSoldier_Event_Desc_A" text="As you enjoy your drink in the cozy atmosphere of the local tavern in {currentSettlement}, your solitude is interrupted by the approach of three individuals. A woman, flanked by two young boys, hesitantly makes her way towards you. With a mixture of respect and apprehension, they request a moment of your time. They reveal themselves to be the family of a soldier who tragically lost his life under your command. The sorrow in their eyes is evident as they explain their dire situation. With their primary breadwinner gone, they find themselves struggling to sustain their farm. They stand before you, a picture of vulnerability, seeking financial assistance to continue their livelihood in the wake of their loss. Faced with this poignant situation, you ponder over the right course of action. Do you offer them the compensation they desperately need, or do you have another solution in mind?" />
+    <string id="FallenSoldier_Event_Desc_B" text="As you relax in the rustic ambiance of the local tavern in {currentSettlement}, your quiet evening is interrupted by the arrival of three somber figures. A woman, visibly burdened by life's hardships, accompanied by two young boys, approaches you with a sense of purpose. They politely ask for your attention, revealing themselves to be the family of a soldier who valiantly fought and died under your command. The pain in their eyes speaks volumes as they express their plight: with the loss of their family's main provider, they are struggling to keep their farm from falling into ruin. Desperation is clear in their voices as they humbly request financial assistance to help them through this challenging time. As you absorb their story, a dilemma unfolds before you: how to respond to this heartfelt plea for help in memory of a fallen soldier." />
+    <string id="FallenSoldier_Event_Desc_C" text="In the midst of your peaceful drink at the tavern in {currentSettlement}, your solitude is pierced by the cautious approach of a small, forlorn group. A woman, her face etched with lines of worry, and two young boys, who exude a sense of loss, stand before you. They hesitantly explain that they are the family of a soldier who lost his life while serving under your leadership. Their struggle is apparent as they share the dire straits they have found themselves in, now facing the daunting task of maintaining their farm without their beloved. They look to you, their last hope, seeking compensation to alleviate their financial burdens in these trying times. Confronted with their earnest appeal, you are left to weigh the gravity of their situation against the demands of your own conscience." />
+    <string id="FallenSoldier_Event_Desc_D" text="As you enjoy a moment of respite with a drink in hand at the tavern in {currentSettlement}, your tranquility is disrupted by the hesitant approach of three individuals. A woman, whose eyes reflect a deep-seated sorrow, flanked by two young boys, requests a moment of your time. With a voice tinged with grief, they reveal their identity as the family of a soldier who bravely served and died under your command. Their current plight, struggling to sustain the farm that was once their soldier's pride, is laid bare before you. They seek your aid, hoping for compensation to keep their lives afloat in the wake of their irreplaceable loss. As their story of struggle and resilience unfolds, you find yourself grappling with the decision of how to best assist them during their time of need." />
+    <string id="FallenSoldier_Event_Desc_E" text="Your evening at the tavern in {currentSettlement}, previously filled with the simple pleasure of a drink, takes a poignant turn as three individuals approach you. Leading them is a woman, her face a canvas of both strength and despair, accompanied by two young boys. With a respectful demeanor, they request a moment to speak with you. They identify themselves as the family of a soldier who once served under you and recently fell in battle. The harsh reality of their situation becomes evident as they describe their struggle to keep their farm, now devoid of its caretaker. With a heartfelt plea, they ask for your financial support, hoping it will provide some respite in their time of overwhelming hardship. You are left to ponder their request, deeply aware of the impact your decision could have on their lives." />
+
     <!--FallenSoldier - Event Choices-->
     <string id="FallenSoldier_Event_Option_1" text="Offer them compensation" />
     <string id="FallenSoldier_Event_Option_1_Hover" text="They should be compensated" />
@@ -299,26 +373,71 @@
     <string id="FallenSoldier_Event_Option_2_Hover" text="Not my problem!" />
     <string id="FallenSoldier_Event_Option_3" text="Leave" />
     <string id="FallenSoldier_Event_Option_3_Hover" text="You have a headache so you leave" />
-    <string id="FallenSoldier_Event_Option_4" text="Trick them" />
+    <string id="FallenSoldier_Event_Option_4" text="[Roguery] Trick them" />
     <string id="FallenSoldier_Event_Option_4_Hover" text="{rogueryAppendedText}" />
 
     <!--FallenSoldier - Event Button-->
     <string id="FallenSoldier_Event_Button_Text_1" text="Okay" />
     <string id="FallenSoldier_Event_Button_Text_2" text="Done" />
 
-    <!--FallenSoldier - Events-->
-    <string id="FallenSoldier_Event_Choice_1" text="You ask for the name and rank of the man who died. When she tells you his name you do remember him and how he died. The soldier in question was executed by your hands as it was discovered he was a traitor. \n The question you ask yourself now is if his entire family should suffer from his mistake. They have spoken so warmly about him that you don't want to tell them the truth about how he died so you make up a heroic story.\n Even though the family have no right for compensation, you agree to pay them {familyCompensation} gold in compensation so they can keep their family farm.\n \n After you have handed over they gold to them and they have left, you cannot help but wonder if you did the right thing keeping the mother in the dark about her son's true nature.\n \nYou end up drinking the night away." />
-    <string id="FallenSoldier_Event_Choice_2" text="You ask for the name and rank of the man who died. When she tells you his name you do remember him and how he died. The soldier in question was executed by your hands as it was discovered he was a traitor. \n You tell the family that you cannot grant them compensation as it was specified in his contract that the family left behind had no right to claim compensation. The women starts to cry and begs you to help them. You decline to help them and leave the tavern." />
-    <string id="FallenSoldier_Event_Choice_3" text="You don't have the energy to deal with this so you tell them that you don't owe them anything. You then leave the tavern." />
-    <string id="FallenSoldier_Event_Choice_4" text="You ask for the name and rank of the man who died. When she tells you his name you do remember him and how he died. The soldier in question was executed by your hands as it was discovered he was a traitor.\n You ask them where their farm is and you tell them you will be there tomorrow. You then excuse yourself and leave. \n \n The following day you and your men arrive at the farm but you have no intention to pay them. Instead you order your men to burn the farm to the ground and kill the owners.\n  You watch as your men execute your orders. You see them dragging the family outside with their hands bound behind their backs. You see you men exit the farmhouse with some valuables. You watch as the farmhouse burns and you witness your men executing all of the family.\n Once they are done you order your men back and you ride back to your main party. \n \nBack at camp your men told you they looted {goldLooted} gold from the house." />
+    <!--FallenSoldier - Event 1-->
+    <string id="FallenSoldier_Event_Choice_1A" text="You ask for the name and rank of the man who died. When she tells you his name you do remember him and how he died. The soldier in question was executed by your hands as it was discovered he was a traitor. The question you ask yourself now is if his entire family should suffer from his mistake. They have spoken so warmly about him that you don't want to tell them the truth about how he died so you make up a heroic story. Even though the family have no right for compensation, you agree to pay them {familyCompensation} gold in compensation so they can keep their family farm. After you have handed over the gold to them and they have left, you cannot help but wonder if you did the right thing keeping the mother in the dark about her son's true nature. You end up drinking the night away." />
+    <string id="FallenSoldier_Event_Choice_1B" text="You inquire about the name and rank of the deceased soldier. Upon hearing his name, you recall him vividly – he was executed by your order for treason. Now, you're faced with a moral dilemma: should his family suffer for his betrayal? They speak of him with such fondness that you decide against revealing the bitter truth, instead, crafting a tale of his bravery. Though they aren't entitled to compensation, you choose to give them {familyCompensation} gold to support their farm. As they depart with the gold, you're left questioning whether keeping the mother uninformed of her son's betrayal was the right choice. The rest of your night is spent in contemplative drinking, pondering over the complexities of truth and compassion." />
+    <string id="FallenSoldier_Event_Choice_1C" text="You request the name and details of the soldier who lost his life. Recognizing the name, you remember his fate - he was a traitor whom you had to execute. This revelation leaves you in a quandary; does his family deserve to bear the consequences of his actions? They hold him in such high regard that you choose not to shatter their image of him, instead telling a story of his heroism. Though they have no legal claim to compensation, you feel compelled to offer them {familyCompensation} gold to save their farm. After they leave with the money, doubts linger about your decision to keep the truth hidden, leading you to seek solace in drink as you reflect on the night's events." />
+    <string id="FallenSoldier_Event_Choice_1D" text="You question the woman about her husband's identity and his role in your army. When she mentions his name, it strikes a chord – he was the soldier you had executed for committing treason. This knowledge presents a difficult choice: should his family suffer for his wrongdoing? Realizing they hold him in high esteem, you decide to spare them the painful truth, inventing a story of his gallantry instead. Although there's no obligation for compensation, you hand them {familyCompensation} gold to help maintain their farm. After they've gone, you're left with a heavy heart, wondering if keeping the mother oblivious to her son's real actions was just. The night passes in a blur as you drink away your uncertainties." />
+    <string id="FallenSoldier_Event_Choice_1E" text="Curiously, you ask about the soldier's identity. When she reveals his name, memories flood back – he was the one you had to execute for his treacherous acts. This recollection forces you to confront a tough decision: is it fair for his family to pay for his mistake? Given their affectionate memories of him, you opt not to disclose the harsh reality, instead weaving a narrative of his valor. Despite no entitlement to compensation, you feel morally obliged to provide them {familyCompensation} gold for their farm's upkeep. Once they leave with the gold, a sense of doubt creeps in about your choice to conceal the truth from his mother, leading you to drown these thoughts in alcohol as the night progresses." />
 
-    <!--FallenSoldier - Log Messages-->
-    <string id="FallenSoldier_Event_Msg_1" text="{heroName} gave the family {familyCompensation} gold in compensation." />
-    <string id="FallenSoldier_Event_Msg_2" text="{heroName} denied the family compensation." />
-    <string id="FallenSoldier_Event_Msg_3" text="{heroName}'s party looted {goldLooted} gold from the farmhouse." />
+    <!--FallenSoldier - Event 2-->
+    <string id="FallenSoldier_Event_Choice_2A" text="You ask for the name and rank of the man who died. When she tells you his name you do remember him and how he died. The soldier in question was executed by your hands as it was discovered he was a traitor. You tell the family that you cannot grant them compensation as it was specified in his contract that the family left behind had no right to claim compensation. The woman starts to cry and begs you to help them. You decline to help them and leave the tavern." />
+    <string id="FallenSoldier_Event_Choice_2B" text="You inquire about the fallen soldier's name and rank. Recognition dawns as his name is mentioned, along with the memory of his execution - a traitor's end by your own hand. You inform the family that compensation is not possible, as his military contract clearly stated no entitlement for his family in such circumstances. The woman breaks down in tears, pleading for your assistance. Despite her pleas, you firmly uphold the decision and exit the tavern, leaving the family to grapple with the harsh realities of their situation." />
+    <string id="FallenSoldier_Event_Choice_2C" text="Seeking details, you ask about the soldier's identity. His name triggers memories; he was the one you executed for betrayal. You explain to the family that, according to his service terms, they are ineligible for compensation. Overwhelmed with sorrow, the woman starts to weep and implores you for aid. However, bound by the rules of the contract, you choose not to intervene and make your way out of the tavern, leaving them in their moment of despair." />
+    <string id="FallenSoldier_Event_Choice_2D" text="You question the family about the soldier's name and service rank. Upon hearing his name, you recall his fate – a traitor executed under your command. You relay to the family that, as per his agreement, they have no right to compensation. The woman's tears start to flow as she desperately seeks your help. Despite her distress, you maintain your stance, unable to deviate from the contract's stipulations, and depart from the tavern, leaving the family in their sorrowful state." />
+    <string id="FallenSoldier_Event_Choice_2E" text="Curious, you ask for the soldier's identity. His name brings back the memory of his execution for treachery. You inform the family that, under the terms of his enlistment, they are not entitled to any compensation. The woman, stricken with grief, begins to cry and earnestly requests your help. Despite her emotional plea, you stand by the contract's terms, declining to provide assistance, and take your leave from the tavern, immersed in the complexity of duty and compassion." />
 
+    <!--FallenSoldier - Event 3-->
+    <string id="FallenSoldier_Event_Choice_3A" text="Feeling drained and unwilling to engage in such a heavy conversation, you bluntly inform the family that you have no obligation to provide them with any assistance. The weight of their gaze lingers on you as you stand up, signaling your desire to leave the tavern. Their faces, etched with disappointment and growing despair, fade into the background as you step out, seeking to distance yourself from the situation. As you exit, the air of the tavern suddenly feels heavier, the burden of their unmet hopes lingering in your mind even as you walk away." />
+    <string id="FallenSoldier_Event_Choice_3B" text="Overwhelmed by the emotional weight of the encounter, you quickly assert that you bear no responsibility for their financial woes. The atmosphere turns tense as you rise from your seat, ready to depart from the tavern. Their faces, a mix of shock and sadness, watch you as you stride out, leaving behind a silence filled with unspoken pleas and dashed hopes. The heaviness of the situation stays with you, a silent companion as you leave the tavern behind." />
+    <string id="FallenSoldier_Event_Choice_3C" text="Feeling unequipped to handle this situation, you firmly state that you owe them nothing. The family's expressions shift to one of disbelief as you get up, indicating your intent to leave. As you make your way out of the tavern, their forlorn looks linger in your mind, their unfulfilled expectations casting a shadow over your departure. The door closes behind you, but the echo of their plight resonates, leaving you with a sense of unresolved tension." />
+    <string id="FallenSoldier_Event_Choice_3D" text="Lacking the patience for such a confrontation, you dismissively tell them that they are not entitled to any compensation from you. The sorrow in their eyes deepens as you stand and head towards the tavern's exit. Their silent stares follow you, heavy with unmet needs and sorrow. As you step outside, the murmur of the tavern fades, but the imprint of their disappointed faces remains, a stark reminder of the encounter as you walk away." />
+    <string id="FallenSoldier_Event_Choice_3E" text="Devoid of the energy to engage in this emotionally charged conversation, you tersely inform them of your inability to help. The family's expressions turn to a blend of grief and disbelief as you rise to leave. Walking out of the tavern, you can feel their eyes on your back, heavy with the weight of unfulfilled hopes. The door shuts behind you, but the heaviness of the moment lingers, casting a pall over your steps as you distance yourself from the tavern and their plight." />
 
+    <!--FallenSoldier - Event 4-->
+    <string id="FallenSoldier_Event_Choice_4A" text="Upon inquiring about the name and rank of the deceased soldier, you recognize him as the man you executed for treason. Curiously, you ask the family about the location of their farm, assuring them of your visit the next day. After politely excusing yourself, you leave the tavern. The next day, you and your men approach the farm with a sinister agenda. Rather than offering aid, you command your men to obliterate the farm and eliminate its inhabitants. Observing the chaos, you see your men forcefully escort the family outside, their hands bound. They then proceed to ransack the farmhouse, extracting valuables before setting it ablaze. You watch dispassionately as the farmhouse is engulfed in flames and your men carry out the execution of the entire family. After the grim task is completed, you signal your men to regroup and depart towards your main encampment. Back at camp, your men report that they acquired {goldLooted} gold from the looting, a cold testament to the day's ruthless actions." />
+    <string id="FallenSoldier_Event_Choice_4B" text="You inquire about the soldier's details. Recognizing his name, you recall his fate as a traitor executed by your command. Curious, you ask about their farm's location, promising to visit the next day. After excusing yourself, you leave the tavern. The next day, you arrive at their farm, not with aid, but a grim plan. You command your men to raze the farm and eliminate the family. As the flames engulf the farmhouse, you oversee the capture and execution of the family. Your men emerge with valuables, including {goldLooted} gold, which they report back at camp. The grim task completed, you return to your main party, the day's events leaving a stark mark on your memory." />
+    <string id="FallenSoldier_Event_Choice_4C" text="After learning the soldier's name, memories of his execution for treachery flood back. You feign interest in their farm's whereabouts, stating you'll visit soon. Politely excusing yourself, you exit the tavern. The following dawn, you and your men reach the farm, harboring dark intentions. You coldly order the destruction of the farm and the execution of its inhabitants. You stand watch as your men bind the family, pillage the house, and set it ablaze. The family's execution is carried out under your watchful eye. Your men later inform you at camp that they secured {goldLooted} gold from the looting." />
+    <string id="FallenSoldier_Event_Choice_4D" text="Recognizing the name of the soldier you executed for betrayal, you express interest in visiting their farm. You leave the tavern, promising to arrive the next day. Upon arrival at the farm, your intentions are far from benevolent. Instead, you instruct your men to set fire to the farm and eliminate its residents. You oversee the operation as your men forcibly remove the family, loot their possessions, and execute them one by one. The farmhouse is reduced to ashes. Back at camp, your men report a loot of {goldLooted} gold from the raid." />
+    <string id="FallenSoldier_Event_Choice_4E" text="Upon hearing the soldier's name, you remember executing him for treason. You ask about the location of their farm and assure them of your visit the next day. However, your intentions are malevolent. Arriving at the farm, you command your men to annihilate it and its owners. You watch impassively as they drag the family out, ransack the house for valuables, and then set it ablaze. The execution of the family is carried out under your command. Later, at your camp, your men inform you of the {goldLooted} gold they acquired from the looting." />
 
+    <!--FallenSoldier - Log Messages - Event 1-->
+    <string id="FallenSoldier_Event_Msg_1A" text="{heroName} gave the family {familyCompensation} gold in compensation." />
+    <string id="FallenSoldier_Event_Msg_1B" text="{heroName} handed over {familyCompensation} gold to the soldier's family as compensation." />
+    <string id="FallenSoldier_Event_Msg_1C" text="{heroName} provided the grieving family {familyCompensation} gold for their loss." />
+    <string id="FallenSoldier_Event_Msg_1D" text="{heroName} presented {familyCompensation} gold to the bereaved family." />
+    <string id="FallenSoldier_Event_Msg_1E" text="{heroName} compensated the family with {familyCompensation} gold." />
+
+    <!--FallenSoldier - Log Messages - Event 2-->
+    <string id="FallenSoldier_Event_Msg_2A" text="{heroName} denied the family compensation." />
+    <string id="FallenSoldier_Event_Msg_2B" text="{heroName} refused to grant the family any compensation." />
+    <string id="FallenSoldier_Event_Msg_2C" text="{heroName} declined the family's request for compensation." />
+    <string id="FallenSoldier_Event_Msg_2D" text="Despite the family's plea, {heroName} did not offer them compensation." />
+    <string id="FallenSoldier_Event_Msg_2E" text="{heroName} withheld compensation from the soldier's family." />
+
+    <!--FallenSoldier - Log Messages - Event 3-->
+    <string id="FallenSoldier_Event_Msg_3A" text="{heroName} could not be bothered to listen." />
+    <string id="FallenSoldier_Event_Msg_3B" text="{heroName} showed no interest in hearing their story." />
+    <string id="FallenSoldier_Event_Msg_3C" text="{heroName} disregarded their pleas, unwilling to listen." />
+    <string id="FallenSoldier_Event_Msg_3D" text="{heroName} chose not to pay attention to their words." />
+    <string id="FallenSoldier_Event_Msg_3E" text="{heroName} remained uninterested and did not entertain their appeal." />
+    
+    <!--FallenSoldier - Log Messages - Event 4-->
+    <string id="FallenSoldier_Event_Msg_4A" text="{heroName}'s party looted {goldLooted} gold from the farmhouse and killed everyone." />
+    <string id="FallenSoldier_Event_Msg_4B" text="{heroName}'s men plundered {goldLooted} gold and eliminated all occupants of the farmhouse." />
+    <string id="FallenSoldier_Event_Msg_4C" text="Led by {heroName}, the group seized {goldLooted} gold and eradicated everyone in the farmhouse." />
+    <string id="FallenSoldier_Event_Msg_4D" text="Under {heroName}'s command, the unit extracted {goldLooted} gold from the farmhouse, leaving no survivors." />
+    <string id="FallenSoldier_Event_Msg_4E" text="{heroName}'s forces raided, acquiring {goldLooted} gold and dispatching all inhabitants of the farmhouse." />
+    
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -327,24 +446,81 @@
     ******************************************************************************
     -->
     
-    <!--FishingSpot Event-->
-    <string id="FishingSpot_Title" text="A Great Fishing Spot" />
-    <string id="FishingSpot_Event_Desc" text="While camping, {soldiersGoneFishing} of your men decide they want to go to the lake just outside the camp to try and catch some fish.\nYou could always use the additional resources and it would be a great morale booster for the party if they catch some. You tell them to be back before nightfall." />
+    <!--FishingSpot Event Titles-->
+    <string id="FishingSpot_Title_A" text="A Great Fishing Spot" />
+    <string id="FishingSpot_Title_B" text="Another Great Fishing Spot" />
+    <string id="FishingSpot_Title_C" text="The Best Fishing Spot Around" />
+    <string id="FishingSpot_Title_D" text="An Excellent Fishing Spot" />
+    <string id="FishingSpot_Title_E" text="A Hidden Fishing Spot" />
+    <string id="FishingSpot_Title_F" text="A Quiet Fishing Spot" />
+    <string id="FishingSpot_Title_G" text="A Popular Fishing Spot" />
+    <string id="FishingSpot_Title_H" text="A Scenic Fishing Spot" />
+    <string id="FishingSpot_Title_I" text="A Serene Fishing Spot" />
+    <string id="FishingSpot_Title_J" text="A Famous Fishing Spot" />
+    <string id="FishingSpot_Title_K" text="A Peaceful Fishing Spot" />
 
-    <!--FishingSpot - Event Outcomes-->
-    <string id="FishingSpot_Outcome_1" text="Your men return empty handed just before nightfall. At least they had a good time together." />
-    <string id="FishingSpot_Outcome_2" text="Your men return with {fishCaught} fish just before nightfall. At least its better than nothing. You let the fishermen enjoy their catch." />
-    <string id="FishingSpot_Outcome_3" text="Your men return with {fishCaught} fish just before nightfall. This is a sizeable catch so you congratulate them. You join the fishermen in their feast." />
-    <string id="FishingSpot_Outcome_4" text="Your men return triumphant with {fishCaught} fish just after nightfall. This is a massive catch so you congratulate them. You order your men to start preparing food for everyone." />
+    <!--FishingSpot Event Descriptions-->
+    <string id="FishingSpot_Event_Desc_A" text="While camping, {soldiersGoneFishing} of your men decide they want to go to the lake just outside the camp to try and catch some fish. You could always use the additional resources and it would be a great morale booster for the party if they catch some. You tell them to be back before nightfall." />
+    <string id="FishingSpot_Event_Desc_B" text="{soldiersGoneFishing} of your men are eager to visit the nearby river and try their luck at fishing. They believe it could provide both food and a chance to relax after a tough day. You allow them to go but remind them to return before dark." />
+    <string id="FishingSpot_Event_Desc_C" text="A nearby stream has caught the attention of {soldiersGoneFishing} of your soldiers, who ask permission to fish for a while. You recognize this as an opportunity to improve morale and possibly secure some extra supplies." />
+    <string id="FishingSpot_Event_Desc_D" text="{soldiersGoneFishing} of your men notice a small pond near the camp and request some time to fish. This could be a chance to boost their spirits and add to your provisions. You agree, with a warning to be cautious." />
+    <string id="FishingSpot_Event_Desc_E" text="Your party comes across a picturesque fishing spot. {soldiersGoneFishing} of your men request a brief respite to cast their lines and enjoy the moment. You permit them but emphasize the importance of returning promptly." />
 
-    <!--FishingSpot - Event Button-->
-    <string id="FishingSpot_Event_Button_Text" text="Continue" />
+    <!--FishingSpot - Event 1-->
+    <string id="FishingSpot_Outcome_1A" text="Your men return empty-handed just before nightfall. At least they had a good time together." />
+    <string id="FishingSpot_Outcome_1B" text="Despite their best efforts, your men return with no fish. They seem slightly disappointed but grateful for the break." />
+    <string id="FishingSpot_Outcome_1C" text="The fishing trip ends without any catch. Your men laugh it off, saying the fish were too clever for them today." />
+    <string id="FishingSpot_Outcome_1D" text="Your soldiers come back empty-handed but in high spirits, having enjoyed the peaceful time by the water." />
+    <string id="FishingSpot_Outcome_1E" text="No fish were caught, but your men share stories of their attempts, turning it into an evening of camaraderie." />
 
-    <!--FishingSpot - Log Messages-->
-    <string id="FishingSpot_Event_Msg_1" text="Your men returned empty handed but it raised morale by {moraleGained}." />
-    <string id="FishingSpot_Event_Msg_2" text="Your men returned with {fishCaught} and it raised morale by {moraleGained}." />
-    <string id="FishingSpot_Event_Msg_3" text="Your men returned with {fishCaught} and it raised morale by {moraleGained}." />
-    <string id="FishingSpot_Event_Msg_4" text="Your men returned with {fishCaught} and it raised morale by {moraleGained}." />
+    <!--FishingSpot - Event 2-->
+    <string id="FishingSpot_Outcome_2A" text="Your men return with {fishCaught} fish just before nightfall. At least it's better than nothing. You let the fishermen enjoy their catch." />
+    <string id="FishingSpot_Outcome_2B" text="Your men manage to catch {fishCaught} fish—just enough to share a light meal. It’s not much, but it’s something." />
+    <string id="FishingSpot_Outcome_2C" text="With {fishCaught} fish in their nets, your men return modestly satisfied. It’s a small haul, but they seem pleased with their efforts." />
+    <string id="FishingSpot_Outcome_2D" text="The fishermen return with only {fishCaught} fish. It’s not a big catch, but they’re happy to have contributed a little to the camp." />
+    <string id="FishingSpot_Outcome_2E" text="Bringing back {fishCaught} fish, your men acknowledge it’s a modest catch. Still, the group enjoys the small bounty together." />
+
+    <!--FishingSpot - Event 3-->
+    <string id="FishingSpot_Outcome_3A" text="Your men returned with {fishCaught} fish just before nightfall. This is a sizeable catch so you congratulate them. You join the fishermen in their feast." />
+    <string id="FishingSpot_Outcome_3B" text="Your men come back with {fishCaught} fish, enough to make a hearty meal for the group. You commend their efforts and share in the feast." />
+    <string id="FishingSpot_Outcome_3C" text="The fishermen return with {fishCaught} fish—a decent haul that lifts everyone's spirits. You gladly join them as they enjoy their catch." />
+    <string id="FishingSpot_Outcome_3D" text="With {fishCaught} fish in hand, your men are proud of their efforts. The camp buzzes with excitement as you join the group for a satisfying meal." />
+    <string id="FishingSpot_Outcome_3E" text="A respectable catch of {fishCaught} fish returns with your men. You praise their work, and the camp gathers for a cheerful dinner." />
+
+    <!--FishingSpot - Event 4-->
+    <string id="FishingSpot_Outcome_4A" text="Your men returned triumphant with {fishCaught} fish just after nightfall. This is a massive catch so you congratulate them. You order your men to start preparing food for everyone." />
+    <string id="FishingSpot_Outcome_4B" text="Your men arrive late but victorious, carrying {fishCaught} fish. This impressive catch is enough to feed the entire camp and then some. You commend their efforts and order a grand feast." />
+    <string id="FishingSpot_Outcome_4C" text="Triumphantly returning with {fishCaught} fish, your men have outdone themselves. The sheer volume of the catch calls for celebration, and you instruct the camp to prepare a lavish meal." />
+    <string id="FishingSpot_Outcome_4D" text="The fishermen return beaming, hauling in an extraordinary {fishCaught} fish. This bounty is more than enough for the camp, and you ensure everyone gets their fill." />
+    <string id="FishingSpot_Outcome_4E" text="With an astounding {fishCaught} fish, your men come back just after nightfall. Their success sparks excitement in the camp as you organize a feast to honor the achievement." />
+
+    <!--FishingSpot - Log Messages - Event 1-->
+    <string id="FishingSpot_Event_Msg_1A" text="Your men returned empty-handed but it raised morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_1B" text="The fishing trip yielded no fish, but morale increased by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_1C" text="No fish were caught, but your men enjoyed themselves, boosting morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_1D" text="Despite returning empty-handed, your men’s spirits lifted, gaining {moraleGained} morale." />
+    <string id="FishingSpot_Event_Msg_1E" text="The catch was nonexistent, but the break improved morale by {moraleGained}." />
+
+    <!--FishingSpot - Log Messages - Event 2-->
+    <string id="FishingSpot_Event_Msg_2A" text="Your men returned with {fishCaught} and it raised morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_2B" text="The fishing trip brought in {fishCaught} fish, lifting morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_2C" text="Your men came back with {fishCaught} fish, and the camp’s morale improved by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_2D" text="Returning with {fishCaught} fish, your men’s spirits soared, gaining {moraleGained} morale." />
+    <string id="FishingSpot_Event_Msg_2E" text="The modest haul of {fishCaught} fish boosted morale by {moraleGained}." />
+
+    <!--FishingSpot - Log Messages - Event 3-->
+    <string id="FishingSpot_Event_Msg_3A" text="Your men returned with {fishCaught} and it raised morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_3B" text="The group brought back a solid haul of {fishCaught} fish, increasing morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_3C" text="Your men returned proudly with {fishCaught} fish, boosting the camp’s morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_3D" text="With {fishCaught} fish in hand, your men’s spirits lifted, raising morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_3E" text="The decent catch of {fishCaught} fish cheered up the camp, gaining {moraleGained} morale." />
+
+    <!--FishingSpot - Log Messages - Event 4-->
+    <string id="FishingSpot_Event_Msg_4A" text="Your men returned with {fishCaught} and it raised morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_4B" text="Triumphantly, your men brought back {fishCaught} fish, significantly boosting morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_4C" text="With an impressive haul of {fishCaught} fish, your men’s morale soared, increasing by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_4D" text="The bountiful catch of {fishCaught} fish greatly lifted spirits, raising morale by {moraleGained}." />
+    <string id="FishingSpot_Event_Msg_4E" text="Returning with an extraordinary {fishCaught} fish, your men celebrated, gaining {moraleGained} morale." />
 
 
     
@@ -356,24 +532,81 @@
     ******************************************************************************
     -->
     
-    <!--HuntingTrip Event-->
-    <string id="HuntingTrip_Title" text="The Great Hunt" />
-    <string id="HuntingTrip_Event_Desc" text="While camping, {soldiersGoneHunting} of your men decide they want to go into the forest just west of camp to try hunting.\nYou could use the additional resources and it would be a great morale booster for the party if they catch some. You tell them to be back before nightfall." />
+    <!--HuntingTrip Event Titles-->
+    <string id="HuntingTrip_Title_A" text="The Great Hunt" />
+    <string id="HuntingTrip_Title_B" text="The Thrill of the Hunt" />
+    <string id="HuntingTrip_Title_C" text="A Noble Hunting Expedition" />
+    <string id="HuntingTrip_Title_D" text="The Call of the Wild" />
+    <string id="HuntingTrip_Title_E" text="A Grand Hunting Party" />
+    <string id="HuntingTrip_Title_F" text="A Dangerous Hunting Quest" />
+    <string id="HuntingTrip_Title_G" text="Tracking the Prey" />
+    <string id="HuntingTrip_Title_H" text="The Hunt for Glory" />
+    <string id="HuntingTrip_Title_I" text="A Test of Skill and Patience" />
+    <string id="HuntingTrip_Title_J" text="The Bounty of the Forest" />
+    <string id="HuntingTrip_Title_K" text="A Legendary Hunting Trip" />
 
-    <!--HuntingTrip - Event Outcomes-->
-    <string id="HuntingTrip_Outcome_1" text="Your men return empty handed just before nightfall. At least they had a good time together." />
-    <string id="HuntingTrip_Outcome_2" text="Your hunters return just before nightfall, having successfully caught {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. Better than nothing. You let the hunters finish butchering the animals." />
-    <string id="HuntingTrip_Outcome_3" text="Your hunters return just before nightfall, having successfully caught {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. You join the hunters in storing the meat." />
-    <string id="HuntingTrip_Outcome_4" text="Your hunters return triumphantly just before nightfall, having successfully caught {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. You order your men to start preparing a feast for everyone." />
+    <!--HuntingTrip Event Descriptions-->
+    <string id="HuntingTrip_Event_Desc_A" text="While camping, {soldiersGoneHunting} of your men decide they want to go into the forest just west of camp to try hunting. You could use the additional resources and it would be a great morale booster for the party if they catch some. You tell them to be back before nightfall." />
+    <string id="HuntingTrip_Event_Desc_B" text="A group of {soldiersGoneHunting} soldiers approaches you, asking for permission to hunt in the nearby woods. They believe it will provide food and boost morale. You agree but remind them to return before dark." />
+    <string id="HuntingTrip_Event_Desc_C" text="Your men notice signs of game near the camp and {soldiersGoneHunting} volunteers ask to head out and hunt. It could yield valuable supplies, so you allow them to go with instructions to be cautious and return by nightfall." />
+    <string id="HuntingTrip_Event_Desc_D" text="Some of your men suggest hunting in the nearby forest to gather resources and take a break from the routine. {soldiersGoneHunting} of them set out after you approve, with a warning to stay safe and come back before night." />
+    <string id="HuntingTrip_Event_Desc_E" text="Your camp is surrounded by dense forest, and {soldiersGoneHunting} of your soldiers express interest in hunting. They promise to be quick and careful, and you permit them to go, expecting them back by nightfall." />
 
-    <!--HuntingTrip - Event Button-->
-    <string id="HuntingTrip_Event_Button_Text" text="Continue" />
-    <!--HuntingTrip - Log Messages-->
-    <string id="HuntingTrip_Event_Msg_1" text="Your men returned empty handed but it raised morale by {moraleGained}." />
-    <string id="HuntingTrip_Event_Msg_2" text="The hunt yielded {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\n Morale was raised by {moraleGained}." />
-    <string id="HuntingTrip_Event_Msg_3" text="The hunt yielded {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\n Morale was raised by {moraleGained}." />
-    <string id="HuntingTrip_Event_Msg_4" text="The hunt yielded {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\n Morale was raised by {moraleGained}." />
+    <!--HuntingTrip - Event 1-->
+    <string id="HuntingTrip_Outcome_1A" text="Your men return empty-handed just before nightfall. At least they had a good time together." />
+    <string id="HuntingTrip_Outcome_1B" text="Despite their efforts, your men return without any game. They seem slightly disappointed but enjoyed the experience." />
+    <string id="HuntingTrip_Outcome_1C" text="The hunters come back empty-handed, laughing about the ones that got away. At least morale remains intact." />
+    <string id="HuntingTrip_Outcome_1D" text="Your men return with no success, though they share amusing stories of their failed attempts." />
+    <string id="HuntingTrip_Outcome_1E" text="No game was caught, but your men return with smiles, claiming it was a good bonding experience." />
 
+    <!--HuntingTrip - Event 2-->
+    <string id="HuntingTrip_Outcome_2A" text="Your hunters return just before nightfall, having successfully caught {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. Better than nothing. You let the hunters finish butchering the animals." />
+    <string id="HuntingTrip_Outcome_2B" text="Your men manage to bring back {animalsCaught} small animals. This yields {animalsCaught} hides and {yieldedMeatResources} pieces of meat. It’s not much, but it’s something to boost the supplies." />
+    <string id="HuntingTrip_Outcome_2C" text="The hunting party returns with {animalsCaught} animals, providing {animalsCaught} hides and {yieldedMeatResources} pieces of meat. It’s a modest haul, but it will help sustain the camp." />
+    <string id="HuntingTrip_Outcome_2D" text="With {animalsCaught} animals in hand, your hunters have something to show for their effort. They bring back {animalsCaught} hides and {yieldedMeatResources} pieces of meat." />
+    <string id="HuntingTrip_Outcome_2E" text="Your men return with {animalsCaught} small game animals, which provide {animalsCaught} hides and {yieldedMeatResources} pieces of meat. A small but appreciated contribution." />
+
+    <!--HuntingTrip - Event 3-->
+    <string id="HuntingTrip_Outcome_3A" text="Your hunters return just before nightfall, having successfully caught {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. You join the hunters in storing the meat." />
+    <string id="HuntingTrip_Outcome_3B" text="The hunting party brings back {animalsCaught} animals, providing {animalsCaught} hides and {yieldedMeatResources} pieces of meat. It’s a decent haul that will help sustain the camp for a while." />
+    <string id="HuntingTrip_Outcome_3C" text="Your men return with {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. The camp is pleased with this successful outing." />
+    <string id="HuntingTrip_Outcome_3D" text="With {animalsCaught} animals, your hunters return proudly, having gathered {animalsCaught} hides and {yieldedMeatResources} pieces of meat. It’s a worthwhile contribution to the camp's supplies." />
+    <string id="HuntingTrip_Outcome_3E" text="The hunters arrive back with {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. A satisfying result for their efforts." />
+
+    <!--HuntingTrip - Event 4-->
+    <string id="HuntingTrip_Outcome_4A" text="Your hunters return triumphantly just before nightfall, having successfully caught {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. You order your men to start preparing a feast for everyone." />
+    <string id="HuntingTrip_Outcome_4B" text="The hunting party arrives with an impressive {animalsCaught} animals, providing {animalsCaught} hides and {yieldedMeatResources} pieces of meat. Their success calls for a grand feast, which you order to be prepared immediately." />
+    <string id="HuntingTrip_Outcome_4C" text="Your men triumphantly return with {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. The camp celebrates this remarkable achievement with a well-deserved feast." />
+    <string id="HuntingTrip_Outcome_4D" text="Returning with an extraordinary {animalsCaught} animals, your hunters provide {animalsCaught} hides and {yieldedMeatResources} pieces of meat. You ensure the entire camp enjoys the bounty with a festive meal." />
+    <string id="HuntingTrip_Outcome_4E" text="The hunters return laden with {animalsCaught} animals, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat. Their exceptional success sparks a celebratory feast for the whole camp." />
+
+    <!--HuntingTrip - Log Messages - Event 1-->
+    <string id="HuntingTrip_Event_Msg_1A" text="Your men returned empty-handed but it raised morale by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_1B" text="The hunting trip yielded no game, but morale increased by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_1C" text="No animals were caught, but your men enjoyed the outing, boosting morale by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_1D" text="Despite returning empty-handed, your men’s spirits lifted, gaining {moraleGained} morale." />
+    <string id="HuntingTrip_Event_Msg_1E" text="The hunt was unsuccessful, but the time away improved morale by {moraleGained}." />
+
+    <!--HuntingTrip - Log Messages - Event 2-->
+    <string id="HuntingTrip_Event_Msg_2A" text="The hunt yielded {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nMorale was raised by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_2B" text="Your men brought back {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nThe camp’s morale increased by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_2C" text="A modest haul of {animalsCaught} hides and {yieldedMeatResources} pieces of meat was secured.\nMorale improved by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_2D" text="Returning with {animalsCaught} hides and {yieldedMeatResources} pieces of meat, your men lifted spirits by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_2E" text="The small hunt resulted in {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nMorale was raised by {moraleGained}." />
+
+    <!--HuntingTrip - Log Messages - Event 3-->
+    <string id="HuntingTrip_Event_Msg_3A" text="The hunt yielded {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nMorale was raised by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_3B" text="Your men returned with {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nThe camp’s morale increased by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_3C" text="A solid haul of {animalsCaught} hides and {yieldedMeatResources} pieces of meat boosted morale by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_3D" text="Bringing back {animalsCaught} hides and {yieldedMeatResources} pieces of meat, your men raised spirits by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_3E" text="The hunt was a success, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nMorale increased by {moraleGained}." />
+
+    <!--HuntingTrip - Log Messages - Event 4-->
+    <string id="HuntingTrip_Event_Msg_4A" text="The hunt yielded {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nMorale was raised by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_4B" text="Your men triumphantly returned with {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nThe camp’s morale soared by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_4C" text="A remarkable haul of {animalsCaught} hides and {yieldedMeatResources} pieces of meat greatly lifted spirits, raising morale by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_4D" text="The hunt was a resounding success, yielding {animalsCaught} hides and {yieldedMeatResources} pieces of meat.\nMorale increased by {moraleGained}." />
+    <string id="HuntingTrip_Event_Msg_4E" text="An extraordinary {animalsCaught} hides and {yieldedMeatResources} pieces of meat were brought back, boosting morale significantly by {moraleGained}." />
 
 
     <!--
@@ -384,24 +617,69 @@
     ******************************************************************************
     -->
     
-    <!--LoggingSite Event-->
-    <string id="LoggingSite_Title" text="The Hardwood Forest" />
-    <string id="LoggingSite_Event_Desc" text="While your party is traveling through the lands near {closestSettlement} you come across a forest rich in hardwood trees. You decide that it's time to stock up on hardwood so you order {soldiersGoneLogging} of your men to get to work. The men agree that this is a good opportunity to get some resources so they do as you say without much complaint.\nYou don't really need much, just enough to start some smithing projects next time you come across a forge. The rest you can easily sell for a nice profit." />
+    <!--LoggingSite Event Titles-->
+    <string id="LoggingSite_Title_A" text="The Hardwood Forest" />
+    <string id="LoggingSite_Title_B" text="The Whispering Woods" />
+    <string id="LoggingSite_Title_C" text="The Lumberjack's Haven" />
+    <string id="LoggingSite_Title_D" text="The Endless Timbers" />
+    <string id="LoggingSite_Title_E" text="The Dense Woodland" />
+    <string id="LoggingSite_Title_F" text="The Echoing Forest" />
+    <string id="LoggingSite_Title_G" text="The Timberland Grove" />
+    <string id="LoggingSite_Title_H" text="The Ancient Forest" />
+    <string id="LoggingSite_Title_I" text="The Verdant Canopy" />
+    <string id="LoggingSite_Title_J" text="The Greenwood Retreat" />
 
-    <!--LoggingSite - Event Outcomes-->
-    <string id="LoggingSite_Outcome_1" text="The logging crew return just as the sun is setting. In total they chopped down {treesChopped} trees which yielded {yieldHardwood} pieces of Hardwood.\nYou admittedly had hoped for more resources than this so you berate your men for being lazy." />
-    <string id="LoggingSite_Outcome_2" text="The logging crew return just as the sun is setting. In total they chopped down {treesChopped} trees which yielded {yieldHardwood} pieces of Hardwood.\nYou had hoped for a better result but all in all this should be enough to cover your own projects." />
-    <string id="LoggingSite_Outcome_3" text="The logging crew return just as the sun is setting. In total they chopped down {treesChopped} trees which yielded {yieldHardwood} pieces of Hardwood.\nThis is the result you were hoping for! Enough for your own projects and enough to sell at a settlement for a nice profit. You congratulate your men on a hard days work." />
-    <!--LoggingSite - Event Button-->
-    <string id="LoggingSite_Event_Button_Text" text="Continue" />
+    <!--LoggingSite Event Descriptions-->
+    <string id="LoggingSite_Event_Desc_A" text="While your party is traveling through the lands near {closestSettlement}, you come across a forest rich in hardwood trees. You decide that it's time to stock up on hardwood, so you order {soldiersGoneLogging} of your men to get to work. The men agree that this is a good opportunity to get some resources, so they do as you say without much complaint. You don't really need much, just enough to start some smithing projects next time you come across a forge. The rest you can easily sell for a nice profit." />
+    <string id="LoggingSite_Event_Desc_B" text="As your party journeys near {closestSettlement}, you discover a forest teeming with valuable hardwood trees. Seeing an opportunity, you instruct {soldiersGoneLogging} of your men to gather some of the timber. They eagerly agree, recognizing the value of the resource. You plan to use some for smithing while selling the surplus for a tidy profit." />
+    <string id="LoggingSite_Event_Desc_C" text="Your party stumbles upon a dense forest full of prime hardwood near {closestSettlement}. Recognizing the potential, you order {soldiersGoneLogging} of your men to begin logging. The men set to work willingly, knowing the value of the resources. You intend to use the hardwood for smithing and to make some profit from the excess." />
+    <string id="LoggingSite_Event_Desc_D" text="While passing through the lands near {closestSettlement}, you come across a forest known for its hardwood. You instruct {soldiersGoneLogging} of your men to gather enough wood to restock your supplies. They agree without hesitation, seeing the opportunity to gather resources for smithing and trade." />
+    <string id="LoggingSite_Event_Desc_E" text="Traveling through the area near {closestSettlement}, your party encounters a forest filled with hardwood trees. You decide it’s an excellent chance to replenish your stock, so you send {soldiersGoneLogging} of your men to log some timber. The men see the value in the task and work without complaint, knowing the hardwood will serve for crafting or selling later." />
 
-    <!--LoggingSite - Log Messages-->
-    <string id="LoggingSite_Event_Msg_1" text="You got {yieldHardwood} hardwood." />
-    <string id="LoggingSite_Event_Msg_2" text="You got {yieldHardwood} hardwood. You hoped for more." />
-    <string id="LoggingSite_Event_Msg_3" text="You got {yieldHardwood} hardwood. Awesome!" />
+    <!--LoggingSite - Event 1-->
+    <string id="LoggingSite_Outcome_1A" text="The logging crew return just as the sun is setting. In total, they chopped down {treesChopped} trees which yielded {yieldHardwood} pieces of hardwood. You admittedly had hoped for more resources than this, so you berate your men for being lazy." />
+    <string id="LoggingSite_Outcome_1B" text="As the sun sets, the logging crew returns with only {treesChopped} trees worth of hardwood, yielding {yieldHardwood} pieces. Frustrated with the underwhelming results, you reprimand your men for their lack of effort." />
+    <string id="LoggingSite_Outcome_1C" text="The crew returns at dusk with only {yieldHardwood} pieces of hardwood from {treesChopped} trees. Disappointed, you question their dedication and remind them of the importance of their work." />
+    <string id="LoggingSite_Outcome_1D" text="Your logging crew arrives just as the day ends, having only chopped {treesChopped} trees and yielding {yieldHardwood} pieces of hardwood. The result is far less than you expected, and you sternly scold them for their poor performance." />
+    <string id="LoggingSite_Outcome_1E" text="The logging crew trudges back to camp at sunset, managing only {treesChopped} trees and yielding {yieldHardwood} pieces of hardwood. Disappointed by their effort, you criticize them for wasting valuable time and resources." />
+
+    <!--LoggingSite - Event 2-->
+    <string id="LoggingSite_Outcome_2A" text="The logging crew return just as the sun is setting. In total, they chopped down {treesChopped} trees, yielding {yieldHardwood} pieces of hardwood. You had hoped for a better result, but all in all, this should be enough to cover your own projects." />
+    <string id="LoggingSite_Outcome_2B" text="The crew returns at sunset, reporting {treesChopped} trees felled and {yieldHardwood} pieces of hardwood collected. It’s not quite as much as you had hoped, but it should suffice for your immediate needs." />
+    <string id="LoggingSite_Outcome_2C" text="As the sun dips below the horizon, the logging crew arrives with {yieldHardwood} pieces of hardwood from {treesChopped} trees. While it’s not a stellar outcome, it should be enough to handle your projects for now." />
+    <string id="LoggingSite_Outcome_2D" text="The logging team returns at day’s end with {yieldHardwood} pieces of hardwood from {treesChopped} trees. Though not the haul you were expecting, it’s sufficient for your current plans." />
+    <string id="LoggingSite_Outcome_2E" text="The logging crew makes it back as the sun sets, having chopped {treesChopped} trees and yielding {yieldHardwood} pieces of hardwood. It’s an acceptable result, enough to meet your immediate needs, though not as much as you’d hoped." />
+
+    <!--LoggingSite - Event 3-->
+    <string id="LoggingSite_Outcome_3A" text="The logging crew return just as the sun is setting. In total, they chopped down {treesChopped} trees, yielding {yieldHardwood} pieces of hardwood. This is the result you were hoping for! Enough for your own projects and enough to sell at a settlement for a nice profit. You congratulate your men on a hard day's work." />
+    <string id="LoggingSite_Outcome_3B" text="As the sun sets, the logging crew returns with an impressive haul of {yieldHardwood} pieces of hardwood from {treesChopped} trees. This is exactly what you needed—plenty for your projects and a surplus to trade. You praise your men for their dedication and effort." />
+    <string id="LoggingSite_Outcome_3C" text="The crew arrives just before nightfall, having felled {treesChopped} trees and collected {yieldHardwood} pieces of hardwood. You are pleased with the outcome, knowing there’s enough for your plans and to turn a profit. Your men earn your commendation for their hard work." />
+    <string id="LoggingSite_Outcome_3D" text="The logging crew finishes the day with {treesChopped} trees cut and {yieldHardwood} pieces of hardwood collected. It’s a great result, more than enough for your needs and to sell for extra coin. You thank your men for their excellent effort." />
+    <string id="LoggingSite_Outcome_3E" text="As the sun sets, the logging crew returns with {treesChopped} trees worth of timber, yielding {yieldHardwood} pieces of hardwood. It’s a fantastic outcome—ample for your smithing projects and to fetch a good price at market. You commend your men for their outstanding work." />
+
+    <!--LoggingSite - Log Messages - Event 1-->
+    <string id="LoggingSite_Event_Msg_1A" text="You got {yieldHardwood} hardwood." />
+    <string id="LoggingSite_Event_Msg_1B" text="Your men collected {yieldHardwood} pieces of hardwood." />
+    <string id="LoggingSite_Event_Msg_1C" text="The logging yielded {yieldHardwood} pieces of hardwood." />
+    <string id="LoggingSite_Event_Msg_1D" text="You’ve added {yieldHardwood} hardwood to your stockpile." />
+    <string id="LoggingSite_Event_Msg_1E" text="{yieldHardwood} pieces of hardwood were successfully gathered." />
+
+    <!--LoggingSite - Log Messages - Event 2-->
+    <string id="LoggingSite_Event_Msg_2A" text="You got {yieldHardwood} hardwood. You hoped for more." />
+    <string id="LoggingSite_Event_Msg_2B" text="Your men collected {yieldHardwood} pieces of hardwood. It’s enough for now, but not as much as you expected." />
+    <string id="LoggingSite_Event_Msg_2C" text="The logging resulted in {yieldHardwood} hardwood. It’s acceptable, but you had higher expectations." />
+    <string id="LoggingSite_Event_Msg_2D" text="You’ve gathered {yieldHardwood} pieces of hardwood. It should suffice, though you wish there was more." />
+    <string id="LoggingSite_Event_Msg_2E" text="The crew brought back {yieldHardwood} hardwood. Not quite the haul you were hoping for." />
+
+    <!--LoggingSite - Log Messages - Event 3-->
+    <string id="LoggingSite_Event_Msg_3A" text="You got {yieldHardwood} hardwood. Awesome!" />
+    <string id="LoggingSite_Event_Msg_3B" text="Your men collected {yieldHardwood} pieces of hardwood. Excellent work!" />
+    <string id="LoggingSite_Event_Msg_3C" text="An impressive {yieldHardwood} pieces of hardwood were gathered. Fantastic result!" />
+    <string id="LoggingSite_Event_Msg_3D" text="You’ve secured {yieldHardwood} pieces of hardwood. This is exactly what you needed!" />
+    <string id="LoggingSite_Event_Msg_3E" text="The haul yielded {yieldHardwood} hardwood. Great job all around!" />
 
 
-
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -410,9 +688,24 @@
     ******************************************************************************
     -->
     
-    <!--MassGrave Event-->
-    <string id="MassGrave_Title" text="The Mass Grave" />
-    <string id="MassGrave_Event_Desc" text="Your party has set up camp near {closestSettlement} and you have sent out some men to gather resources and hunt. Out of the blue {soldiersDiscovery} of your men come back and tell you that there is something you need to see. You join your men as they escort you to whatever it is they want to show you.\nWhen you arrive your are shocked to see a fresh mass grave filled with men, women and children. Your men asks you what they think we should do." />
+    <!--MassGrave Event Titles-->
+    <string id="MassGrave_Title_A" text="The Mass Grave" />
+    <string id="MassGrave_Title_B" text="A Field of Bones" />
+    <string id="MassGrave_Title_C" text="The Forgotten Burial" />
+    <string id="MassGrave_Title_D" text="Shadows of the Dead" />
+    <string id="MassGrave_Title_E" text="The Grave of Many" />
+    <string id="MassGrave_Title_F" text="The Silent Resting Place" />
+    <string id="MassGrave_Title_G" text="The Pit of Sorrows" />
+    <string id="MassGrave_Title_H" text="The Lost Tomb" />
+    <string id="MassGrave_Title_I" text="Echoes of the Fallen" />
+    <string id="MassGrave_Title_J" text="The Unmarked Grave" />
+
+    <!--MassGrave Event Descriptions-->
+    <string id="MassGrave_Event_Desc_A" text="Your party has set up camp near {closestSettlement}, and you have sent out some men to gather resources and hunt. Out of the blue, {soldiersDiscovery} of your men come back and tell you that there is something you need to see. You join your men as they escort you to whatever it is they want to show you. When you arrive, you are shocked to see a fresh mass grave filled with men, women, and children. Your men ask you what they think we should do." />
+    <string id="MassGrave_Event_Desc_B" text="While camped near {closestSettlement}, you send out {soldiersDiscovery} of your men to gather resources. Unexpectedly, they return, urging you to follow them. Intrigued and uneasy, you accompany them to the site they’ve discovered. Upon arrival, you are horrified to find a mass grave, recently filled with the bodies of men, women, and children. Your men turn to you for guidance, asking what should be done." />
+    <string id="MassGrave_Event_Desc_C" text="As your party camps near {closestSettlement}, {soldiersDiscovery} of your men return from a scouting trip, insisting you come with them to see something they’ve found. With growing concern, you follow them to the site. You are stunned to find a mass grave filled with recently buried men, women, and children. Your men look to you for direction, unsure of how to proceed." />
+    <string id="MassGrave_Event_Desc_D" text="Camping near {closestSettlement}, you send a few men to gather supplies. Not long after, {soldiersDiscovery} return with urgency, claiming they’ve found something disturbing. Following them, you come upon the site. To your horror, it’s a fresh mass grave containing men, women, and children. The grim discovery leaves your men uncertain, and they ask for your decision on how to respond." />
+    <string id="MassGrave_Event_Desc_E" text="While stationed near {closestSettlement}, {soldiersDiscovery} of your men approach you with urgency, saying they’ve found something alarming. Curiosity and dread push you to follow them to the site. You’re horrified to find a fresh mass grave, the bodies of men, women, and children laid within. Your men, shaken, ask you what should be done about the grisly discovery." />
 
     <!--MassGrave - Event Choices-->
     <string id="MassGrave_Event_Option_1" text="Make individual graves" />
@@ -424,24 +717,47 @@
     <string id="MassGrave_Event_Option_4" text="Leave them" />
     <string id="MassGrave_Event_Option_4_Hover" text="Not your problem" />
 
-    <!--MassGrave - Event Button-->
+    <!--MassGrave - Event Buttons-->
     <string id="MassGrave_Event_Button_Text_1" text="Choose" />
     <string id="MassGrave_Event_Button_Text_2" text="Done" />
 
-    <!--MassGrave - Events-->
-    <string id="MassGrave_Event_Choice_1" text="You order two of your men to go back to camp and fetch shovels, linen and more men while you and the others start to remove the bodies from the grave. You lay the bodies next to each other in neat lines. Whenever there is a child brought up from the grave you feel a great sadness and you cannot help hold back a few tears. Several of your men weep as well and you feel the mood is very dark. \nYour men return with the requested supplies and additional men. Some start to dig graves while others wrap bodies in linen. In total you pull {bodiesInGrave} bodies from the mass grave. After spending several hours digging and burying you are finally done just before nightfall. You and your men return to camp and decided to sit around the campfire discussing your feelings after the today's events." />
-    <string id="MassGrave_Event_Choice_2" text="You order two of your men to go back to camp and fetch shovels and more men while you and the others start to fill the hole. After a few minutes men with shovels join in. You end up digging for a few hours until the grave is filled. You all decide to recite some prayers before leaving." />
-    <string id="MassGrave_Event_Choice_3" text="You order your men to start the burning of the bodies. It doesn't take long for them to burn. When you return after a few hours only ash and bone are left in the grave." />
-    <string id="MassGrave_Event_Choice_4" text="You decide to just leave the area as it is. You tell your men they can handle this in any way they want. Later that evening your men return having buried the bodies." />
+    <!--MassGrave - Event 1-->
+    <string id="MassGrave_Event_Choice_1A" text="You order two of your men to return to camp for shovels, linen, and additional help, while you and the others begin carefully removing the bodies from the grave. Each body is laid out in neat lines, and with every child you recover, a wave of sorrow washes over you. Tears stream down your face, and many of your men weep silently alongside you. When the supplies and reinforcements arrive, some of your men start digging graves while others wrap the bodies in linen. In total, you recover {bodiesInGrave} bodies from the grave. Hours later, as night approaches, the task is complete. You gather around the campfire with your men, discussing the emotional weight of the day’s events." />
+    <string id="MassGrave_Event_Choice_1B" text="You send two men back to camp to retrieve tools and reinforcements while you and the others begin the grim task of recovering the bodies. You carefully lay them out in orderly rows, feeling an unbearable sadness when children are brought up from the grave. Many of your men, like you, are moved to tears. When the others return with shovels, linen, and more hands, the process of digging graves and preparing the bodies begins. In total, you recover {bodiesInGrave} bodies, finishing the somber task just as the sun dips below the horizon. Back at camp, you and your men sit around the fire, sharing thoughts and emotions stirred by the harrowing experience." />
+    <string id="MassGrave_Event_Choice_1C" text="You instruct two of your men to head back to camp to fetch shovels, linen, and additional help. Meanwhile, you and the remaining men carefully lift the bodies from the grave. Each one is placed respectfully in rows, but the sight of a child’s body brings a deep ache to your heart, and you can’t help but shed tears. Your men share in the grief, their faces solemn. As reinforcements arrive, graves are dug and the bodies are wrapped in linen. By the time the {bodiesInGrave} bodies are properly buried, night is beginning to fall. You return to camp, where the fire becomes a place of shared sorrow and reflection on the day’s grim discoveries." />
+    <string id="MassGrave_Event_Choice_1D" text="Two men are sent back to camp to gather tools and more help, while you and the rest begin the arduous task of recovering the bodies. One by one, they are laid out in orderly rows, but the sight of children among the dead weighs heavily on your heart. Tears fall freely, and your men silently grieve alongside you. Once the reinforcements arrive, some men dig individual graves while others carefully wrap the bodies. By nightfall, all {bodiesInGrave} bodies are buried, and you return to camp emotionally drained. You and your men gather around the fire, discussing the sadness and unease left by the day's events." />
+    <string id="MassGrave_Event_Choice_1E" text="You order two men to return to camp for supplies while you and the others begin the grim work of removing the bodies. With each body you lay out in rows, the weight of the tragedy deepens, especially when a child is recovered. Tears fall freely from you and your men as the emotional toll sets in. When the others return with shovels, linen, and more hands, the burial begins in earnest. A total of {bodiesInGrave} bodies are recovered, and the task stretches until nightfall. Around the campfire, you and your men reflect on the tragedy and share your thoughts on what you witnessed." />
+
+    <!--MassGrave - Event 2-->
+    <string id="MassGrave_Event_Choice_2A" text="You order two of your men to return to camp to fetch shovels and reinforcements while you and the others begin filling the grave. Before long, additional men arrive to assist. Together, you spend several hours moving dirt until the grave is fully covered. Before leaving, you and your men stand in silence, reciting prayers for the souls of the departed." />
+    <string id="MassGrave_Event_Choice_2B" text="You instruct two men to retrieve shovels and reinforcements from camp while you and the rest start filling the grave. More men soon arrive to help, and after hours of work, the grave is completely filled. Before departing, you and your men solemnly recite prayers, paying respect to the lost lives." />
+    <string id="MassGrave_Event_Choice_2C" text="Two men are sent to camp for supplies while you and the others begin the somber task of filling the grave. When more men join, the work progresses steadily, taking several hours to complete. Once the grave is filled, your group pauses to offer prayers for the dead before returning to camp." />
+    <string id="MassGrave_Event_Choice_2D" text="You send two men to fetch shovels and additional help while you and the others start filling the grave. The reinforcements arrive shortly, and together, you spend hours working until the grave is completely covered. Before leaving, you gather your men to recite prayers, ensuring the dead receive a final tribute." />
+    <string id="MassGrave_Event_Choice_2E" text="While two men retrieve shovels and more help from camp, you and the rest begin filling the grave. The additional hands make the work go faster, though it still takes hours to complete. Once the grave is filled, you and your men stand together, offering prayers for those buried below." />
+
+    <!--MassGrave - Event 3-->
+    <string id="MassGrave_Event_Choice_3A" text="You order your men to begin burning the bodies. The flames take quickly, and within a few hours, only ash and bone remain in the grave. The grim task leaves a heavy silence among your men as you return to camp." />
+    <string id="MassGrave_Event_Choice_3B" text="Your orders are clear: burn the bodies. The fire consumes them swiftly, and after a few hours, nothing remains but ash and fragments of bone. The somber atmosphere lingers as you and your men walk back to camp." />
+    <string id="MassGrave_Event_Choice_3C" text="You instruct your men to set the bodies alight. The flames roar to life, and within hours, the grave is reduced to a mix of ash and bone. The sight weighs heavily on everyone as you quietly return to camp." />
+    <string id="MassGrave_Event_Choice_3D" text="Under your orders, the men prepare and ignite the bodies. The fire burns hot and fast, and by the time you return, only ash and bone remain. The haunting scene stays with you as you make your way back to camp." />
+    <string id="MassGrave_Event_Choice_3E" text="You command your men to burn the bodies. It takes only a few hours for the flames to reduce the contents of the grave to ash and bone. The task complete, you and your men return to camp in somber silence." />
+
+    <!--MassGrave - Event 4-->
+    <string id="MassGrave_Event_Choice_4A" text="You decide to leave the area as it is, instructing your men to handle it however they see fit. Later that evening, your men return, reporting that they have buried the bodies." />
+    <string id="MassGrave_Event_Choice_4B" text="Choosing not to intervene directly, you tell your men to deal with the situation as they deem appropriate. By nightfall, they return and inform you that the bodies have been buried." />
+    <string id="MassGrave_Event_Choice_4C" text="You decide to move on without taking action yourself, leaving your men to handle the situation. That evening, they return to camp and report that they’ve buried the bodies with care." />
+    <string id="MassGrave_Event_Choice_4D" text="Opting not to take charge, you allow your men to address the situation in their own way. Hours later, they return, having completed the burial of the bodies." />
+    <string id="MassGrave_Event_Choice_4E" text="You leave the decision to your men, telling them to handle the matter as they see fit. By evening, they return, explaining that the bodies have been respectfully buried." />
 
     <!--MassGrave - Log Messages-->
     <string id="MassGrave_Event_Msg_1" text="Your party lost {baseMoraleLoss} morale due to recent events." />
-    <string id="MassGrave_Event_Msg_2" text="Your party lost {baseMoraleLoss} morale due to recent events." />
-    <string id="MassGrave_Event_Msg_3" text="Your party lost {baseMoraleLoss} morale due to recent events." />
-    <string id="MassGrave_Event_Msg_4" text="Your party lost {baseMoraleLoss} morale due to recent events." />
-
-
-
+    <string id="MassGrave_Event_Msg_2" text="The grim discovery has caused your party to lose {baseMoraleLoss} morale." />
+    <string id="MassGrave_Event_Msg_3" text="Recent events have shaken your party, resulting in a morale loss of {baseMoraleLoss}." />
+    <string id="MassGrave_Event_Msg_4" text="The unsettling events have lowered your party’s morale by {baseMoraleLoss}." />
+    <string id="MassGrave_Event_Msg_5" text="Your party struggles to recover from recent events, losing {baseMoraleLoss} morale." />
+    
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -450,20 +766,43 @@
     ******************************************************************************
     -->
     
-    <!--NotOfThisWorld Event-->
-    <string id="NotOfThisWorld_Title" text="Not of this world" />
-    <string id="NotOfThisWorld_Part_1" text="Your party is currently resting in the vicinity of {closestSettlement} when you observe a strange object descending from the sky and into the nearby forest. {soldiersInvestigating} of your men decide to go investigate, but you remain at the camp.\n After a few minutes you see an object leaving the forest and head towards the sky at an unbelievable speed. Eventually only one of your men returns from the forest. He tells you a bizarre story. \n \nWhen your men entered the forest they could see some object amongst the trees. This object was emitting an intense heat. After a few seconds an opening appeared and three small figures in a strange armor got out. One of your men tried to approach the entities, but was hit in the abdomen by a strange glowing arrow that came out of a small weapon the entities had. The man subsequently dropped dead.\n At this point the survivor hid in some bushes, but he witnessed the events that followed. He told you that the entities proceeded to kill the other {killedSoldiers} soldiers who went to investigate." />
-    <string id="NotOfThisWorld_Part_2" text="These creatures then proceeded to load the bodies of the soldiers into the vessel while speaking a language unlike anything ever heard before. They also seemed to load up pieces of the nearby flora as if taking samples for study. After a few minutes the vessel leaves without a sound towards the sky.\nThe soldier who returned from this ordeal was a trusted man whom you are inclined to believe. You tell him to go get some food and go to bed. As he is heading towards his tent he suddenly bends over and starts vomiting violently. He then falls to the ground in agony while blood is flowing from all his facial orifices. You grab a sword and put him out of his misery and order your men to burn his body at once.\n \nWhen you return to your tent you are shaking. You try to make a note of this event in your diary but you find yourself too distraught to write anything. You ponder the question of who or what could have killed your men like this. The answer may never be known." />
+    <!--NotOfThisWorld Event Titles-->
+    <string id="NotOfThisWorld_Title_A" text="Not of This World" />
+    <string id="NotOfThisWorld_Title_B" text="Alien Encounters" />
+    <string id="NotOfThisWorld_Title_C" text="Extraterrestrial Visit" />
+    <string id="NotOfThisWorld_Title_D" text="Beyond Earthly Realms" />
+    <string id="NotOfThisWorld_Title_E" text="Interstellar Mystery" />
+    <string id="NotOfThisWorld_Title_F" text="Cosmic Strangers" />
+    <string id="NotOfThisWorld_Title_G" text="Unearthly Beings" />
+    <string id="NotOfThisWorld_Title_H" text="Visitors from the Stars" />
 
     <!--NotOfThisWorld - Event Button-->
     <string id="NotOfThisWorld_Event_Button_Text_1" text="Read on!" />
     <string id="NotOfThisWorld_Event_Button_Text_2" text="Try to sleep" />
 
+    <!--NotOfThisWorld Event Part 1-->
+    <string id="NotOfThisWorld_Part_1A" text="Your party is currently resting in the vicinity of {closestSettlement} when you observe a strange object descending from the sky and into the nearby forest. {soldiersInvestigating} of your men decide to go investigate, but you remain at the camp. After a few minutes, you see an object leaving the forest and head towards the sky at an unbelievable speed. Eventually, only one of your men returns from the forest. He tells you a bizarre story. When your men entered the forest, they could see some object amongst the trees. This object was emitting an intense heat. After a few seconds, an opening appeared, and three small figures in strange armor got out. One of your men tried to approach the entities but was hit in the abdomen by a strange glowing arrow that came out of a small weapon the entities had. The man subsequently dropped dead. At this point, the survivor hid in some bushes, but he witnessed the events that followed. He told you that the entities proceeded to kill the other {killedSoldiers} soldiers who went to investigate." />
+    <string id="NotOfThisWorld_Part_1B" text="Resting near {closestSettlement}, your group sees a strange object descending into the nearby woods. Intrigued, {soldiersInvestigating} of your men decide to go investigate this curious phenomenon, leaving you at the camp. After a short while, you observe the object re-emerging from the forest and ascending into the sky at an astonishing speed. Eventually, only one of your men returns, appearing shaken. He tells you a bizarre story. Upon entering the forest, they encountered a mysterious object amidst the trees, which was emanating an intense heat and strange light. Suddenly, an opening appeared and three small figures, clad in unfamiliar, shining armor, stepped out. As one of your men moved to approach these entities, he was struck in the abdomen by a glowing projectile emitted from a small, futuristic weapon the entities wielded. He died almost instantly. The survivor, having concealed himself in dense undergrowth, witnessed the rest of the events unfold. He recounts that the entities then proceeded to methodically eliminate the other {killedSoldiers} soldiers. After completing their grim task, they re-entered their craft, leaving the forest as quickly as they had arrived." />
+    <string id="NotOfThisWorld_Part_1C" text="While your party relaxes in the vicinity of {closestSettlement}, an unusual object catches your eye as it descends into the forest. Curious, {soldiersInvestigating} of your men decide to investigate the mysterious occurrence, while you opt to stay at the camp. Not long after, the object swiftly leaves the forest, shooting towards the sky at a breathtaking velocity. Finally, only one of your soldiers returns, looking bewildered and alarmed. He shares a rather extraordinary tale with you. He explains that as they ventured into the forest, they discovered an object that was emitting both heat and a bright light. A hatch opened, revealing three small, oddly dressed figures in what seemed like advanced armor. One soldier, daring to get closer, was suddenly struck by a luminous arrow, launched from a peculiar, compact weapon carried by the figures. He collapsed, lifeless. The remaining soldier, who had prudently hidden behind some bushes, silently observed the subsequent actions of these beings. They methodically and coldly killed the remaining {killedSoldiers} soldiers. After their ruthless act, they quickly retreated to their vessel and disappeared into the sky." />
+    <string id="NotOfThisWorld_Part_1D" text="As you and your party take a break near {closestSettlement}, a mysterious object descends into the nearby forest, catching everyone's attention. {soldiersInvestigating} of your brave men decide to delve into the woods to uncover the source of this enigma, leaving you behind at the camp. Moments later, you witness the object rapidly ascend from the forest canopy, vanishing into the sky at an incredible pace. Only one of your soldiers manages to return from the investigation, his expression one of shock and disbelief. He recounts a strange and unsettling encounter. He tells you that upon entering the forest, they stumbled upon an unusual object among the trees, which was radiating an extraordinary amount of heat and light. An aperture appeared on the object, and from it emerged three small figures, donning unfamiliar, reflective armor. When one of your men attempted to communicate or approach them, he was hit in the abdomen by a radiant arrow from a strange, small weapon they possessed, resulting in his immediate death. The surviving soldier, who had wisely taken cover in the thick underbrush, watched in horror as the alien figures proceeded to eliminate systematically the other {killedSoldiers} soldiers who had accompanied him. After their lethal mission, the beings retreated back into their craft and swiftly departed, leaving behind a trail of mystery and death." />
+    <string id="NotOfThisWorld_Part_1E" text="In the vicinity of {closestSettlement}, your party pauses as an unidentifiable object makes its descent into the neighboring forest. Driven by curiosity, {soldiersInvestigating} of your men set out to explore the source of this unusual occurrence, while you choose to remain at the campsite. Shortly thereafter, the object is seen hastily exiting the forest, soaring into the sky at an incredible rate. Only one of your men makes it back, visibly disturbed and anxious. He recounts an eerie and unexpected experience. He describes how they came across a peculiar object hidden amongst the trees, emitting an intense heat and a piercing light. Abruptly, an entryway opened on the object, and out stepped three small figures in what appeared to be advanced, gleaming armor. When one brave soldier approached them, he was immediately struck down by a shining arrow shot from a compact, unknown weapon that the figures carried. He died instantly. The remaining soldier, having hidden himself among dense foliage, remained unseen and watched the unsettling events unfold. He observed the figures as they coldly and efficiently killed the rest of the {killedSoldiers} soldiers who had ventured into the forest. Completing their grim task, they returned to their vessel and left as quickly as they had arrived, leaving a sense of foreboding and fear in their wake." />
+
+    <!--NotOfThisWorld Event Part 2-->
+    <string id="NotOfThisWorld_Part_2A" text="These creatures then proceeded to load the bodies of the soldiers into the vessel while speaking a language unlike anything ever heard before. They also seemed to load up pieces of the nearby flora as if taking samples for study. After a few minutes, the vessel leaves without a sound towards the sky. The soldier who returned from this ordeal was a trusted man whom you are inclined to believe. You tell him to go get some food and go to bed. As he is heading towards his tent, he suddenly bends over and starts vomiting violently. He then falls to the ground in agony while blood is flowing from all his facial orifices. You grab a sword and put him out of his misery and order your men to burn his body at once. When you return to your tent you are shaking. You try to make a note of this event in your diary but you find yourself too distraught to write anything. You ponder the question of who or what could have killed your men like this. The answer may never be known." />
+    <string id="NotOfThisWorld_Part_2B" text="The mysterious beings began methodically loading the fallen soldiers' bodies onto their craft, all the while conversing in an unintelligible, alien language. They appeared to be collecting samples of the local plants too, perhaps for some unknown research. Minutes later, the vessel ascended silently into the sky and vanished. The surviving soldier, a reliable and trusted member of your team, seemed genuinely shaken. Believing his account, you instruct him to eat and rest. As he heads to his tent, he suddenly doubles over, violently vomiting. Within moments, he collapses in excruciating pain, blood streaming from his eyes, nose, and mouth. You swiftly end his suffering with your sword and order an immediate cremation of his body. Returning to your tent, a sense of dread overwhelms you. You attempt to document the harrowing incident in your diary, but find yourself too unsettled to write coherently. The thought of what entity could have inflicted such horror upon your men lingers hauntingly in your mind, a question that might remain forever unanswered." />
+    <string id="NotOfThisWorld_Part_2C" text="The alien figures efficiently transferred the soldiers' corpses into their vessel, speaking in a bizarre, unheard language. They also gathered samples of the forest's vegetation, suggesting scientific interest. Shortly, the craft lifted off noiselessly into the sky. The returned soldier, known for his honesty, was visibly distressed. Trusting his testimony, you advise him to eat and sleep. However, as he moves towards his tent, he suddenly starts to retch violently, then falls, blood oozing from his facial orifices. Acting quickly, you mercifully kill him with your sword and command your men to burn the body without delay. Back in your tent, you're visibly shaken. Trying to record the event in your diary proves futile, as you're too disturbed. The identity of your men's killer and the nature of the attack plague your thoughts, a mystery that might never be solved." />
+    <string id="NotOfThisWorld_Part_2D" text="The strange creatures proceeded to load the deceased soldiers into their ship, speaking a language that defied comprehension. They also seemed to collect various plant specimens, likely for analysis. After completing their eerie task, the vessel ascended silently into the heavens. The soldier who returned, usually steadfast and believable, was clearly traumatized. Accepting his account, you tell him to rest and eat. Tragically, as he walks to his tent, he is overtaken by violent vomiting and collapses, blood pouring from every facial opening. You end his agony swiftly with your sword and order an immediate cremation of his body. Shaken, you return to your tent, struggling to process the day's events. You open your diary to document the occurrence but find yourself too distraught. The question of what could have annihilated your men in such a manner lingers ominously, likely remaining an unsolved enigma." />
+    <string id="NotOfThisWorld_Part_2E" text="The entities began to transport the soldiers' bodies into their spacecraft, communicating in an alien dialect that was completely foreign. They also appeared to be collecting samples of the local flora, possibly for analysis. Within minutes, the vessel departed silently skyward. The soldier who made it back, known for his reliability, was visibly shaken by the experience. Taking his word, you suggest he get some food and rest. However, as he staggers to his tent, he is suddenly struck by violent vomiting, collapsing in pain as blood flows from his face. With a heavy heart, you end his suffering with your sword and order a prompt cremation. You return to your tent, trembling from the ordeal. Attempting to note down the event in your diary, you find yourself too distraught to write. The question of what force could have decimated your men in such a way haunts you, a mystery that might forever remain unsolved." />
+
     <!--NotOfThisWorld - Log Messages-->
-    <string id="NotOfThisWorld_Event_Msg_1" text="{soldiersInvestigating} of your men were killed by the mysterious entities." />
-
-
-
+    <string id="NotOfThisWorld_Event_Msg_1A" text="{soldiersInvestigating} of your men were killed by the mysterious entities." />
+    <string id="NotOfThisWorld_Event_Msg_1B" text="{soldiersInvestigating} soldiers met their end at the hands of the enigmatic beings." />
+    <string id="NotOfThisWorld_Event_Msg_1C" text="The alien figures claimed the lives of {soldiersInvestigating} of your troops." />
+    <string id="NotOfThisWorld_Event_Msg_1D" text="Mysterious creatures have fatally struck down {soldiersInvestigating} of your soldiers." />
+    <string id="NotOfThisWorld_Event_Msg_1E" text="{soldiersInvestigating} of your men fell victim to the lethal force of the unknown entities." />
+    
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -471,16 +810,31 @@
     *                                                                            *
     ******************************************************************************
     -->
-    
-    <!--PassingComet Event-->
-    <string id="PassingComet_Title" text="The Celestial Visitor" />
-    <string id="PassingComet_Event_Text" text="You and some of your men are standing in a field at night gazing up at a comet. You all agree that this is the most beautiful sight any of you have ever seen. You cannot help wondering what it really is. You have always been fascinated by the stars and night sky. Most people believe it's the gods looking down on us, but you think otherwise.\n \nYou have often wondered if the stars are nothing more than the same thing as the Sun just much further away or perhaps they're angels of our fallen ancestors watching over us. You have never shared these thoughts with anyone as most would think you to be crazy. At least for now you can be fascinated by the amazing comet passing by. You and a couple of your men end up standing there all night looking up and talking." />
+
+    <!--PassingComet Event Titles-->
+    <string id="PassingComet_Title_A" text="The Celestial Visitor" />
+    <string id="PassingComet_Title_B" text="The Wandering Star" />
+    <string id="PassingComet_Title_C" text="The Cosmic Traveler" />
+    <string id="PassingComet_Title_D" text="The Sky's Messenger" />
+    <string id="PassingComet_Title_E" text="The Passing Light" />
+    <string id="PassingComet_Title_F" text="The Stellar Nomad" />
+    <string id="PassingComet_Title_G" text="The Streak of the Heavens" />
+    <string id="PassingComet_Title_H" text="The Astral Wanderer" />
+    <string id="PassingComet_Title_I" text="The Distant Flame" />
+    <string id="PassingComet_Title_J" text="The Comet's Trail" />
+
+    <!--PassingComet Event Descriptions-->
+    <string id="PassingComet_Event_Text_A" text="You and some of your men are standing in a field at night gazing up at a comet. It is one of the most beautiful sights you have ever seen. You cannot help wondering what it really is. You have always been fascinated by the stars and night sky. Most people believe it's the gods looking down on us, but you think otherwise.\n\nYou have often wondered if the stars are the same thing as the Sun just much further away... Or perhaps they're angels of our fallen ancestors watching over us. You have never shared these thoughts with anyone as most would think you to be crazy. At least for now you can be fascinated by the amazing comet passing by. You and a couple of your men end up standing there all night looking up and talking." />
+    <string id="PassingComet_Event_Text_B" text="You find yourself with a few of your men in a quiet field, staring up at a comet streaking across the night sky. Its beauty is mesmerizing, filling you with wonder. You ponder its nature—could it be a message from the gods, as some believe, or something entirely different?\n\nThe stars have always fascinated you. Are they distant suns, like your own, or perhaps the spirits of those who came before us? Such thoughts linger in your mind, though you keep them to yourself. For now, you simply enjoy the sight of the comet, talking quietly with your men through the night." />
+    <string id="PassingComet_Event_Text_C" text="Standing with some of your men in a dark field, you look up to see a comet cutting across the night sky. Its brilliance captivates you, sparking questions about its origin. Some say it’s the gods showing their presence, but you have other theories.\n\nCould the stars be suns, farther than you could ever imagine? Or are they the spirits of those who have left this world? You keep your musings private, fearing ridicule, but in this moment, you feel a deep connection to the heavens. You and your men stay in the field, marveling at the celestial display and sharing quiet conversations." />
+    <string id="PassingComet_Event_Text_D" text="You stand with a few of your men under the vast night sky, captivated by a brilliant comet streaking overhead. It feels otherworldly, and you find yourself wondering what it really is. The stars have always been a source of fascination for you. Some believe they are the watchful eyes of gods, but you suspect otherwise.\n\nCould the stars be distant suns? Or perhaps they are the souls of those who once lived? These thoughts have always stayed with you, unspoken, but now, under the comet's light, you feel the vastness of the cosmos. You and your men remain there all night, gazing and talking in hushed tones." />
+    <string id="PassingComet_Event_Text_E" text="In the stillness of the night, you and a small group of your men watch a comet blaze across the heavens. Its beauty is breathtaking, igniting your curiosity about the stars. Some see them as the eyes of gods, but your mind wanders to other possibilities.\n\nCould the stars be suns, unimaginably far away? Or are they the spirits of those who came before? You’ve often wondered but never voiced these thoughts, fearing how others might react. Tonight, though, the comet provides a moment of awe and reflection. You and your men stand together, quietly talking and marveling at the wonders of the night sky." />
 
     <!--PassingComet - Event Button-->
     <string id="PassingComet_Event_Button_Text" text="Done" />
     
-
-
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *
@@ -489,11 +843,26 @@
     ******************************************************************************
     -->
     
-    <!--RedMoon Event-->
-    <string id="RedMoon_Title" text="The Red Moon" />
-    <string id="RedMoon_Event_Desc" text="You are in your tent late one night when you are awoken by your men starting a commotion. Annoyed, you go out and tell them to quiet down but as soon as you step foot outside your tent you see what the commotion is about. The moon has become blood red. Your men are panicking and running around in all directions and proclaiming this to be the end of days. The only question you can ask yourself is what are you going to do about this?" />
+    <!--RedMoon Event Titles-->
+    <string id="RedMoon_Title_A" text="The Red Moon" />
+    <string id="RedMoon_Title_B" text="The Crimson Sky" />
+    <string id="RedMoon_Title_C" text="Blood on the Moon" />
+    <string id="RedMoon_Title_D" text="The Scarlet Eclipse" />
+    <string id="RedMoon_Title_E" text="The Lunar Omen" />
+    <string id="RedMoon_Title_F" text="The Blood Moon" />
+    <string id="RedMoon_Title_G" text="The Ruby Night" />
+    <string id="RedMoon_Title_H" text="The Sky’s Warning" />
+    <string id="RedMoon_Title_I" text="The Night of Red Light" />
+    <string id="RedMoon_Title_J" text="The Fiery Orb" />
 
-    <!--RedMoon Event Choices-->
+    <!--RedMoon Event Descriptions-->
+    <string id="RedMoon_Event_Desc_A" text="You are in your tent late one night when you are awoken by your men starting a commotion. Annoyed, you step outside to quiet them, but as soon as you leave the tent, you understand the chaos. The moon hangs in the sky, blood red and ominous. Your men are panicking, running in all directions, crying out that this is the end of days. The only question that lingers in your mind is how you will handle this." />
+    <string id="RedMoon_Event_Desc_B" text="Late at night, your slumber is interrupted by the sounds of shouting and confusion among your men. Frustrated, you step outside to put an end to the noise, only to freeze in shock as you see the source of their panic. The moon glows blood red, casting an eerie light over the camp. Your men are in disarray, many proclaiming this to be an apocalyptic sign. What will you do to restore order?" />
+    <string id="RedMoon_Event_Desc_C" text="You wake abruptly to the sound of chaos outside your tent. Frustrated, you go out to confront your men, but the sight above stops you in your tracks. The moon is crimson red, bathing the camp in an otherworldly light. Your men are terrified, shouting that the end of days has arrived. It’s up to you to decide how to calm them." />
+    <string id="RedMoon_Event_Desc_D" text="The commotion outside your tent wakes you late one night. Irritated, you step outside to confront your men, only to be met with the haunting sight of a blood-red moon looming above. Fear grips the camp as your men scatter, proclaiming doom is upon them. In this moment of panic, you must choose how to lead." />
+    <string id="RedMoon_Event_Desc_E" text="Awakened by frantic shouting, you emerge from your tent to a scene of chaos. The moon glows red as blood, casting an eerie light over your camp. Your men are in a frenzy, convinced this marks the end of days. Faced with their fear, you must decide how to respond to this unsettling omen." />
+
+    <!--RedMoon - Event Choices-->
     <string id="RedMoon_Event_Option_1" text="Panic with your men" />
     <string id="RedMoon_Event_Option_1_Hover" text="This really **is** the end!" />
     <string id="RedMoon_Event_Option_2" text="Call your men to you" />
@@ -503,21 +872,65 @@
     <string id="RedMoon_Event_Option_4" text="Ignore everything" />
     <string id="RedMoon_Event_Option_4_Hover" text="Just head back to your tent" />
 
-    <!--RedMoon Events-->
-    <string id="RedMoon_Event_Choice_1" text="You fall to your knees and start praying to the gods. Several of your men join you in prayer. \n \nAfter praying for almost 10 minutes you realize that this won't help. You order your men to give you {goldLostToReligion} gold that you will rush to the nearest chapel. Hopefully the priests can help you. You mount your steed and ride of. You ride like a madman towards {closestSettlement} as you know the settlement has a chapel. As your steed jumps over a fence you fall off and black out.\nWhen you wake up it's morning you make your way back to camp. Only after you arrived back did you think of the chest of gold you lost." />
-    <string id="RedMoon_Event_Choice_2" text="You call your men to you. Many are panicking and you see genuine fear in their faces. You tell to stop and calm down but to no avail. They start running around like headless chickens again. You decide not to waste your time and let the fanatics do what they want so you retire to your tent.\n \nWhen you wake up the following morning you learned that {menLostToReligion} of your men left your party in the direction of {closestSettlement}. They also inform you they took {goldLostToReligion} gold from the treasury as an offering to the church. At least the fanatics are gone!" />
-    <string id="RedMoon_Event_Choice_3" text="You order your men to you! Most fall in line immediately, but some still act like idiots. You tell your men that what you are witnessing is a natural occuring phenomenon since you have witnessed this before. You explain how you saw the exact same thing a few years ago and nothing bad came out of it. You men seem to be happy to hear this. There are still some idiots praying in the back but you kick them from the party claiming you don't need mentally unstable warriors. You have several of your guards kick them out of camp!" />
-    <string id="RedMoon_Event_Choice_4" text="Nope...\n \nYou turn around and go back into your tent and straight back to bed.\n \nWhen you wake up the following morning you learned that {menLostToReligion} of your men left your party in the direction of {closestSettlement}. They also inform you they took {goldLostToReligion} gold from the treasury as an offering to the church. At least the fanatics are gone!" />
-
-    <!--RedMoon Event Buttons-->
+    <!--RedMoon - Event Buttons-->
     <string id="RedMoon_Event_Button_Text_1" text="Choose" />
     <string id="RedMoon_Event_Button_Text_2" text="Done" />
+    
+    <!--RedMoon - Event 1-->
+    <string id="RedMoon_Event_Choice_1A" text="You fall to your knees, overwhelmed by the sight, and begin praying fervently to the gods. Some of your men, inspired or desperate, join you in prayer.\n\nAfter nearly 10 minutes, it dawns on you that prayer alone might not suffice. You order your men to hand over {goldLostToReligion} gold to take to the nearest chapel. Mounting your steed, you set off at a frantic pace toward {closestSettlement}, where you know there is a place of worship. In your haste, as your horse clears a fence, you are thrown off and lose consciousness.\nYou awaken to find the sun rising. Weary and bruised, you return to camp, only to realize the chest of gold is gone." />
+    <string id="RedMoon_Event_Choice_1B" text="Stricken by fear, you drop to your knees and begin to pray, urging your men to join you. Many follow your lead, hoping to appease the gods.\n\nAfter some time, you realize prayers won’t solve the problem. Gathering {goldLostToReligion} gold, you mount your horse and ride with urgency toward {closestSettlement}, knowing the chapel there might offer aid. As you leap over a fence, your horse stumbles, throwing you to the ground. The impact leaves you unconscious.\nWhen you regain consciousness, it is already morning. Returning to camp, you recall the chest of gold you lost in your desperate ride." />
+    <string id="RedMoon_Event_Choice_1C" text="Unable to contain your fear, you kneel and begin praying, calling on the gods for guidance. Several of your men follow suit, their voices joining yours in fervent prayer.\n\nRealizing that prayer alone won’t bring a solution, you hastily collect {goldLostToReligion} gold and ride toward {closestSettlement}, hoping the priests can intervene. Riding recklessly, your horse jumps a fence, causing you to fall and black out.\nYou wake to the dawn’s light and return to camp. Only then does the memory of the lost gold return to you, deepening your regret." />
+    <string id="RedMoon_Event_Choice_1D" text="You drop to your knees, overwhelmed, and begin praying. Some of your men join you, their voices trembling with fear.\n\nAfter nearly 10 minutes, you realize more action is needed. Collecting {goldLostToReligion} gold, you ride at breakneck speed toward {closestSettlement}, where the local chapel might help. In your haste, your horse leaps a fence, throwing you off and rendering you unconscious.\nWhen you awaken, the sun is already high in the sky. Returning to camp, you recall the gold you carried—and lost—on your desperate journey." />
+    <string id="RedMoon_Event_Choice_1E" text="You collapse to your knees in desperation, praying loudly to the gods for mercy. Several of your men join you, seeking solace in prayer.\n\nWhen it becomes clear this won’t resolve anything, you collect {goldLostToReligion} gold and set off for {closestSettlement}, hoping the priests can help. Riding recklessly, your horse stumbles while jumping a fence, throwing you violently to the ground. You lose consciousness.\nAwakening at dawn, you slowly make your way back to camp. Only then do you remember the chest of gold you carried—and lost along the way." />
 
-    <!--RedMoon Log Messages-->
-    <string id="RedMoon_Event_Msg_1" text="{heroName} lost {goldLostToReligion} gold due to a... unfortunate accident." />
-    <string id="RedMoon_Event_Msg_2" text="{heroName} lost {menLostToReligion} men and {goldLostToReligion} gold after the red moon." />
-    <string id="RedMoon_Event_Msg_3" text="{heroName} threw {menLostToReligion} men out of his party for being unworthy." />
-    <string id="RedMoon_Event_Msg_4" text="{heroName} lost {menLostToReligion} men and {goldLostToReligion} gold after ignoring the men last night." />
+    <!--RedMoon - Event 2-->
+    <string id="RedMoon_Event_Choice_2A" text="You call your men to gather, trying to quell the panic and fear you see in their faces. Despite your best efforts to calm them, they scatter like headless chickens, ignoring your commands. Frustrated, you decide to let them be and return to your tent.\n\nThe next morning, you learn that {menLostToReligion} of your men left the party, heading toward {closestSettlement}. They also took {goldLostToReligion} gold from the treasury as an offering to the church. At least the fanatics are gone!" />
+    <string id="RedMoon_Event_Choice_2B" text="You try to address your men, who are consumed by panic and fear. Despite your attempts to reason with them, chaos ensues as they run around in a frenzy. Realizing there’s no point in trying further, you retreat to your tent.\n\nBy morning, you discover that {menLostToReligion} of your men have left, taking {goldLostToReligion} gold with them as an offering to the church in {closestSettlement}. Though frustrating, you can’t help but feel relieved that the fanatics are no longer your problem." />
+    <string id="RedMoon_Event_Choice_2C" text="Gathering your men, you attempt to calm their frayed nerves, but your words fall on deaf ears. The panic spreads, and they ignore your orders, running around aimlessly. Frustrated, you decide to let them act as they wish and retreat to your tent for the night.\n\nThe next day, you learn that {menLostToReligion} men have abandoned the party, taking {goldLostToReligion} gold from the treasury. They’ve gone toward {closestSettlement}, likely seeking solace in the church. At least the commotion has died down." />
+    <string id="RedMoon_Event_Choice_2D" text="Calling your men to you, you attempt to restore order, but the panic is too great. They scatter in fear, ignoring your pleas for calm. Accepting that nothing can be done, you retire to your tent.\n\nBy morning, you find out that {menLostToReligion} of your men have left, taking {goldLostToReligion} gold from the treasury with them. They’ve gone toward {closestSettlement}, seeking refuge at the church. At least the situation is quieter now." />
+    <string id="RedMoon_Event_Choice_2E" text="You gather your men and try to reassure them, but their terror is overwhelming. Your words are drowned out by the chaos as they run around in a state of panic. Recognizing the futility, you decide to retire to your tent and let them sort themselves out.\n\nThe following morning, you learn that {menLostToReligion} of your men have deserted, taking {goldLostToReligion} gold from the treasury as an offering to the church in {closestSettlement}. At least their absence brings some peace to the camp." />
+
+    <!--RedMoon - Event 3-->
+    <string id="RedMoon_Event_Choice_3A" text="You call your men to attention, most of whom fall in line quickly, though a few continue to panic. You address them firmly, explaining that the red moon is a naturally occurring phenomenon. You reassure them by recounting how you witnessed the same event years ago, and nothing ill came of it. Your men seem to calm down, though some fools in the back persist in their prayers. Deciding you don’t need unstable warriors in your ranks, you order your guards to kick them out of camp." />
+    <string id="RedMoon_Event_Choice_3B" text="With authority, you command your men to gather. Most obey at once, though a few remain caught up in their hysteria. You explain to them that the red moon is a natural event, having seen it yourself years ago with no ill consequences. Your calm demeanor reassures most of your men, but a handful continue praying fervently. Frustrated, you decide such unstable individuals have no place in your party and have your guards escort them out of camp." />
+    <string id="RedMoon_Event_Choice_3C" text="Raising your voice, you order your men to stand down and listen. While most comply, a few still act irrationally. You calmly explain that the red moon is a natural event, one you personally witnessed years ago with no harm resulting from it. This reassures the majority of your men, but a small group of fanatics continues their prayers. You decide to expel them from the party, instructing your guards to remove them from the camp." />
+    <string id="RedMoon_Event_Choice_3D" text="You assert your authority, commanding your men to assemble. While most obey, a few remain lost in their panic. You explain to them that this red moon is nothing more than a natural occurrence, something you witnessed years ago without any dire consequences. Your words soothe the majority of your men, but those still praying are deemed unfit for your party. You have your guards remove them from camp to maintain order." />
+    <string id="RedMoon_Event_Choice_3E" text="You order your men to gather and listen. Most quickly fall in line, but a handful remain frantic. Speaking with confidence, you explain that the red moon is a natural phenomenon, recounting how you witnessed the same event years ago without any trouble. Your men appear reassured, though some fanatics persist in their prayers. Deciding they are a liability, you have your guards escort them out of camp immediately." />
+
+    <!--RedMoon - Event 4-->
+    <string id="RedMoon_Event_Choice_4A" text="Nope...\n\nYou decide not to deal with the chaos and return to your tent to sleep.\n\nThe next morning, you’re informed that {menLostToReligion} of your men left the party during the night, heading toward {closestSettlement}. They also took {goldLostToReligion} gold from the treasury as an offering to the church. At least the fanatics are gone!" />
+    <string id="RedMoon_Event_Choice_4B" text="You shake your head and mutter, 'Nope...' before retreating into your tent and going straight to bed.\n\nWhen morning comes, you learn that {menLostToReligion} men deserted the camp, heading toward {closestSettlement}. They also took {goldLostToReligion} gold from the treasury for their religious offering. At least you won’t have to deal with them anymore." />
+    <string id="RedMoon_Event_Choice_4C" text="With a simple 'Nope,' you turn back to your tent, ignoring the chaos outside, and settle in for the night.\n\nUpon waking, you’re informed that {menLostToReligion} men left the party, making their way toward {closestSettlement}. They also helped themselves to {goldLostToReligion} gold from the treasury. At least the fanatics are no longer your problem." />
+    <string id="RedMoon_Event_Choice_4D" text="Deciding you want no part in the commotion, you say, 'Nope,' and head back to your tent for some sleep.\n\nThe following morning, you’re told that {menLostToReligion} of your men abandoned the party, heading toward {closestSettlement}. They also took {goldLostToReligion} gold as an offering to the church. You sigh, relieved to see them gone." />
+    <string id="RedMoon_Event_Choice_4E" text="You glance at the chaos, shrug, and simply say, 'Nope.' Returning to your tent, you go straight to sleep.\n\nWhen you wake, you’re informed that {menLostToReligion} men left during the night, taking {goldLostToReligion} gold from the treasury as an offering to the church. At least the troublemakers are gone!" />
+
+    <!--RedMoon - Log Messages - Event 1-->
+    <string id="RedMoon_Event_Msg_1A" text="{heroName} lost {goldLostToReligion} gold due to an... unfortunate accident." />
+    <string id="RedMoon_Event_Msg_1B" text="An unfortunate series of events caused {heroName} to lose {goldLostToReligion} gold." />
+    <string id="RedMoon_Event_Msg_1C" text="{heroName} lost {goldLostToReligion} gold under less-than-ideal circumstances." />
+    <string id="RedMoon_Event_Msg_1D" text="{goldLostToReligion} gold was lost by {heroName} in an unfortunate turn of events." />
+    <string id="RedMoon_Event_Msg_1E" text="{heroName} managed to misplace {goldLostToReligion} gold due to unforeseen complications." />
+
+    <!--RedMoon - Log Messages - Event 2-->
+    <string id="RedMoon_Event_Msg_2A" text="{heroName} lost {menLostToReligion} men and {goldLostToReligion} gold after the red moon." />
+    <string id="RedMoon_Event_Msg_2B" text="Following the red moon, {heroName} lost {menLostToReligion} men and {goldLostToReligion} gold." />
+    <string id="RedMoon_Event_Msg_2C" text="The red moon caused {heroName} to lose {menLostToReligion} men and {goldLostToReligion} gold." />
+    <string id="RedMoon_Event_Msg_2D" text="{heroName} suffered the loss of {menLostToReligion} men and {goldLostToReligion} gold due to the red moon." />
+    <string id="RedMoon_Event_Msg_2E" text="After the red moon, {heroName} found {menLostToReligion} men and {goldLostToReligion} gold missing." />
+
+    <!--RedMoon - Log Messages - Event 3-->
+    <string id="RedMoon_Event_Msg_3A" text="{heroName} calmed the party but expelled several fanatics from the group." />
+    <string id="RedMoon_Event_Msg_3B" text="Order was restored by {heroName}, though a few fanatics were removed from the party." />
+    <string id="RedMoon_Event_Msg_3C" text="{heroName} reassured the group but decided to expel unstable members." />
+    <string id="RedMoon_Event_Msg_3D" text="The red moon caused panic, but {heroName} calmed the group and removed the fanatics." />
+    <string id="RedMoon_Event_Msg_3E" text="{heroName} maintained order by calming the group and expelling troublemakers." />
+
+    <!--RedMoon - Log Messages - Event 4-->
+    <string id="RedMoon_Event_Msg_4A" text="{heroName} lost {menLostToReligion} men and {goldLostToReligion} gold after ignoring the men last night." />
+    <string id="RedMoon_Event_Msg_4B" text="By choosing to ignore the chaos, {heroName} lost {menLostToReligion} men and {goldLostToReligion} gold." />
+    <string id="RedMoon_Event_Msg_4C" text="Ignoring the men’s fears cost {heroName} {menLostToReligion} men and {goldLostToReligion} gold." />
+    <string id="RedMoon_Event_Msg_4D" text="{heroName} suffered the loss of {menLostToReligion} men and {goldLostToReligion} gold due to inaction during the red moon." />
+    <string id="RedMoon_Event_Msg_4E" text="After choosing not to intervene, {heroName} lost {menLostToReligion} men and {goldLostToReligion} gold." />
 
 
 
@@ -529,9 +942,24 @@
     ******************************************************************************
     -->
     
-    <!--RunawaySon Event-->
-    <string id="RunawaySon_Title" text="Runaway Son" />
-    <string id="RunawaySon_Event_Desc" text="As your party moves through the land near {closestSettlement}, you are approached by a young man. He explains that he ran away from the family farm after suffering abuse from his parents for years. He wants to join your party and he tells you he has some skills with weapons." />
+    <!--RunawaySon Event Titles-->
+    <string id="RunawaySon_Title_A" text="Runaway Son" />
+    <string id="RunawaySon_Title_B" text="The Fugitive Heir" />
+    <string id="RunawaySon_Title_C" text="The Wayward Man" />
+    <string id="RunawaySon_Title_D" text="The Wanderer’s Tale" />
+    <string id="RunawaySon_Title_E" text="The Lost Scion" />
+    <string id="RunawaySon_Title_F" text="The Escaped Son" />
+    <string id="RunawaySon_Title_G" text="The Rebel Son" />
+    <string id="RunawaySon_Title_H" text="The Missing Man" />
+    <string id="RunawaySon_Title_I" text="The Exiled Son" />
+    <string id="RunawaySon_Title_J" text="The Runaway Stranger" />
+    
+    <!--RunawaySon Event Descriptions-->
+    <string id="RunawaySon_Event_Desc_A" text="As your party travels near {closestSettlement}, a young man approaches you. He explains that he fled his family farm after enduring years of abuse from his parents. Desperate for a new start, he asks to join your party, claiming to have some skill with weapons." />
+    <string id="RunawaySon_Event_Desc_B" text="While journeying near {closestSettlement}, your party is approached by a young man. He shares a grim story of running away from his family farm to escape years of mistreatment by his parents. Seeking refuge, he offers his skills with weapons and requests to join your group." />
+    <string id="RunawaySon_Event_Desc_C" text="As you pass through the lands near {closestSettlement}, a young man intercepts your party. He recounts a harrowing tale of fleeing his abusive parents and abandoning the family farm. Eager to prove himself, he asks to join your ranks, boasting some proficiency with weapons." />
+    <string id="RunawaySon_Event_Desc_D" text="Near {closestSettlement}, a young man steps out of the shadows and approaches your party. He reveals that he has run away from an abusive home, leaving his family farm behind. Hoping for a new life, he offers his skills with weapons in exchange for a place in your party." />
+    <string id="RunawaySon_Event_Desc_E" text="While traveling near {closestSettlement}, your group encounters a young man seeking sanctuary. He tells you he has fled his family farm, unable to endure the abuse of his parents any longer. In need of safety and purpose, he requests to join your party, claiming some experience with weapons." />
 
     <!--RunawaySon - Event Choices-->
     <string id="RunawaySon_Event_Option_1" text="Take him in and train him" />
@@ -542,24 +970,45 @@
     <string id="RunawaySon_Event_Option_3_Hover" text="He needs to leave" />
     <string id="RunawaySon_Event_Option_4" text="[Roguery] Kill him" />
     <string id="RunawaySon_Event_Option_4_Hover" text="It's a cruel world.\n{rogueryAppendedText}" />
-
-    <!--Skill Check-->
-    <string id="RunawaySon_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="RunawaySon_Roguery_Appended_Text" text="[Roguery - lvl {minRogueryLevel}]" />
-
+    
     <!--RunawaySon - Event Buttons-->
     <string id="RunawaySon_Event_Button_Text_1" text="Okay" />
     <string id="RunawaySon_Event_Button_Text_2" text="Done" />
+    
+    <!--RunawaySon - Event 1-->
+    <string id="RunawaySon_Event_Choice_1A" text="You tell him he is welcome in your ranks and that you will personally train him to become a fine soldier." />
+    <string id="RunawaySon_Event_Choice_1B" text="You accept him into your ranks, promising to mentor him and shape him into a capable warrior." />
+    <string id="RunawaySon_Event_Choice_1C" text="You welcome him to your party and assure him that, with your guidance, he will become a skilled soldier." />
+    <string id="RunawaySon_Event_Choice_1D" text="You nod and invite him to join, vowing to train him yourself and turn him into a reliable fighter." />
+    <string id="RunawaySon_Event_Choice_1E" text="You agree to take him in, promising to teach him the skills he’ll need to thrive as a soldier in your ranks." />
 
-    <!--RunawaySon - Events-->
-    <string id="RunawaySon_Event_Choice_1" text="You tell him he is welcome in your ranks and you will personally train him and make a fine solider of him." />
-    <string id="RunawaySon_Event_Choice_2" text="You tell him he can tag along, but under no circumstance should he interfere in your affairs." />
-    <string id="RunawaySon_Event_Choice_3" text="You tell him to get lost. The man turns around and promptly leaves." />
-    <string id="RunawaySon_Event_Choice_4" text="You laugh as you hear his plea and your men soon join in on the laughter. You approach the man and thrust a dagger into his stomach. You watch him fall to the ground in a pool of blood, screaming in pain.\n You kneel down beside him and watch as the light soon leaves his eyes and he dies from his injury. You and some men decide to cut him open and hang his body from a tree as a warning but not before looting his body for {goldLooted} gold." />
+    <!--RunawaySon - Event 2-->
+    <string id="RunawaySon_Event_Choice_2A" text="You tell him he can tag along but make it clear that he is not to interfere in your affairs." />
+    <string id="RunawaySon_Event_Choice_2B" text="You agree to let him travel with you, warning him to stay out of your business." />
+    <string id="RunawaySon_Event_Choice_2C" text="You permit him to accompany your group but firmly instruct him not to meddle in your matters." />
+    <string id="RunawaySon_Event_Choice_2D" text="You allow him to join, but with a stern warning that he is not to involve himself in your affairs." />
+    <string id="RunawaySon_Event_Choice_2E" text="You let him follow your party but make it clear that he must keep his distance from your dealings." />
+
+    <!--RunawaySon - Event 3-->
+    <string id="RunawaySon_Event_Choice_3A" text="You tell him to get lost. The man says nothing and promptly turns to leave." />
+    <string id="RunawaySon_Event_Choice_3B" text="You dismiss him, telling him to leave immediately. Without a word, he turns and walks away." />
+    <string id="RunawaySon_Event_Choice_3C" text="You firmly tell him to leave. The man nods silently before turning and walking off." />
+    <string id="RunawaySon_Event_Choice_3D" text="You instruct him to leave at once. Without protest, he turns around and departs." />
+    <string id="RunawaySon_Event_Choice_3E" text="You harshly tell him to get lost. He doesn’t argue, turning on his heel and leaving immediately." />
+    
+    <!--RunawaySon - Event 4-->
+    <string id="RunawaySon_Event_Choice_4A" text="You laugh mockingly at his plea, and soon your men join in the laughter. Approaching the man, you drive a dagger into his stomach, watching as he collapses to the ground, screaming in agony. You kneel beside him, observing as the light fades from his eyes and he succumbs to his wounds. Afterward, you and some of your men cut him open and hang his body from a tree as a grim warning to others, but not before looting {goldLooted} gold from his corpse." />
+    <string id="RunawaySon_Event_Choice_4B" text="Hearing his plea, you burst into cruel laughter, and your men follow suit. Without hesitation, you step forward and plunge a dagger into his stomach. He falls to the ground, writhing and screaming in pain. You crouch beside him, watching as his life fades away. Once he’s dead, you and your men carve his body open and string it up in a tree as a warning to others, looting {goldLooted} gold from him first." />
+    <string id="RunawaySon_Event_Choice_4C" text="You laugh cruelly at his desperate plea, and your men join in the jeers. Moving forward, you thrust your dagger into his stomach, watching as he collapses in pain. Kneeling beside his lifeless body, you and your men decide to cut him open and hang him from a tree as a warning. Before leaving, you loot {goldLooted} gold from his belongings." />
+    <string id="RunawaySon_Event_Choice_4D" text="His plea only amuses you, and you laugh coldly, prompting your men to join in. Without a word, you approach and stab him in the stomach, listening to his screams as he falls to the ground. You crouch down, watching as he dies, then order your men to disembowel him and hang his body from a tree as a warning. Before departing, you take {goldLooted} gold from his body." />
+    <string id="RunawaySon_Event_Choice_4E" text="You laugh derisively at his plea, and your men echo your cruel amusement. Stepping forward, you drive a dagger into his stomach, smiling as he collapses in agony. You kneel by his side and wait until he breathes his last. Then, with the help of your men, you cut open his body and hang it from a tree as a warning. Before leaving, you search him and recover {goldLooted} gold." />
 
     <!--RunawaySon - Log Messages-->
-    <string id="RunawaySon_Event_Msg_1" text="{heroName} killed a young man and looted {goldLooted} from his corpse." />
-
+    <string id="RunawaySon_Event_Msgs_A" text="{heroName} killed a young man and looted {goldLooted} from his corpse." />
+    <string id="RunawaySon_Event_Msgs_B" text="{heroName} ended a young man’s life and took {goldLooted} from his belongings." />
+    <string id="RunawaySon_Event_Msgs_C" text="After killing a young man, {heroName} looted {goldLooted} gold from his body." />
+    <string id="RunawaySon_Event_Msgs_D" text="{heroName} claimed {goldLooted} gold after taking the life of a young man." />
+    <string id="RunawaySon_Event_Msgs_E" text="{heroName} looted {goldLooted} gold from the corpse of a young man they killed." />
 
 
     <!--
@@ -570,9 +1019,24 @@
     ******************************************************************************
     -->
     
-    <!--SuddenStorm Event-->
-    <string id="SuddenStorm_Title" text="A Sudden Storm" />
-    <string id="SuddenStorm_Event_Desc" text="Your party is traveling near {closestSettlement} when you are suddenly caught in a massive storm. The hailstones are massive, the rain is pouring, the wind -- intense, and there is lightning strikes all around. You waste no time telling your men what do to." />
+    <!--SuddenStorm Event Titles-->
+    <string id="SuddenStorm_Title_A" text="A Sudden Storm" />
+    <string id="SuddenStorm_Title_B" text="The Tempest Strikes" />
+    <string id="SuddenStorm_Title_C" text="Caught in the Storm" />
+    <string id="SuddenStorm_Title_D" text="The Raging Skies" />
+    <string id="SuddenStorm_Title_E" text="The Unexpected Tempest" />
+    <string id="SuddenStorm_Title_F" text="Fury of the Heavens" />
+    <string id="SuddenStorm_Title_G" text="The Unforgiving Storm" />
+    <string id="SuddenStorm_Title_H" text="The Storm’s Wrath" />
+    <string id="SuddenStorm_Title_I" text="Chaos in the Clouds" />
+    <string id="SuddenStorm_Title_J" text="The Thunder’s Roar" />
+    
+    <!--SuddenStorm Event Descriptions-->
+    <string id="SuddenStorm_Event_Desc_A" text="Your party is traveling near {closestSettlement} when you are suddenly caught in a massive storm. Hailstones the size of fists fall around you, the rain pours in torrents, the wind howls fiercely, and lightning cracks dangerously close. Wasting no time, you shout orders to your men." />
+    <string id="SuddenStorm_Event_Desc_B" text="While journeying near {closestSettlement}, a ferocious storm catches your party off guard. The hailstones pelt down, rain lashes against you, and the winds threaten to topple your tents. Lightning streaks across the sky as you quickly direct your men to action." />
+    <string id="SuddenStorm_Event_Desc_C" text="As your party nears {closestSettlement}, an intense storm descends without warning. Massive hailstones, relentless rain, and howling winds assault you from all sides, while lightning flashes dangerously close. You immediately bark orders to your men to secure the camp." />
+    <string id="SuddenStorm_Event_Desc_D" text="Near {closestSettlement}, your party is caught in the grip of a sudden and violent storm. Hailstones hammer down, rain pours in sheets, and gale-force winds whip through the camp. With lightning striking nearby, you don’t hesitate to rally your men and take control of the situation." />
+    <string id="SuddenStorm_Event_Desc_E" text="Your party is moving near {closestSettlement} when an unexpected storm strikes. The hailstones are immense, rain lashes in waves, and fierce winds tear through the area. With lightning illuminating the chaos, you quickly step in to organize your men." />
 
     <!--SuddenStorm - Event Choices-->
     <string id="SuddenStorm_Event_Option_1" text="Run for cover in the forest!" />
@@ -588,18 +1052,61 @@
     <string id="SuddenStorm_Event_Button_Text_1" text="Choose" />
     <string id="SuddenStorm_Event_Button_Text_2" text="Done" />
 
-    <!--SuddenStorm - Events-->
-    <string id="SuddenStorm_Event_Choice_1" text="You order your men to run into the forest to the right. The men drop what they can and makes for the woods. Once inside, you look back and see the corpses of men and horses that weren't so quick. You cannot do anything for them now so you huddle together with your men and wait for the storm to pass.\n\nLuckily the storm passes just as quickly as it came. You then start to inspect the damage and help those who are wounded, deciding to take the wounded men to {closestSettlement} to get help there. All in all {horsesLost} horses and {menDied} men died from the storm. {menWounded} men were taken to {closestSettlement} to get help. You bury your deceased men in a single grave and manage to salvage {meatFromHorse} meat from the dead horses." />
-    <string id="SuddenStorm_Event_Choice_2" text="You order your men to hide underneath the wagons, but some men are running into the forest nearby. While you lay on the muddy ground you can hear the sound of the giant hail destroying some of your equipment as well as killing some horses. \n\nSuddenly a bolt of lightning hit the forest where some of your men had run. Over the deafening sound of the wind you can hear some of them crying out for help. You cannot do anything for them now so you and your men wait.\n\nLuckily the storm passes just as quickly as it came. You and your men start to inspect the damage and help those who are wounded in the forest, deciding to take the wounded men to {closestSettlement} to get help there. All in all {horsesLost} horses and {menDied} men died from the storm. {menWounded} men were taken to {closestSettlement} to get help. You bury your deceased men in a single grave and you manage to salvage {meatFromHorse} meat from the dead horses." />
-    <string id="SuddenStorm_Event_Choice_3" text="You order your men to press on through the storm in an attempt to find better shelter. The men reluctantly follow your lead towards a rock face not to far away. When you reach it you order your men to dismount and stand close to the wall. The men all do as you say and you all stand there for what seams like forever in waiting for the storm to pass. A lightning bolt rips through the sky and the deafening boom that follows spooks the horses so they start to run in all directions. Some of your men start to run after the horses but you manage to convince them to stay by saying that we will search once the storm has passed.\n\nThe storm passes relatively quickly. You and your men start to inspect the damage to your gear and help those who have been wounded. You decide to take the wounded men to {closestSettlement} to get help there. After a few hours you find all the surviving horses. All in all {horsesLost} horses died and {menWounded} men were wounded and they were taken to {closestSettlement} to get help. You manage to salvage {meatFromHorse} meat from the dead horses." />
-    <string id="SuddenStorm_Event_Choice_4" text="You tell your men that no storm shall stop you and order them to march though the storm. After a few minutes you hear the men begging you to stop, telling you that some of your men already have been killed by the giant hail. Hearing this you agree to stop and everyone takes cover. As you jump off your horse you suddenly feel an intense pain in the back of your head moments before the world fades to darkness.\n\nYou are awoken by several of your men uttering your name and pouring water in your face. They help you to your feet. The sun is shining, the birds are singing and there is no sign of the storm except distant rumbling. One of your men shows you the helmet you were wearing. You are shocked when you see it has a massive dent in the back from the hail. If you weren't wearing this there is no doubt you would be dead.\nYou and your men start to inspect the damage and help those who are wounded. You decide to take the wounded men to {closestSettlement} to get help there. All in all {horsesLost} horses and {menDied} men died from the storm, but you cannot help thinking that number would have been lower if you had stopped sooner. {menWounded} men were taken to {closestSettlement} to get help. You bury your deceased men in a single grave and you manage to salvage {meatFromHorse} meat from the dead horses." />
+    <!--SuddenStorm - Event 1-->
+    <string id="SuddenStorm_Event_Choice_1A" text="You order your men to take cover in the forest to the right. Dropping whatever they can, they make a desperate dash for the trees. Once inside, you glance back and see the bodies of men and horses that couldn’t make it in time. There is nothing you can do for them now, so you huddle together with your men and wait for the storm to pass. The storm subsides as suddenly as it arrived. You inspect the damage, tending to the wounded and deciding to take them to {closestSettlement} for proper care. All told, {horsesLost} horses and {menDied} men perished in the storm, while {menWounded} were taken to {closestSettlement}. You bury the fallen in a single grave and salvage {meatFromHorse} meat from the dead horses." />
+    <string id="SuddenStorm_Event_Choice_1B" text="You shout for your men to make for the forest on the right. They drop their belongings and sprint for cover. As you take shelter among the trees, you glance back to see fallen men and horses who weren’t quick enough to escape. With no way to help them now, you stay with your men until the storm passes. When the skies clear, you assess the situation. {horsesLost} horses and {menDied} men were lost to the storm, and {menWounded} require medical attention, so you head to {closestSettlement}. You bury your dead in a single grave and manage to collect {meatFromHorse} meat from the fallen horses." />
+    <string id="SuddenStorm_Event_Choice_1C" text="You command your men to flee into the nearby forest for safety. They drop their gear and run, but as you glance back, you see the lifeless bodies of men and horses who weren’t fast enough. There’s nothing you can do for them now, so you stay with your men in the shelter of the trees until the storm subsides. Once the storm clears, you evaluate the aftermath. {horsesLost} horses and {menDied} men were lost, and {menWounded} are in need of care, prompting you to take them to {closestSettlement}. You bury the fallen in a shared grave and salvage {meatFromHorse} meat from the horse carcasses." />
+    <string id="SuddenStorm_Event_Choice_1D" text="You urgently direct your men to the forest on the right, yelling for them to leave their belongings and move quickly. As you find safety among the trees, you glance back at the grim sight of fallen men and horses. Helpless to aid them now, you remain huddled with your men until the storm abates. When it’s over, you assess the damage. {horsesLost} horses and {menDied} men were claimed by the storm, and {menWounded} are brought to {closestSettlement} for medical care. You bury the dead in a single grave, recovering {meatFromHorse} meat from the horses." />
+    <string id="SuddenStorm_Event_Choice_1E" text="You quickly order your men to seek shelter in the forest to the right. Abandoning their belongings, they rush for the trees. Looking back, you see the bodies of those who didn’t make it in time, both men and horses. You stay with your remaining men, waiting for the storm to pass. When the storm finally clears, you assess the toll. {horsesLost} horses and {menDied} men were lost to the storm, while {menWounded} are transported to {closestSettlement} for treatment. You bury the deceased in a single grave and salvage {meatFromHorse} meat from the fallen horses." />
 
-    <!--SuddenStorm - Log Messages-->
-    <string id="SuddenStorm_Event_Msg_1" text="{heroName} lost {horsesLost} horses and {menDied} men to a sudden storm. He also received {meatFromHorse} meat from butchering the dead horses." />
-    <string id="SuddenStorm_Event_Msg_2" text="{heroName} lost {horsesLost} horses and {menDied} men to a sudden storm. He also received {meatFromHorse} meat from butchering the dead horses." />
-    <string id="SuddenStorm_Event_Msg_3" text="{heroName} lost {horsesLost} horses to a sudden storm. He received {meatFromHorse} meat from butchering the dead horses." />
-    <string id="SuddenStorm_Event_Msg_4" text="In refusing his men shelter from the storm, {heroName} lost {horsesLost} horses and {menDied} men to a sudden storm." />
+    <!--SuddenStorm - Event 2-->
+    <string id="SuddenStorm_Event_Choice_2A" text="You order your men to take shelter beneath the wagons, though some ignore your command and run toward the nearby forest. As you lay on the muddy ground, you hear the relentless hail smashing equipment and killing several horses. Suddenly, a bolt of lightning strikes the forest where the others fled, followed by cries for help carried on the wind. Unable to assist them in the storm, you and your men remain under the wagons until it passes. Once the storm clears, you assess the aftermath. {horsesLost} horses and {menDied} men were lost, while {menWounded} are taken to {closestSettlement} for treatment. You bury the dead in a single grave and salvage {meatFromHorse} meat from the horse carcasses." />
+    <string id="SuddenStorm_Event_Choice_2B" text="You command your men to take cover beneath the wagons, but a few panic and dash into the nearby forest. Lying on the ground, you hear the hailstones destroy equipment and kill some of the horses. Suddenly, a lightning bolt strikes the forest, and over the roar of the wind, you hear cries for help. There is nothing you can do for them now, so you and your men wait out the storm. When the skies finally clear, you take stock of the situation. {horsesLost} horses and {menDied} men perished, and {menWounded} are sent to {closestSettlement} for medical aid. You bury the fallen in a shared grave and recover {meatFromHorse} meat from the dead horses." />
+    <string id="SuddenStorm_Event_Choice_2C" text="You order everyone to take refuge under the wagons, though some men bolt for the forest in panic. Lying in the mud, you can hear the hail ripping through your equipment and killing several horses. A sudden lightning strike hits the forest, and cries of pain reach you through the howling wind. Unable to act, you remain with your men under the wagons until the storm subsides. After the storm passes, you survey the damage. {horsesLost} horses and {menDied} men were lost, and {menWounded} are transported to {closestSettlement} for care. You bury the deceased in a single grave and salvage {meatFromHorse} meat from the fallen ones." />
+    <string id="SuddenStorm_Event_Choice_2D" text="You instruct your men to hide beneath the wagons, but a few panic and run for the forest. Lying on the wet ground, you listen to the storm wreak havoc, destroying equipment and killing horses. A bolt of lightning strikes the forest, and faint cries for help echo through the wind. Unable to reach them, you stay put until the storm passes. When it’s over, you tally the losses: {horsesLost} horses and {menDied} men. {menWounded} are taken to {closestSettlement} for treatment. You bury the dead and salvage {meatFromHorse} meat from the horse remains." />
+    <string id="SuddenStorm_Event_Choice_2E" text="You direct your men to shelter under the wagons, though some rush toward the forest in their panic. As hail pounds down, you hear the destruction of your equipment and the death cries of several horses. A lightning strike hits the forest, followed by faint screams. Unable to help, you hunker down with your men until the storm blows over. When the storm clears, you assess the damage. {horsesLost} horses and {menDied} men were lost, and {menWounded} are brought to {closestSettlement} for help. You bury your fallen men in a shared grave and recover {meatFromHorse} meat from the horses." />
 
+    <!--SuddenStorm - Event 3-->
+    <string id="SuddenStorm_Event_Choice_3A" text="You order your men to press on through the storm, hoping to find better shelter. Reluctantly, they follow you toward a nearby rock face. Upon reaching it, you instruct everyone to dismount and stand close to the wall. Your men comply, and you all endure what feels like an eternity waiting for the storm to pass. A lightning bolt rips across the sky, and the thunderclap that follows spooks the horses, causing them to scatter in all directions. Some of your men try to chase after them, but you convince them to wait until the storm subsides. Once the storm passes, you begin assessing the damage. {horsesLost} horses were killed, and {menWounded} men were wounded. You decide to take the injured to {closestSettlement} for treatment. After several hours, you manage to recover all surviving horses and salvage {meatFromHorse} meat from the dead ones." />
+    <string id="SuddenStorm_Event_Choice_3B" text="Determined to find better shelter, you order your men to press on through the storm. They hesitantly follow you to a nearby rock face, where you instruct everyone to dismount and gather close to the wall. As the storm rages on, a bolt of lightning cracks through the sky, and the ensuing thunder spooks the horses, causing them to bolt. Some of your men begin to pursue them, but you manage to convince them to stay put and wait for the storm to pass. When the skies clear, you assess the situation. {horsesLost} horses died, and {menWounded} men were injured. You transport the wounded to {closestSettlement} for care and recover the surviving horses after several hours of searching. You also manage to salvage {meatFromHorse} meat from the dead horses." />
+    <string id="SuddenStorm_Event_Choice_3C" text="You instruct your men to continue through the storm in search of better shelter. They reluctantly follow as you lead them toward a rock face. Upon arrival, you order them to dismount and stay close to the wall. A lightning bolt cuts through the sky, followed by an earsplitting thunderclap that causes the horses to panic and scatter. Some of your men attempt to chase after the horses, but you stop them, urging them to wait until the storm passes. When the storm is over, you survey the damage. {horsesLost} horses were lost, and {menWounded} men were injured and sent to {closestSettlement} for aid. After hours of searching, you recover the surviving horses and salvage {meatFromHorse} meat from the fallen ones." />
+    <string id="SuddenStorm_Event_Choice_3D" text="Hoping for better shelter, you command your men to move through the storm toward a nearby rock face. They reluctantly obey, and upon reaching it, you instruct them to dismount and stand close to the wall. The storm’s fury continues until a sudden bolt of lightning startles the horses, sending them running in every direction. Your men want to pursue them, but you convince them to wait until the storm subsides. Once the skies clear, you inspect the damage. {horsesLost} horses were killed, and {menWounded} men were wounded. You transport the injured to {closestSettlement} and spend hours recovering the surviving horses. Additionally, you salvage {meatFromHorse} meat from the horses that perished." />
+    <string id="SuddenStorm_Event_Choice_3E" text="You decide to push on through the storm, leading your men toward a nearby rock face for shelter. Though hesitant, they follow. Once there, you order them to dismount and huddle close to the wall. A bolt of lightning splits the sky, and the thunderous boom that follows sends the horses into a frenzy, scattering in all directions. Some men move to chase the horses, but you stop them, insisting they wait for the storm to pass. After the storm, you assess the losses. {horsesLost} horses were killed, and {menWounded} men were injured. You transport the wounded to {closestSettlement} and eventually recover the surviving horses. From the fallen horses, you manage to salvage {meatFromHorse} meat." />
+
+    <!--SuddenStorm - Event 4-->
+    <string id="SuddenStorm_Event_Choice_4A" text="You proclaim that no storm will stop you and order your men to march through it. After a few minutes, you hear their desperate pleas to stop, warning that some of your men have already been killed by the massive hail. Reluctantly, you agree and signal everyone to take cover. As you dismount, an intense pain shoots through the back of your head, and everything goes dark. You awaken to your men calling your name and pouring water on your face. They help you to your feet as the sun shines, birds sing, and the storm is but a distant memory. One of your men shows you your dented helmet, and you realize it saved your life. Without it, you would surely have died. You and your men inspect the damage and assist the wounded. {horsesLost} horses and {menDied} men were lost, though you can’t help but think the toll would have been smaller had you stopped earlier. {menWounded} men are taken to {closestSettlement} for treatment. You bury your dead in a shared grave and salvage {meatFromHorse} meat from the fallen horses." />
+    <string id="SuddenStorm_Event_Choice_4B" text="Determined to press on, you declare that no storm will stop your march and order your men forward. Before long, the sound of pleading reaches you as your men beg to stop, informing you that several have already been killed by the hail. You reluctantly agree and order everyone to take cover. As you dismount, you feel a sudden, sharp pain in the back of your head before everything fades to black. You awaken to find your men hovering over you, calling your name and pouring water on your face. They help you to your feet as sunlight breaks through the clouds, and one of them shows you your helmet, dented from the storm. You shudder to think what would have happened if you hadn’t been wearing it. Assessing the aftermath, you count {horsesLost} horses and {menDied} men lost. {menWounded} men are taken to {closestSettlement} for aid. You bury the fallen in a single grave and recover {meatFromHorse} meat from the dead horses." />
+    <string id="SuddenStorm_Event_Choice_4C" text="You rally your men, shouting that no storm shall halt your progress, and command them to march on. The hail intensifies, and soon your men beg you to stop, warning that lives have already been lost. Realizing the danger, you order everyone to find shelter. As you dismount, a sharp pain explodes at the back of your head, and the world fades to darkness. You come to with your men surrounding you, calling your name and helping you up. One of them hands you your helmet, now bearing a deep dent from the hail, and you realize how close you came to death. The storm has passed, leaving only distant rumbles behind. You inspect the damage: {horsesLost} horses and {menDied} men are gone, and {menWounded} men are transported to {closestSettlement}. Reflecting on your choices, you regret not stopping sooner. You bury the dead in a shared grave and salvage {meatFromHorse} meat from the horses." />
+    <string id="SuddenStorm_Event_Choice_4D" text="Refusing to be deterred by the storm, you command your men to march forward. The hail grows relentless, and their pleas to stop soon reach your ears. They inform you that men have already died, and you reluctantly agree to halt and seek cover. As you dismount, a sharp pain strikes the back of your head, and everything goes black. You awaken to your men tending to you, pouring water on your face and calling your name. They help you to your feet, showing you your dented helmet, which saved you from certain death. The storm is gone, leaving only distant echoes. You assess the toll: {horsesLost} horses and {menDied} men were lost, and {menWounded} are sent to {closestSettlement}. You bury the fallen in a communal grave and recover {meatFromHorse} meat from the dead horses." />
+    <string id="SuddenStorm_Event_Choice_4E" text="You boldly order your men to push through the storm, proclaiming that no weather will halt your march. However, their cries to stop soon reach you, as they inform you that the hail has already claimed lives. Realizing the danger, you halt the march and instruct everyone to take cover. As you dismount, a sudden impact to the back of your head sends you into unconsciousness. You awaken to the sun shining and your men helping you up. One shows you your helmet, now dented but proof of how it saved your life. The storm has passed, but the toll remains. {horsesLost} horses and {menDied} men were lost, and {menWounded} men are taken to {closestSettlement}. You bury the dead and salvage {meatFromHorse} meat from the fallen horses." />
+
+    <!--SuddenStorm - Log Messages - Event 1-->
+    <string id="SuddenStorm_Event_Msg_1A" text="{heroName} lost {horsesLost} horses and {menDied} men to a sudden storm. He also received {meatFromHorse} meat from butchering the dead horses." />
+    <string id="SuddenStorm_Event_Msg_1B" text="A sudden storm claimed {horsesLost} horses and {menDied} men from {heroName}'s party. {meatFromHorse} meat was salvaged from the dead horses." />
+    <string id="SuddenStorm_Event_Msg_1C" text="{heroName}'s party suffered the loss of {horsesLost} horses and {menDied} men to a sudden storm but managed to recover {meatFromHorse} meat." />
+    <string id="SuddenStorm_Event_Msg_1D" text="After a sudden storm, {heroName} lost {horsesLost} horses and {menDied} men. However, {meatFromHorse} meat was salvaged from the horses." />
+    <string id="SuddenStorm_Event_Msg_1E" text="{heroName} endured a sudden storm, losing {horsesLost} horses and {menDied} men, but salvaged {meatFromHorse} meat from the fallen horses." />
+
+    <!--SuddenStorm - Log Messages - Event 2-->
+    <string id="SuddenStorm_Event_Msg_2A" text="{heroName} lost {horsesLost} horses and {menDied} men to a sudden storm. He also received {meatFromHorse} meat from butchering the dead horses." />
+    <string id="SuddenStorm_Event_Msg_2B" text="A sudden storm claimed {horsesLost} horses and {menDied} men from {heroName}'s party. {meatFromHorse} meat was salvaged from the remains." />
+    <string id="SuddenStorm_Event_Msg_2C" text="During a fierce storm, {heroName} lost {horsesLost} horses and {menDied} men, but recovered {meatFromHorse} meat from the fallen horses." />
+    <string id="SuddenStorm_Event_Msg_2D" text="{heroName} suffered the loss of {horsesLost} horses and {menDied} men in a sudden storm, yet salvaged {meatFromHorse} meat from the dead horses." />
+    <string id="SuddenStorm_Event_Msg_2E" text="After enduring a sudden storm, {heroName} lost {horsesLost} horses and {menDied} men, but managed to gather {meatFromHorse} meat from the horses." />
+
+    <!--SuddenStorm - Log Messages - Event 3-->
+    <string id="SuddenStorm_Event_Msg_3A" text="{heroName} lost {horsesLost} horses to a sudden storm. He received {meatFromHorse} meat from butchering the dead horses." />
+    <string id="SuddenStorm_Event_Msg_3B" text="A sudden storm claimed {horsesLost} horses from {heroName}'s party, but {meatFromHorse} meat was salvaged from the remains." />
+    <string id="SuddenStorm_Event_Msg_3C" text="During the storm, {heroName} lost {horsesLost} horses but recovered {meatFromHorse} meat from their carcasses." />
+    <string id="SuddenStorm_Event_Msg_3D" text="{heroName} suffered the loss of {horsesLost} horses in a storm but managed to salvage {meatFromHorse} meat." />
+    <string id="SuddenStorm_Event_Msg_3E" text="A fierce storm took {horsesLost} horses from {heroName}, though {meatFromHorse} meat was butchered from the dead horses." />
+
+    <!--SuddenStorm - Log Messages - Event 4-->
+    <string id="SuddenStorm_Event_Msg_4A" text="In refusing his men shelter from the storm, {heroName} lost {horsesLost} horses and {menDied} men to a sudden storm." />
+    <string id="SuddenStorm_Event_Msg_4B" text="{heroName}'s refusal to seek shelter cost his party {horsesLost} horses and {menDied} men during a sudden storm." />
+    <string id="SuddenStorm_Event_Msg_4C" text="By denying his men shelter, {heroName} suffered the loss of {horsesLost} horses and {menDied} men to the storm." />
+    <string id="SuddenStorm_Event_Msg_4D" text="{heroName}'s decision to press on through the storm resulted in the loss of {horsesLost} horses and {menDied} men." />
+    <string id="SuddenStorm_Event_Msg_4E" text="The storm claimed {horsesLost} horses and {menDied} men from {heroName}'s party after he refused to seek shelter." />
 
 
     <!--
@@ -1059,7 +1566,7 @@
     <!--WanderingLivestock - Plural-->
     <string id="WanderingLivestock_Event_Plural_End" text="s" />
 
-    <!-- The ending of the plural form of the language your are translating to, eg cow, cows -->
+    <!-- The ending of the plural form of the language you are translating to, e.g. cow, cows -->
     <string id="WanderingLivestock_Event_Cow_Text" text=", and {cowCount} cow{cowPlural}." />
 
     <!--WanderingLivestock - Outcomes-->
@@ -1415,6 +1922,23 @@
 
 
 
+
+    <!--
+    ******************************************************************************
+    *                                                                            *
+    *                                 Skill Checks                               *
+    *                                                                            *
+    ******************************************************************************
+    -->
+
+    <string id="Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
+    <string id="Roguery_Appended_Text" text="[Roguery - lvl {minRogueryLevel}]" />
+    <string id="Steward_Appended_Text" text="[Steward - lvl {minStewardLevel}]" />
+    <string id="Engineering_Appended_Text" text="[Engineering - lvl {minEngineeringLevel}]" />
+    <string id="TwoHanded_Appended_Text" text="[Two-Handed - lvl {minTwoHandedLevel}]" />
+    <string id="Charm_Appended_Text" text="[Charm - lvl {minCharmLevel}]" />
+    
+    
     <!--
     ******************************************************************************
     *                                                                            *

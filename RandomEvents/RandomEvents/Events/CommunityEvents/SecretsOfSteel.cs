@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -11,7 +11,7 @@ using TaleWorlds.Library;
 using TaleWorlds.Localization;
 using TaleWorlds.ObjectSystem;
 
-namespace CryingBuffalo.RandomEvents.Events.CommunityEvents
+namespace Bannerlord.RandomEvents.Events.CommunityEvents
 {
     public sealed class SecretsOfSteel : BaseEvent
     {

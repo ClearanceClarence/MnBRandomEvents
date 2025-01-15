@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -11,7 +11,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events.CCEvents
+namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public sealed class RunawaySon : BaseEvent
     {
@@ -71,7 +71,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
             {
                 
                 canKill = true;
-                rogueryAppendedText = new TextObject("{=RunawaySon_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
+                rogueryAppendedText = new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
 
             }
             else
@@ -80,7 +80,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     canKill = true;
                     
-                    rogueryAppendedText = new TextObject("{=RunawaySon_Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
+                    rogueryAppendedText = new TextObject("{=Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
                         .SetTextVariable("minRogueryLevel", minRogueryLevel)
                         .ToString();
                 }

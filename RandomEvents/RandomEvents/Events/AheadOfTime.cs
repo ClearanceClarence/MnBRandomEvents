@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Settlements;
@@ -11,7 +11,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events
+namespace Bannerlord.RandomEvents.Events
 {
 	public sealed class AheadOfTime : BaseEvent
 	{
@@ -58,7 +58,7 @@ namespace CryingBuffalo.RandomEvents.Events
 		{	
 			try
 			{
-				var eventTitle = new TextObject("{=AheadOfTime_Title}Ahead of Time!").ToString();
+				var eventTitle = new TextObject(EventTextHandler.GetRandomEventTitle()).ToString();
 
 				var randomElement = MBRandom.RandomInt(eligibleSettlements.Count);
 				var settlement = eligibleSettlements[randomElement];
@@ -67,8 +67,7 @@ namespace CryingBuffalo.RandomEvents.Events
 				settlement.Town.CurrentBuilding.LevelUp();
 				settlement.Town.BuildingsInProgress.Dequeue();
 
-				var eventText =new TextObject(
-						"{=AheadOfTimeEvent_Text}You receive word that {settlement} has completed its current project earlier than expected.")
+				var eventText =new TextObject(EventTextHandler.GetRandomEventText())
 					.SetTextVariable("settlement", settlement.ToString())
 					.ToString();
 				
@@ -94,6 +93,57 @@ namespace CryingBuffalo.RandomEvents.Events
 			{
 				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n { ex.StackTrace}");
 			}
+		}
+		
+		private static class EventTextHandler
+		{
+			private static readonly Random random = new Random();
+            
+			private static readonly List<string> eventTitles = new List<string>
+			{
+				"{=AheadOfTime_Title_A}Ahead of Time!",
+				"{=AheadOfTime_Title_B}Finished Early!",
+				"{=AheadOfTime_Title_C}Project Ahead of Schedule!",
+				"{=AheadOfTime_Title_D}Ahead of the Curve!",
+				"{=AheadOfTime_Title_E}A Swift Completion!",
+				"{=AheadOfTime_Title_F}Progress Ahead of Time!",
+				"{=AheadOfTime_Title_G}Done in Record Time!",
+				"{=AheadOfTime_Title_H}Ahead of the Deadline!",
+				"{=AheadOfTime_Title_I}Beating the Clock!",
+				"{=AheadOfTime_Title_J}Ahead of Expectations!"
+			};
+            
+			private static readonly List<string> eventText = new List<string>
+			{
+				//Event Text A
+				"{=AheadOfTimeEvent_Text_A}You receive word that {settlement} has completed its current project earlier than expected.",
+                
+				//Event Text B
+				"{=AheadOfTimeEvent_Text_B}News reaches you that {settlement} has finished its project ahead of schedule.",
+                
+				//Event Text C
+				"{=AheadOfTimeEvent_Text_C}You are informed that the current project in {settlement} has been completed ahead of time.",
+                
+				//Event Text D
+				"{=AheadOfTimeEvent_Text_D}A messenger brings great news: the project in {settlement} is finished earlier than planned.",
+                
+				//Event Text E
+				"{=AheadOfTimeEvent_Text_E}Word arrives that {settlement} has successfully completed its project ahead of the expected timeline."
+			};
+            
+            
+			public static string GetRandomEventTitle()
+			{
+				var index = random.Next(eventTitles.Count);
+				return eventTitles[index];
+			}
+            
+			public static string GetRandomEventText()
+			{
+				var index = random.Next(eventText.Count);
+				return eventText[index];
+			}
+    
 		}
 	}
 

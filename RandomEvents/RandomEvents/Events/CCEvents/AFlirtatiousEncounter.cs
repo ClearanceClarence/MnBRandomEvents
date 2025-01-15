@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -12,7 +12,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events.CCEvents
+namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public sealed class AFlirtatiousEncounter : BaseEvent
     {
@@ -93,7 +93,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     canCharmTarget = true;
                     charmAppendedText =
-                        new TextObject("{=AFlirtatiousEncounter_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
+                        new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
                             .ToString();
                 }
                 else
@@ -103,7 +103,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                         canCharmTarget = true;
 
                         charmAppendedText =
-                            new TextObject("{=AFlirtatiousEncounter_Charm_Appended_Text}[Charm - lvl {minCharmLevel}]")
+                            new TextObject("{=Charm_Appended_Text}[Charm - lvl {minCharmLevel}]")
                                 .SetTextVariable("minCharmLevel", minCharmLevel)
                                 .ToString();
                     }
@@ -289,14 +289,16 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
             
             private static readonly List<string> eventTitles = new List<string>
             {
-                "{=AFlirtatiousEncounter_Title_A}Dusk's Desire",
-                "{=AFlirtatiousEncounter_Title_B}Twilight Temptations",
-                "{=AFlirtatiousEncounter_Title_C}Evening Enchantment",
-                "{=AFlirtatiousEncounter_Title_D}Nightfall's Whisper",
-                "{=AFlirtatiousEncounter_Title_E}Moonlit Mischief",
-                "{=AFlirtatiousEncounter_Title_F}Starry Serenade",
-                "{=AFlirtatiousEncounter_Title_G}Sundown Soirée",
-                "{=AFlirtatiousEncounter_Title_H}A Flirtatious Encounter"
+                "{=AFlirtatiousEncounter_Title_A}A Tavern’s Allure",
+                "{=AFlirtatiousEncounter_Title_B}Eyes Across the Room",
+                "{=AFlirtatiousEncounter_Title_C}An Intriguing Stranger",
+                "{=AFlirtatiousEncounter_Title_D}The Smile That Beckons",
+                "{=AFlirtatiousEncounter_Title_E}A Chance Meeting",
+                "{=AFlirtatiousEncounter_Title_F}Tavern Temptations",
+                "{=AFlirtatiousEncounter_Title_G}Whispers Over Ale",
+                "{=AFlirtatiousEncounter_Title_H}The Spark of a Stranger",
+                "{=AFlirtatiousEncounter_Title_I}An Unexpected Connection",
+                "{=AFlirtatiousEncounter_Title_J}A Night to Remember"
             };
             
             private static readonly List<string> eventDescriptions = new List<string>

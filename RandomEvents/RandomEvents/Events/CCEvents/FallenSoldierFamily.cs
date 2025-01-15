@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events.CCEvents
+namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public sealed class FallenSoldierFamily : BaseEvent
     {
@@ -72,7 +72,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
             {
                 
                 plotEvil = true;
-                rogueryAppendedText = new TextObject("{=FallenSoldier_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
+                rogueryAppendedText = new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
 
             }
             else
@@ -81,7 +81,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     plotEvil = true;
                     
-                    rogueryAppendedText = new TextObject("{=FallenSoldier_Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
+                    rogueryAppendedText = new TextObject("{=Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
                         .SetTextVariable("minRogueryLevel", minRogueryLevel)
                         .ToString();
                 }
@@ -368,7 +368,6 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 "earnestly requests your help. Despite her emotional plea, you stand by the contract's terms, " +
                 "declining to provide assistance, and take your leave from the tavern, immersed in the complexity " +
                 "of duty and compassion."
-                
             };
             
             private static readonly List<string> eventChoice3 = new List<string>

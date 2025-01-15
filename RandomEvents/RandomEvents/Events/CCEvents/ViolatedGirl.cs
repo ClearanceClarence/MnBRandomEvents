@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -10,7 +10,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events.CCEvents
+namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public sealed class ViolatedGirl : BaseEvent
     {
@@ -82,7 +82,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
 
                 canKillWoman = true;
 
-                rogueryAppendedText = new TextObject("{=ViolatedGirl_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
+                rogueryAppendedText = new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**")
                         .ToString();
 
             }
@@ -92,7 +92,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     canKillWoman = true;
 
-                    rogueryAppendedText = new TextObject("{=ViolatedGirl_Roguery_Appended_Text_1}[Roguery - lvl {minRogueryLevel}]")
+                    rogueryAppendedText = new TextObject("{=Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
                             .SetTextVariable("minRogueryLevel", minRogueryLevel)
                             .ToString();
                 }

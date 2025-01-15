@@ -2,7 +2,7 @@
 using System.Reflection;
 using TaleWorlds.Library;
 
-namespace CryingBuffalo.RandomEvents.Helpers
+namespace Bannerlord.RandomEvents.Helpers
 {
     public abstract class ParseIniFile
     {

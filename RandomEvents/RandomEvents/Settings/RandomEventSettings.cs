@@ -1,10 +1,10 @@
-﻿using CryingBuffalo.RandomEvents.Events;
-using CryingBuffalo.RandomEvents.Events.AiEvents;
-using CryingBuffalo.RandomEvents.Events.BicEvents;
-using CryingBuffalo.RandomEvents.Events.CCEvents;
-using CryingBuffalo.RandomEvents.Events.CommunityEvents;
+﻿using Bannerlord.RandomEvents.Events;
+using Bannerlord.RandomEvents.Events.AiEvents;
+using Bannerlord.RandomEvents.Events.BicEvents;
+using Bannerlord.RandomEvents.Events.CCEvents;
+using Bannerlord.RandomEvents.Events.CommunityEvents;
 
-namespace CryingBuffalo.RandomEvents.Settings
+namespace Bannerlord.RandomEvents.Settings
 {
     internal class RandomEventSettings
     {
@@ -75,8 +75,6 @@ namespace CryingBuffalo.RandomEvents.Settings
         
         public FishingSpotData FishingSpotData { get; } = new FishingSpotData("FishingSpot", 0.5f);
         
-        public FleeingFateData FleeingFateData { get; } = new FleeingFateData("FleeingFate", 0.5f);
-        
         public HuntingTripData HuntingTripData { get; } = new HuntingTripData("HuntingTrip", 0.5f);
         
         public LightsInTheSkiesData LightsInTheSkiesData { get; } = new LightsInTheSkiesData("LightsInTheSkies", 0.05f);
@@ -142,6 +140,17 @@ namespace CryingBuffalo.RandomEvents.Settings
         public SecretsOfSteelData SecretsOfSteelData { get; } = new SecretsOfSteelData("SecretsOfSteel", 0.35f);
         
         public PoisonedWineData PoisonedWineData { get; } = new PoisonedWineData("PoisonedWine", 0.4f);
+
+        #endregion
+
+        
+        #region AiEvents
+
+        public FleeingFateData FleeingFateData { get; } = new FleeingFateData("FleeingFate", 0.5f);
+        
+        public CostOfBetrayalData CostOfBetrayalData { get; } = new CostOfBetrayalData("CostOfBetrayal", 0.5f);
+        
+        public PriceOfRebellionData PriceOfRebellionData { get; } = new PriceOfRebellionData("PriceOfRebellion", 0.5f);
 
         #endregion
         

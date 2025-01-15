@@ -1,4 +1,4 @@
-﻿namespace CryingBuffalo.RandomEvents.Settings
+﻿namespace Bannerlord.RandomEvents.Settings
 {
     internal static class ModSettings
     {

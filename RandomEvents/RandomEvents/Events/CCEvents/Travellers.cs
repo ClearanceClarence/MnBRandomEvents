@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows;
-using CryingBuffalo.RandomEvents.Helpers;
-using CryingBuffalo.RandomEvents.Settings;
+using Bannerlord.RandomEvents.Helpers;
+using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
@@ -11,7 +11,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace CryingBuffalo.RandomEvents.Events.CCEvents
+namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public sealed class Travellers : BaseEvent
     {
@@ -88,9 +88,9 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 canRaidWagon = true;
                 canOfferDinner = true;
                 
-                engineeringAppendedText = new TextObject("{=Travellers_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
-                rogueryAppendedText = new TextObject("{=Travellers_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
-                stewardAppendedText = new TextObject("{=Travellers_Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
+                engineeringAppendedText = new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
+                rogueryAppendedText = new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
+                stewardAppendedText = new TextObject("{=Skill_Check_Disable_Appended_Text}**Skill checks are disabled**").ToString();
                 
             }
             else
@@ -99,7 +99,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     canRepairWagon = true;
                     
-                    engineeringAppendedText = new TextObject("{=Travellers_Engineering_Appended_Text}[Engineering - lvl {minEngineeringLevel}]")
+                    engineeringAppendedText = new TextObject("{=Engineering_Appended_Text}[Engineering - lvl {minEngineeringLevel}]")
                         .SetTextVariable("minEngineeringLevel", minEngineeringLevel)
                         .ToString();
                 }
@@ -108,7 +108,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     canRaidWagon = true;
                     
-                    rogueryAppendedText = new TextObject("{=Travellers_Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
+                    rogueryAppendedText = new TextObject("{=Roguery_Appended_Text}[Roguery - lvl {minRogueryLevel}]")
                         .SetTextVariable("minRogueryLevel", minRogueryLevel)
                         .ToString();
                 }
@@ -117,7 +117,7 @@ namespace CryingBuffalo.RandomEvents.Events.CCEvents
                 {
                     canOfferDinner = true;
                     
-                    stewardAppendedText = new TextObject("{=Travellers_Steward_Appended_Text}[Steward - lvl {minStewardLevel}]")
+                    stewardAppendedText = new TextObject("{=Steward_Appended_Text}[Steward - lvl {minStewardLevel}]")
                         .SetTextVariable("minStewardLevel", minStewardLevel)
                         .ToString();
                 }
