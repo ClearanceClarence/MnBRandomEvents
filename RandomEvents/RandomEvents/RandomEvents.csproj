@@ -59,11 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\AheadOfTime.cs" />
-    <Compile Include="Events\AiEvents\BloodToll.cs" />
-    <Compile Include="Events\AiEvents\CostOfBetrayal.cs" />
-    <Compile Include="Events\AiEvents\DesecrateAltar.cs" />
-    <Compile Include="Events\AiEvents\FleeingFate.cs" />
-    <Compile Include="Events\AiEvents\PriceOfRebellion.cs" />
     <Compile Include="Events\BanditAmbush.cs" />
     <Compile Include="Events\BaseEvent.cs" />
     <Compile Include="Events\BeeKind.cs" />
@@ -84,10 +79,15 @@
     <Compile Include="Events\CCEvents\AFlirtatiousEncounter.cs" />
     <Compile Include="Events\CCEvents\BeggarBegging.cs" />
     <Compile Include="Events\CCEvents\BirthdayParty.cs" />
+    <Compile Include="Events\CCEvents\BloodToll.cs" />
+    <Compile Include="Events\CCEvents\CostOfBetrayal.cs" />
+    <Compile Include="Events\CCEvents\DesecrateAltar.cs" />
     <Compile Include="Events\CCEvents\Duel.cs" />
     <Compile Include="Events\CCEvents\FallenSoldierFamily.cs" />
     <Compile Include="Events\CCEvents\FishingSpot.cs" />
+    <Compile Include="Events\CCEvents\FleeingFate.cs" />
     <Compile Include="Events\CCEvents\LightsInTheSkies.cs" />
+    <Compile Include="Events\CCEvents\PriceOfRebellion.cs" />
     <Compile Include="Events\CCEvents\Robbery.cs" />
     <Compile Include="Events\CCEvents\SuddenStorm.cs" />
     <Compile Include="Events\CCEvents\HuntingTrip.cs" />
@@ -122,7 +122,7 @@
     <Compile Include="Events\TargetPractice.cs" />
     <Compile Include="Events\Undercooked.cs" />
     <Compile Include="Events\WanderingLivestock.cs" />
-    <Compile Include="Helpers\ClosestSettlement.cs" />
+    <Compile Include="Helpers\ClosestSettlements.cs" />
     <Compile Include="Helpers\CurrentTimeOfDay.cs" />
     <Compile Include="Helpers\DefaultIni.cs" />
     <Compile Include="Helpers\Demonym.cs" />

@@ -101,7 +101,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             var eventOption1 = new TextObject("{=ViolatedGirl_Event_Option_1}Find the culprit").ToString();
             var eventOption1Hover = new TextObject("{=ViolatedGirl_Event_Option_1_Hover}This is unacceptable behaviour!").ToString();
 
-            var eventOption2 = new TextObject("{=ViolatedGirl_Event_Option_2}Ask how much to keep this quiet?").ToString();
+            var eventOption2 = new TextObject("{=ViolatedGirl_Event_Option_2}Ask how much to keep this quiet").ToString();
             var eventOption2Hover = new TextObject("{=ViolatedGirl_Event_Option_2_Hover}Everyone has a price.").ToString();
 
             var eventOption3 = new TextObject("{=ViolatedGirl_Event_Option_3}Tell her to leave").ToString();
@@ -172,13 +172,18 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                     {
                         case "a":
                             InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionAText, true, false, eventButtonText2, null, null, null), true);
+                            
                             Hero.MainHero.ChangeHeroGold(-compensation);
+                            MobileParty.MainParty.MemberRoster.KillNumberOfNonHeroTroopsRandomly(1);
+                            
                             InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color_POS_Outcome));
                             break;
                         case "b":
                         {
                             InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionBText, true, false, eventButtonText2, null, null, null), true);
+                            
                             Hero.MainHero.ChangeHeroGold(-totalCompensation);
+                            
                             InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_POS_Outcome));
                             break;
                         }

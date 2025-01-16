@@ -178,7 +178,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 .SetTextVariable("goldToDonate", goldToDonate)
                 .ToString();
             
-            var eventMsg4 =new TextObject(EventTextHandler.GetRandomEventMessage4())
+            var eventMsg5 =new TextObject(EventTextHandler.GetRandomEventMessage5())
                 .SetTextVariable("heroName", heroName)
                 .SetTextVariable("raidedGold", raidedGold)
                 .ToString();
@@ -226,7 +226,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                             
                             Hero.MainHero.ChangeHeroGold(+raidedGold);
                             
-                            InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
+                            InformationManager.DisplayMessage(new InformationMessage(eventMsg5, RandomEventsSubmodule.Msg_Color));
                             
                             break;
                         default:
@@ -481,13 +481,13 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 "{=UnexpectedWedding_Event_Msg_3E}{goldToDonate} gold was given to the happy couple by {heroName}."
             };
             
-            private static readonly List<string> eventMsg4 = new List<string>
+            private static readonly List<string> eventMsg5 = new List<string>
             { 
-                "{=UnexpectedWedding_Event_Msg_4A}{heroName} stole {raidedGold} gold from the wedding, leaving chaos in their wake.",
-                "{=UnexpectedWedding_Event_Msg_4B}{heroName} looted {raidedGold} gold from the wedding and ruined the celebration.",
-                "{=UnexpectedWedding_Event_Msg_4C}The wedding was left in shambles after {heroName} stole {raidedGold} gold from the guests.",
-                "{=UnexpectedWedding_Event_Msg_4D}{heroName} raided the wedding, taking {raidedGold} gold and leaving devastation behind.",
-                "{=UnexpectedWedding_Event_Msg_4E}With no regard for the celebration, {heroName} stole {raidedGold} gold from the wedding party."
+                "{=UnexpectedWedding_Event_Msg_5A}{heroName} stole {raidedGold} gold from the wedding, leaving chaos in their wake.",
+                "{=UnexpectedWedding_Event_Msg_5B}{heroName} looted {raidedGold} gold from the wedding and ruined the celebration.",
+                "{=UnexpectedWedding_Event_Msg_5C}The wedding was left in shambles after {heroName} stole {raidedGold} gold from the guests.",
+                "{=UnexpectedWedding_Event_Msg_5D}{heroName} raided the wedding, taking {raidedGold} gold and leaving devastation behind.",
+                "{=UnexpectedWedding_Event_Msg_5E}With no regard for the celebration, {heroName} stole {raidedGold} gold from the wedding party."
             };
 
             
@@ -563,10 +563,10 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 return eventMsg3[index];
             }
             
-            public static string GetRandomEventMessage4()
+            public static string GetRandomEventMessage5()
             {
-                var index = random.Next(eventMsg4.Count);
-                return eventMsg4[index];
+                var index = random.Next(eventMsg5.Count);
+                return eventMsg5[index];
             }
         }
     }

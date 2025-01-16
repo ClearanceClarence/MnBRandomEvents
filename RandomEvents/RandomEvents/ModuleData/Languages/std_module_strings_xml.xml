@@ -6,9 +6,7 @@
   <strings>
     <!--
     ******************************************************************************
-    *                                                                            *
     *                      A Flirtatious Encounter Event                         *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -109,9 +107,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                             Army Games Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -124,9 +120,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                          Birthday Party Event                              *
-    *                                                                            *
     ******************************************************************************
     -->
 
@@ -221,9 +215,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                          Beggar Begging Event                              *
-    *                                                                            *
     ******************************************************************************
     -->
 
@@ -343,9 +335,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                          Fallen Soldier Event                              *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -440,9 +430,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                           Fishing Spot Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -526,9 +514,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                           Hunting Trip Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -609,11 +595,79 @@
     <string id="HuntingTrip_Event_Msg_4E" text="An extraordinary {animalsCaught} hides and {yieldedMeatResources} pieces of meat were brought back, boosting morale significantly by {moraleGained}." />
 
 
+
     <!--
     ******************************************************************************
-    *                                                                            *
+    *                           LightsInTheSkies Event                           *
+    ******************************************************************************
+    -->
+    
+    <!--LightsInTheSkies Event Titles-->
+    <string id="LightsInTheSkies_Title_A" text="Lights In The Skies" />
+    <string id="LightsInTheSkies_Title_B" text="Mysterious Lights Above" />
+    <string id="LightsInTheSkies_Title_C" text="The Sky Illuminated" />
+    <string id="LightsInTheSkies_Title_D" text="Shadows of the Unknown" />
+    <string id="LightsInTheSkies_Title_E" text="Dancing Lights in the Night" />
+    <string id="LightsInTheSkies_Title_F" text="Signals from Beyond" />
+    <string id="LightsInTheSkies_Title_G" text="The Sky's Cryptic Message" />
+    <string id="LightsInTheSkies_Title_H" text="Eerie Glows in the Darkness" />
+    <string id="LightsInTheSkies_Title_I" text="Anomalies in the Sky" />
+    <string id="LightsInTheSkies_Title_J" text="The Night of Unseen Forces" />
+
+    <!--LightsInTheSkies - Event Part 1-->
+    <string id="LightsInTheSkies_Event_Text_1A" text="Late one night, you are taking a walk in the woods near {closestSettlement} to clear your head. You manage to find a nice clearing not too far into the woods where you sit down and lean against a big boulder to relax. As you sit there, you notice a light approaching in the sky from the south. You stand up and look at the light that now has come even closer. It's glowing and keeps changing colors, but it hovers in the sky without a sound. After you've stared at the light for a few minutes, it disappears over the treeline. Having no clue to what you witnessed, you make your way back but you are somewhat shocked when you see the sun is rising in the east, as by your calculations, it's just after midnight. You make haste back to the main camp. When you arrive, some of your high-ranking men run towards you and ask you where you have been. Perplexed, you answer them and tell them about the strange light. You are shocked when the men tell you that you have been gone for over 5 hours. A few hours later your party is on the move again, but the men can clearly notice that you are preoccupied with last night's events." />
+    <string id="LightsInTheSkies_Event_Text_1B" text="One evening, you decide to clear your head with a walk near {closestSettlement}. As you venture into the woods, you come across a peaceful clearing and rest against a large rock. While relaxing, you notice a light moving across the southern sky. Curious, you stand and watch as the light draws closer, glowing and shifting colors. It moves silently above the trees before vanishing into the distance. Time feels strange, and as you return to the main camp, you realize the sun is rising despite it feeling like midnight. Upon your arrival, your high-ranking men inform you that you've been missing for over 5 hours. The next day, you remain deeply unsettled, lost in thought over the night's events." />
+    <string id="LightsInTheSkies_Event_Text_1C" text="As the night grows late, you take a stroll near {closestSettlement} to gather your thoughts. A short walk into the woods leads you to a serene clearing. Leaning back against a boulder, you spot a peculiar light in the southern sky. It approaches slowly, pulsating and shifting hues without making a sound. The light hovers, then abruptly vanishes beyond the trees. Confused, you head back but are startled to see dawn breaking. When you return to camp, your men ask where you’ve been, claiming you’ve been gone for hours. Their words only deepen the mystery of the light you saw. The next day, the incident weighs heavily on your mind." />
+    <string id="LightsInTheSkies_Event_Text_1D" text="Taking a late-night walk to clear your thoughts, you wander near {closestSettlement} and find a clearing among the trees. While resting, you notice a distant light in the southern sky. It draws closer, glowing and shifting colors eerily in complete silence. You watch, entranced, as it moves over the treetops before disappearing. As you walk back, the rising sun catches you off guard—it feels far too early. Reaching the camp, your men confront you, claiming you've been missing for hours. Their revelation leaves you shaken, unable to comprehend what you experienced." />
+    <string id="LightsInTheSkies_Event_Text_1E" text="While walking through the woods near {closestSettlement} to clear your mind, you find a quiet clearing and sit against a large rock. A glowing light appears in the sky to the south, drawing closer. It pulses with shifting colors and moves silently above the trees before vanishing. Returning to camp, you are stunned to see the sun rising, as it feels like you were gone only moments. Your men approach, relieved to see you, and tell you that hours have passed. You can't shake the feeling of unease as you reflect on the strange encounter." />
+
+    <!--LightsInTheSkies - Event Part 2-->
+    <string id="LightsInTheSkies_Event_Text_2A" text="When you finally decide to make camp for the night you go to wash yourself in your tent. While washing your face, you notice that you are bleeding from the nose. You attempt to blow your nose, only to find a small metallic-looking object come out. You pick it up and study it for a few seconds before it crumbles to ash before your eyes. You also notice several small, fresh scars on your extremities. They are identical and perfectly rounded, showing no signs of bleeding. To your horror, you discover that you are missing two molars, and the nails on your right foot are gone. This realization leaves you trembling with fear. As night falls, drifting to sleep alongside the last rays of daylight, you suddenly awaken drenched in sweat, heart pounding, and discover that you have wet the bed. Shaken, you reach for your diary to write down fragments of a dream that now seems all too vivid." />
+    <string id="LightsInTheSkies_Event_Text_2B" text="As you settle into camp for the night, you wash your face in your tent. Glancing into the basin, you notice blood dripping from your nose. Blowing your nose, a metallic object emerges, which disintegrates into ash when you pick it up. Confused and frightened, you inspect your body and discover fresh scars on your limbs—perfectly round, with no sign of bleeding. The terror deepens when you realize two of your molars are missing, along with the nails on your right foot. Falling asleep hours later, you are jolted awake, drenched in sweat and trembling. Your diary offers a faint solace as you try to record the fleeting remnants of a disturbing dream." />
+    <string id="LightsInTheSkies_Event_Text_2C" text="While preparing to rest in your tent, you notice a faint trickle of blood from your nose. As you blow your nose, a strange metallic object dislodges and crumbles to dust in your hand. Inspecting yourself, you find small, circular scars on your arms and legs—silent, bloodless, and uniform. Panic sets in when you discover missing molars and toenails. As you finally drift to sleep, exhaustion overtaking fear, you awaken hours later in a cold sweat, heart pounding. The fragments of a dream cling to your mind, compelling you to record them in your diary before they fade completely." />
+    <string id="LightsInTheSkies_Event_Text_2D" text="After setting up camp, you retreat to your tent to clean up. As you wash your face, a nosebleed starts. When you blow your nose, a metallic object emerges and crumbles into dust. Fear escalates as you examine your limbs and discover identical round scars. The realization that your molars and toenails are missing strikes like a lightning bolt, leaving you shaken. The night’s darkness deepens, and exhaustion eventually takes you to sleep. But you awaken drenched in sweat, your heart racing, with faint memories of a dream that you hastily jot down in your diary." />
+    <string id="LightsInTheSkies_Event_Text_2E" text="As the camp settles for the night, you wash your face in the privacy of your tent. Noticing blood from your nose, you blow it and watch in horror as a metallic object falls out, disintegrating before you can examine it. Checking your body, you find strange, bloodless scars and horrifyingly discover missing teeth and toenails. Though fear consumes you, sleep eventually claims you. Hours later, you wake drenched in sweat, trembling as flashes of a vivid dream haunt you. Desperate to preserve what little you recall, you reach for your diary." />
+
+    <!--LightsInTheSkies - Event Part 3-->
+    <string id="LightsInTheSkies_Event_Text_3A" text="“I am in the clearing at night, staring at the strange light, when suddenly an intense beam engulfs me, lifting me off the ground and pulling me toward the light. As I get closer, I realize the light is emanating from a silvery metallic object with an opening that draws me in. Overcome by terror, I lose consciousness.” “When I awaken, I am strapped to a cold metallic table, surrounded by three strange beings. They resemble humans in size and form, but their faces are covered in dense hair, while their ears and noses are oddly hairless.”" />
+    <string id="LightsInTheSkies_Event_Text_3B" text="“The clearing is bathed in the strange light, and before I can react, a beam of energy engulfs me, lifting me from the ground. I am pulled toward the source of the light, which reveals itself to be a silvery metallic object with an open entrance. Fear consumes me as I approach, and I pass out.” “When I regain consciousness, I am lying on a freezing metallic table. Three strange creatures stand nearby. They appear human-like but smaller, their faces obscured by thick hair except for their smooth, hairless ears and noses.”" />
+    <string id="LightsInTheSkies_Event_Text_3C" text="“In the clearing, the light intensifies and suddenly, a beam strikes me, lifting me effortlessly toward the sky. As I ascend, I see that the light comes from a silvery metal object with an opening drawing me in. Horror overtakes me, and I black out.” “When I come to, I am strapped to a cold, metallic table. Surrounding me are three beings, vaguely human-like but smaller. Their faces are covered in thick hair, yet their ears and noses are smooth and hairless, making them look even stranger.”" />
+    <string id="LightsInTheSkies_Event_Text_3D" text="“The strange light envelops me, and I am struck by a powerful beam that lifts me toward the source. As I draw closer, I see it is a silvery metallic object with an open portal. Fear takes hold as I am pulled closer, and everything fades to black.” “When I awaken, I find myself restrained on a cold metal table. Surrounding me are three odd creatures, humanoid in form but smaller, their faces hidden under thick hair, except for their oddly bare ears and noses.”" />
+    <string id="LightsInTheSkies_Event_Text_3E" text="“In the clearing, I am transfixed by the strange light, when without warning, a powerful beam hits me and lifts me off the ground. The source of the light reveals itself to be a metallic object, shining silver with an open entrance that draws me in. The sheer terror is too much, and I lose consciousness.” “When I open my eyes, I am lying on a frigid metallic table. Three figures stand around me, humanoid but smaller, their faces shrouded in thick hair. Strangely, their ears and noses are smooth and bare, adding to their uncanny appearance.”" />
+
+    <!--LightsInTheSkies - Event Part 4-->
+    <string id="LightsInTheSkies_Event_Text_4A" text="“I lie there, paralyzed, as the creatures prod me with strange instruments and scribble notes, speaking in an incomprehensible language. After a while, they place a helmet over my head, and suddenly, a sequence of images and symbols is burned into my mind. The helmet is removed, and moments later, a mask is placed over my mouth and nose. Darkness consumes me as I pass out once again.” “When I regain consciousness, I find myself standing in the clearing, watching the light vanish beyond the treeline.”" />
+    <string id="LightsInTheSkies_Event_Text_4B" text="“Unable to move, I feel the creatures poke and prod me with instruments while they exchange words in an alien language. At some point, they place a helmet over my head, and my mind is flooded with a series of burning images and patterns. After removing the helmet, they cover my face with a mask. My vision fades, and I black out again.” “When I awaken, I am back in the clearing, staring at the strange light as it disappears into the night.”" />
+    <string id="LightsInTheSkies_Event_Text_4C" text="“I am frozen in place as the beings prod me with various tools and appear to communicate in a language I cannot understand. A helmet is placed on my head, and a vivid, searing sequence is etched into my mind. Once the helmet is removed, they place a mask over my face, and the world fades to black.” “When I come to, I am standing in the clearing, watching the light retreat beyond the trees.”" />
+    <string id="LightsInTheSkies_Event_Text_4D" text="“Paralyzed, I feel the cold instruments of the creatures pressing against my skin as they make notes and chatter in an alien tongue. A helmet is placed over my head, and a sequence of images burns itself into my consciousness. The helmet is removed, and I am given a mask that makes me lose consciousness once more.” “When I wake, I am back in the clearing, the light fading into the treetops.”" />
+    <string id="LightsInTheSkies_Event_Text_4E" text="“I remain motionless as the creatures poke and examine me with their strange devices, speaking in a language I cannot decipher. Then they place a helmet on me, and my mind is flooded with burning symbols and images. Afterward, they place a mask over my face, and I lose consciousness once again.” “When I open my eyes, I am standing in the clearing, the mysterious light disappearing over the horizon.”" />
+
+    <!--LightsInTheSkies - Event Part 5-->
+    <string id="LightsInTheSkies_Event_Text_5A" text="As you finish writing and stare at the gibberish you have just written, you realize your hands are trembling uncontrollably. Seeking fresh air, you leave your tent. A few of your men notice your distress, but you reassure them that everything is fine. You make your way to the lookout point and gaze over the quiet land, struggling to piece together the events of the night. Minutes pass as you stand there, lost in thought. Just as you turn to leave, you catch a glimpse of the same strange light streaking across the distant sky one final time." />
+    <string id="LightsInTheSkies_Event_Text_5B" text="Shaken, you finish writing the cryptic symbols and step out of your tent for fresh air. A few of your men glance at you, concern evident in their faces, but you wave them off, insisting that you are fine. You head to the camp's lookout and stand there, staring out at the landscape, trying to make sense of what happened. Time seems to blur as you stand motionless. As you finally decide to leave, a streak of the strange light flashes across the sky once more, sending chills down your spine." />
+    <string id="LightsInTheSkies_Event_Text_5C" text="You finish writing the strange sequence, unable to stop your hands from shaking. Needing to clear your head, you leave the tent. Some of your men notice and approach, but you assure them everything is fine. You climb to the camp's lookout point, scanning the dark expanse before you as you try to comprehend the night’s events. Minutes pass as your thoughts swirl. As you turn to leave, you see a faint streak of the same strange light in the far-off sky, leaving you even more unsettled." />
+    <string id="LightsInTheSkies_Event_Text_5D" text="The symbols now on the page do little to ease your trembling hands. You step outside to gather yourself, brushing off concerned glances from your men with reassurances. You make your way to the lookout, gazing at the vast expanse of land, trying to quiet your mind and make sense of the inexplicable. Minutes pass in silence. As you prepare to leave, the sight of the strange light streaking across the distant sky one last time freezes you in place." />
+    <string id="LightsInTheSkies_Event_Text_5E" text="The strange symbols you’ve written stare back at you, and the tremor in your hands refuses to subside. Seeking solace, you step outside, brushing off the concerns of a few awake men with reassurances. You climb to the lookout point, staring out into the night as your thoughts race. The cool air does little to calm you as the minutes tick by. As you turn to leave, you catch a final glimpse of the mysterious light darting across the horizon, leaving you more unsettled than before." />
+
+    <!--LightsInTheSkies - Event Unknown text-->
+    <string id="LightsInTheSkies_Event_Text_Unknown_A" text="You turn the page and write down the sequence now burned into your mind.\n\n{unknownText}\n\n Some of the symbols are unlike anything you've ever encountered. You sit back, wondering what their purpose could be." />
+    <string id="LightsInTheSkies_Event_Text_Unknown_B" text="Flipping open your journal, you hastily jot down the sequence etched into your memory.\n\n{unknownText}\n\n The symbols seem alien, beyond any language or code you recognize. You are left pondering their meaning." />
+    <string id="LightsInTheSkies_Event_Text_Unknown_C" text="You quickly grab your journal and transcribe the strange sequence from your mind.\n\n{unknownText}\n\n The unfamiliar symbols leave you unsettled as you wonder what message they might hold." />
+    <string id="LightsInTheSkies_Event_Text_Unknown_D" text="Your hands shake as you write the mysterious sequence into your journal.\n\n{unknownText}\n\n The symbols are foreign, and their meaning eludes you, but you feel compelled to understand them." />
+    <string id="LightsInTheSkies_Event_Text_Unknown_E" text="You carefully record the sequence burned into your memory.\n\n{unknownText}\n\n The symbols are unlike anything you've seen before, and their presence leaves you deeply unsettled. You can't help but wonder what it all signifies." />
+
+    <!--LightsInTheSkies - Log Messages-->
+    <string id="LightsInTheSkies_Event_Msg_1" text="{heroName} had a strange experience one night near {closestSettlement}." />
+    <string id="LightsInTheSkies_Event_Msg_2" text="Rumors spread that {heroName} witnessed something unusual near {closestSettlement}." />
+    <string id="LightsInTheSkies_Event_Msg_3" text="One night, {heroName} encountered something unexplainable near {closestSettlement}." />
+    <string id="LightsInTheSkies_Event_Msg_4" text="{heroName} returned from the outskirts of {closestSettlement} visibly shaken after a bizarre incident." />
+    <string id="LightsInTheSkies_Event_Msg_5" text="Something extraordinary happened to {heroName} near {closestSettlement}, though details remain unclear." />
+    
+    
+
+    <!--
+    ******************************************************************************
     *                           Logging Site Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -682,9 +736,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                            Mass Grave Event                                *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -760,9 +812,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                        Not of This World Event                             *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -805,9 +855,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                          Passing Comet Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
 
@@ -837,9 +885,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                             Red Moon Event                                 *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -933,12 +979,100 @@
     <string id="RedMoon_Event_Msg_4E" text="After choosing not to intervene, {heroName} lost {menLostToReligion} men and {goldLostToReligion} gold." />
 
 
+    <!--
+    ******************************************************************************
+    *                              Robbery Event                                 *
+    ******************************************************************************
+    -->
+    
+    <!--Robbery Event Titles-->
+    <string id="Robbery_Title_A" text="City Heist" />
+    <string id="Robbery_Title_B" text="Urban Theft" />
+    <string id="Robbery_Title_C" text="Streets of Deceit" />
+    <string id="Robbery_Title_D" text="The City's Underbelly" />
+    <string id="Robbery_Title_E" text="Metropolitan Mugging" />
+    <string id="Robbery_Title_F" text="Backstreet Banditry" />
+    <string id="Robbery_Title_G" text="Thieves in the Shadows" />
+    <string id="Robbery_Title_H" text="Urban Pickpocketing" />
+
+    <!--Robbery - Event Button-->
+    <string id="Robbery_Event_Button_Text" text="Continue" />
+
+    <!--Robbery Event Outcomes - Bad-->
+    <string id="Robbery_Event_Text_Bad_Outcome_A" text="On a late-night departure from the tavern in {currentSettlement}, you opt for an alley as a shortcut. Suddenly, you find yourself encircled by {thugs} menacing figures. The group's leader, {gangLeader}, demands your valuables. Outnumbered, you relinquish {goldLost} gold to {gangLeader} and {Adjective} accomplices. {gangLeader} instructs {Adjective} followers to give you a harsh reminder to avoid their territory. The ensuing moments are chaotic as you endure punches, kicks, and threats. Consciousness fades. When you come to, you're lying in a pigsty. Gathering your strength, you hurriedly return to your lodgings." />
+    <string id="Robbery_Event_Text_Bad_Outcome_B" text="Strolling back from the tavern in {currentSettlement} via an alleyway proved perilous when {thugs} thugs, led by {gangLeader}, corner you. With no way to resist, you hand over {goldLost} gold to {gangLeader} and {Adjective} gang. 'Remember this place,' {gangLeader} sneers, as {Adjective} henchmen rough you up. After a flurry of blows and jeers, you lose consciousness. You later awaken in a filthy pigsty, barely able to stand, and hasten back to your accommodation." />
+    <string id="Robbery_Event_Text_Bad_Outcome_C" text="Late at night in {currentSettlement}, an alley shortcut turns into a nightmare. Surrounded by {thugs} of {gangLeader}'s gang, you're coerced into giving up {goldLost} gold. {gangLeader} signals {Adjective} thugs to 'leave a mark,' leading to a brutal beating. The world spins and goes dark. You eventually come to in a disgusting pigsty, bruised and battered. You quickly make your way back to your temporary home." />
+    <string id="Robbery_Event_Text_Bad_Outcome_D" text="Leaving the tavern in {currentSettlement}, you decide on an alley for a quick return. But {thugs} thugs, led by {gangLeader}, soon encircle you. Faced with no choice, you give {gangLeader} and {Adjective} cronies {goldLost} gold. 'Make sure they remember,' {gangLeader} orders, and {Adjective} goons unleash a barrage of violence upon you. When you regain consciousness, you're in a pigsty, dazed and hurting. You make a swift return to safety." />
+    <string id="Robbery_Event_Text_Bad_Outcome_E" text="Your walk back from the tavern in {currentSettlement} takes a dire turn in an alley, where {thugs} of {gangLeader}'s gang trap you. Reluctantly, you hand over {goldLost} gold to {gangLeader} and {Adjective} gang members. 'Teach them not to trespass,' {gangLeader} commands. A brutal assault follows, leaving you unconscious. Awakening in a pigsty, you muster the strength to stagger back to your lodgings." />
+
+    <!--Robbery Event Outcomes - Convinced-->
+    <string id="Robbery_Event_Text_Convinced_Outcome_A" text="Exiting the tavern in {currentSettlement} late at night, you venture through an alley as a shortcut. Suddenly, you're surrounded by {thugs} thugs. The gang's leader, {gangLeader}, demands your valuables. In a bold move, you question {gangLeader}'s sanity for not recognizing who you are. A moment of tension passes before {gangLeader} and {Adjective} gang recognize you, leading to an apology from {gangLeader} and a quick dispersal of {Adjective} thugs. They let you continue, leaving the alley clear for you. Someone else, though, might not be so lucky next time." />
+    <string id="Robbery_Event_Text_Convinced_Outcome_B" text="As you leave a tavern in {currentSettlement} via an alleyway, {thugs} thugs encircle you, led by {gangLeader} who demands your treasures. You retort, asking if {gangLeader} has lost their mind not to know you. After a second look, {gangLeader} and {Adjective} thugs recognize you, hastily apologizing and retreating. You're allowed to pass, but you can't help but think of the next unsuspecting passerby." />
+    <string id="Robbery_Event_Text_Convinced_Outcome_C" text="On a late-night stroll from the tavern in {currentSettlement}, an alley shortcut lands you amidst {thugs} thugs. Their leader, {gangLeader}, orders you to hand over your goods. You challenge {gangLeader}, questioning their recognition of you. Recognition dawns on {gangLeader} and {Adjective} thugs, leading to a swift apology and your unobstructed passage, leaving the alley's danger to the next traveler." />
+    <string id="Robbery_Event_Text_Convinced_Outcome_D" text="Navigating an alley after leaving a tavern in {currentSettlement}, you're ambushed by {thugs} thugs under {gangLeader}. Confronted for valuables, you question {gangLeader}'s awareness of your identity. A moment of realization strikes {gangLeader} and {Adjective} thugs, prompting a quick apology and your safe passage, though the alley remains a peril for others." />
+    <string id="Robbery_Event_Text_Convinced_Outcome_E" text="Taking an alleyway post-tavern visit in {currentSettlement}, you're cornered by {thugs} thugs, with {gangLeader} demanding your valuables. You confront {gangLeader} about their failure to recognize you. After a brief pause, recognition hits {gangLeader} and {Adjective} thugs, leading to an apologetic retreat and your free passage, leaving the alley's next victim to fate." />
+
+    <!--Robbery Event Outcomes - Charmed-->
+    <string id="Robbery_Event_Text_Charmed_Outcome_A" text="Exiting the tavern in {currentSettlement} late, you choose an alley shortcut and are soon surrounded by {thugs} thugs. Confronted by their leader, {gangLeader}, you're asked for your valuables. Outnumbered, you engage {gangLeader} in conversation, piquing {Subjective} interest with tales of a wealthy visitor in town. After a thoughtful pause, {gangLeader} orders {Adjective} thugs to release you. You part with 100 gold and bid farewell, relieved." />
+    <string id="Robbery_Event_Text_Charmed_Outcome_B" text="Leaving the tavern in {currentSettlement} at night, an alleyway shortcut leads you into a trap set by {thugs} thugs. {gangLeader} demands your valuables, but you deftly start a chat, intriguing {Subjective} with rumors of a wealthy visitor. Intrigued, {gangLeader} decides to let you go after you hand over 100 gold, leaving you to continue your night." />
+    <string id="Robbery_Event_Text_Charmed_Outcome_C" text="After leaving a tavern in {currentSettlement} at night, your alley shortcut results in an encounter with {thugs} thugs. {gangLeader} wants your valuables, but your quick wit leads to a conversation about a rumored affluent guest. {gangLeader}, intrigued, releases you after taking 100 gold, a small price for your safety." />
+    <string id="Robbery_Event_Text_Charmed_Outcome_D" text="Your late-night shortcut through an alley in {currentSettlement} ends with {thugs} thugs demanding valuables. You talk your way out, capturing {gangLeader}'s attention with gossip of a rich visitor. Captivated, {gangLeader} frees you after receiving 100 gold, allowing you to depart unharmed." />
+    <string id="Robbery_Event_Text_Charmed_Outcome_E" text="In {currentSettlement} at night, an alley shortcut traps you with {thugs} thugs. Faced with {gangLeader}'s demands, you distract {Subjective} with stories of a wealthy city visitor. {gangLeader}, intrigued, lets you go for 100 gold, sparing you further trouble." />
+
+    <!--Robbery Event Outcomes - Intimidated-->
+    <string id="Robbery_Event_Text_Intimidated_Outcome_A" text="In {currentSettlement} at night, an alleyway shortcut leads you to a confrontation with {thugs} thugs. The leader, {gangLeader}, demands your valuables. You respond with laughter, recounting your formidable battlefield exploits and the bandits who've fallen by your hand. This visibly unnerves the thugs. Challenging {gangLeader} about their threat, you see their resolve waver. {gangLeader} permits your departure, as you warn them of impending justice." />
+    <string id="Robbery_Event_Text_Intimidated_Outcome_B" text="After leaving a tavern in {currentSettlement}, you're ambushed in an alley by {thugs} thugs. {gangLeader} asks for valuables, but you laugh, boasting of your martial prowess and past victories over bandits. The impact of your tales is clear on the thugs' faces. Questioning {gangLeader}'s confidence, they back down, allowing you to leave with a final warning of justice's reach." />
+    <string id="Robbery_Event_Text_Intimidated_Outcome_C" text="A late-night shortcut in {currentSettlement} puts you face-to-face with {thugs} thugs. {gangLeader}'s demand for loot is met with your derisive laughter and tales of battlefield glory. The thugs' confidence falters upon hearing of your feats. You confront {gangLeader} about their threat, leading them to stand down, as you leave a cautionary note about justice." />
+    <string id="Robbery_Event_Text_Intimidated_Outcome_D" text="Surrounded by {thugs} thugs in an alley in {currentSettlement}, you defy {gangLeader}'s demand for valuables with laughter, sharing your fearsome battlefield accomplishments. Your words sow doubt among the thugs. Challenging their threat, they lower their weapons, and {gangLeader} allows your exit, heedful of your warning about justice." />
+    <string id="Robbery_Event_Text_Intimidated_Outcome_E" text="Navigating an alley in {currentSettlement}, {thugs} thugs, led by {gangLeader}, corner you for valuables. You mock them with laughter, narrating your victories and the fate of past foes. The thugs grow anxious. Your challenge to {gangLeader} causes them to retract, letting you pass with a foreboding hint about justice's arrival." />
+
+    <!--Robbery Event Outcomes - Good Relation-->
+    <string id="Robbery_Event_Text_Good_Relation_Outcome_A" text="Exiting the tavern in {currentSettlement} at night, your alley shortcut leads to an encounter with {thugs} thugs. Their leader, {gangLeader}, demands your valuables, but you question if {Subjective} recognizes you. Recognizing an old friend, {gangLeader} greets you with laughter and a warm hug. You reminisce about times before the world's chaos, sharing stories and catching up. After a heartfelt conversation, you part ways with {gangLeader}, exchanging goodbyes and a final embrace." />
+    <string id="Robbery_Event_Text_Good_Relation_Outcome_B" text="At night in {currentSettlement}, an alleyway shortcut unexpectedly reunites you with {thugs} thugs, led by an old acquaintance, {gangLeader}. Upon realizing your identity, {gangLeader} shares a hearty laugh and a friendly hug. You both reminisce about the past and update each other on recent events. With a fond farewell and a last embrace, you continue on your way." />
+    <string id="Robbery_Event_Text_Good_Relation_Outcome_C" text="In {currentSettlement} late at night, your alleyway detour brings you face to face with {thugs} thugs and their leader, {gangLeader}. Recognizing an old comrade, {gangLeader} greets you with jovial laughter and an affectionate hug. You spend a few moments exchanging tales of the past and present before parting with a warm goodbye and a final embrace." />
+    <string id="Robbery_Event_Text_Good_Relation_Outcome_D" text="Walking through an alley in {currentSettlement} at night, you're stopped by {thugs} thugs. Their leader, {gangLeader}, initially demands valuables but then joyfully recognizes you. A reunion filled with laughter and a friendly hug ensues, as you both reminisce over old times. Eventually, you bid {gangLeader} farewell, embracing before parting ways." />
+    <string id="Robbery_Event_Text_Good_Relation_Outcome_E" text="A late-night shortcut in {currentSettlement} turns into a surprising reunion with {thugs} thugs and their chief, {gangLeader}. Realizing your long-standing connection, {gangLeader} greets you with laughter and a heartfelt hug. You catch up on old memories and current affairs, then say goodbye with a final warm embrace." />
+
+    <!--Robbery - Log Messages - Event Bad-->
+    <string id="Robbery_Event_Text_Bad_Outcome_Msg_A" text="{heroName} loses {goldLost} gold to {gangLeader}'s thugs in {currentSettlement}, waking up later in a pigsty." />
+    <string id="Robbery_Event_Text_Bad_Outcome_Msg_B" text="Cornered by {gangLeader}'s gang in {currentSettlement}, {heroName} is robbed of {goldLost} gold and left in a pigsty." />
+    <string id="Robbery_Event_Text_Bad_Outcome_Msg_C" text="Ambushed in a {currentSettlement} alley, {heroName} hands {goldLost} gold to {gangLeader}'s thugs and wakes in a pigsty." />
+    <string id="Robbery_Event_Text_Bad_Outcome_Msg_D" text="In {currentSettlement}, {heroName} gives {gangLeader}'s thugs {goldLost} gold and regains consciousness in a pigsty." />
+    <string id="Robbery_Event_Text_Bad_Outcome_Msg_E" text="{heroName}, trapped by {gangLeader}'s gang in {currentSettlement}, loses {goldLost} gold and wakes up in a pigsty." />
+
+    <!--Robbery - Log Messages - Event Convinced-->
+    <string id="Robbery_Event_Text_Convinced_Msg_A" text="In a {currentSettlement} alley, {heroName} is confronted by {gangLeader}'s thugs but convinces them to leave, escaping unharmed." />
+    <string id="Robbery_Event_Text_Convinced_Msg_B" text="{heroName} talks their way out of a robbery by {gangLeader}'s gang in {currentSettlement}, leaving the alley safely." />
+    <string id="Robbery_Event_Text_Convinced_Msg_C" text="Cornered in {currentSettlement}, {heroName} avoids a mugging by {gangLeader}'s thugs through quick wit." />
+    <string id="Robbery_Event_Text_Convinced_Msg_D" text="{heroName} faces down {gangLeader}'s thugs in a {currentSettlement} alley and escapes without harm after being recognized." />
+    <string id="Robbery_Event_Text_Convinced_Msg_E" text="In {currentSettlement}, {heroName} is cornered by {gangLeader}'s thugs but evades trouble by revealing their identity." />
+
+    <!--Robbery - Log Messages - Event Charmed-->
+    <string id="Robbery_Event_Text_Charmed_Msg_A" text="In a {currentSettlement} alley, {heroName} diverts {gangLeader}'s attention with a tale, parting with 100 gold for a safe exit." />
+    <string id="Robbery_Event_Text_Charmed_Msg_B" text="{heroName} avoids a mugging in {currentSettlement} by intriguing {gangLeader} with rumors, losing 100 gold but gaining freedom." />
+    <string id="Robbery_Event_Text_Charmed_Msg_C" text="Cornered by {gangLeader}'s thugs, {heroName} spins a story of a rich visitor in {currentSettlement}, escaping with a 100 gold loss." />
+    <string id="Robbery_Event_Text_Charmed_Msg_D" text="Facing {gangLeader}'s thugs in {currentSettlement}, {heroName} talks of wealthy strangers, exchanging 100 gold for safety." />
+    <string id="Robbery_Event_Text_Charmed_Msg_E" text="{heroName} in {currentSettlement} distracts {gangLeader} with tales of affluence, trading 100 gold for an unharmed departure." />
+
+    <!--Robbery - Log Messages - Event Intimidated-->
+    <string id="Robbery_Event_Text_Intimidated_Msg_A" text="In {currentSettlement}, {heroName} thwarts {gangLeader}'s thugs with tales of battle, leaving unscathed with a warning of justice." />
+    <string id="Robbery_Event_Text_Intimidated_Msg_B" text="{heroName} laughs off {gangLeader}'s ambush in {currentSettlement}, intimidating the thugs into retreat with tales of martial prowess." />
+    <string id="Robbery_Event_Text_Intimidated_Msg_C" text="{heroName}'s mockery and battlefield stories unnerve {gangLeader}'s thugs in {currentSettlement}, allowing a safe departure." />
+    <string id="Robbery_Event_Text_Intimidated_Msg_D" text="Faced with {gangLeader}'s thugs in {currentSettlement}, {heroName} uses fear, recounting past victories to secure an escape." />
+    <string id="Robbery_Event_Text_Intimidated_Msg_E" text="In an alley of {currentSettlement}, {heroName} intimidates {gangLeader}'s gang with daunting tales, leaving a stern warning behind." />
+
+    <!--Robbery - Log Messages - Event Good Relation-->
+    <string id="Robbery_Event_Text_Good_Relation_Msg_A" text="In {currentSettlement}, {heroName}'s chance meeting with {gangLeader}'s thugs turns into a friendly reunion, reminiscing old times." />
+    <string id="Robbery_Event_Text_Good_Relation_Msg_B" text="{heroName} encounters old friend {gangLeader} in {currentSettlement}, leading to laughter, stories, and a warm farewell." />
+    <string id="Robbery_Event_Text_Good_Relation_Msg_C" text="An alley in {currentSettlement} brings {heroName} and {gangLeader} together, sharing fond memories before parting ways." />
+    <string id="Robbery_Event_Text_Good_Relation_Msg_D" text="{heroName} runs into {gangLeader} and thugs in {currentSettlement}, turning a potential mugging into a joyful catch-up." />
+    <string id="Robbery_Event_Text_Good_Relation_Msg_E" text="A surprise reunion with {gangLeader} in {currentSettlement} transforms {heroName}'s night into a nostalgic exchange of tales and goodbyes." />
+
+    
 
     <!--
     ******************************************************************************
-    *                                                                            *
     *                            Runaway Son Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -1013,9 +1147,7 @@
 
     <!--
     ******************************************************************************
-    *                                                                            *
     *                           Sudden Storm Event                               *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -1111,15 +1243,26 @@
 
     <!--
     ******************************************************************************
-    *                                                                            *
     *                     Supernatural Encounter Event                           *
-    *                                                                            *
     ******************************************************************************
     -->
     
-    <!--SupernaturalEncounter Event-->
-    <string id="SupernaturalEncounter_Title" text="A Supernatural Encounter" />
-    <string id="SupernaturalEncounter_Event_Desc" text="You are sleeping peacefully in your tent at night when you are awoken by the apparition of a young woman. She stands there looking at you and then she turns to leave but stops at the exit and turns back to you. You get the feeling she wants you to follow her." />
+    <!--SupernaturalEncounter Event Titles-->
+    <string id="SupernaturalEncounter_Title_A" text="A Supernatural Encounter" />
+    <string id="SupernaturalEncounter_Title_B" text="The Maiden's Ghost" />
+    <string id="SupernaturalEncounter_Title_C" text="Whispers of the Lost Girl" />
+    <string id="SupernaturalEncounter_Title_D" text="Apparition of a Young Maiden" />
+    <string id="SupernaturalEncounter_Title_E" text="Spectral Visitation" />
+    <string id="SupernaturalEncounter_Title_F" text="Echoes of a Young Spirit" />
+    <string id="SupernaturalEncounter_Title_G" text="The Phantom Maiden" />
+    <string id="SupernaturalEncounter_Title_H" text="Haunting of the Young Girl" />
+
+    <!--SupernaturalEncounter Event Descriptions-->
+    <string id="SupernaturalEncounter_Event_Desc_A" text="In the dead of night, a chilling presence disturbs your slumber in the tent. You awaken to see the ghostly figure of a young woman, her eyes fixed on you with an eerie, unspoken plea. As she drifts towards the exit, she pauses and looks back, her ethereal form casting a haunting silhouette. A sense of ominous foreboding washes over you, suggesting she desires you to follow." />
+    <string id="SupernaturalEncounter_Event_Desc_B" text="A sudden coldness envelops your tent, rousing you from sleep to face a spectral young woman. Her gaze is sorrowful yet piercing, filled with silent stories of yesteryears. She moves ghostly towards the entrance, halting momentarily to glance back, her form almost beckoning. The air grows heavy, hinting that she seeks your pursuit into the unknown." />
+    <string id="SupernaturalEncounter_Event_Desc_C" text="Under the moon's ghostly light, your sleep is interrupted by a spectral vision. A young woman's apparition, shrouded in an aura of mystery, stands before you. She begins to fade away, stopping at the tent's threshold to cast a lingering, haunting look in your direction. An inexplicable urge to follow her grips you, as if drawn to uncover her spectral tale." />
+    <string id="SupernaturalEncounter_Event_Desc_D" text="Your peaceful night is shattered by the apparition of a young woman, her ghostly presence exuding a spine-chilling aura. She stares deeply, an unspoken sorrow in her eyes, before slowly drifting towards the exit. Yet, she hesitates, turning back with a look that transcends time, inviting you to follow her into the night's eerie embrace." />
+    <string id="SupernaturalEncounter_Event_Desc_E" text="As the night whispers through your tent, you're startled awake by an unsettling apparition. A young woman, her figure spectral and otherworldly, gazes at you with eyes that pierce the veil between life and death. She moves towards the exit, only to pause and glance back hauntingly, her silent gaze compelling you to follow her into the shrouded mysteries of the night." />
 
     <!--SupernaturalEncounter - Event Choices-->
     <string id="SupernaturalEncounter_Event_Option_1" text="Follow the apparition" />
@@ -1131,28 +1274,204 @@
     <string id="SupernaturalEncounter_Event_Option_4" text="Ignore it" />
     <string id="SupernaturalEncounter_Event_Option_4_Hover" text="It's just a dream anyway" />
 
-    <!--SupernaturalEncounter - Event Button-->
+    <!--SupernaturalEncounter - Event Buttons-->
     <string id="SupernaturalEncounter_Event_Button_Text_1" text="Okay" />
     <string id="SupernaturalEncounter_Event_Button_Text_2" text="Done" />
+    
+    <!--SupernaturalEncounter - Event 1-->
+    <string id="SupernaturalEncounter_Event_Choice_1A" text="Led by an inexplicable force, you cautiously follow the ethereal apparition, with a handful of your men, equally entranced, trailing behind. The ghostly woman guides you through the silent night, her spectral form gliding effortlessly until she reaches a lone, ancient tree in a mist-enshrouded meadow. There, in a haunting display, she vanishes, leaving behind a cold, eerie energy. Your group, enveloped in a mix of awe and fear, returns to camp, the silence between you speaking volumes. Gathering around the dying embers of the campfire, you debate the significance of this otherworldly encounter. Resolving to unearth the mystery, you lead a somber expedition back to the tree at dawn. After painstakingly digging for what seems like an eternity, the shocking revelation of a human skeleton buried beneath sends a shiver of dread through everyone. With a newfound respect for the spectral maiden, you and your men carefully gather the bones and perform a proper burial, hoping this act will grant her troubled spirit the peace it desperately seeks." />
+    <string id="SupernaturalEncounter_Event_Choice_1B" text="Intrigued yet apprehensive, you and several unnerved men follow the ghostly woman’s path into the darkness. She glides silently, her figure casting an otherworldly glow, leading you to a solitary, gnarled tree in a desolate meadow. As you reach the spot, she fades into the night, her presence leaving a chilling void. The haunting image lingers as you retreat to camp, the unsettling encounter hanging heavily in the air. Around the campfire, whispers of the supernatural swirl among your men, igniting a mixture of curiosity and dread. Determined to confront the unknown, you lead a return to the eerie site at first light. Methodically excavating the earth beneath the tree, your heart pounds with each shovel of soil. The grim discovery of a human skeleton buried in the cold ground confirms the ghostly maiden's silent message. With a deep sense of solemnity, you and your men reverently gather the remains, giving them a respectful burial. As you lay the bones to rest, a silent prayer is offered, hoping to soothe the unrestful spirit that led you here." />
+    <string id="SupernaturalEncounter_Event_Choice_1C" text="With a sense of foreboding, you follow the haunting figure of the young woman, her ghostly visage a beacon in the moonlit night. A few of your bravest men accompany you, their faces etched with a mix of fascination and fear. She leads you through the whispering fields to a solitary tree, standing stark against the night sky. In a moment that feels suspended in time, she vanishes, her disappearance leaving an indelible mark on your souls. The eerie journey back to camp is filled with hushed conversations and uneasy glances. Unable to shake the ghostly encounter from your mind, you decide to delve deeper into the mystery. As the first light of dawn breaks, you return to the haunting site, a sense of determination driving your actions. The excavation reveals a buried secret - a human skeleton, its resting place undisturbed until now. The air grows heavy with the realization of what lies before you. In a ceremony filled with gravity, you carefully lay the remains to rest, each shovel of earth a step towards bringing peace to the restless spirit that guided you." />
+    <string id="SupernaturalEncounter_Event_Choice_1D" text="Compelled by the spectral maiden, you venture into the unknown, your heart racing as you traverse the shadowy landscape. A few men, their expressions a mix of curiosity and trepidation, follow closely. The apparition leads you to a bleak meadow, stopping beneath a forlorn tree that seems to echo her loneliness. As she dissipates, a chilling breeze sweeps through, solidifying the surreal experience. You return to camp in silence, each man lost in his thoughts, the ghostly image etched in your minds. Gathering your senses, you convene with your men, the air thick with theories and apprehensions. As the night gives way to dawn, you are drawn back to the tree, a resolve to uncover the truth guiding your actions. Your efforts uncover a startling truth - a skeletal remnant hidden beneath the earth. The discovery sends a wave of realization through the group. In a respectful and solemn act, you bury the remains, hoping this gesture of honor will appease the spirit that led you to this poignant discovery." />
+    <string id="SupernaturalEncounter_Event_Choice_1E" text="Following the ghostly apparition, you tread cautiously, the night air heavy with a sense of impending revelation. Accompanied by several men, their faces a canvas of intrigue and unease, you are led to an isolated tree in a moonlit meadow. The spectral figure stops, her presence a poignant reminder of life’s ephemeral nature. Then, as if dissolving into the night, she disappears, leaving a void that seems to echo her silent cry. The return to camp is a journey of contemplation, the apparition's lingering image igniting a flurry of whispered speculations. With the break of dawn, a unanimous decision to return to the site is made, a collective need to unearth the truth driving you. The excavation at the tree’s base reveals a haunting discovery - the skeletal remains of a once-living being. The solemn act of uncovering the bones is met with a reverent silence. You carefully bury the remains, each motion a tribute to the young spirit that brought you to this fateful spot, in the hope that your actions will bring solace to her wandering soul." />
 
-    <!--SupernaturalEncounter - Events-->
-    <string id="SupernaturalEncounter_Event_Choice_1" text="You follow the apparition. A few men who also have seen the spectacle joins in following her.\n The apparition stops under a lone tree in a meadow and disappears. You and your men stare at each other in disbelief.\n \n You and your men go back to the main camp and discuss what should be done.\n After some deliberation, you come to the conclusion that you go back and dig at the site she disappeared to see if you find anything.\n After digging for about 30 minutes you come across a single skeleton.\nThis must be her! You and your men respectfully gather up the bones and gives them a proper burial.\n Hopefully her restless spirit will finally have peace." />
-    <string id="SupernaturalEncounter_Event_Choice_2" text="You manage to utter a single 'hello'\n The women then lets out a bone chilling shriek and vanishes before your eyes.\nYou spend the rest of the night shaking like a leaf in your bed." />
-    <string id="SupernaturalEncounter_Event_Choice_3" text="HELP!\n You leap from your bed and bolt out the door. \n Your men around the campfire start laughing as soon as you tell them about the event." />
-    <string id="SupernaturalEncounter_Event_Choice_4" text="You wake up fully rested the next morning with the previous night's event absent from your mind." />
+    <!--SupernaturalEncounter - Event 2-->
+    <string id="SupernaturalEncounter_Event_Choice_2A" text="Gathering your courage, you manage to whisper a tentative 'hello' into the stillness of the night. In response, the ghostly woman emits a bone-chilling shriek, a sound so piercing and unearthly it seems to reverberate through the very fabric of the air. In an instant, she vanishes before your eyes, leaving behind a haunting echo of her cry. The sudden silence that follows is almost as terrifying as the scream itself. You find yourself paralyzed with fear, unable to move or speak. The rest of the night is spent in your bed, shaking uncontrollably, every shadow and rustle of the wind magnified into a thousand frightful possibilities. The image of her tormented face and the memory of her harrowing scream linger with you, ensuring that sleep remains an elusive, distant dream for the remainder of the night." />
+    <string id="SupernaturalEncounter_Event_Choice_2B" text="Summoning your bravest whisper, you murmur 'hello' into the midnight silence. The spectral woman answers with a shriek that cuts through the night, a sound so eerie and otherworldly it seems to warp the air around you. She vanishes instantly, her scream echoing in your ears. Overwhelmed by fear, you're frozen, unable to utter a word. The night drags on, every shadow and breeze turning into terrifying specters in your imagination. The vision of her anguished face and the chilling sound of her cry haunt you, making sleep an impossible feat." />
+    <string id="SupernaturalEncounter_Event_Choice_2C" text="With hesitant bravery, you utter a soft 'hello' into the night's quiet. The ghostly figure responds with a scream that chills your bones, an unearthly howl vibrating through the atmosphere. In a blink, she's gone, her wail lingering in the air. Rooted to the spot in terror, you can't move or speak. The remainder of the night is a blur of fear, every minor noise or shadow appearing monstrous and threatening. Her pained expression and the memory of her eerie scream stay with you, banishing any hope of sleep." />
+    <string id="SupernaturalEncounter_Event_Choice_2D" text="Bracing yourself, you gently say 'hello' into the calm of the night. The ghost-like woman unleashes a scream so chilling and surreal it seems to shake the very air. Then, she's nowhere to be seen, her cry echoing hauntingly. Stricken with fear, you stand petrified, speechless. The rest of the night is a cascade of terror, with every little sound or movement becoming a source of unspeakable horror. Her tortured visage and the echoing scream remain etched in your mind, driving away any chance of sleep." />
+    <string id="SupernaturalEncounter_Event_Choice_2E" text="With a trembling voice, you breathe out a 'hello' into the still night. The apparition responds with a scream that's bone-chillingly unearthly, echoing as if from another realm. She disappears abruptly, her scream resonating in the silence. You're left paralyzed with fear, unable to utter another word. The night turns into a long ordeal of terror, with every shadow and whisper of wind seeming ominous and full of dread. The image of her suffering face and her terrifying scream linger with you, ensuring a night devoid of sleep." />
+
+    <!--SupernaturalEncounter - Event 3-->
+    <string id="SupernaturalEncounter_Event_Choice_3A" text="Panicked as if chased by a horde of Sea Raiders, you leap from your bed, arms flailing, and bolt out the door like a shot arrow. Your mad sprint through the camp is a blur of tents and startled faces. As you skid to a halt by the campfire, you're a wild-eyed, breathless mess, hastily explaining about a ghostly apparition in your tent. Your men burst into uncontrollable laughter. One of them, a veteran with a scarred face, mimics your terrified expression, 'Did the ghost threaten to steal your boots?' he jests, while another, a younger recruit, starts a playful chant, 'Brave {heroName}, scared of the dark!' They laugh heartily, clinking their ale mugs, as you stand there, your fear slowly turning into a sheepish grin. The night continues with exaggerated reenactments of your 'brave escape,' your men finding endless amusement in your uncharacteristic dash." />
+    <string id="SupernaturalEncounter_Event_Choice_3B" text="You catapult out of your bed as if a bandit lord was on your heels, your feet barely touching the ground in your frantic escape. The entire camp seems to whirl past as you sprint straight to the campfire. Gasping for air, you recount the terrifying encounter with what seemed like a ghost. The men fall into fits of laughter. 'Was the ghost armed? Did you win the duel?' one asks between chuckles. Another, a grizzled sergeant, pretends to be frightened by his shadow, sending the group into another uproar. Jokes about recruiting ghosts for your next siege or sending you on a 'ghost patrol' fill the air. As the night wears on, your tale of terror becomes a campfire legend, embellished with each retelling, much to the delight of your troops." />
+    <string id="SupernaturalEncounter_Event_Choice_3C" text="With a shriek that echoes through the camp, you leap from your bed as if it were on fire and make a beeline for the door, sprinting as though leading a desperate charge against Swadian knights. You stumble into the campfire area, a mix of fear and confusion. Out of breath, you explain about a ghostly figure in your tent. The men erupt in laughter. One of them, a jester at heart, grabs a blanket and starts floating around, imitating your ghost. 'Look out, our commander will desert us for a ghost,' he cackles. Another pats your back, 'Don’t worry, we’ll stand guard tonight, lest the scary ghost returns!' he says with a wink. The rest of the evening is filled with light-hearted banter and mock ghost stories, each more outrageous than the last, as you join in the laughter, your initial fear dissolving into the warm camaraderie of your men." />
+    <string id="SupernaturalEncounter_Event_Choice_3D" text="In a frenzy that rivals a villager escaping raiders, you jump from your bed and hurtle through the camp. Dodging tents and a snoozing hound, you arrive at the campfire, a picture of wide-eyed panic. Breathlessly, you recount your ghostly encounter, expecting some empathy. Instead, your comrades erupt with laughter. One jokes heartily, 'Scared more than a peasant at tax time!' while another breaks into a playful song about ghostly pursuits. The night turns into an uproar of jests and light-hearted teasing, suggestions of a ghost hunt adding to the merriment. As the fire crackles and stars shimmer, laughter fills the air, your spectral scare now a favorite tale among your fellow soldiers." />
+    <string id="SupernaturalEncounter_Event_Choice_3E" text="Like a deer startled by an arrow, you bound from your bed and race through the camp with the speed of a fleeing looter. Your dramatic entrance at the campfire, where your men lounge leisurely, is met with surprise. Out of breath, you recount your ghostly encounter, expecting a mix of awe and concern. Instead, your men can't hold back their laughter. A gruff soldier knight jests, 'Did you challenge the ghost to a duel, or were you too busy running?' Another playfully peers into the darkness, pretending to spot a whole army of ghosts. The mood lightens as they tease you about enlisting ghosts for your next campaign. Amidst chuckles and friendly jibes, your eerie experience turns into a source of mirth, bringing a light-hearted end to the evening under the starlit Calradian sky." />
+
+    <!--SupernaturalEncounter - Event 4-->
+    <string id="SupernaturalEncounter_Event_Choice_4A" text="As the first light of dawn filters through your tent, you stir awake, feeling unusually refreshed. The events of the eerie night seem like distant echoes, almost as if they belonged to another life. Stretching your arms, you welcome the calmness that has settled over you. The ghostly encounter that had sent chills down your spine now feels like a fragment of a forgotten dream, its details blurred and its fearsome impact faded. As you prepare for the day, there's a newfound lightness in your step, the worries of the night dissolved in the morning's gentle embrace." />
+    <string id="SupernaturalEncounter_Event_Choice_4B" text="You awaken to the morning sun casting gentle rays across your bedding, a sense of deep restfulness enveloping you. Strangely, the terrors of the previous night have vanished from your memory, as if swept away by the comforting light of day. You sit up, feeling rejuvenated, the ghostly visitation now nothing more than a shadow, lost in the recesses of your mind. As you step out of your tent, the fresh air fills your lungs, and you find yourself smiling, ready to face the new day with vigor, the night's fears locked away in the vault of forgotten dreams." />
+    <string id="SupernaturalEncounter_Event_Choice_4C" text="You open your eyes to the soft glow of dawn, feeling an unexpected sense of peace. The frightful encounter with the ghostly apparition that had haunted your night seems strangely absent from your thoughts. It's as if the morning light has washed away the remnants of fear, leaving behind a clear, tranquil mind. You rise, feeling lighter and more composed than you have in days. The memory of the night's specter now feels like a distant, untroubling thought, barely a whisper in the back of your mind as you prepare to greet the day with renewed energy and a clear head." />
+    <string id="SupernaturalEncounter_Event_Choice_4D" text="As the morning sun peeks through the fabric of your tent, you wake up feeling surprisingly well-rested. The harrowing events of the night, which had once seemed so vivid and terrifying, now feel like they never happened. It's as though the light of day has a power to erase the fears of the dark. You stretch, feeling revitalized, the memory of the ghostly figure fading like mist in the morning sun. With a light heart, you step outside, ready to embrace the day's challenges, the echoes of the night's terror now just a fleeting, inconsequential memory." />
+    <string id="SupernaturalEncounter_Event_Choice_4E" text="The chirping of birds outside your tent gently coaxes you from sleep, and you awaken to a morning bathed in soft, golden light. Remarkably, you feel thoroughly rested, the turmoil of the previous night's ghostly encounter seemingly erased from your consciousness. It's as if the night's shadows, which had once loomed so large and menacing, have been dispelled by the reassuring light of day. You lie there for a moment, basking in the serene quiet, the memory of the spectral visitor now fading like a half-remembered dream. As you rise to greet the day, there's a spring in your step, a sense of liberation from the night's fright, as if it were a tale from a distant past, no longer holding any sway over your thoughts or emotions." />
+    
+    <!--SupernaturalEncounter - Log Messages - Event 1-->
+    <string id="SupernaturalEncounter_Msg_1A" text="{heroName} followed a ghostly guide and unearthed a skeleton, honoring the spirit with a solemn burial." />
+    <string id="SupernaturalEncounter_Msg_1B" text="{heroName}'s night expedition unveiled a buried skeleton, laid to rest after a respectful ceremony." />
+    <string id="SupernaturalEncounter_Msg_1C" text="Guided by an apparition, {heroName} discovered ancient bones and performed a dignified burial." />
+    <string id="SupernaturalEncounter_Msg_1D" text="{heroName} responded to a spectral call, uncovering and interring old remains with reverence." />
+    <string id="SupernaturalEncounter_Msg_1E" text="A spectral encounter led {heroName} to a hidden skeleton, granting peace to the spirit with a proper burial." />
+
+    <!--SupernaturalEncounter - Log Messages - Event 2-->
+    <string id="SupernaturalEncounter_Msg_2A" text="{heroName}'s greeting was met with a ghost's shriek, leading to a night of dread and restlessness." />
+    <string id="SupernaturalEncounter_Msg_2B" text="{heroName}'s whisper into the darkness returned a haunting scream, creating a night of terror." />
+    <string id="SupernaturalEncounter_Msg_2C" text="{heroName}'s soft call was answered by a chilling wail, enveloping the night in fear." />
+    <string id="SupernaturalEncounter_Msg_2D" text="{heroName}'s gentle words were echoed by a ghostly scream, casting a shadow of horror over the night." />
+    <string id="SupernaturalEncounter_Msg_2E" text="{heroName}'s tentative hello provoked an unearthly scream, filling the night with lingering fright." />
+
+    <!--SupernaturalEncounter - Log Messages - Event 3-->
+    <string id="SupernaturalEncounter_Msg_3A" text="{heroName}'s frantic escape from a ghostly apparition turns into campfire humor among the troops." />
+    <string id="SupernaturalEncounter_Msg_3B" text="{heroName}'s night of ghostly terror becomes a source of laughter and legendary tales at the campfire." />
+    <string id="SupernaturalEncounter_Msg_3C" text="After a comedic escape from a supposed ghost, {heroName} finds humor and camaraderie around the campfire." />
+    <string id="SupernaturalEncounter_Msg_3D" text="{heroName}'s ghostly encounter quickly transforms into amusing jests and light-hearted banter among the soldiers." />
+    <string id="SupernaturalEncounter_Msg_3E" text="{heroName}'s startled sprint from a ghost leads to an evening of laughter and playful teasing by the campfire." />
+
+    <!--SupernaturalEncounter - Log Messages - Event 4-->
+    <string id="SupernaturalEncounter_Msg_4A" text="{heroName} awakens refreshed, the ghostly night's fears dissolving in the dawn's light." />
+    <string id="SupernaturalEncounter_Msg_4B" text="Morning's light brings peace to {heroName}, erasing the haunting memories of the night." />
+    <string id="SupernaturalEncounter_Msg_4C" text="Dawn's soft glow clears {heroName}'s mind of the night's terrors, bringing unexpected tranquility." />
+    <string id="SupernaturalEncounter_Msg_4D" text="{heroName} rises at sunrise, feeling renewed, the ghostly encounters now just distant echoes." />
+    <string id="SupernaturalEncounter_Msg_4E" text="Awakening to a golden morning, {heroName} finds the ghostly fears of the night faded like a forgotten dream." />
 
 
 
     <!--
     ******************************************************************************
-    *                                                                            *
-    *                        Unexpected Wedding Event                            *
-    *                                                                            *
+    *                              Travellers Event                              *
     ******************************************************************************
     -->
-    <!--UnexpectedWedding Event-->
-    <string id="UnexpectedWedding_Title" text="An Unexpected Wedding" />
-    <string id="UnexpectedWedding_Event_Desc" text="You and your party are traveling in the vicinity of {closestSettlement} when you stumble across {peopleInWedding} people in a wedding taking place. The guests invite you over to celebrate this momentous event with them." />
+
+    <!--Travellers Event Titles-->
+    <string id="Travellers_Title_A" text="Travellers" />
+    <string id="Travellers_Title_B" text="The Broken Wagon" />
+    <string id="Travellers_Title_C" text="Fugitives on the Road" />
+    <string id="Travellers_Title_D" text="A Family in Need" />
+    <string id="Travellers_Title_E" text="Strangers on the Path" />
+    <string id="Travellers_Title_F" text="The Wagon in the River" />
+    <string id="Travellers_Title_G" text="Runaways" />
+    <string id="Travellers_Title_H" text="Fleeing the Bandits" />
+    <string id="Travellers_Title_I" text="A Family's Desperate Flight" />
+    <string id="Travellers_Title_J" text="The Refugees" />
+
+    <!--Travellers Event Descriptions-->
+    <string id="Travellers_Event_Desc_A" text="Your party is traveling near {closestSettlement} when you encounter a {familyDemonym} family with a broken wagon. The wheel has come off and rolled into a small river nearby. The family pleads for your help, explaining that they are fleeing from bandits who have extorted them for money and even tried to kidnap their two daughters multiple times. They’ve packed all their belongings in hopes of starting anew. How will you proceed?" />
+    <string id="Travellers_Event_Desc_B" text="As your party moves through the area near {closestSettlement}, you come across a {familyDemonym} family stranded with a broken wagon. One of the wheels has detached and rolled into a river close by. The family explains their plight, fleeing bandits who extorted them and threatened to kidnap their daughters. Desperate for a fresh start, they ask for your help. What will you do?" />
+    <string id="Travellers_Event_Desc_C" text="While traveling near {closestSettlement}, you come upon a {familyDemonym} family in distress. Their wagon is broken, its wheel having rolled into a nearby river. They explain they are running from bandits who have terrorized them with extortion and attempted kidnappings of their daughters. Carrying all they own, they seek your help to move forward. What is your choice?" />
+    <string id="Travellers_Event_Desc_D" text="Your party is passing not far from {closestSettlement} when you spot a {familyDemonym} family stranded with a broken wagon. The detached wheel rests in a nearby river, and the family is clearly desperate. They share their story of fleeing bandits who blackmailed them and attempted to abduct their daughters. They’ve brought everything they own, seeking refuge and a new beginning. Will you help them?" />
+    <string id="Travellers_Event_Desc_E" text="Traveling near {closestSettlement}, you find a {familyDemonym} family struggling with a broken wagon. The wheel has rolled into a nearby river, leaving them stranded. They explain they are fleeing from bandits who extorted them and made repeated attempts to kidnap their daughters. They’ve risked everything to start over. How do you respond?" />
+
+    <!--Travellers - Event Choices-->
+    <string id="Travellers_Event_Option_1" text="[Engineering] Offer to repair the waggon" />
+    <string id="Travellers_Event_Option_1_Hover" text="You should be able to fix it.\n{engineeringAppendedText}" />
+    <string id="Travellers_Event_Option_2" text="[Roguery] Raid them!" />
+    <string id="Travellers_Event_Option_2_Hover" text="Take everything of value\n{rogueryAppendedText}" />
+    <string id="Travellers_Event_Option_3" text="[Steward] Offer them dinner" />
+    <string id="Travellers_Event_Option_3_Hover" text="While your men load all their belongings into a spare wagon you have {stewardAppendedText}" />
+    <string id="Travellers_Event_Option_4" text="Offer them directions" />
+    <string id="Travellers_Event_Option_4_Hover" text="Give them directions to the nearest settlement" />
+    <string id="Travellers_Event_Option_5" text="Ignore them" />
+    <string id="Travellers_Event_Option_5_Hover" text="This isn't your problem" />
+
+    <!--Travellers - Event Buttons-->
+    <string id="Travellers_Event_Button_Text_1" text="Choose" />
+    <string id="Travellers_Event_Button_Text_2" text="Done" />
+
+    <!--Travellers - Event 1-->
+    <string id="Travellers_Event_Choice_1A" text="You inspect the wagon and quickly confirm that the damage can be repaired with relative ease. You instruct your men to retrieve some tools from the party's supplies and send one man into the river to fetch the missing wheel. Meanwhile, you tell the family to rest under the shade of a large oak tree while the children are given drinks and snacks. Working efficiently with a few of your men, you repair the wagon and restore it to working order. You inform the family that their wagon is ready to continue their journey. Grateful, the man offers his thanks, but you assure him that no thanks are needed. You help them load their belongings and provide directions to {closestSettlement}, advising them to have the wagon repaired properly there. The man promises to tell tales of your kindness, but you doubt he’ll heed your insistence that it’s unnecessary." />
+    <string id="Travellers_Event_Choice_1B" text="Examining the wagon, you determine that the damage is minimal and can be fixed quickly. You instruct your men to fetch tools and send another to retrieve the wheel from the river. You invite the family to rest beneath a nearby oak tree, where the children are given refreshments and snacks. With the assistance of your men, the wagon is repaired in no time. Approaching the family, you inform them that they can continue their journey. The man thanks you profusely, but you wave off his gratitude. Helping them load their belongings, you point them toward {closestSettlement}, where they can get a proper repair. The man vows to share tales of your generosity, though you tell him it’s unnecessary." />
+    <string id="Travellers_Event_Choice_1C" text="You examine the wagon and confirm that the damage can be repaired without much difficulty. Calling for tools and assistance from your men, you also instruct one of them to retrieve the wheel from the river. While you work, you encourage the family to relax under the shade of an oak tree, providing refreshments for the children. With a few skilled hands, the wagon is repaired quickly. You inform the family that they are ready to continue their journey. The man expresses deep gratitude, but you assure him it’s not necessary. You help them reload the wagon and direct them to {closestSettlement} for further repairs. Despite your protest, the man insists he will share stories of your kindness." />
+    <string id="Travellers_Event_Choice_1D" text="Assessing the damage, you conclude that the wagon can be fixed easily. Directing your men to gather tools and retrieve the wheel from the river, you invite the family to rest in the shade of a nearby tree. Snacks and drinks are offered to the children to help them relax. With your men’s assistance, you repair the wagon efficiently. You inform the family of the good news and assist them in reloading their belongings. The man thanks you sincerely, but you dismiss his gratitude as unnecessary. Pointing them toward {closestSettlement} for a thorough repair, you wish them well, though you suspect the man will still spread tales of your generosity." />
+    <string id="Travellers_Event_Choice_1E" text="You take a closer look at the wagon and confirm that it’s a simple fix. Calling for tools from your supplies and sending one of your men to fetch the wheel from the river, you instruct the family to rest beneath a nearby oak tree. Refreshments and snacks are provided to the children to lift their spirits. Working quickly with your men, the wagon is repaired in no time. You let the family know that they can now continue their journey and assist them in reloading their wagon. The man thanks you profusely, but you insist it’s not necessary. You direct them to {closestSettlement} for a proper repair, though the man promises to tell others of your kindness despite your protests." />
+
+    <!--Travellers - Event 2-->
+    <string id="Travellers_Event_Choice_2A" text="You order your men to remove the family from the wagon but instruct them not to harm anyone, as there are children involved. The father tries to resist but is quickly subdued by your men, who bind his hands. His wife pleads with him to comply, and he reluctantly agrees. Your men begin searching the wagon for valuables, but their efforts yield little of worth. Frustrated, you take the mother aside and, in a threatening tone, tell her that if she doesn’t reveal all their valuables, you will kill her husband, sell the children into slavery, and keep her for your own purposes. Though you don’t mean it, your tone convinces her otherwise. Terrified, she reveals the location of their hidden valuables. After searching, you manage to steal {stolenGold} gold from them. Before leaving, you free the woman and instruct her to release her family only after your men are out of sight. Despite your actions, you direct them to the nearest settlement where they might find help." />
+    <string id="Travellers_Event_Choice_2B" text="You instruct your men to remove the family from the wagon, warning them not to harm anyone, especially the children. The father struggles but is overpowered and tied up by your men. His wife begs him to stop resisting, and he finally relents. Your men rummage through the wagon, hoping to find valuables, but the results are disappointing. Turning to the mother, you issue a dire warning: if she doesn’t cooperate, you’ll harm her family in unspeakable ways. Although you have no intention of following through, the threat is enough to terrify her. She reveals their hidden valuables, and you successfully take {stolenGold} gold. Before departing, you release the woman and tell her to free her family once you and your men are gone. You also provide directions to the nearest settlement, where they might seek aid." />
+    <string id="Travellers_Event_Choice_2C" text="You order your men to separate the family from the wagon, emphasizing that no harm should come to them due to the presence of children. The father resists but is quickly subdued and bound by your men. His wife urges him to comply, and he reluctantly does. Your men search the wagon for anything valuable, but their efforts are largely fruitless. Frustrated, you confront the mother and issue a cruel threat, pretending you will harm her family if she doesn’t cooperate. Horrified, she reveals the location of their valuables. You manage to take {stolenGold} gold from them. After securing the gold, you release the woman and tell her to wait until your men have left to free her family. Despite your actions, you direct them toward the nearest settlement for assistance." />
+    <string id="Travellers_Event_Choice_2D" text="You have your men escort the family away from the wagon, ensuring they don’t harm anyone, particularly the children. The father resists but is quickly restrained by your men, who bind his hands. His wife convinces him to stop struggling, and he complies. Your men search the wagon but find little of value. Turning to the mother, you deliver a terrifying ultimatum, claiming you’ll harm her family if she doesn’t cooperate. Though it’s an empty threat, she believes you and reveals their hidden valuables. You collect {stolenGold} gold from the family. Once finished, you release the woman and instruct her to free her family only after you and your men are gone. As a final act, you provide directions to the nearest settlement, where they can find assistance." />
+    <string id="Travellers_Event_Choice_2E" text="You command your men to separate the family from the wagon, cautioning them to handle the situation carefully because of the children. The father struggles but is restrained and tied by your men. His wife, in tears, persuades him to stop resisting, and he begrudgingly complies. After searching the wagon to no avail, you confront the mother with a grim threat, pretending you’ll harm her family if she doesn’t reveal where their valuables are hidden. Terrified, she divulges their location. Your men collect {stolenGold} gold from the wagon. You release the woman and tell her to wait until your men are out of sight to free her family. Before leaving, you direct them to the nearest settlement, suggesting they might find help there." />
+
+    <!--Travellers - Event 3-->
+    <string id="Travellers_Event_Choice_3A" text="Noticing the exhaustion and hunger etched on the family's faces, you ask if you can prepare a meal for them. Though hesitant at first, they eventually agree. You order your men to set up a small tent for the family while you take it upon yourself to cook their dinner. Meanwhile, some of your men work on repairing the wagon. You and a few of your men bring drinks for the family as you get to work on the meal. After some time, the family finishes eating just as your men announce that the wagon is repaired. You help them reload their belongings and provide directions to the nearest settlement. As they depart, the mother expresses her gratitude, calling you an extraordinary man." />
+    <string id="Travellers_Event_Choice_3B" text="Seeing how tired and hungry the family looks, you offer to prepare a meal for them. Initially hesitant, they accept your kindness. You instruct your men to set up a small tent for the family while you personally handle the cooking. Meanwhile, your men begin repairing the wagon. Bringing drinks to the family, you set to work preparing dinner. After they finish their meal, your men report that the wagon has been repaired. You assist the family in reloading their belongings and guide them toward the nearest settlement. The mother, deeply moved, calls you an extraordinary person." />
+    <string id="Travellers_Event_Choice_3C" text="Realizing the family’s dire state, you offer to prepare a meal for them. Though wary, they accept your offer. You order your men to erect a small tent for the family while you take charge of cooking. At the same time, your men start work on fixing the wagon. With drinks brought out for the family, you focus on preparing a hearty dinner. By the time they finish eating, your men have completed the wagon repairs. You help the family load up their belongings and provide directions to the nearest settlement. The mother praises your kindness, calling you remarkable." />
+    <string id="Travellers_Event_Choice_3D" text="You notice the family’s exhaustion and apparent hunger and offer to cook them a meal. While they’re hesitant at first, they eventually agree. You instruct your men to set up a small tent for their comfort while you prepare the meal yourself. Meanwhile, the wagon repair begins. Bringing drinks for the family, you get to work on dinner. After their meal, your men inform you that the wagon is repaired. You help the family reload their belongings and guide them to the nearest settlement. As they prepare to leave, the mother expresses her heartfelt gratitude, calling you extraordinary." />
+    <string id="Travellers_Event_Choice_3E" text="Noticing their exhaustion and likely days without food, you offer to prepare a meal for the family. Though cautious, they accept your help. You direct your men to pitch a small tent for their comfort while you personally handle cooking. Simultaneously, your men begin repairing the wagon. After offering drinks to the family, you prepare a meal with care. Once they finish eating, your men report that the wagon is fully repaired. You assist them in loading their belongings and provide directions to the nearest settlement. The mother, overwhelmed with gratitude, calls you an extraordinary person." />
+
+    <!--Travellers - Event 4-->
+    <string id="Travellers_Event_Choice_4A" text="You stop to ask what happened and learn that they lost control of their wagon, which ended up in a ditch. Inspecting the wagon, you determine that neither you nor your men have the skills to repair it. The family asks if they can buy a wagon from your party for 500 gold, but you insist on giving them one for free, recognizing their distress and need for help. You order your men to bring forth a spare wagon. Together with the family and some of your men, you help transfer their belongings to the new wagon. Once the transfer is complete, you provide them with directions to the nearest settlement. They thank you profusely as you part ways." />
+    <string id="Travellers_Event_Choice_4B" text="You ask the family what happened and they explain that their wagon veered off the road into a ditch. After examining the wagon, you conclude that the damage is beyond the abilities of you or your men to repair. They offer to buy a wagon from your party for 500 gold, but you decline their payment, offering to provide one for free given their dire situation. You instruct your men to bring a spare wagon, and together with the family, you transfer their belongings to the new one. Once everything is loaded, you give them directions to the nearest settlement. They express their heartfelt gratitude as you bid them farewell." />
+    <string id="Travellers_Event_Choice_4C" text="Stopping to inquire about their situation, you learn that their wagon ended up in a ditch after they lost control of it. Looking over the damage, it becomes clear that neither you nor your men can fix it. The family asks if they can purchase a wagon for 500 gold, but you decline the payment, deciding to help them by giving them one for free. Your men retrieve a spare wagon, and with the family’s assistance, you transfer their belongings to the new one. Once the task is complete, you provide directions to the nearest settlement. The family thanks you repeatedly as they prepare to continue their journey." />
+    <string id="Travellers_Event_Choice_4D" text="You approach the family and ask what happened. They explain that their wagon ran into a ditch and became unusable. After inspecting the damage, you realize it’s too complex for you or your men to fix. They offer to purchase a wagon from your party for 500 gold, but you refuse to take their money, opting to provide one for free instead. Your men bring out a spare wagon, and with everyone’s help, the family’s belongings are transferred. Once the transfer is complete, you guide them toward the nearest settlement. They express their profound gratitude as you leave them to continue their journey." />
+    <string id="Travellers_Event_Choice_4E" text="The family explains their predicament, saying their wagon ended up in a ditch and they cannot continue. After inspecting the wagon, you confirm that neither you nor your men can repair it. When they ask to buy a wagon for 500 gold, you refuse their payment, deciding to provide one for free out of compassion. You instruct your men to bring a spare wagon, and together with the family, you transfer their belongings. When everything is ready, you give them directions to the nearest settlement. They thank you warmly as you part ways." />
+
+    <!--Travellers - Event 5-->
+    <string id="Travellers_Event_Choice_5A" text="You decide that you cannot be bothered with this situation and inform the family that you cannot help. As they try to ask for directions, you walk away without answering. A few moments later, you overhear some of your men stopping to offer the family directions to the nearest settlement and some coin." />
+    <string id="Travellers_Event_Choice_5B" text="Unwilling to deal with the situation, you tell the family that you cannot assist them. Ignoring their request for directions, you walk on. However, you soon hear that a few of your men have paused to provide the family with directions to the nearest settlement and even offer them some coin." />
+    <string id="Travellers_Event_Choice_5C" text="You dismiss the family’s plight, telling them you are unable to help. When they ask for directions, you refuse to respond and continue on your way. After a short distance, you overhear some of your men stopping to guide the family to the nearest settlement and giving them some money." />
+    <string id="Travellers_Event_Choice_5D" text="Not wanting to involve yourself, you tell the family you cannot help and ignore their plea for directions. As you walk away, you hear that some of your men have stayed behind to assist, offering the family directions to the nearest settlement and giving them a bit of coin." />
+    <string id="Travellers_Event_Choice_5E" text="You inform the family that you cannot help and disregard their request for directions. Walking away, you soon hear that a few of your men have taken it upon themselves to stop, give the family directions to the nearest settlement, and hand them some coin." />
+
+    <!--Travellers - Log Messages - Event 1-->
+    <string id="Travellers_Event_Msg_1A" text="{heroName} was able to fix the stranded family's wagon." />
+    <string id="Travellers_Event_Msg_1B" text="{heroName} successfully repaired the wagon for the stranded family." />
+    <string id="Travellers_Event_Msg_1C" text="{heroName} fixed the broken wagon, allowing the family to continue their journey." />
+    <string id="Travellers_Event_Msg_1D" text="{heroName} repaired the stranded family's wagon and sent them on their way." />
+    <string id="Travellers_Event_Msg_1E" text="The stranded family’s wagon was repaired thanks to {heroName}." />
+
+    <!--Travellers - Log Messages - Event 2-->
+    <string id="Travellers_Event_Msg_2A" text="{heroName} stole {stolenGold} gold from the stranded family and left them." />
+    <string id="Travellers_Event_Msg_2B" text="{heroName} took {stolenGold} gold from the stranded family before leaving them behind." />
+    <string id="Travellers_Event_Msg_2C" text="{heroName} robbed the stranded family of {stolenGold} gold and departed." />
+    <string id="Travellers_Event_Msg_2D" text="After taking {stolenGold} gold from the stranded family, {heroName} left them to their fate." />
+    <string id="Travellers_Event_Msg_2E" text="{heroName} stole {stolenGold} gold from the family and walked away without helping them." />
+
+    <!--Travellers - Log Messages - Event 3-->
+    <string id="Travellers_Event_Msg_3A" text="{heroName} made dinner while the men fixed the wagon." />
+    <string id="Travellers_Event_Msg_3B" text="{heroName} prepared a meal for the stranded family as the men repaired the wagon." />
+    <string id="Travellers_Event_Msg_3C" text="While the men worked on the wagon, {heroName} cooked dinner for the family." />
+    <string id="Travellers_Event_Msg_3D" text="As the men fixed the wagon, {heroName} took the time to prepare dinner for the family." />
+    <string id="Travellers_Event_Msg_3E" text="{heroName} cooked dinner for the family while the wagon was being repaired." />
+
+    <!--Travellers - Log Messages - Event 4-->
+    <string id="Travellers_Event_Msg_4A" text="{heroName} gave the stranded family directions to {closestSettlement}." />
+    <string id="Travellers_Event_Msg_4B" text="{heroName} provided the stranded family with directions to {closestSettlement}." />
+    <string id="Travellers_Event_Msg_4C" text="The stranded family received directions to {closestSettlement} from {heroName}." />
+    <string id="Travellers_Event_Msg_4D" text="{heroName} directed the stranded family toward {closestSettlement}." />
+    <string id="Travellers_Event_Msg_4E" text="{heroName} pointed the stranded family toward {closestSettlement}." />
+
+    <!--Travellers - Log Messages - Event 5-->
+    <string id="Travellers_Event_Msg_5A" text="{heroName} ignored the stranded family. At least the men aren't that heartless!" />
+    <string id="Travellers_Event_Msg_5B" text="{heroName} walked away from the stranded family, but the men showed some kindness." />
+    <string id="Travellers_Event_Msg_5C" text="While {heroName} ignored the stranded family, the men offered some help." />
+    <string id="Travellers_Event_Msg_5D" text="{heroName} showed no concern for the stranded family, but the men stepped in to assist." />
+    <string id="Travellers_Event_Msg_5E" text="The stranded family was ignored by {heroName}, but the men offered some aid." />
+
+
+    <!--
+    ******************************************************************************
+    *                        Unexpected Wedding Event                            *
+    ******************************************************************************
+    -->
+    
+    <!--UnexpectedWedding - Event Titles-->
+    <string id="UnexpectedWedding_Title_A" text="An Unexpected Wedding" />
+    <string id="UnexpectedWedding_Title_B" text="The Wedding Celebration" />
+    <string id="UnexpectedWedding_Title_C" text="A Wedding by Chance" />
+    <string id="UnexpectedWedding_Title_D" text="Festivities on the Road" />
+    <string id="UnexpectedWedding_Title_E" text="The Wedding Encounter" />
+    <string id="UnexpectedWedding_Title_F" text="A Joyful Discovery" />
+    <string id="UnexpectedWedding_Title_G" text="The Wedding Surprise" />
+    <string id="UnexpectedWedding_Title_H" text="Unplanned Festivities" />
+    <string id="UnexpectedWedding_Title_I" text="A Celebration by Chance" />
+    <string id="UnexpectedWedding_Title_J" text="The Roadside Wedding" />
+
+    <!--UnexpectedWedding - Event Descriptions-->
+    <string id="UnexpectedWedding_Event_Desc_A" text="You and your party are traveling near {closestSettlement} when you come across a group of {peopleInWedding} celebrating a wedding. The joyous guests warmly invite you to join the festivities and celebrate this special occasion with them." />
+    <string id="UnexpectedWedding_Event_Desc_B" text="While traveling in the vicinity of {closestSettlement}, you and your party stumble upon a wedding with {peopleInWedding} guests in attendance. The cheerful group extends an invitation for you to join their celebration of this happy event." />
+    <string id="UnexpectedWedding_Event_Desc_C" text="Near {closestSettlement}, your party encounters a lively gathering of {peopleInWedding} people celebrating a wedding. The attendees enthusiastically invite you to join their festivities and share in the joyous occasion." />
+    <string id="UnexpectedWedding_Event_Desc_D" text="As your party travels close to {closestSettlement}, you come across a wedding celebration with {peopleInWedding} attendees. The guests graciously invite you to participate in their joyous event and join the revelry." />
+    <string id="UnexpectedWedding_Event_Desc_E" text="Traveling near {closestSettlement}, you and your party happen upon a wedding gathering with {peopleInWedding} people. The cheerful guests invite you to join in the celebration of this momentous occasion." />
 
     <!--UnexpectedWedding - Event Choices-->
     <string id="UnexpectedWedding_Event_Option_1" text="Give them {goldToDonate} gold as a gift" />
@@ -1165,93 +1484,209 @@
     <string id="UnexpectedWedding_Event_Option_4_Hover" text="Not interested" />
     <string id="UnexpectedWedding_Event_Option_5" text="[Roguery] Raid the wedding" />
     <string id="UnexpectedWedding_Event_Option_5_Hover" text="You could do with some gold\n{rogueryAppendedText}" />
-
-    <!--Skill Check-->
-    <string id="UnexpectedWedding_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="UnexpectedWedding_Roguery_Appended_Text" text="[Roguery - lvl {minRogueryLevel}]" />
-
-    <!--UnexpectedWedding - Event Button-->
+    
+    <!--UnexpectedWedding - Event Buttons-->
     <string id="UnexpectedWedding_Event_Button_Text_1" text="Okay" />
     <string id="UnexpectedWedding_Event_Button_Text_2" text="Done" />
+    
+    <!--UnexpectedWedding - Event Choice 1-->
+    <string id="UnexpectedWedding_Event_Choice_1A" text="You warmly congratulate the couple, and you and your men gather {goldToDonate} gold as a wedding gift. Your party then spends the evening enjoying the festivities and having fun." />
+    <string id="UnexpectedWedding_Event_Choice_1B" text="You offer your congratulations to the newlyweds and collect {goldToDonate} gold from your men as a gift. The evening is spent celebrating and enjoying the joyous atmosphere with the guests." />
+    <string id="UnexpectedWedding_Event_Choice_1C" text="Congratulating the happy couple, you and your men pool together {goldToDonate} gold as a gift. Your party spends the rest of the evening reveling in the celebration." />
+    <string id="UnexpectedWedding_Event_Choice_1D" text="You congratulate the bride and groom and gather {goldToDonate} gold from your party as a token of goodwill. The evening is filled with laughter and celebration as your men join the festivities." />
+    <string id="UnexpectedWedding_Event_Choice_1E" text="After congratulating the newlyweds, you and your men donate {goldToDonate} gold as a wedding gift. Your party then joins the guests and spends the evening celebrating the joyous occasion." />
+    
+    <!--UnexpectedWedding - Event Choice 2A-->
+    <string id="UnexpectedWedding_Event_Choice_2AA" text="You have your men bring 5 bottles of your best wine and present it to the bride and groom. They are overwhelmed with gratitude, thanking you profusely for such an exquisite gift. The evening continues with laughter and celebration as they share the wine with the guests." />
+    <string id="UnexpectedWedding_Event_Choice_2AB" text="Your men fetch 5 bottles of your finest wine, which you present to the bride and groom. They are delighted by the gesture and express their thanks. The wine becomes the highlight of the evening, enjoyed by all the guests." />
+    <string id="UnexpectedWedding_Event_Choice_2AC" text="You offer 5 bottles of your best wine to the bride and groom, who accept the gift with joyful smiles. The wine adds to the celebration, and the couple thanks you repeatedly for your generosity." />
+    <string id="UnexpectedWedding_Event_Choice_2AD" text="Your men retrieve 5 bottles of excellent wine, which you gift to the newlyweds. The bride and groom are thrilled and express their heartfelt gratitude. The wine enhances the festivities, making the evening even more memorable." />
+    <string id="UnexpectedWedding_Event_Choice_2AE" text="You present 5 bottles of your finest wine to the happy couple. They are genuinely touched by the gesture and thank you warmly. The wine is shared among the guests, elevating the joy and celebration of the wedding." />
 
-    <!--UnexpectedWedding - Events-->
-    <string id="UnexpectedWedding_Event_Choice_1" text="You congratulate the couple and you and your men scrape together {goldToDonate} gold and give it as a gift. Your party then spends the evening having fun!" />
-    <string id="UnexpectedWedding_Event_Choice_2-1" text="You have your men find 5 bottles of your best wine. You offer it to the bride and groom. They thank you for this exquisite gift." />
-    <string id="UnexpectedWedding_Event_Choice_2-2" text="You have your men find 5 bottles of your best wine. After a few minutes, one clearly embarrassed solider approaches you and tells you you are all out of wine. You slap him across his face for putting you in such a humiliating situation. You tell the solider to hand over all his coin to you. He does as you command. You apologises to the bride and hand her {embarrassedSoliderGold} gold instead of wine. She thanks you and your party moves on." />
-    <string id="UnexpectedWedding_Event_Choice_3" text="You and your men stay for the ceremony but you leave once it is concluded. You leave a small gift of {goldToDonate} gold to the newlyweds." />
-    <string id="UnexpectedWedding_Event_Choice_4" text="You politely decline and order your men to leave." />
-    <string id="UnexpectedWedding_Event_Choice_5" text="You have your men surround the area while you go and talk to the guests. You have all guests empty their pockets and give you anything valuable. Some guests resist but after a few threatening gestures from your men they too fall in line. After you have stolen {raidedGold} gold and anything of value from the wedding, you order your men to trash the entire area. Your men do so without blinking an eye. You see the bride crying while being comforted by some guests. You can see the hate in the groom's eyes. He will undoubtedly remember you.\n \n After you have personally made sure that you have thoroughly ruined this once joyful moment, you order your men to leave." />
+    <!--UnexpectedWedding - Event Choice 2B-->
+    <string id="UnexpectedWedding_Event_Choice_2BA" text="You instruct your men to fetch 5 bottles of your finest wine. After some time, an embarrassed soldier informs you that there is no wine left. Furious at this humiliation, you slap him across the face and demand all his coin. He hands over {embarrassedSoliderGold} gold, which you then offer to the bride as an apology. She accepts the gold graciously, and your party moves on." />
+    <string id="UnexpectedWedding_Event_Choice_2BB" text="Your men search for 5 bottles of your best wine, but a soldier returns looking ashamed and admits that none can be found. Enraged, you strike him across the face and order him to surrender his coin. With {embarrassedSoliderGold} gold in hand, you offer it to the bride as compensation. She thanks you politely, and you and your party leave the wedding." />
+    <string id="UnexpectedWedding_Event_Choice_2BC" text="After requesting your men to find 5 bottles of wine, a soldier hesitantly approaches, admitting that your reserves are empty. Angered by the embarrassment, you slap him and demand all his coin. You hand over {embarrassedSoliderGold} gold to the bride as an apology, which she accepts. Your party then departs the wedding." />
+    <string id="UnexpectedWedding_Event_Choice_2BD" text="You order your men to find wine, but a soldier returns empty-handed, clearly humiliated. You reprimand him harshly, slapping him and taking {embarrassedSoliderGold} gold from him. Offering the gold to the bride as a substitute, you apologize. The bride thanks you kindly, and you move on with your party." />
+    <string id="UnexpectedWedding_Event_Choice_2BE" text="When your men fail to find any wine, an ashamed soldier informs you of the situation. Outraged, you slap him for this failure and demand all his coin, totaling {embarrassedSoliderGold} gold. You offer the gold to the bride as a gesture of goodwill. She accepts with gratitude, and your party continues on its way." />
 
-    <!--UnexpectedWedding - Log Messages-->
-    <string id="UnexpectedWedding_Event_Msg_1" text="{heroName} gave the newlyweds {goldToDonate} gold." />
-    <string id="UnexpectedWedding_Event_Msg_2" text="{heroName} made the soldier who embarrassed you give the newlyweds {embarrassedSoliderGold} gold." />
-    <string id="UnexpectedWedding_Event_Msg_3" text="{heroName} gave the newlyweds {goldToDonate} gold." />
-    <string id="UnexpectedWedding_Event_Msg_4" text="{heroName} stole {raidedGold} gold from the wedding." />
+    <!--UnexpectedWedding - Event Choice 3-->
+    <string id="UnexpectedWedding_Event_Choice_3A" text="You and your men stay to witness the wedding ceremony. Once it concludes, you leave a small gift of {goldToDonate} gold to the newlyweds and continue on your way." />
+    <string id="UnexpectedWedding_Event_Choice_3B" text="You decide to stay for the ceremony alongside your men. After the vows are exchanged, you present a modest gift of {goldToDonate} gold to the couple and depart." />
+    <string id="UnexpectedWedding_Event_Choice_3C" text="Your party attends the ceremony, respectfully observing the joyous occasion. As it concludes, you offer the newlyweds {goldToDonate} gold as a small token before leaving." />
+    <string id="UnexpectedWedding_Event_Choice_3D" text="You and your men remain for the wedding ceremony. When it ends, you gift the couple {goldToDonate} gold and take your leave." />
+    <string id="UnexpectedWedding_Event_Choice_3E" text="Staying for the ceremony, you and your men watch the happy couple exchange vows. At the end, you leave a small gift of {goldToDonate} gold for the newlyweds before departing." />
 
+    <!--UnexpectedWedding - Event Choice 4-->
+    <string id="UnexpectedWedding_Event_Choice_4A" text="You politely decline the invitation and order your men to leave the celebration." />
+    <string id="UnexpectedWedding_Event_Choice_4B" text="You respectfully decline the offer to join the celebration and tell your men it’s time to leave." />
+    <string id="UnexpectedWedding_Event_Choice_4C" text="You graciously refuse the invitation and instruct your men to continue on their way." />
+    <string id="UnexpectedWedding_Event_Choice_4D" text="You decline the offer with respect and command your men to leave the wedding festivities." />
+    <string id="UnexpectedWedding_Event_Choice_4E" text="With a polite refusal, you order your men to move on and leave the wedding behind." />
 
+    <!--UnexpectedWedding - Event Choice 5-->
+    <string id="UnexpectedWedding_Event_Choice_5A" text="You command your men to surround the area as you approach the guests with a sinister smile. Demanding that everyone empty their pockets and surrender all valuables, you make it clear there will be dire consequences for resistance. Those who hesitate are met with a chilling glare and the menacing presence of your soldiers, forcing them to comply. After collecting {raidedGold} gold and other valuables, you order your men to desecrate the area. They gleefully obey, destroying decorations and overturning tables. You savor the sight of the bride weeping and the groom staring at you with burning hatred. You know he will remember this day, and that fills you with grim satisfaction. Once the wedding is utterly ruined, you order your men to leave, laughing as you walk away." />
+    <string id="UnexpectedWedding_Event_Choice_5B" text="With cold determination, you order your men to surround the area and approach the terrified guests. You demand that they hand over all valuables, showing no mercy to those who hesitate. A few guests resist, but your men quickly make examples of them, forcing the others to fall in line. After looting {raidedGold} gold and all their treasures, you instruct your men to destroy everything in sight. Laughter and chaos fill the air as your soldiers carry out your orders with sadistic enthusiasm. The bride’s sobs and the groom’s searing glare only add to your twisted sense of triumph. Once the joyous occasion is reduced to ash, you call your men to leave, relishing the devastation left behind." />
+    <string id="UnexpectedWedding_Event_Choice_5C" text="You signal your men to surround the wedding, ensuring no one escapes. Calmly but coldly, you demand that all guests empty their pockets and surrender every valuable item they possess. Resistance is met with brutal efficiency by your men, who intimidate and threaten anyone foolish enough to disobey. With {raidedGold} gold and countless treasures in hand, you take it a step further and command your men to destroy the wedding site completely. The bride’s wails and the groom’s silent, furious hatred are music to your ears as you oversee the destruction. Satisfied with your cruelty, you order your men to march out, leaving behind shattered lives and a ruined celebration." />
+    <string id="UnexpectedWedding_Event_Choice_5D" text="You have your men form a tight perimeter around the guests, ensuring none can flee. With an icy smile, you demand all valuables be surrendered immediately. Any defiance is quickly crushed under the weight of your men’s menacing presence. After looting {raidedGold} gold and numerous treasures, you escalate your tyranny, ordering your men to annihilate everything in sight. Tables are smashed, decorations are torn down, and the festive atmosphere is replaced by despair. The bride’s tear-streaked face and the groom’s blazing hatred only fuel your dark amusement. With the celebration thoroughly destroyed, you lead your men away, leaving chaos in your wake." />
+    <string id="UnexpectedWedding_Event_Choice_5E" text="Commanding your men to surround the wedding, you stride toward the guests with a sinister air. You demand all valuables, showing no patience for resistance. A few guests attempt to defy you, but the brutal actions of your men quickly silence them. After collecting {raidedGold} gold and every shred of value, you instruct your men to destroy the wedding site completely. The once-joyous event is turned into a scene of utter devastation, with shattered decorations and ruined tables strewn everywhere. The bride’s anguished cries and the groom’s seething hatred are a satisfying reminder of your cruelty. With a final smirk, you order your men to leave, knowing the scars of your actions will linger long after you’re gone." />
 
+    <!--UnexpectedWedding - Log Messages - Event 1-->
+    <string id="UnexpectedWedding_Event_Msg_1A" text="{heroName} gave the newlyweds {goldToDonate} gold." />
+    <string id="UnexpectedWedding_Event_Msg_1B" text="{heroName} gifted {goldToDonate} gold to the newlyweds." />
+    <string id="UnexpectedWedding_Event_Msg_1C" text="The newlyweds received {goldToDonate} gold from {heroName}." />
+    <string id="UnexpectedWedding_Event_Msg_1D" text="{heroName} presented a gift of {goldToDonate} gold to the happy couple." />
+    <string id="UnexpectedWedding_Event_Msg_1E" text="{goldToDonate} gold was given to the newlyweds by {heroName}." />
+
+    <!--UnexpectedWedding - Log Messages - Event 2A-->
+    <string id="UnexpectedWedding_Event_Msg_2AA" text="{heroName} gifted 5 bottles of fine wine to the newlyweds, delighting the guests." />
+    <string id="UnexpectedWedding_Event_Msg_2AB" text="The newlyweds were thrilled to receive 5 bottles of exquisite wine from {heroName}." />
+    <string id="UnexpectedWedding_Event_Msg_2AC" text="{heroName} presented the bride and groom with 5 bottles of wine, making the celebration even more joyous." />
+    <string id="UnexpectedWedding_Event_Msg_2AD" text="With a generous gesture, {heroName} gifted 5 bottles of wine to the newlyweds, bringing smiles to all." />
+    <string id="UnexpectedWedding_Event_Msg_2AE" text="{heroName}'s gift of 5 bottles of fine wine added to the merriment of the wedding celebration." />
+
+    <!--UnexpectedWedding - Log Messages - Event 2B-->
+    <string id="UnexpectedWedding_Event_Msg_2BA" text="{heroName} was unable to provide wine and instead gave {embarrassedSoliderGold} gold to the newlyweds." />
+    <string id="UnexpectedWedding_Event_Msg_2BB" text="After failing to find wine, {heroName} handed over {embarrassedSoliderGold} gold as compensation to the bride." />
+    <string id="UnexpectedWedding_Event_Msg_2BC" text="{heroName} gave {embarrassedSoliderGold} gold to the newlyweds after being unable to provide wine." />
+    <string id="UnexpectedWedding_Event_Msg_2BD" text="When no wine was found, {heroName} offered {embarrassedSoliderGold} gold to the bride as an apology." />
+    <string id="UnexpectedWedding_Event_Msg_2BE" text="Without wine to give, {heroName} compensated the newlyweds with {embarrassedSoliderGold} gold." />
+
+    <!--UnexpectedWedding - Log Messages - Event 3-->
+    <string id="UnexpectedWedding_Event_Msg_3A" text="{heroName} gave the newlyweds {goldToDonate} gold as a token of goodwill." />
+    <string id="UnexpectedWedding_Event_Msg_3B" text="{heroName} left {goldToDonate} gold with the newlyweds before departing." />
+    <string id="UnexpectedWedding_Event_Msg_3C" text="The newlyweds received a gift of {goldToDonate} gold from {heroName}." />
+    <string id="UnexpectedWedding_Event_Msg_3D" text="{heroName} generously donated {goldToDonate} gold to the bride and groom." />
+    <string id="UnexpectedWedding_Event_Msg_3E" text="{goldToDonate} gold was given to the happy couple by {heroName}." />
+
+    <!--UnexpectedWedding - Log Messages - Event 5-->
+    <string id="UnexpectedWedding_Event_Msg_5A" text="{heroName} stole {raidedGold} gold from the wedding, leaving chaos in their wake." />
+    <string id="UnexpectedWedding_Event_Msg_5B" text="{heroName} looted {raidedGold} gold from the wedding and ruined the celebration." />
+    <string id="UnexpectedWedding_Event_Msg_5C" text="The wedding was left in shambles after {heroName} stole {raidedGold} gold from the guests." />
+    <string id="UnexpectedWedding_Event_Msg_5D" text="{heroName} raided the wedding, taking {raidedGold} gold and leaving devastation behind." />
+    <string id="UnexpectedWedding_Event_Msg_5E" text="With no regard for the celebration, {heroName} stole {raidedGold} gold from the wedding party." />
+    
+    
+    
     <!--
     ******************************************************************************
-    *                                                                            *
     *                           Violated Girl Event                              *
-    *                                                                            *
     ******************************************************************************
     -->
     
-    <!--ViolatedGirl Event-->
-    <string id="ViolatedGirl_Title" text="A violated girl" />
-    <string id="ViolatedGirl_Event_Desc" text="As your party is resting near {closestSettlement}, you are approached by a young girl. She asks to speak to you privately. You invite her into your tent to listen to what she has to say. She claims that while you were in the previous town she was violated by one of your men. What do you do?" />
+    <!--ViolatedGirl Event Titles-->
+    <string id="ViolatedGirl_Title_A" text="Shattered Innocence" />
+    <string id="ViolatedGirl_Title_B" text="Broken Blossom" />
+    <string id="ViolatedGirl_Title_C" text="Lost Purity" />
+    <string id="ViolatedGirl_Title_D" text="Tarnished Youth" />
+    <string id="ViolatedGirl_Title_E" text="Faded Petals" />
+    <string id="ViolatedGirl_Title_F" text="Silenced Flower" />
+    <string id="ViolatedGirl_Title_G" text="Echoes of Harm" />
+    <string id="ViolatedGirl_Title_H" text="Wilted Innocence" />
+    
+    <!--ViolatedGirl Event Descriptions-->
+    <string id="ViolatedGirl_Event_Desc_A" text="As your party is resting near {closestSettlement}, you are approached by a young girl. She asks to speak to you privately. You invite her into your tent to listen to what she has to say. She claims that while you were in the previous town she was violated by one of your men. What do you do?" />
+    <string id="ViolatedGirl_Event_Desc_B" text="While encamped near {closestSettlement}, a distressed young girl seeks your audience. In the privacy of your tent, she reveals a harrowing tale. She alleges that during your recent stay in a nearby town, she was subjected to violation by a member of your party. Faced with this grave accusation, you ponder your next course of action." />
+    <string id="ViolatedGirl_Event_Desc_C" text="During a rest near {closestSettlement}, a somber girl approaches, requesting a private conversation. Once secluded in your tent, she hesitantly confides that she suffered a violation at the hands of one of your soldiers in the last town you visited. The gravity of her claim weighs upon you as you consider how to respond." />
+    <string id="ViolatedGirl_Event_Desc_D" text="Near {closestSettlement}, your camp is approached by a young girl, visibly upset. She asks to speak with you alone. Inside your tent, she tearfully accuses one of your men of violating her in the previous town you passed through. Her words leave you in a moral quandary, contemplating your next move." />
+    <string id="ViolatedGirl_Event_Desc_E" text="As you make camp by {closestSettlement}, a young girl, fraught with emotion, requests a private word. In the confines of your tent, she bravely discloses that she was violated by a member of your party in the last town you visited. Her revelation presents you with a difficult decision on how to proceed." />
 
     <!--ViolatedGirl - Event Choices-->
     <string id="ViolatedGirl_Event_Option_1" text="Find the culprit" />
     <string id="ViolatedGirl_Event_Option_1_Hover" text="This is unacceptable behaviour!" />
-    <string id="ViolatedGirl_Event_Option_2" text="Ask how much to keep this quiet?" />
+    <string id="ViolatedGirl_Event_Option_2" text="Ask how much to keep this quiet" />
     <string id="ViolatedGirl_Event_Option_2_Hover" text="Everyone has a price." />
     <string id="ViolatedGirl_Event_Option_3" text="Tell her to leave" />
     <string id="ViolatedGirl_Event_Option_3_Hover" text="Leave... NOW!" />
     <string id="ViolatedGirl_Event_Option_4" text="[Roguery] Kill her" />
     <string id="ViolatedGirl_Event_Option_4_Hover" text="She is too dangerous to be left alive.\n{rogueryAppendedText}" />
-    <string id="ViolatedGirl_Event_Option_5" text="[Roguery] Violate her yourself" />
-    <string id="ViolatedGirl_Event_Option_5_Hover" text="Teach her to be quiet next time.\n{rogueryAppendedText}" />
 
-    <!--ViolatedGirl - Skill Checks-->
-    <string id="ViolatedGirl_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="ViolatedGirl_Roguery_Appended_Text_1" text="[Roguery - lvl {minRogueryLevel}]" />
-    <string id="ViolatedGirl_Roguery_Appended_Text_2" text="[Roguery - lvl 225]" />
-    
-
-    <!--ViolatedGirl - Event Button-->
+    <!--ViolatedGirl - Event Buttons-->
     <string id="ViolatedGirl_Event_Button_Text_1" text="Okay" />
     <string id="ViolatedGirl_Event_Button_Text_2" text="Done" />
 
-    <!--ViolatedGirl - Events-->
-    <string id="ViolatedGirl_Event_Choice_1" text="You tell her that this sort of behaviour is unacceptable. You order all your men to attention as you and the girl search for the man. She finally stops and points to one of your men. You order him to you.\n You ask him if her story is true and he confirms that it is. You immediately punch him in the face so hard that he falls on his back. You strip him of his rank on the spot and have some men take him in chains.\nYou ask the girl what she wants to do with him. She wants him to pay for his misdeed so you have 5 of your men escort him to {closestCity} where he will face justice. \nYou also give the girl {compensation} gold as an apology from you personally. The girl thank you for believing her and appreciate your swift action." />
-    <string id="ViolatedGirl_Event_Choice_2" text="You listen to the girl's story. You do believe her but you cannot risk this news damaging the morale of the men. You ask her how much gold it would take to keep this quiet.\n The girl says she doesn't have a lot of gold as she is tending to her sick father at home. She says a sum of {goldToCompensate} gold would be enough to help her father and forget about this incident.\n You agree to pay her the requested amount plus 300 additional gold as a sign of goodwill. The girl then promptly leaves your camp. \n \nAll in all this event has cost you {totalCompensation} gold." />
-    <string id="ViolatedGirl_Event_Choice_3" text="You tell her you don't buy her story and even if you did you can't take her word for it. You have three guards escort her from the camp. The girl leaves but not before she screams a few profanities your way." />
-    <string id="ViolatedGirl_Event_Choice_4" text="You know that if this gets out you are in trouble. You offer the girl a glass of wine which she accepts. While she has her back to you, you pull out your dagger and in one swift move you have cut her throat.\n It doesn't take long for her to bleed out. Once she does you call on 5 of your most trusted men to help you with the cleanup. You personally put her body in a sheet of linen and put her on your horse.\n Your ride away from camp for a few minutes until you stop and dig a shallow grave. You bury the girl and return to camp. The men inform you that the cleanup is done. No one will ever know what transpired here today." />
-    <string id="ViolatedGirl_Event_Choice_5" text="You grab her by her hair and pull out you trusty dagger. You start cutting away layers of clothes on the girl until she has nothing on her. You tell her that if she wants to live beyond today she will do as you tell her. She nods in agreement. You guide her to your bed where you push her down and have your way with her.\n\nAfter a few hours you lie in the bed next to her. She has fallen asleep in your bed, probably exhausted from the ordeal. You wake her up and tells her to get out of here but not before warning her about the consequences of telling anyone what happened. You hand her a piece of an old sack that she can use to cover herself and once she has it on, you have  a few of your men throw her out of the camp. She better hope not to cross your path again!" />
+    <!--ViolatedGirl - Event 1-->
+    <string id="ViolatedGirl_Event_Choice_1A" text="Upon hearing the girl's accusation, you immediately call your men to assemble. With the girl's assistance, the perpetrator is identified among your ranks. After he shamefully admits his guilt, you deliver a forceful punch as a mark of your fury and strip him of his rank. Following the girl's desire for justice, you send him to {closestCity} for a proper trial, escorted by your men. To the girl, you offer {compensation} gold as a personal apology for the wrongdoing. Grateful for your prompt and just response, she thanks you before departing." />
+    <string id="ViolatedGirl_Event_Choice_1B" text="Reacting with zero tolerance, you gather your troops and, with the girl's help, quickly identify the guilty soldier. Confronting him, his confession to the crime enrages you. You reprimand him publicly and demote him on the spot. He is then taken to {closestCity} to face legal judgment, as per the girl's wish. You compensate the girl with {compensation} gold, apologizing for the incident. She expresses her gratitude for your fairness and decisive action." />
+    <string id="ViolatedGirl_Event_Choice_1C" text="You take immediate action, lining up your men for identification. The girl points out the culprit, who, when questioned, admits his guilt. In a swift act of justice, you strike him for his misconduct, remove his rank, and order his detention. Respecting the girl's demand for justice, he is sent to {closestCity} for trial. You present the girl with {compensation} gold as a gesture of remorse. She thanks you, relieved by your swift and just handling of the matter." />
+    <string id="ViolatedGirl_Event_Choice_1D" text="With a sense of urgency, you summon all your men for an identification parade. The girl nervously identifies the offender, who confesses under your questioning. Outraged, you deliver a punishing blow and strip him of his duties, signaling your intolerance for such behavior. He is dispatched to {closestCity} for trial, according to the girl's wishes. You give the girl {compensation} gold, apologizing for the harm caused. She departs, thanking you for your prompt and empathetic response." />
+    <string id="ViolatedGirl_Event_Choice_1E" text="Without hesitation, you call your men to gather for a lineup. With the girl's help, the perpetrator is singled out. His admission of guilt leads to a swift reprimand from you and immediate demotion. Following the girl's desire for justice, he is sent to {closestCity} under guard. You hand the girl {compensation} gold, expressing your personal regret for the incident. She acknowledges your actions with gratitude, appreciating your swift and respectful response." />
 
-    <!--ViolatedGirl - Log Messages-->
-    <string id="ViolatedGirl_Event_Msg_1" text="{heroName} gave the girl {compensation} gold and had the perpetrator sent to the dungeons of {closestCity}." />
-    <string id="ViolatedGirl_Event_Msg_2" text="{heroName} bought the girl's silence for {totalCompensation} gold." />
-    <string id="ViolatedGirl_Event_Msg_3" text="{heroName} didn't buy the girl's story." />
-    <string id="ViolatedGirl_Event_Msg_4" text="There are rumors that {heroName} killed a young girl to keep a secret." />
-    <string id="ViolatedGirl_Event_Msg_5" text="There are rumors that {heroName} has done something unforgivable." />
+    <!--ViolatedGirl - Event 2-->
+    <string id="ViolatedGirl_Event_Choice_2A" text="After hearing the girl's account, you find yourself in a dilemma. While believing her, you also consider the impact on your troops' morale. You discreetly inquire about a sum that would ensure her silence. She mentions needing {goldToCompensate} gold for her ailing father and to move past the incident. To demonstrate goodwill, you give her the requested amount plus an additional 300 gold. She leaves your camp quickly, and the incident costs you a total of {totalCompensation} gold." />
+    <string id="ViolatedGirl_Event_Choice_2B" text="You attentively listen to the girl and, understanding the sensitivity of the situation, you propose a monetary settlement. She suggests {goldToCompensate} gold would suffice for her father's care and her silence. You add 300 gold to the amount as a gesture of goodwill. Accepting the money, the girl departs from your camp, leaving you with a total expense of {totalCompensation} gold." />
+    <string id="ViolatedGirl_Event_Choice_2C" text="Recognizing the potential impact of the girl's story, you opt for a discreet resolution. You offer compensation, and she requests {goldToCompensate} gold for her father's treatment and to forget the ordeal. You hand her the sum plus an extra 300 gold, aiming to ensure her silence. She quickly exits your camp, the entire matter costing you {totalCompensation} gold in total." />
+    <string id="ViolatedGirl_Event_Choice_2D" text="After hearing the girl's distressing story, you weigh the risks and decide to settle the matter quietly. She asks for {goldToCompensate} gold to aid her sick father and keep the incident to herself. You agree and generously add 300 gold to the amount. With the gold in hand, she hastily leaves your camp, the resolution setting you back {totalCompensation} gold." />
+    <string id="ViolatedGirl_Event_Choice_2E" text="Upon understanding the girl's predicament, you suggest a financial settlement to maintain discretion. She indicates that {goldToCompensate} gold would cover her father's medical expenses and her silence. You provide the requested gold along with an additional 300 gold, aiming for a peaceful resolution. She departs swiftly, and you tally the cost of this quiet settlement to be {totalCompensation} gold." />
+    
+    <!--ViolatedGirl - Event 3-->
+    <string id="ViolatedGirl_Event_Choice_3A" text="You express skepticism towards the girl's tale and state that you cannot act solely on her accusation. You order three guards to escort her out of the camp. As she departs, she hurls a string of profanities in your direction, clearly upset by your disbelief." />
+    <string id="ViolatedGirl_Event_Choice_3B" text="You doubt the girl's story and decide not to take any action without concrete evidence. Three of your guards are instructed to lead her away from your camp. She leaves, shouting insults and curses back at you, angered by your dismissal of her claim." />
+    <string id="ViolatedGirl_Event_Choice_3C" text="Skeptical of the girl's allegations, you conclude that her word alone isn't enough to warrant action. You signal for three guards to remove her from your presence. She exits the camp, lobbing angry accusations and expletives at you." />
+    <string id="ViolatedGirl_Event_Choice_3D" text="Unconvinced by the girl's account, you refuse to take her claim at face value. Three guards are assigned to ensure her departure from the camp. She storms out, unleashing a torrent of harsh words towards you." />
+    <string id="ViolatedGirl_Event_Choice_3E" text="You express doubts about the authenticity of the girl's story and refuse to accept her allegations without proof. Arranging for three guards to escort her out, she reacts with fury, casting profanities in your direction as she's led away." />
 
+    <!--ViolatedGirl - Event 4-->
+    <string id="ViolatedGirl_Event_Choice_4A" text="Facing the gravity of the situation and the potential repercussions, you realize the need for a discreet resolution. You invite the girl for a private talk outside the camp to discuss her claims. Under the guise of addressing her concerns, you lead her to a secluded area. In a tragic turn of events, the girl meets an untimely end, the details of which remain obscure. You call upon a few of your most trusted men to ensure there is no trace of what happened. The grim task is handled with utmost secrecy, and you return to camp with the assurance that the incident will remain a hidden chapter of your journey." />
+    <string id="ViolatedGirl_Event_Choice_4B" text="In the face of potential ruin, you choose a path of ruthless pragmatism. Feigning sympathy, you lead the girl to a secluded woodland under the pretext of ensuring her safety. Once isolated, you reveal your true, sinister intent. Your actions are swift and merciless, extinguishing her life to protect your own reputation. You enlist the help of your most loyal and unscrupulous men to meticulously remove every trace of the girl and the deed. The night air is heavy with the grim reality of your actions as you coldly oversee the erasure of this dark episode from history." />
+    <string id="ViolatedGirl_Event_Choice_4C" text="Determined to suppress the girl's story at all costs, you mask your malevolent intentions with concern. You escort her to a desolate cavern, where her hopes for justice are cruelly shattered. In the echoing silence of the cave, you enact a plan of cold-blooded finality. Your actions are calculated and brutal, ensuring her voice is silenced forever. With the help of a few handpicked, ruthless soldiers, you erase the evidence of your heinous act, burying the truth beneath layers of deceit and darkness." />
+    <string id="ViolatedGirl_Event_Choice_4D" text="To eliminate the threat to your status, you adopt a façade of diplomacy and lead the girl to a forgotten ruin under the guise of discussing her claims. In this forsaken place, you enact a grim and irreversible judgment. Your methods are chilling and methodical, leaving no chance of her tale ever surfacing. The few men you involve in covering up this dark deed are sworn to secrecy, complicit in a conspiracy that entombs the girl's story in the shadows of oblivion." />
+    <string id="ViolatedGirl_Event_Choice_4E" text="With your reputation hanging in the balance, you decide on a path of utter ruthlessness. Luring the girl to an abandoned quarry with promises of aid, you instead deliver a fate most grim. The deed is done with chilling precision and malice, a stark testament to the lengths you'll go to protect your name. You summon a cadre of your most hardened and unscrupulous men to dispose of any evidence, their loyalty bought with the promise of silence. As you ride back to camp, the weight of your dark choice lingers, the girl's fate sealed and buried in the depths of the night." />
 
+    <!--ViolatedGirl - Log Messages - Event 1-->
+    <string id="ViolatedGirl_Event_Msg_1A" text="{heroName} compensated the girl with {compensation} gold and ensured the offender was imprisoned in {closestCity}'s dungeons." />
+    <string id="ViolatedGirl_Event_Msg_1B" text="{heroName} provided {compensation} gold to the girl and had the guilty party detained in the cells of {closestCity}." />
+    <string id="ViolatedGirl_Event_Msg_1C" text="{heroName} handed {compensation} gold to the girl and dispatched the perpetrator to {closestCity}'s jail." />
+    <string id="ViolatedGirl_Event_Msg_1D" text="{heroName} offered {compensation} gold as reparation to the girl and sent the accused to {closestCity}'s dungeons." />
+    <string id="ViolatedGirl_Event_Msg_1E" text="{heroName} gave {compensation} gold in compensation to the girl and relegated the culprit to the dungeons in {closestCity}." />
+    
+    <!--ViolatedGirl - Log Messages - Event 2-->
+    <string id="ViolatedGirl_Event_Msg_2A" text="{heroName} secured the girl's silence with a payment of {totalCompensation} gold." />
+    <string id="ViolatedGirl_Event_Msg_2B" text="{heroName} ensured the girl's discretion for the sum of {totalCompensation} gold." />
+    <string id="ViolatedGirl_Event_Msg_2C" text="{heroName} paid {totalCompensation} gold to the girl for her silence on the matter." />
+    <string id="ViolatedGirl_Event_Msg_2D" text="{heroName} exchanged {totalCompensation} gold for the girl's commitment to secrecy." />
+    <string id="ViolatedGirl_Event_Msg_2E" text="{heroName} obtained the girl's silence, compensating her with {totalCompensation} gold." />
 
+    <!--ViolatedGirl - Log Messages - Event 3-->
+    <string id="ViolatedGirl_Event_Msg_3A" text="{heroName} was skeptical of the girl's account." />
+    <string id="ViolatedGirl_Event_Msg_3B" text="{heroName} doubted the girl's version of events." />
+    <string id="ViolatedGirl_Event_Msg_3C" text="{heroName} found the girl's story unconvincing." />
+    <string id="ViolatedGirl_Event_Msg_3D" text="{heroName} did not believe the girl's claims." />
+    <string id="ViolatedGirl_Event_Msg_3E" text="{heroName} questioned the truth in the girl's tale." />
 
+    <!--ViolatedGirl - Log Messages - Event 4-->
+    <string id="ViolatedGirl_Event_Msg_4A" text="Whispers circulate about {heroName} silencing a young girl outside {closestCity} to hide a truth." />
+    <string id="ViolatedGirl_Event_Msg_4B" text="Gossip suggests {heroName} ended a girl's life near {closestCity} to conceal a secret." />
+    <string id="ViolatedGirl_Event_Msg_4C" text="It's rumored that {heroName} caused a young girl's demise by {closestCity} to bury a secret." />
+    <string id="ViolatedGirl_Event_Msg_4D" text="Talk is spreading that {heroName} took a girl's life around {closestCity} for secrecy." />
+    <string id="ViolatedGirl_Event_Msg_4E" text="Rumors abound of {heroName} eliminating a girl near {closestCity} to keep something hidden." />
+    
+    
+    
     <!--
     ******************************************************************************
-    *                                                                            *
     *                             Old Ruins Event                                *
-    *                                                                            *
     ******************************************************************************
     -->
     
-    <!--OldRuins Event-->
-    <string id="OldRuins_Title" text="The old ruins" />
-    <string id="OldRuins_Event_Desc" text="You are traveling through the lands near {closestSettlement} when you come across the ruins of a small abandoned settlement. You don't remember there being any settlements out here on any map so you tell your men to set up camp nearby. You and {manCount} of your men decide to investigate it. \n\nWhen you enter the settlement it becomes apparent that it has been abandoned for some time. There is an old farmhouse, well, barn, and a small shack at the settlement. You ask your men where they want to check first but before they can answer a bolt of lightning rips through the clouds followed by a thunderous roar. You decide that you only have time to check one of the locations before you head back. Which will it be?" />
+    <!--OldRuins Event Titles-->
+    <string id="OldRuins_Title_A" text="The Old Ruins" />
+    <string id="OldRuins_Title_B" text="The Forgotten Settlement" />
+    <string id="OldRuins_Title_C" text="Ruins of the Past" />
+    <string id="OldRuins_Title_D" text="The Abandoned Village" />
+    <string id="OldRuins_Title_E" text="Echoes of an Empty Town" />
+    <string id="OldRuins_Title_F" text="The Deserted Hamlet" />
+    <string id="OldRuins_Title_G" text="Shadows of a Lost Settlement" />
+    <string id="OldRuins_Title_H" text="The Crumbling Remains" />
+    <string id="OldRuins_Title_I" text="Relics of a Forgotten Era" />
+    <string id="OldRuins_Title_J" text="The Silent Ruins" />
+    
+    <!--OldRuins Event Descriptions-->
+    <string id="OldRuins_Event_Desc_A" text="You are traveling through the lands near {closestSettlement} when you come across the ruins of a small abandoned settlement. You don't remember there being any settlements out here on any map, so you tell your men to set up camp nearby. You and {manCount} of your men decide to investigate. When you enter the settlement, it becomes apparent that it has been abandoned for a long time. There is an old farmhouse, well, barn, and a small shack at the settlement. You ask your men where they want to check first, but before they can answer, a bolt of lightning splits the sky, followed by a deafening thunderclap. You decide there’s only time to search one location before heading back." />
+    <string id="OldRuins_Event_Desc_B" text="While traveling near {closestSettlement}, you stumble upon the ruins of an old settlement. It's not marked on any maps you’ve seen, so you have your men set up camp nearby. Taking {manCount} of your men, you decide to investigate further. The settlement appears long abandoned, with an old farmhouse, a well, a barn, and a small shack among the ruins. As you deliberate where to start searching, a sudden lightning bolt cuts through the sky, followed by a roar of thunder. Realizing time is short, you decide to explore one location before returning." />
+    <string id="OldRuins_Event_Desc_C" text="As your party journeys near {closestSettlement}, you come across the ruins of an unmarked settlement. Curious, you instruct your men to establish a camp close by while you and {manCount} others explore the area. The settlement shows signs of long abandonment, with a farmhouse, a well, a barn, and a small shack still standing. Before you can decide where to begin searching, a flash of lightning illuminates the ruins, followed by a loud rumble of thunder. You realize there’s only time to investigate one spot before retreating to camp." />
+    <string id="OldRuins_Event_Desc_D" text="While passing through the lands near {closestSettlement}, your party discovers the remnants of a forgotten settlement. Noticing that it’s unmarked on any map, you order your men to set up camp nearby and take {manCount} with you to investigate. The settlement is clearly abandoned, with only a farmhouse, a well, a barn, and a shack left standing. As you begin to decide where to search, a lightning bolt splits the sky, followed by a deafening thunderclap. Recognizing the storm's arrival, you decide there’s time for only one quick search." />
+    <string id="OldRuins_Event_Desc_E" text="Your party is traveling near {closestSettlement} when you come upon the ruins of a small settlement. It doesn’t appear on any maps, so you direct your men to make camp nearby. Taking {manCount} of them, you venture into the ruins to investigate. The settlement seems to have been abandoned for many years, with a farmhouse, a well, a barn, and a shack still standing. As you discuss where to start searching, a sudden bolt of lightning illuminates the ruins, followed by a thunderous roar. You realize you have time to check only one place before returning." />
 
     <!--OldRuins - Event Choices-->
     <string id="OldRuins_Event_Option_1" text="The old farmhouse" />
@@ -1265,30 +1700,118 @@
     <string id="OldRuins_Event_Option_5" text="None of them, just leave" />
     <string id="OldRuins_Event_Option_5_Hover" text="You don't want to get wet" />
 
-    <!--OldRuins - Event Button-->
+    <!--OldRuins - Event Buttons-->
     <string id="OldRuins_Event_Button_Text_1" text="Choose" />
     <string id="OldRuins_Event_Button_Text_2" text="Done" />
+    
+    <!--OldRuins - Event 1-->
+    <string id="OldRuins_Event_Choice_1A" text="You decide to check the farmhouse. You approach the door and push it inwards, causing it to fall off its hinges as the building groans ominously. Ignoring the warning signs, you and your men scatter inside to search for anything valuable. In the living room, you find nothing but dust, bugs, and cobwebs. As you step outside to check on the horses, a deafening crash echoes behind you. The entire farmhouse collapses. Panicked, you call out to your men, but there’s no response. Returning to camp, you gather additional soldiers to help recover those trapped. Tragically, only two men survive, while {killedMen} others are lost in the rubble." />
+    <string id="OldRuins_Event_Choice_1B" text="You head toward the farmhouse and push the creaking door open. It falls off, revealing a structure on the verge of collapse. Undeterred, you and your men spread out to search the house. In the living room, you find nothing noteworthy, only insects and decay. As you step outside to check on your horses, the building suddenly collapses behind you with a thunderous crash. You shout for your men, but only silence greets you. Rushing back to camp, you gather reinforcements to rescue those trapped. Sadly, only two men are pulled out alive, while {killedMen} others perish in the collapse." />
+    <string id="OldRuins_Event_Choice_1C" text="You choose to investigate the farmhouse. The door falls off as you push it open, and the building creaks ominously. You instruct your men to search the interior while you explore the living room, finding only cobwebs and bugs. As you leave the building to check on the horses, a thunderous crash behind you marks the farmhouse's collapse. Frantic, you call for your men but hear no reply. You quickly gather reinforcements from camp to dig through the rubble. Tragically, only two men survive, while {killedMen} others are found dead." />
+    <string id="OldRuins_Event_Choice_1D" text="Deciding to inspect the farmhouse, you push the door open, and it falls off its frame, revealing a precariously unstable structure. You send your men to search while you head into the living room, only to find it empty except for insects and dust. Stepping outside to check on your horses, you hear a loud crash as the building collapses. Shouting for your men yields no response. Back at camp, you organize a rescue effort. Despite your best efforts, only two men survive, while {killedMen} are lost under the rubble." />
+    <string id="OldRuins_Event_Choice_1E" text="The farmhouse draws your attention, and you decide to investigate. The door comes off its hinges with a groan, and the entire structure creaks ominously. You instruct your men to search the building, while you check the living room, which holds nothing but bugs and cobwebs. As you step back outside, the farmhouse collapses with a deafening roar. Panicked, you call out to your men but receive no answer. You quickly organize reinforcements from camp to assist in the rescue. Unfortunately, only two men are saved, while {killedMen} others lose their lives." />
 
-    <!--OldRuins - Events-->
-    <string id="OldRuins_Event_Choice_1" text="You decide to check the farmhouse. You approach the door and push it inwards. It falls off and the entire building is beginning to creak. You push into the building and have your men scatter to search for anything interesting. You decide to check the living room. Nothing special here except bugs and spiders. You head back out to make sure your horses are still there. As you head out of the building you hear the deafening sound of the entire building collapsing behind you. \n\nConfused you start to call out the names of your men but no one responds. You return to the main party and gathers some additional soldiers to help retrieve them men trapped. Sadly only 2 of them survived and the {killedMen} others perished from being crushed." />
-    <string id="OldRuins_Event_Choice_2" text="You all decide to check the well as it's closest to you. You encircle it, look down and... Nothing... Just dirt. You then leave." />
-    <string id="OldRuins_Event_Choice_3" text="The men want to check the barn so you agree. Once inside you can only see some skeletons from what you can only assume were farm animals. The men scatter and search the barn but they all come up empty handed. You proceed to leave." />
-    <string id="OldRuins_Event_Choice_4" text="You all agree to head to the shack. You pry the door open and inside you find a chest with a lock. After fidgeting for a couple of minutes you manage to break the lock. The chest is mostly filled with papers but all the way at the bottom you come across a rather hefty coin purse. You open it and to you amazement it's filled with lots of gold coins. You head back to camp where you split the content of the purse with your men. You found {goldFound} gold and there were {men} men who went with you so {goldFound} / {men} = {goldForYou}." />
-    <string id="OldRuins_Event_Choice_5" text="You all agree that you don't want to get wet so you make your way back to camp." />
+    <!--OldRuins - Event 2-->
+    <string id="OldRuins_Event_Choice_2A" text="You decide to investigate the well since it’s the closest structure. Gathering around it, you peer down into the darkness. After a moment, you realize there’s nothing but dirt at the bottom. Disappointed, you decide to leave." />
+    <string id="OldRuins_Event_Choice_2B" text="The well catches your attention, and you decide to inspect it first. Your group circles the well, looking down into its depths. To your dismay, there’s nothing inside—just a layer of dirt at the bottom. With nothing else to find, you move on." />
+    <string id="OldRuins_Event_Choice_2C" text="Choosing the well as your first stop, you and your men gather around and peer inside. The well is dry, and only dirt lines the bottom. Finding nothing of interest, you decide to leave and explore elsewhere." />
+    <string id="OldRuins_Event_Choice_2D" text="You head to the well, hoping it might hold something valuable. Encircling it, you lean over to peer inside, only to discover it’s empty. Disappointed, you decide to leave and search elsewhere." />
+    <string id="OldRuins_Event_Choice_2E" text="The well is your first choice, as it’s nearby. You and your men gather around and inspect it. Looking down, you see nothing but dirt at the bottom. Finding no reason to linger, you quickly move on." />
 
-    <!--OldRuins - Log Messages-->
-    <string id="OldRuins_Event_Msg_1" text="{heroName} lost {killedMen} men to a collapsing structure." />
-    <string id="OldRuins_Event_Msg_2" text="{heroName} received {goldForYou} gold after splitting {goldFound} gold with {men} men." />
+    <!--OldRuins - Event 3-->
+    <string id="OldRuins_Event_Choice_3A" text="The men suggest checking the barn, and you agree. Inside, you find the skeletons of what were likely farm animals, scattered among the debris. The men spread out to search, but they find nothing of value. Disappointed, you decide to leave." />
+    <string id="OldRuins_Event_Choice_3B" text="You agree with the men’s suggestion to investigate the barn. Inside, you see a few animal skeletons lying amidst the rotting wood. The men fan out to search every corner, but their efforts yield nothing. With nothing left to find, you leave." />
+    <string id="OldRuins_Event_Choice_3C" text="Deciding to investigate the barn, you and your men enter cautiously. The interior holds little more than the skeletal remains of farm animals. The men search the area thoroughly, but they come back empty-handed. With nothing of interest, you leave." />
+    <string id="OldRuins_Event_Choice_3D" text="The barn becomes the focus of your investigation, and you step inside with your men. It’s dark, and only the skeletons of long-dead animals remain. Your men search the barn diligently but find nothing worth taking. Disheartened, you decide to move on." />
+    <string id="OldRuins_Event_Choice_3E" text="Agreeing to check the barn, you and your men step inside. The place is in disarray, with skeletal remains of farm animals scattered throughout. Despite a thorough search by your men, the barn offers nothing of value. You leave empty-handed." />
+
+    <!--OldRuins - Event 4-->
+    <string id="OldRuins_Event_Choice_4A" text="You all agree to head to the shack. Forcing the door open, you find a chest with a lock inside. After a few minutes of effort, you manage to break it open. The chest contains mostly old papers, but at the very bottom, you discover a hefty coin purse. Opening it reveals a collection of gold coins. You return to camp and split the gold with your men. You found {goldFound} gold, and with {men} men accompanying you, each receives {goldForYou}." />
+    <string id="OldRuins_Event_Choice_4B" text="The shack catches your group’s interest, and you decide to investigate. Inside, you find an old chest with a rusted lock. After some effort, you manage to break it open. Most of the chest’s contents are useless papers, but hidden at the bottom is a coin purse. To your surprise, it’s filled with gold coins. Back at camp, you divide the {goldFound} gold among the {men} men, each receiving {goldForYou}." />
+    <string id="OldRuins_Event_Choice_4C" text="Agreeing to explore the shack, you force the door open and find a chest with a sturdy lock. After some fidgeting, the lock gives way. The chest is mostly filled with papers, but buried beneath them is a coin purse brimming with gold coins. Returning to camp, you split the {goldFound} gold evenly among {men} men, each receiving {goldForYou}." />
+    <string id="OldRuins_Event_Choice_4D" text="Your group heads to the shack, where you pry open the door. Inside, you discover a locked chest. After working on it for a while, the lock snaps open, revealing papers and, hidden at the bottom, a weighty coin purse. It’s packed with gold coins. Back at camp, you share the {goldFound} gold among the {men} men who joined you, with each receiving {goldForYou}." />
+    <string id="OldRuins_Event_Choice_4E" text="The shack draws your attention, and you decide to check it out. Inside, you find a chest secured with a lock. After some effort, you break the lock and rummage through its contents. Most are papers, but at the very bottom, you find a coin purse heavy with gold. Returning to camp, you divide the {goldFound} gold equally among the {men} men, resulting in {goldForYou} each." />
+
+    <!--OldRuins - Event 5-->
+    <string id="OldRuins_Event_Choice_5A" text="You all agree that getting wet is not worth the risk, so you decide to head back to camp." />
+    <string id="OldRuins_Event_Choice_5B" text="Deciding to avoid the storm, you and your men agree to return to camp without exploring further." />
+    <string id="OldRuins_Event_Choice_5C" text="Not wanting to risk getting soaked in the approaching storm, your group unanimously decides to head back to camp." />
+    <string id="OldRuins_Event_Choice_5D" text="With the storm looming, you all agree it’s best to return to camp and stay dry rather than continue exploring." />
+    <string id="OldRuins_Event_Choice_5E" text="Unwilling to brave the rain, you and your men decide to abandon the investigation and make your way back to camp." />
+
+    <!--OldRuins - Log Messages - Event 1-->
+    <string id="OldRuins_Event_Msg_1A" text="{heroName} lost {killedMen} men to a collapsing structure." />
+    <string id="OldRuins_Event_Msg_1B" text="{killedMen} men under {heroName}'s command perished when a structure collapsed." />
+    <string id="OldRuins_Event_Msg_1C" text="A collapsing building claimed the lives of {killedMen} of {heroName}'s men." />
+    <string id="OldRuins_Event_Msg_1D" text="{heroName} lost {killedMen} men in a tragic structural collapse." />
+    <string id="OldRuins_Event_Msg_1E" text="{heroName}'s group suffered the loss of {killedMen} men due to a collapsing structure." />
+
+    <!--OldRuins - Log Messages - Event 2-->
+    <string id="OldRuins_Event_Msg_2A" text="{heroName} investigated the well but found nothing." />
+    <string id="OldRuins_Event_Msg_2B" text="The well revealed nothing of interest to {heroName} and their men." />
+    <string id="OldRuins_Event_Msg_2C" text="{heroName} found the well empty, with only dirt at the bottom." />
+    <string id="OldRuins_Event_Msg_2D" text="After inspecting the well, {heroName} and their men discovered it was empty." />
+    <string id="OldRuins_Event_Msg_2E" text="The well held no secrets, leaving {heroName} and their men disappointed." />
+
+    <!--OldRuins - Log Messages - Event 3-->
+    <string id="OldRuins_Event_Msg_3A" text="{heroName} searched the barn but found nothing of value." />
+    <string id="OldRuins_Event_Msg_3B" text="The barn contained only animal skeletons, leaving {heroName} empty-handed." />
+    <string id="OldRuins_Event_Msg_3C" text="{heroName} and their men searched the barn thoroughly but found nothing useful." />
+    <string id="OldRuins_Event_Msg_3D" text="The barn held no valuables, only remnants of long-dead animals." />
+    <string id="OldRuins_Event_Msg_3E" text="{heroName} found the barn empty, with nothing but dust and decay inside." />
+
+    <!--OldRuins - Log Messages - Event 4-->
+    <string id="OldRuins_Event_Msg_4A" text="{heroName} received {goldForYou} gold after splitting {goldFound} gold with {manCount} men." />
+    <string id="OldRuins_Event_Msg_4B" text="After dividing {goldFound} gold among {manCount} men, {heroName} kept {goldForYou} gold." />
+    <string id="OldRuins_Event_Msg_4C" text="{heroName} ended up with {goldForYou} gold after sharing {goldFound} gold with {manCount} others." />
+    <string id="OldRuins_Event_Msg_4D" text="{goldFound} gold was found, and {heroName} received {goldForYou} after splitting it among {manCount} men." />
+    <string id="OldRuins_Event_Msg_4E" text="Following the division of {goldFound} gold among {manCount} men, {heroName} kept {goldForYou} gold." />
+
+    <!--OldRuins - Log Messages - Event 5-->
+    <string id="OldRuins_Event_Msg_5A" text="{heroName} decided to return to camp without further exploration." />
+    <string id="OldRuins_Event_Msg_5B" text="Facing the looming storm, {heroName} and their men chose to head back to camp." />
+    <string id="OldRuins_Event_Msg_5C" text="{heroName} returned to camp, deciding it was best to avoid the approaching rain." />
+    <string id="OldRuins_Event_Msg_5D" text="{heroName} and their group abandoned the ruins and made their way back to camp." />
+    <string id="OldRuins_Event_Msg_5E" text="Opting for safety, {heroName} led their men back to camp before the storm arrived." />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             Ahead of Time Event                            *
+    ******************************************************************************
+    -->
+    
+    <!--AheadOfTime Event Titles-->
+    <string id="AheadOfTime_Title_A" text="Ahead of Time!" />
+    <string id="AheadOfTime_Title_B" text="Finished Early!" />
+    <string id="AheadOfTime_Title_C" text="Project Ahead of Schedule!" />
+    <string id="AheadOfTime_Title_D" text="Ahead of the Curve!" />
+    <string id="AheadOfTime_Title_E" text="A Swift Completion!" />
+    <string id="AheadOfTime_Title_F" text="Progress Ahead of Time!" />
+    <string id="AheadOfTime_Title_G" text="Done in Record Time!" />
+    <string id="AheadOfTime_Title_H" text="Ahead of the Deadline!" />
+    <string id="AheadOfTime_Title_I" text="Beating the Clock!" />
+    <string id="AheadOfTime_Title_J" text="Ahead of Expectations!" />
 
-    <!--AheadOfTime Event-->
-    <string id="AheadOfTime_Title" text="Ahead of Time!" />
-    <string id="AheadOfTimeEvent_Text" text="You receive word that {settlement} has completed its current project earlier than expected." />
+    <!--AheadOfTime Event Text-->
+    <string id="AheadOfTimeEvent_Text_A" text="You receive word that {settlement} has completed its current project earlier than expected." />
+    <string id="AheadOfTimeEvent_Text_B" text="News reaches you that {settlement} has finished its project ahead of schedule." />
+    <string id="AheadOfTimeEvent_Text_C" text="You are informed that the current project in {settlement} has been completed ahead of time." />
+    <string id="AheadOfTimeEvent_Text_D" text="A messenger brings great news: the project in {settlement} is finished earlier than planned." />
+    <string id="AheadOfTimeEvent_Text_E" text="Word arrives that {settlement} has successfully completed its project ahead of the expected timeline." />
+
+    <!--AheadOfTime Event Button-->
     <string id="AheadOfTimeEvent_Event_Button_Text_1" text="Done" />
-
-
-
+    
+    
+    
+    <!--
+    ******************************************************************************
+    *                             Bandit Ambush Event                            *
+    ******************************************************************************
+    -->
+    
     <!--BanditAmbush Event-->
     <string id="BanditAmbush_Title" text="Ambushed by bandits!" />
     <string id="BanditAmbush_Event_Desc_1" text="You are traveling with your forward party when you get surrounded by a group of bandits!" />
@@ -1303,22 +1826,33 @@
     <!--BanditAmbush - Event Button-->
     <string id="BanditAmbush_Event_Button_Text_1" text="Okay" />
     <string id="BanditAmbush_Event_Button_Text_2" text="Done" />
-
-
+    
     <!--BanditAmbush - Events-->
     <string id="BanditAmbush_Event_Choice_1" text="You give the bandits {goldLost} coins and they quickly flee. At least you and your soldiers live to fight another day." />
     <string id="BanditAmbush_Event_Choice_2" text="Seeing you won't back down, the bandits get ready for a fight." />
     <string id="BanditAmbush_Event_Choice_3" text="You laugh as you watch the rest of your party emerge over the crest of the hill. The bandits get ready to flee." />
+    
+    
+    
+    <!--
+    ******************************************************************************
+    *                             BeeKind Event                                  *
+    ******************************************************************************
+    -->
 
-
-
-    <!--AheadOfTime Event-->
+    <!--BeeKind Event-->
     <string id="BeeKind_Title" text="Bee Kind" />
     <string id="BeeKind_Event_Extra_Dialogue" text="Your body reacts painfully to the sting. " />
     <string id="BeeKind_Event_Text" text="As you sit down next to some flowers you get stung by a bee! {extraDialogue}Why is nature so cruel?" />
     <string id="BeeKind_Event_Button_Text" text="Ouch" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             BetMoney Event                                 *
+    ******************************************************************************
+    -->
 
     <!--BetMoney Event-->
     <string id="BetMoney_Title" text="All or nothing" />
@@ -1335,6 +1869,12 @@
     <string id="BetMoney_Event_Outcome_Text_2" text="Better luck next time. Your companion says smugly." />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             BumperCrop Event                               *
+    ******************************************************************************
+    -->
 
     <!--BumperCrop - Event-->
     <string id="BumperCrop_Title" text="Bumper Crop!" />
@@ -1342,6 +1882,12 @@
     <string id="BumperCrop_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                           BunchOfPrisoners Event                           *
+    ******************************************************************************
+    -->
 
     <!--BunchOfPrisoners - Event-->
     <string id="BunchOfPrisoners_Title" text="Bunch of Prisoners" />
@@ -1349,6 +1895,12 @@
     <string id="BunchOfPrisoners_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                          ChattingCommanders Event                          *
+    ******************************************************************************
+    -->
 
     <!--ChattingCommanders - Event-->
     <string id="ChattingCommanders_Title" text="The Same Page" />
@@ -1356,6 +1908,12 @@
     <string id="ChattingCommanders_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             DiseasedCity Event                             *
+    ******************************************************************************
+    -->
 
     <!--DiseasedCity - Event-->
     <string id="DiseasedCity_Title" text="It's Airborne!" />
@@ -1368,6 +1926,12 @@
     <string id="DiseasedCity_Event_Choice_4" text="Although the telltale signs of an emerging plague starting to appear in {plaguedSettlement}, as luck would have it, nothing ever came of it. Those that were ill recovered, and the fears of a deadly pandemic can be laid to rest... For now." />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                              EagerTroops Event                             *
+    ******************************************************************************
+    -->
 
     <!--EagerTroops - Event-->
     <string id="EagerTroops_Title" text="Eager Troops!" />
@@ -1384,6 +1948,12 @@
     <string id="EagerTroops_Event_Button_Text_2" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             ExoticDrinks Event                             *
+    ******************************************************************************
+    -->
 
     <!--ExoticDrinks - Event-->
     <string id="ExoticDrinks_Title" text="Exotic Drinks" />
@@ -1406,12 +1976,24 @@
 
 
 
+    <!--
+    ******************************************************************************
+    *                           FantasticFighters Event                          *
+    ******************************************************************************
+    -->
+
     <!--FantasticFighters - Event-->
     <string id="FantasticFighters_Title" text="Fantastic Fighters?" />
     <string id="FantasticFighters_Event_Text" text="A rumor spreads that your clan managed to decisively win a battle when outnumbered 10-1." />
     <string id="FantasticFighters_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                               FoodFight Event                              *
+    ******************************************************************************
+    -->
 
     <!--FoodFight - Event-->
     <string id="FoodFight_Title" text="Food Fight!" />
@@ -1433,6 +2015,12 @@
     <string id="FoodFight_Event_Button_Text_2" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                              GranaryRats Event                             *
+    ******************************************************************************
+    -->
 
     <!--GranaryRats - Event-->
     <string id="GranaryRats_Title" text="Rats in the granary!" />
@@ -1441,6 +2029,12 @@
     <string id="GranaryRats_Event_Msg_1" text="{ratSettlement} lost {foodLossPercent}% of it's food to rats in the granary." />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                              HotSprings Event                              *
+    ******************************************************************************
+    -->
 
     <!--HotSprings - Event-->
     <string id="HotSprings_Title" text="The Hot Springs" />
@@ -1448,6 +2042,12 @@
     <string id="HotSprings_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                               Momentum Event                               *
+    ******************************************************************************
+    -->
 
     <!--Momentum - Event-->
     <string id="Momentum_Title" text="Momentum" />
@@ -1456,23 +2056,29 @@
     <string id="Momentum_Event_Text" text="After spending so much time {dialogue} you gain a second wind!" />
     <string id="Momentum_Event_Button_Text" text="Done" />
 
+    
+    
+    <!--
+    ******************************************************************************
+    *                                LookUp Event                                *
+    ******************************************************************************
+    -->
 
-
-    <!--LookUp_ - Event-->
+    <!--LookUp - Event-->
     <string id="LookUp_Title" text="Look up!" />
     <string id="LookUp_Event_Desc" text="While walking past some trees you notice something shiny high up in its branches." />
 
-    <!--LookUp_ - Choices-->
+    <!--LookUp - Choices-->
     <string id="LookUp_Event_Option_1" text="Shake the tree" />
     <string id="LookUp_Event_Option_2" text="Leave it be" />
     <string id="LookUp_Event_Option_3" text="Use ranged weapon" />
 
-    <!--LookUp_ - Buttons-->
+    <!--LookUp - Buttons-->
     <string id="LookUp_Event_Button_Text_1" text="Okay" />
     <string id="LookUp_Event_Button_Text_2" text="Done" />
     <string id="LookUp_Event_Button_Text_3" text="Sorry" />
 
-    <!--LookUp_ - Outcomes-->
+    <!--LookUp - Outcomes-->
     <string id="LookUp_Event_Text_1" text="You eventually shake the shiny object free from the tree! It hits the ground with a heavy thunk. It turns out that it was a purse with {goldGained} gold inside." />
     <string id="LookUp_Event_Text_2" text="Try as you might, you're unable to get dislodge the shiny object." />
     <string id="LookUp_Event_Text_3" text="You decide to leave the tree alone. Throughout the next few hours you can't help but wonder it was..." />
@@ -1481,6 +2087,12 @@
     <string id="LookUp_Event_Text_6" text="Shot after shot you attempt to knock down the object without success. At one stage a bird drops out of the tree. It's time to give up... At least you have dinner." />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             PerfectWeather Event                           *
+    ******************************************************************************
+    -->
 
     <!--PerfectWeather - Event-->
     <string id="PerfectWeather_Title" text="Perfect Weather" />
@@ -1488,6 +2100,12 @@
     <string id="PerfectWeather_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                              SecretSinger Event                            *
+    ******************************************************************************
+    -->
 
     <!--SecretSinger - Event-->
     <string id="SecretSinger_Title" text="Secret Singer!" />
@@ -1495,6 +2113,12 @@
     <string id="SecretSinger_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                             SpeedyRecovery Event                           *
+    ******************************************************************************
+    -->
 
     <!--SpeedyRecovery - Event-->
     <string id="SpeedyRecovery_Title" text="Speedy Recovery!" />
@@ -1502,6 +2126,12 @@
     <string id="SpeedyRecovery_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                           SuccessfulDeeds Event                            *
+    ******************************************************************************
+    -->
 
     <!--SuccessfulDeeds - Event-->
     <string id="SuccessfulDeeds_Title" text="Successful Deeds!" />
@@ -1509,6 +2139,12 @@
     <string id="SuccessfulDeeds_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                              Undercooked Event                             *
+    ******************************************************************************
+    -->
 
     <!--Undercooked - Event-->
     <string id="Undercooked_Title" text="Undercooked" />
@@ -1516,6 +2152,12 @@
     <string id="Undercooked_Event_Button_Text" text="Done" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                          PrisonerRebellion Event                           *
+    ******************************************************************************
+    -->
 
     <!--PrisonerRebellion - Event-->
     <string id="PrisonerRebellion_Title" text="Prisoner Rebellion!" />
@@ -1524,6 +2166,12 @@
     <string id="PrisonerRebellion_Hero_Dialogue" text="\n\nFortunately, you keep the important prisoners separate and they were unable to escape!" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                           TargetPractice Event                             *
+    ******************************************************************************
+    -->
 
     <!--TargetPractice - Event-->
     <string id="TargetPractice_Title" text="Target Practice!" />
@@ -1549,6 +2197,12 @@
     <string id="TargetPractice_Event_Size_Desc_3" text="huge" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                         WanderingLivestock Event                           *
+    ******************************************************************************
+    -->
 
     <!--WanderingLivestock - Event-->
     <string id="WanderingLivestock_Title" text="Free Range Meat" />
@@ -1572,43 +2226,8 @@
     <!--WanderingLivestock - Outcomes-->
     <string id="WanderingLivestock_Event_Choice_1" text="Who could say no to such a delicious -- I mean, reasonable proposition? You end up in possession of {sheepCount} sheep{cowText}" />
     <string id="WanderingLivestock_Event_Choice_2" text="The last thing you need right now is to tend to livestock, so you leave them." />
-
-
-
-    <!--Robbery Event-->
-    <string id="Robbery_Title" text="Robbery" />
-    <string id="Robbery_Event_Text_Bad_Outcome" text="One evening, while leaving the tavern in {currentSettlement} late at night you decide to take a shortcut back through an alley. You quickly realize that this was a bad idea as you are surrounded by {thugs} thugs who start threatening you. Their leader, {gangLeader}, tells you to hand over any valuables you have on you. Knowing you are outnumbered, you comply and hand over {goldLost} gold to {gangLeader} and {Adjective} thugs.\n\n{gangLeader}tells {Adjective} thugs to teach you a lesson that will keep you out of their alley next time. The next few minutes are a blur as you are punched, kicked, thrown, and intimidated.\nYou black out\n\nYou awake some time later only to realize the thugs have dumped you in a pigsty. You stumble to your feet and make haste back to where you are staying." />
-    <string id="Robbery_Event_Text_Convinced_Outcome" text="One evening, while leaving the tavern in {currentSettlement} late at night you decide to take a shortcut back through an alley. You quickly realize that this was a bad idea as you are surrounded by {thugs} thugs who start threatening you. Their leader, {gangLeader}, tells you to hand over any valuables you have on you. You ask {gangLeader} if they are crazy and haven't recognized you. {gangLeader} and {Adjective} thugs look at you one more time before realization sets in. {gangLeader} apologizes and withdraws {Adjective} thugs. They let you pass through their alley unhindered. The next person however will be in for quite a surprise." />
-    <string id="Robbery_Event_Text_Charmed_Outcome" text="One evening, while leaving the tavern in {currentSettlement} late at night you decide to take a shortcut back through an alley. You quickly realize that this was a bad idea as you are surrounded by {thugs} thugs who start threatening you. Their leader, {gangLeader}, tells you to hand over any valuables you have on you. Knowing you are outnumbered, you do what you do best, talk. You strike up a somewhat friendly conversation with {gangLeader} and {Subjective} actually seem interested in the conversation. You tell {Adjective} some gossip you've heard about a rich guest visiting this city and so on. {gangLeader} takes one long look at you before ordering {Adjective} thugs to let you go. You hand over 100 gold to {gangLeader} and bids farewell." />
-    <string id="Robbery_Event_Text_Intimidated_Outcome" text="One evening, while leaving the tavern in {currentSettlement} late at night you decide to take a shortcut back through an alley. You quickly realize that this was a bad idea as you are surrounded by {thugs} thugs who start threatening you. Their leader, {gangLeader}, tells you to hand over any valuables you have on you. You immediately burst out in laughter, much to the surprise of {gangLeader} and {Adjective} thugs. You go on to tell them the deeds you have done on the battlefields of Calradia, about all the looters and bandits who have died by your hand. You can see the thugs are getting nervous. You ask {gangLeader} if {Subjective} really think {thugs} thugs are gonna pose any threat to you. The thugs put away their weapons and {gangLeader} tells you that you may leave. You leave the alley but not before suggesting to the thugs that justice will soon catch up to them." />
-    <string id="Robbery_Event_Text_Good_Relation_Outcome" text="One evening, while leaving the tavern in {currentSettlement} late at night you decide to take a shortcut back through an alley. You quickly realize that this was a bad idea as you are surrounded by {thugs} thugs who start threatening you. Their leader, {gangLeader}, tells you to hand over any valuables you have on you. You ask {gangLeader} if {Subjective} don't recognize you. {gangLeader} then approaches you and gives you a big hug while laughing. You and {gangLeader} go way back, back to the time before the turmoil the world is in. The two of you stand there talking for a few minutes and catch up on the old and new. Eventually you tell {gangLeader} that it's time for you to get some rest. You say your goodbyes and embrace one last time." />
-
-    <!--Robbery - Event Button-->
-    <string id="Robbery_Event_Button_Text" text="Continue" />
-
-    <!--Robbery - Log Messages-->
-    <string id="Robbery_Event_Msg_1" text="Clan {playerClan} lost {renownLost} renown after word spread that {heroName} was robbed by {gangLeader} and {Adjective} thugs!" />
-    <string id="Robbery_Event_Msg_2" text="{heroName} managed to convince {gangLeader} and {Adjective} thugs that they were not worth it." />
-    <string id="Robbery_Event_Msg_3" text="{heroName} managed to talk their way out of a robbery by {gangLeader}." />
-    <string id="Robbery_Event_Msg_4" text="{heroName} managed to intimidate {gangLeader} and {Adjective} thugs." />
-
-
-
-    <!--LightsInTheSkies Event-->
-    <string id="LightsInTheSkies_Title" text="Lights In The Skies" />
-    <string id="LightsInTheSkies_Event_Text_1" text="Late one night, you are taking a walk in the woods near {closestSettlement} to clear your head. You manage to find a nice clearing not to far into the woods where you sit down and lean against a big boulder to relax. As you sit there you notice there is a light approaching in the sky from the south. You stand up and look at the light that now has come even closer. It's glowing and keeps changing colors, but it hovers in the sky without a sound. After you've stared at the light for a few minutes it disappears over the treeline. Having no clue to what you witnessed you make your way back but you are somewhat shocked when you see the sun is rising in the east as by your calculations it's just after midnight. You make haste back to the main camp.\nWhen you arrive some of your high ranking men run towards you and asks you where you have been. Perplexed, you answer them and tell them about the strange light. You are shocked when the men tell you that you have been gone for over 5 hours.\n\nA few hours later your party is on the move again but the men can clearly notice that you are preoccupied with last nights events." />
-    <string id="LightsInTheSkies_Event_Text_2" text="When you finally decide to make camp for the night you go to wash yourself in your tent. While washing your face you notice that you are bleeding from the nose. You attempt to blow your noise, only to find a small metallic looking object come out of your nose. You pick it up and study it for a few seconds before it crumbles to ash before your eyes.\n\nYou also notice that you have several small, fresh scars on your extremities. They are small, and all are identical, perfectly rounded with no signs of bleeding from the wounds. You are even more shocked when you realize that you are, in fact, missing two of your molars and the nails on your right foot are gone. This event now has you scared senseless.\n\nAs night falls, and you drifting to sleep along with the last remnants of daylight you suddenly awaken, drenched in sweat, heart beating fast and you also notice that you have wet the bed. You try to recall the dream as you make your way to the nightstand where your diary is. You attempt to write down what you remember." />
-    <string id="LightsInTheSkies_Event_Text_3" text="“I am in the clearing at night looking at the strange light when I'm suddenly struck with an intense beam of some kind that lifts me from the ground and towards the light. As I got closer I could see that the light is in fact an object made from a silvery metal and that there is an opening in it that the light is pulling me  towards. I faint from horror.”\n\n“When I regain consciousness, I find myself strapped to a cold metallic table and I notice that I am surrounded by three strange creatures. These creatures look somewhat like humans, except from the fact they are somewhat smaller and their faces are covered in thick hair. Their ears and noses are for some reason hairless.”\n\n“I lie there unable to move as the creatures poke me with several instruments and take notes, all while I can hear their unrecognizable language. Eventually they put a mask over my mouth and nose and I pass out again.”\n\n“When I come to I am standing in the clearing looking at the light disappearing across the treeline.”" />
-    <string id="LightsInTheSkies_Event_Text_4" text="You finish writing and you cannot stop shaking so you leave your tent to get some fresh air. Some of your men are still up and they can see that something is wrong but you assure them that everything is fine. You go to a lookout point in the camp and watch over the land as you try to make sense of this whole situation. You end up standing there for a few minutes.\n\nWhen you decide to leave you swear you can see the same strange light streaking across the sky in the distance one last time." />
-
-    <!--LightsInTheSkies - Event Buttons-->
-    <string id="LightsInTheSkies_Event_Button_Text_1" text="Read More" />
-    <string id="LightsInTheSkies_Event_Button_Text_2" text="Done" />
-    <string id="LightsInTheSkies_Event_Button_Text_3" text="What?" />
-
-    <!--LightsInTheSkies - Log Messages-->
-    <string id="LightsInTheSkies_Event_Msg_1" text="{heroName} had a strange experience one night near {closestSettlement}." />
-
+    
+    
 
     <!--BirdSong Event-->
     <string id="BirdSongs_Title" text="Bird Songs" />
@@ -1727,6 +2346,8 @@
     <string id="Refugees_Event_Msg_3" text="You have taken the refugees prisoner." />
     <string id="Refugees_Event_Msg_4" text="You have ignored the refugees." />
 
+    
+    
     <!--Companion Admire-->
     <string id="CompanionAdmire_Title" text="Companion Admiration" />
     <string id="CompanionAdmire_Event_Text1" text="While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor to the {clan} clan in any way {gender} can." />
@@ -1739,41 +2360,13 @@
     <string id="CompanionAdmire_Event_Msg_3" text="Your relationship with {surgeon} has improved." />
     <string id="CompanionAdmire_Event_Msg_4" text="Your relationship with {engineer} has improved." />
 
+    
+    
     <!--Army Invite-->
     <string id="ArmyInvite_Title" text="Army Invitation" />
     <string id="ArmyInvite_Event_Text" text="A messenger from {ArmyLeader} has arrived inviting {player} to join {gender} army located near {settlement}." />
     <string id="ArmyInvite_Event_Button_Text" text="Done" />
     
-    
-    <!--Travellers-->
-    <string id="Travellers_Title" text="Travellers" />
-    <string id="Travellers_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="Travellers_Engineering_Appended_Text" text="[Engineering - lvl {minEngineeringLevel}]" />
-    <string id="Travellers_Roguery_Appended_Text" text="[Roguery - lvl {minCharmLevel}]" />
-    <string id="Travellers_Steward_Appended_Text" text="[Steward - lvl {minStewardLevel}]" />
-    <string id="Travellers_Event_Desc" text="Your party is on the move not to far from {closestSettlement} when you come across {familyDemonym} family with a broken waggon. The wheel seems to have come off and rolled down into a small river not to far from you. The family is asking if you can help them by any chance. They explain that they are running from bandits who kept blackmailing them for money and tried to kidnap their two daughters on more than one occasion. They have brought everything they own with them in the hope of starting a new life somewhere. How do you proceed?" />
-    <string id="Travellers_Event_Option_1" text="[Engineering] Offer to repair the waggon" />
-    <string id="Travellers_Event_Option_1_Hover" text="You should be able to fix it. {engineeringAppendedText}" />
-    <string id="Travellers_Event_Option_2" text="[Roguery] Raid them!" />
-    <string id="Travellers_Event_Option_2_Hover" text="Take everything of value {rogueryAppendedText}" />
-    <string id="Travellers_Event_Option_3" text="[Steward] Offer them dinner" />
-    <string id="Travellers_Event_Option_3_Hover" text="While your men load all their belongings into a spare wagon you have {stewardAppendedText}" />
-    <string id="Travellers_Event_Option_4" text="Offer them directions" />
-    <string id="Travellers_Event_Option_4_Hover" text="Give them directions to the nearest settlement" />
-    <string id="Travellers_Event_Option_5" text="Ignore them" />
-    <string id="Travellers_Event_Option_5_Hover" text="This isn't your problem" />
-    <string id="Travellers_Event_Button_Text_1" text="Choose" />
-    <string id="Travellers_Event_Button_Text_2" text="Done" />
-    <string id="Travellers_Event_Choice_1" text="You take a look at the damage to the wagon and you quickly confirm you suspicion that you are able to fix this with relative ease. Your tell you men to fetch some tools from the back of the party and you order one man down into the river to fetch the wheel. You tell the family to sit in the shade beneath a giant oak tree while the men fetches something to drink and some snacks for the two children.\n\nYou waste no time getting to work and with the assistance of a few men you are able to quickly repair the wagon and put it back in working order. You head over to the family to inform them that they may now head towards their destination again. The man doesn't know how to thank you so you inform him that no thank you are necessary. You help the family load up their wagon again and you give them directions to {closestSettlement}, which is the closest place the wagon can get a proper repair. The man says he will tell stories of you when he arrives at his destination. You assure him that it won't be necessary but you don't think he'll listen." />
-    <string id="Travellers_Event_Choice_2" text="You order your men to take them family away from the wagon but not to hurt them in any way as there are young children with them. The father attempts to resist but he is quickly overpowered by a few men who binds his hands. His wife begs him to just comply with what we are saying and he reluctantly agrees.\n\nYour men starts to empty the wagon and look for anything valuable, but you are disappointed when your can't find anything worthwhile. You take the mother aside and tells her to her dismay that if she doesn't give up all the valuables they have, you will kill her husband, sell the children into slavery and keep her for company. Of course you don't mean this, but the important thing is that she thinks you do.\nShe quickly tell you where to find their valuable possessions. After sometime you managed to steal {stolenGold} gold from them. Once you are done with everything you free the woman and tell her that once all your men are out of sight she may release her family. You're not entirely heartless so you give them directions to the nearest settlement where they may find help." />
-    <string id="Travellers_Event_Choice_3" text="You can clearly see that the family is exhausted and probably haven't eaten in a days. You ask them if you can prepare dinner for them. They reluctantly agree as they have only just met you. You order your men to set up a small tent for the family while you personally cook dinner for the family. Your men will take care of the wagon. You and some of your men bring out something to drink for the family and you get to work prepping dinner.\n\nSome time passes and just as the family have finished eating, your men inform you that the wagon is repaired. You help the family load up their wagon and give them directions to the nearest settlement. The mother tells you what an extraordinary man you are." />
-    <string id="Travellers_Event_Choice_4" text="You stop and ask them what happened. You learn that they lost control of their wagon and it ended up in the ditch. You take a look at the wagon to see if you are able to fix it, but it seems to complex for you or any of your men to fix. They ask if they may buy a wagon from your party for 500 gold, but you tell them you will give them one for free as they are in distress and need a hand. You have your men bring fourth a wagon. You, the family and some of your men help to transfer their item to the new wagon\n\nOnce done you give them directions to the nearest settlement. They thank you yet again as you leave." />
-    <string id="Travellers_Event_Choice_5" text="You cannot be bothered by this now so you tell them you cannot help. They try to ask you for directions but you ignore them, but after a few feet you can hear that some of your men have stopped to give them directions to the nearest settlement and some coin." />
-    <string id="Travellers_Event_Msg_1" text="{heroName} was able to fix the stranded family's wagon." />
-    <string id="Travellers_Event_Msg_2" text="{heroName} stole {stolenGold} gold from the stranded family and left them." />
-    <string id="Travellers_Event_Msg_3" text="{heroName} made dinner while the men fixed the wagon." />
-    <string id="Travellers_Event_Msg_4" text="{heroName} gave the stranded family directions to {closestSettlement}." />
-    <string id="Travellers_Event_Msg_5" text="{heroName} ignored the stranded family. At least the men aren't that heartless!" />
 	
     
 	<!--Feast-->
@@ -1913,21 +2506,25 @@
     <string id="SecretsOfSteel_Event_Msg_3" text="{heroName} agreed to help the blacksmith, but made mistakes during the sharpening." />
     <string id="SecretsOfSteel_Event_Msg_4" text="{heroName} agreed to help the blacksmith and they successfully made all the blades." />
 
-
+    
+    
+    <!--
+     ******************************************************************************
+     *                                 PoisonedWine                               *
+     ******************************************************************************
+     -->
+    
     <!--Poisoned Wine - Event-->
     <string id="PoisonedWine_Title" text="Poisoned Wine" />
     <string id="PoisonedWine_Event_Text" text="Late in the night your decide to throw a party to raise troop morale. Drinks are overflowing, hunger is satiated, and some troops have started games such as arm wrestling and cards. Everything seems to be going as planned as the hours pass by into the night. Soon however, you wished you hadn't counted your chickens before they hatched.\n\nYour stomach starts churning and you hear a commotion on the other side of camp. Your men have started hurling the content of their stomach across the ground. Some are clutching their stomachs, and even a few are crying as they beg for it to stop. Your face goes pale as you realize, you've been poisoned.\n\nQuestions rush through your head. Who could have done it? When? But whether it was because of all of the questions or the poison, your head begins to spin. Unfortunately, this was a moment you knew you were going to hate. The last thing you see before you join your troops with vomiting, is a handful of men, not moving. You only hope you and the rest of your men are not so unlucky." />
     <string id="PoisonedWine_Event_Button_Text" text="Continue" />
     <string id="PoisonedWine_Event_Msg" text="{heroName} lost {menKilled} men and {menHurt} men got sick after drinking poisoned wine." />
 
-
-
-
+    
+    
     <!--
     ******************************************************************************
-    *                                                                            *
     *                                 Skill Checks                               *
-    *                                                                            *
     ******************************************************************************
     -->
 
@@ -1941,9 +2538,7 @@
     
     <!--
     ******************************************************************************
-    *                                                                            *
     *                                 Demonyms                                   *
-    *                                                                            *
     ******************************************************************************
     -->
     
@@ -1966,11 +2561,10 @@
 
     <!--
     ******************************************************************************
-    *                                                                            *
     *                            Gender Assignments                              *
-    *                                                                            *
     ******************************************************************************
     -->
+    
     <string id="gender_male_subjective_cap" text="He" />
     <string id="gender_male_subjective" text="he" />
     <string id="gender_male_objective_cap" text="Him" />

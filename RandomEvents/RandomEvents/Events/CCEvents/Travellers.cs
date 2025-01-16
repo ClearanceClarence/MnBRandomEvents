@@ -189,7 +189,6 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             var eventOptionEText = new TextObject(EventTextHandler.GetRandomEventOutcome5())
                 .ToString();
             
-            
             var eventMsg1 =new TextObject(EventTextHandler.GetRandomEventMessage1())
                 .SetTextVariable("heroName", heroName)
                 .ToString();

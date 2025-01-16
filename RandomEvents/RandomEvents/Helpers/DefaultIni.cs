@@ -143,6 +143,11 @@ MinGoldLooted = 25
 MaxGoldLooted = 250
 MinRogueryLevel = 125
 
+[CostOfBetrayal]
+EventDisabled = false
+MinBaseMoraleLoss = 15
+MaxBaseMoraleLoss = 25
+
 [Duel]
 EventDisabled = false
 MinTwoHandedLevel = 125
@@ -172,7 +177,7 @@ MinAge = 16
 MaxAge = 30
 MinStewardLevel = 100
 MinRogueryLevel = 125
-SuccessChance = 65
+SuccessChance = 66
 
 [HuntingTrip]
 EventDisabled = false
@@ -227,6 +232,14 @@ MinPrisoners = 10
 MaxPrisoners = 50
 MinPricePrPrisoner = 50
 MaxPricePrPrisoner = 400
+
+[PriceOfRebellion]
+EventDisabled = false
+MinBaseMoraleLoss = 15
+MaxBaseMoraleLoss = 25
+MinRenownGain = 25
+MaxRenownGain = 75
+MinRogueryLevel = 100
 
 [RedMoon]
 EventDisabled = false
@@ -305,23 +318,6 @@ MaxSoldiersToHurt = 5
 [SecretsOfSteel]
 EventDisabled = false
 
-
-
-; #######################
-; ###    AiEvents     ###
-; #######################
-[CostOfBetrayal]
-EventDisabled = false
-MinBaseMoraleLoss = 15
-MaxBaseMoraleLoss = 25
-
-[PriceOfRebellion]
-EventDisabled = false
-MinBaseMoraleLoss = 15
-MaxBaseMoraleLoss = 25
-MinRenownGain = 25
-MaxRenownGain = 75
-MinRogueryLevel = 100
 
 
 ; ####################
@@ -452,8 +448,7 @@ MaxTroopsToInjure = 30
 [WanderingLivestock]
 EventDisabled = false
 MinFood = 10
-MaxFood = 20
-";
+MaxFood = 20";
         }
     }
 }

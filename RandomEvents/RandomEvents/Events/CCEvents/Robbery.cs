@@ -442,7 +442,6 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 "surprising reunion with {thugs} thugs and their chief, {gangLeader}. Realizing your long-standing connection, " +
                 "{gangLeader} greets you with laughter and a heartfelt hug. You catch up on old memories and current " +
                 "affairs, then say goodbye with a final warm embrace."
-
             };
             
             private static readonly List<string> eventMsgBadOutcome = new List<string>

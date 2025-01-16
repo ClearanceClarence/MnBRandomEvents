@@ -1,5 +1,4 @@
 ﻿using Bannerlord.RandomEvents.Events;
-using Bannerlord.RandomEvents.Events.AiEvents;
 using Bannerlord.RandomEvents.Events.BicEvents;
 using Bannerlord.RandomEvents.Events.CCEvents;
 using Bannerlord.RandomEvents.Events.CommunityEvents;

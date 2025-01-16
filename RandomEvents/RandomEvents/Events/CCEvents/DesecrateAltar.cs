@@ -1,4 +1,4 @@
-﻿namespace Bannerlord.RandomEvents.Events.AiEvents
+﻿namespace Bannerlord.RandomEvents.Events.CCEvents
 {
     public class DesecrateAltar
     {
