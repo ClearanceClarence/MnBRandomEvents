@@ -12,184 +12,215 @@ using TaleWorlds.ObjectSystem;
 
 namespace Bannerlord.RandomEvents.Helpers
 {
-	public static class PartySetup
-	{
-		public static MobileParty CreateLooterParty(string partyName = null)
-		{
-			MobileParty banditParty = null;
+    /// <summary>
+    /// Provides methods for creating and managing mobile parties in the game.
+    /// </summary>
+    public static class PartySetup
+    {
+        /// <summary>
+        /// Creates a looter party near the main player's party.
+        /// </summary>
+        /// <param name="partyName">Optional string - The name of the looter party. If null, a default name is used.</param>
+        /// <returns>
+        /// A new <see cref="MobileParty"/> representing the looter party, or <c>null</c> if creation fails.
+        /// </returns>
+        public static MobileParty CreateLooterParty(string partyName = null)
+        {
+            MobileParty banditParty = null;
 
-			try
-			{
-				var hideouts = Settlement.FindAll(s => s.IsHideout).ToList();
-				var closestHideout = hideouts.MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
+            try
+            {
+                var hideouts = Settlement.FindAll(s => s.IsHideout).ToList();
+                var closestHideout = hideouts.MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
 
-				var banditCultureObject = MBObjectManager.Instance.GetObject<CultureObject>("looters");
+                var banditCultureObject = MBObjectManager.Instance.GetObject<CultureObject>("looters");
 
-				partyName ??= $"{banditCultureObject.Name} (Random Event)";
-				
-				var partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
-				
-				banditParty = BanditPartyComponent.CreateLooterParty(
-					$"randomevent_{banditCultureObject.StringId}_{MBRandom.RandomInt(int.MaxValue)}",
-					closestHideout.OwnerClan,
-					closestHideout,
-					false);
-				
-				var partyNameTextObject = new TextObject(partyName);
-				
-				banditParty.InitializeMobilePartyAroundPosition(partyTemplate, MobileParty.MainParty.Position2D, 0.2f, 0.1f, 20);
-				banditParty.SetCustomName(partyNameTextObject);
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show($"Error while trying to create a mobile bandit party :\n\n {ex.Message} \n\n { ex.StackTrace}");
-			}
+                partyName ??= $"{banditCultureObject.Name} (Random Event)";
 
-			return banditParty;
-		}
+                var partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
 
-		public static MobileParty CreateBanditParty(string cultureObjectId = null, string partyName = null)
-{
-		    MobileParty banditParty = null;
+                banditParty = BanditPartyComponent.CreateLooterParty(
+                    $"randomevent_{banditCultureObject.StringId}_{MBRandom.RandomInt(int.MaxValue)}",
+                    closestHideout.OwnerClan,
+                    closestHideout,
+                    false);
 
-		    try
-		    {
-			    var hideouts = Settlement.FindAll(s => s.IsHideout).ToList();
-		        var closestHideout = hideouts.MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
+                var partyNameTextObject = new TextObject(partyName);
 
-		        var banditCultureObject = cultureObjectId != null ? MBObjectManager.Instance.GetObject<CultureObject>(cultureObjectId) : closestHideout.Culture;
+                banditParty.InitializeMobilePartyAroundPosition(partyTemplate, MobileParty.MainParty.Position2D, 0.2f, 0.1f, 20);
+                banditParty.SetCustomName(partyNameTextObject);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error while trying to create a mobile bandit party :\n\n {ex.Message} \n\n {ex.StackTrace}");
+            }
 
-		        partyName ??= $"{banditCultureObject.Name} (Random Event)";
+            return banditParty;
+        }
 
-		        var partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
+        /// <summary>
+        /// Creates a bandit party with a specified culture near the main player's party.
+        /// </summary>
+        /// <param name="cultureObjectId">Optional string - The culture ID of the bandit party. Defaults to the closest hideout's culture if null.</param>
+        /// <param name="partyName">Optional string - The name of the bandit party. If null, a default name is used.</param>
+        /// <returns>
+        /// A new <see cref="MobileParty"/> representing the bandit party, or <c>null</c> if creation fails.
+        /// </returns>
+        public static MobileParty CreateBanditParty(string cultureObjectId = null, string partyName = null)
+        {
+            MobileParty banditParty = null;
 
-		        var matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
+            try
+            {
+                var hideouts = Settlement.FindAll(s => s.IsHideout).ToList();
+                var closestHideout = hideouts.MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
 
-		        // If no matching clan is found, select a random culture from the specified list
-		        if (matchedClan == null)
-		        {
-		            var cultures = new List<string> { "Vlandia", "westernEmpire", "easternEmpire", "northernEmpire", "Khuzait", "Aserai", "Sturgia", "Battania" };
-		            
-		            var randomCulture = cultures[MBRandom.RandomInt(cultures.Count)];
-		            
-		            banditCultureObject = MBObjectManager.Instance.GetObject<CultureObject>(randomCulture);
-		            partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
-		            matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
+                var banditCultureObject = cultureObjectId != null ? MBObjectManager.Instance.GetObject<CultureObject>(cultureObjectId) : closestHideout.Culture;
 
-		            if (matchedClan == null)
-		            {
-		                MessageBox.Show($"Error: No matching clan found even with '{randomCulture}' culture.");
-		                return null;
-		            }
-		        }
+                partyName ??= $"{banditCultureObject.Name} (Random Event)";
 
-		        banditParty = BanditPartyComponent.CreateBanditParty(
-		            $"randomevent_{banditCultureObject.StringId}_{MBRandom.RandomInt(int.MaxValue)}",
-		            matchedClan,
-		            closestHideout.Hideout, false);
+                var partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
 
-		        var partyNameTextObject = new TextObject(partyName);
+                var matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
 
-		        banditParty.InitializeMobilePartyAroundPosition(partyTemplate, MobileParty.MainParty.Position2D, 0.2f, 0.1f, 20);
-		        banditParty.SetCustomName(partyNameTextObject);
-		    }
-		    catch (Exception ex)
-		    {
-		        MessageBox.Show($"Error while trying to create a mobile bandit party :\n\n {ex.Message} \n\n { ex.StackTrace}");
-		    }
+                if (matchedClan == null)
+                {
+                    var cultures = new List<string> { "Vlandia", "westernEmpire", "easternEmpire", "northernEmpire", "Khuzait", "Aserai", "Sturgia", "Battania" };
 
-		    return banditParty;
-		}
+                    var randomCulture = cultures[MBRandom.RandomInt(cultures.Count)];
 
+                    banditCultureObject = MBObjectManager.Instance.GetObject<CultureObject>(randomCulture);
+                    partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
+                    matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
 
-		public static void AddRandomCultureUnits(MobileParty party, int numberToAdd, CultureObject overrideCulture = null)
-		{
-			try
-			{
-				// Get culture
-				var partyCultureObject = overrideCulture ?? party.Party.Culture;
+                    if (matchedClan == null)
+                    {
+                        MessageBox.Show($"Error: No matching clan found even with '{randomCulture}' culture.");
+                        return null;
+                    }
+                }
 
-				// Get possible units to create
-				var characterObjectList = partyCultureObject.IsBandit ? GetBanditCharacters(partyCultureObject) : GetMainCultureCharacters(partyCultureObject);
+                banditParty = BanditPartyComponent.CreateBanditParty(
+                    $"randomevent_{banditCultureObject.StringId}_{MBRandom.RandomInt(int.MaxValue)}",
+                    matchedClan,
+                    closestHideout.Hideout, false);
 
-				// Split spawn based on number to add
-				var spawnNumbers = new int[characterObjectList.Count];
-				var currentSpawned = 0;
+                var partyNameTextObject = new TextObject(partyName);
 
-				while (currentSpawned < numberToAdd)
-				{
-					var randomInt = MBRandom.RandomInt(0, spawnNumbers.Length);
-					spawnNumbers[randomInt]++;
-					currentSpawned++;
-				}
+                banditParty.InitializeMobilePartyAroundPosition(partyTemplate, MobileParty.MainParty.Position2D, 0.2f, 0.1f, 20);
+                banditParty.SetCustomName(partyNameTextObject);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error while trying to create a mobile bandit party :\n\n {ex.Message} \n\n {ex.StackTrace}");
+            }
 
-				for (var i = 0; i < characterObjectList.Count; i++)
-				{
-					var characterObject = characterObjectList[i];
-					if (characterObject != null)
-						party.AddElementToMemberRoster(characterObject, spawnNumbers[i]);
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show($"Error while trying to add random culture units :\n\n {ex.Message} \n\n { ex.StackTrace}");
-			}
-		}
+            return banditParty;
+        }
 
-		private static List<CharacterObject> GetBanditCharacters(CultureObject partyCultureObject)
-		{
-			var characterObjectList = new List<CharacterObject>();
+        /// <summary>
+        /// Adds random units from a specified or default culture to a party.
+        /// </summary>
+        /// <param name="party">The <see cref="MobileParty"/> to add units to.</param>
+        /// <param name="numberToAdd">The number of units to add.</param>
+        /// <param name="overrideCulture">Optional <see cref="CultureObject"/> to override the party's culture.</param>
+        public static void AddRandomCultureUnits(MobileParty party, int numberToAdd, CultureObject overrideCulture = null)
+        {
+            try
+            {
+                var partyCultureObject = overrideCulture ?? party.Party.Culture;
 
-			if (partyCultureObject.StringId == "looters")
-			{
-				// We have to treat looters differently as they only have a single unit type compared to the other bandits.
-				characterObjectList.Add(partyCultureObject.BasicTroop);
-			}
-			else
-			{
-				characterObjectList.Add(partyCultureObject.BanditBandit);
-				characterObjectList.Add(partyCultureObject.BanditRaider);
-				characterObjectList.Add(partyCultureObject.BanditChief);
-			}
+                var characterObjectList = partyCultureObject.IsBandit ? GetBanditCharacters(partyCultureObject) : GetMainCultureCharacters(partyCultureObject);
 
-			return characterObjectList;
-		}
+                var spawnNumbers = new int[characterObjectList.Count];
+                var currentSpawned = 0;
 
-		private static List<CharacterObject> GetMainCultureCharacters(CultureObject partyCultureObject)
-		{
-			var characterObjectList = new List<CharacterObject>();
+                while (currentSpawned < numberToAdd)
+                {
+                    var randomInt = MBRandom.RandomInt(0, spawnNumbers.Length);
+                    spawnNumbers[randomInt]++;
+                    currentSpawned++;
+                }
 
-			// Add basic troop
-			if (partyCultureObject.BasicTroop != null)
-			{
-				characterObjectList.Add(partyCultureObject.BasicTroop);
-			}
-			else
-			{
-				return characterObjectList;
-			}
+                for (var i = 0; i < characterObjectList.Count; i++)
+                {
+                    var characterObject = characterObjectList[i];
+                    if (characterObject != null)
+                        party.AddElementToMemberRoster(characterObject, spawnNumbers[i]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error while trying to add random culture units :\n\n {ex.Message} \n\n {ex.StackTrace}");
+            }
+        }
 
-			foreach (var upgradeTarget in partyCultureObject.BasicTroop.UpgradeTargets)
-			{
-				CollectFromTroopTree(upgradeTarget, characterObjectList);
-			}
+        /// <summary>
+        /// Retrieves a list of bandit character objects for a given culture.
+        /// </summary>
+        /// <param name="partyCultureObject">The <see cref="CultureObject"/> representing the party's culture.</param>
+        /// <returns>A list of <see cref="CharacterObject"/> for the bandit culture.</returns>
+        private static List<CharacterObject> GetBanditCharacters(CultureObject partyCultureObject)
+        {
+            var characterObjectList = new List<CharacterObject>();
 
-			return characterObjectList;
-		}
+            if (partyCultureObject.StringId == "looters")
+            {
+                characterObjectList.Add(partyCultureObject.BasicTroop);
+            }
+            else
+            {
+                characterObjectList.Add(partyCultureObject.BanditBandit);
+                characterObjectList.Add(partyCultureObject.BanditRaider);
+                characterObjectList.Add(partyCultureObject.BanditChief);
+            }
 
-		private static void CollectFromTroopTree(CharacterObject co, ICollection<CharacterObject> characterObjectList)
-		{
-			if (co.UpgradeTargets == null || co.UpgradeTargets.Length == 0)
-				return;
+            return characterObjectList;
+        }
 
-			foreach (var upgradeTarget in co.UpgradeTargets)
-			{
-				if(!characterObjectList.Contains(upgradeTarget))
-					characterObjectList.Add(upgradeTarget);
+        /// <summary>
+        /// Retrieves a list of main culture character objects for a given culture.
+        /// </summary>
+        /// <param name="partyCultureObject">The <see cref="CultureObject"/> representing the party's culture.</param>
+        /// <returns>A list of <see cref="CharacterObject"/> for the main culture.</returns>
+        private static List<CharacterObject> GetMainCultureCharacters(CultureObject partyCultureObject)
+        {
+            var characterObjectList = new List<CharacterObject>();
 
-				CollectFromTroopTree(upgradeTarget, characterObjectList);
-			}
-		}
+            if (partyCultureObject.BasicTroop != null)
+            {
+                characterObjectList.Add(partyCultureObject.BasicTroop);
+            }
+            else
+            {
+                return characterObjectList;
+            }
 
-	}
+            foreach (var upgradeTarget in partyCultureObject.BasicTroop.UpgradeTargets)
+            {
+                CollectFromTroopTree(upgradeTarget, characterObjectList);
+            }
+
+            return characterObjectList;
+        }
+
+        /// <summary>
+        /// Recursively collects troop upgrade targets and adds them to the provided list.
+        /// </summary>
+        /// <param name="co">The current <see cref="CharacterObject"/> to process.</param>
+        /// <param name="characterObjectList">The list to which upgrade targets will be added.</param>
+        private static void CollectFromTroopTree(CharacterObject co, ICollection<CharacterObject> characterObjectList)
+        {
+            if (co.UpgradeTargets == null || co.UpgradeTargets.Length == 0)
+                return;
+
+            foreach (var upgradeTarget in co.UpgradeTargets)
+            {
+                if (!characterObjectList.Contains(upgradeTarget))
+                    characterObjectList.Add(upgradeTarget);
+
+                CollectFromTroopTree(upgradeTarget, characterObjectList);
+            }
+        }
+    }
 }

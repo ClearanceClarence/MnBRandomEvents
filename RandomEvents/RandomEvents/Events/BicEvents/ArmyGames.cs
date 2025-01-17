@@ -72,7 +72,6 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 					"is the ultimate champion team. The men haven't had this much fun in quite a long time, this will surely boost morale and cohesion.")
 					.SetTextVariable("leader", ArmyLeader.Name.ToString())
 					.ToString();
-					
 				
 				var eventButtonText = new TextObject("{=ArmyGames_Event_Button_Text}Done").ToString();
 
@@ -82,7 +81,6 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 			{
 				MessageBox.Show($"Error while running \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n { ex.StackTrace}");
 			}
-
 			StopEvent();
 		}
 

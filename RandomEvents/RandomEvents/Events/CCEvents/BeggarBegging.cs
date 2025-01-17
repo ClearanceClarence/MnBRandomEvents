@@ -64,13 +64,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             var rogueryLevel = Hero.MainHero.GetSkillValue(DefaultSkills.Roguery);
             var stewardLevel = Hero.MainHero.GetSkillValue(DefaultSkills.Steward);
 
-            // ReSharper disable once ReplaceWithSingleAssignment.False
-            var ownedSettlement = false;
-            
-            if (currentSettlementOwner == mainHero)
-            {
-                ownedSettlement = true;
-            }
+            var ownedSettlement = currentSettlementOwner == mainHero;
 
             var canGiveMoreGold = false;
             var canOfferFood = false;

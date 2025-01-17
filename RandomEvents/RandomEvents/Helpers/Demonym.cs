@@ -2,10 +2,22 @@
 
 namespace Bannerlord.RandomEvents.Helpers
 {
-    //In English, demonyms are always capitalized.
-    //Defaults to Imperial if error
+    /// <summary>
+    /// Provides utility methods to retrieve the demonym (cultural or citizen name) based on a culture identifier.
+    /// </summary>
+    /// <remarks>
+    /// In English, demonyms are always capitalized. Defaults to "Imperial" if the culture is not recognized.
+    /// </remarks>
     public static class Demonym
     {
+        /// <summary>
+        /// Retrieves the demonym (either as a noun or adjective) for a given culture.
+        /// </summary>
+        /// <param name="culture">String - The culture identifier (e.g., "Empire", "Vlandia").</param>
+        /// <param name="noun">Bool - If <c>true</c>, returns the noun form (e.g., "a Vlandian"); otherwise, returns the adjective form (e.g., "Vlandian").</param>
+        /// <returns>
+        /// A string representing the demonym for the specified culture, or "Imperial" (default) if the culture is unrecognized.
+        /// </returns>
         public static string GetTheDemonym(string culture, bool noun)
         {
             var citizenName = noun ? culture switch

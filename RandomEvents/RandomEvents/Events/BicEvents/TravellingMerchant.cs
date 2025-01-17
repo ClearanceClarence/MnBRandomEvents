@@ -46,7 +46,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 
 		public override bool CanExecuteEvent()
 		{
-			return HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null && MobileParty.MainParty.MemberRoster.TotalHealthyCount >= 5 && Clan.PlayerClan.Renown >= 500;
+			return HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null && MobileParty.MainParty.MemberRoster.TotalHealthyCount >= 10 && Clan.PlayerClan.Renown >= 500;
 		}
 		public override void StartEvent()
 		{
@@ -131,7 +131,6 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 									new InquiryElement("1a", eventOption1a, null, true, eventOption1HoverA),
 									new InquiryElement("1b", eventOption1b, null, true, eventOption1HoverB),
 									new InquiryElement("1c", eventOption1c, null, true, eventOption1HoverC)
-									
 								};
 								
 								var msid1 = new MultiSelectionInquiryData(eventTitle, eventOutcome1, inquiryElements1, false, 1, 1, eventButtonText1, null,
@@ -155,11 +154,11 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 
 											Hero.MainHero.AddSkillXp(DefaultSkills.Roguery, 150);
 											
-											string eventMsg1 = new TextObject("{=TravellingMerchant_Event_Msg_1}You robbed the merchant for {Loot} gold")
+											var eventMsg1 = new TextObject("{=TravellingMerchant_Event_Msg_1}You robbed the merchant for {Loot} gold")
 											.SetTextVariable("Loot", loot)
 											.ToString();
 											
-											InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color_POS_Outcome));
+											InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color_NEG_Outcome));
 
 											var inquiryElements2a = new List<InquiryElement>
 											{
@@ -199,7 +198,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 														  .SetTextVariable("Loot", loot)
 														  .ToString();
 														  
-														  InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_POS_Outcome));
+														  InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_NEG_Outcome));
 														  break;
 												  }
 
@@ -234,7 +233,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 											.SetTextVariable("Loot", loot)
 											.ToString();
 											
-											InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_POS_Outcome));
+											InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_NEG_Outcome));
 											break;																										
 									}
 								}, null, null);
@@ -296,7 +295,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 										.SetTextVariable("Loot", loot)
 										.ToString();
 									
-										InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color_POS_Outcome));
+										InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color_NEG_Outcome));
 										break;
 								}
 							}, null, null);
