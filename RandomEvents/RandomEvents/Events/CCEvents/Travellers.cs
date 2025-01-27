@@ -222,6 +222,9 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                             break;
                         case "b":
                             InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionBText, true, false, eventButtonText2, null, null, null), true);
+                            
+                            Hero.MainHero.ChangeHeroGold(+stolenGold);
+                            
                             InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_EVIL_Outcome));
                             
                             break;

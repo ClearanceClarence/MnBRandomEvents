@@ -10,6 +10,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents
 {
@@ -109,11 +110,13 @@ namespace Bannerlord.RandomEvents
                 "BetMoney",
                 "BirdSong",
                 "BirthdayParty",
+                "BloodToll",
                 "BottomsUp",
                 "BumperCrops",
                 "BunchOfPrisoners",
                 "ChattingCommanders",
                 "CompanionAdmire",
+                "CostOfBetrayal",
                 "Courier",
                 "DiseasedCity",
                 "DreadedSweats",

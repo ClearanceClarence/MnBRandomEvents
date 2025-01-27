@@ -1,6 +1,6 @@
 ﻿namespace Bannerlord.RandomEvents.Events.CCEvents
 {
-    public class DesecrateAltar
+    public class DesecratedAltar
     {
         
     }

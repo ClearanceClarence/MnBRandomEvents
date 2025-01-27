@@ -499,20 +499,20 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             
             private static readonly List<string> eventMsg1 = new List<string>
             {
-                "{=BirthdayParty_Event_Msg_1A}{heroName} gave {goldGiven} to the girl and gained {influenceGain} influence for defeating bandits.",
-                "{=BirthdayParty_Event_Msg_1B}{heroName} donated {goldGiven} and earned {influenceGain} influence for bravery against bandits.",
-                "{=BirthdayParty_Event_Msg_1C}{heroName} bestowed {goldGiven}, gaining {influenceGain} influence for their valor.",
-                "{=BirthdayParty_Event_Msg_1D}{heroName} presented {goldGiven}, increasing {influenceGain} influence post-bandit victory.",
-                "{=BirthdayParty_Event_Msg_1E}{heroName} contributed {goldGiven}, earning {influenceGain} influence for overcoming bandits."
+                "{=BirthdayParty_Event_Msg_1A}{heroName} gave {goldGiven} gold to the girl and gained {influenceGain} influence for defeating bandits.",
+                "{=BirthdayParty_Event_Msg_1B}{heroName} donated {goldGiven} gold and earned {influenceGain} influence for bravery against bandits.",
+                "{=BirthdayParty_Event_Msg_1C}{heroName} bestowed {goldGiven} gold, gaining {influenceGain} influence for their valor.",
+                "{=BirthdayParty_Event_Msg_1D}{heroName} presented {goldGiven} gold, increasing {influenceGain} influence post-bandit victory.",
+                "{=BirthdayParty_Event_Msg_1E}{heroName} contributed {goldGiven}gold, earning {influenceGain} influence for overcoming bandits."
             };
             
             private static readonly List<string> eventMsg2 = new List<string>
             {
-                "{=BirthdayParty_Event_Msg_2A}{heroName} offered {goldGiven} to the girl.",
-                "{=BirthdayParty_Event_Msg_2B}{heroName} presented {goldGiven} to the girl.",
-                "{=BirthdayParty_Event_Msg_2C}{heroName} handed {goldGiven} to the girl.",
-                "{=BirthdayParty_Event_Msg_2D}{heroName} bestowed {goldGiven} upon the girl.",
-                "{=BirthdayParty_Event_Msg_2E}{heroName} donated {goldGiven} to the girl."
+                "{=BirthdayParty_Event_Msg_2A}{heroName} offered {goldGiven} gold to the girl.",
+                "{=BirthdayParty_Event_Msg_2B}{heroName} presented {goldGiven} gold to the girl.",
+                "{=BirthdayParty_Event_Msg_2C}{heroName} handed {goldGiven} gold to the girl.",
+                "{=BirthdayParty_Event_Msg_2D}{heroName} bestowed {goldGiven} gold upon the girl.",
+                "{=BirthdayParty_Event_Msg_2E}{heroName} donated {goldGiven} gold to the girl."
             };
             
             private static readonly List<string> eventMsg3 = new List<string>

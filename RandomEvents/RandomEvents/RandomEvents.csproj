@@ -81,7 +81,7 @@
     <Compile Include="Events\CCEvents\BirthdayParty.cs" />
     <Compile Include="Events\CCEvents\BloodToll.cs" />
     <Compile Include="Events\CCEvents\CostOfBetrayal.cs" />
-    <Compile Include="Events\CCEvents\DesecrateAltar.cs" />
+    <Compile Include="Events\CCEvents\DesecratedAltar.cs" />
     <Compile Include="Events\CCEvents\Duel.cs" />
     <Compile Include="Events\CCEvents\FallenSoldierFamily.cs" />
     <Compile Include="Events\CCEvents\FishingSpot.cs" />
@@ -122,6 +122,7 @@
     <Compile Include="Events\TargetPractice.cs" />
     <Compile Include="Events\Undercooked.cs" />
     <Compile Include="Events\WanderingLivestock.cs" />
+    <Compile Include="Helpers\HelperFunctions.cs" />
     <Compile Include="Helpers\ClosestSettlements.cs" />
     <Compile Include="Helpers\CurrentTimeOfDay.cs" />
     <Compile Include="Helpers\DefaultIni.cs" />

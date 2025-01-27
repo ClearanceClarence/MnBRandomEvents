@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Windows;
+using Bannerlord.RandomEvents.Helpers;
 using Bannerlord.RandomEvents.Settings;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
+using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents
@@ -31,11 +33,16 @@ namespace Bannerlord.RandomEvents
         
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
-
             ModSettings.LoadRandomEventSettings();
+
+            var events = HelperFunctions.CountRandomEvents();
+            
+            var initMsg = new TextObject("Successfully loaded 'RandomEvents' with {events} events.")
+                .SetTextVariable("events", events)
+                .ToString();
             
             //Many mods use this. Nice way to tell if a mod is loaded correctly
-            InformationManager.DisplayMessage(new InformationMessage("Successfully loaded 'RandomEvents'.", Ini_Color));
+            InformationManager.DisplayMessage(new InformationMessage(initMsg, Ini_Color));
         }
 
         protected override void OnGameStart(Game game, IGameStarter gameStarterObject)

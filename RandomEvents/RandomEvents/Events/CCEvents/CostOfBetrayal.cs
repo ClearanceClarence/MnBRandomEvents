@@ -33,12 +33,14 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
 
         private bool HasValidEventData()
         {
-            return eventDisabled == false;
+            if (eventDisabled) return false;
+            
+            return minBaseMoraleLoss != 0 || maxBaseMoraleLoss != 0;
         }
 
         public override bool CanExecuteEvent()
         {
-            return HasValidEventData() && MobileParty.MainParty.CurrentSettlement != null;
+            return HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null;
         }
 
         public override void StartEvent()
@@ -193,10 +195,10 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 "This rebellion, however small, cannot be ignored. Do you strike with swift and brutal force, or will you take a more calculated approach to deal with these traitors?",
                 
                 //Event Description C
-                "{=CostOfBetrayal_Event_Desc_2}A messenger arrives with urgent news: deserters from your ranks have been spotted in the forest near {closestSettlement}. " +
-                "These traitors have stolen valuable supplies and are using them to curry favor with the local populace, spreading dangerous propaganda against you. " +
-                "Villagers have reported strange meetings in the woods, where the deserters speak of overthrowing your rule. " +
-                "This rebellion, however small, cannot be ignored. Do you strike with swift and brutal force, or will you take a more calculated approach to deal with these traitors?",
+                "{=CostOfBetrayal_Event_Desc_3}Your spies bring word of deserters hiding in the dense forests nearby. These turncoats have looted supplies from your armory " +
+                "and are said to be rallying support among the discontented villagers. The deserters have become emboldened, using the cover of night to move freely " +
+                "and spread their treachery. Rumors of their activities have reached the ears of your loyal subjects, creating unease among the people. " +
+                "If not dealt with quickly, their actions could inspire further disloyalty. How will you respond to this act of betrayal?",
                 
                 //Event Description D
                 "{=CostOfBetrayal_Event_Desc_4}Reports of desertion within your ranks have reached you, and the situation is worse than you imagined. " +

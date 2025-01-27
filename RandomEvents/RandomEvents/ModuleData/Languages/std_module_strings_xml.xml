@@ -183,18 +183,18 @@
     <string id="BirthdayParty_Event_Choice_4E" text="Opting for an aggressive approach, you command your men to blockade the party, demanding valuables from the guests. When they hesitate, you seize a young woman from the group, using her as leverage to underscore your determination. Your method is deliberately menacing yet not deadly, meant to terrorize rather than injure. This forceful tactic swiftly convinces the guests to yield their possessions. Satisfied with your success, you derisively toss a gold coin to the anguished birthday girl as you depart. Counting your gains, you find yourself {goldLooted} gold richer, having effectively spread fear and secured considerable wealth." />
 
     <!--BirthdayParty - Log Messages - Event 1-->
-    <string id="BirthdayParty_Event_Msg_1A}{heroName} gave {goldGiven} to the girl and gained {influenceGain} influence for defeating bandits." />
-    <string id="BirthdayParty_Event_Msg_1B}{heroName} donated {goldGiven} and earned {influenceGain} influence for bravery against bandits." />
-    <string id="BirthdayParty_Event_Msg_1C}{heroName} bestowed {goldGiven}, gaining {influenceGain} influence for their valor." />
-    <string id="BirthdayParty_Event_Msg_1D}{heroName} presented {goldGiven}, increasing {influenceGain} influence post-bandit victory." />
-    <string id="BirthdayParty_Event_Msg_1E}{heroName} contributed {goldGiven}, earning {influenceGain} influence for overcoming bandits." />
+    <string id="BirthdayParty_Event_Msg_1A}{heroName} gave {goldGiven} gold to the girl and gained {influenceGain} influence for defeating bandits." />
+    <string id="BirthdayParty_Event_Msg_1B}{heroName} donated {goldGiven} gold and earned {influenceGain} influence for bravery against bandits." />
+    <string id="BirthdayParty_Event_Msg_1C}{heroName} bestowed {goldGiven} gold, gaining {influenceGain} influence for their valor." />
+    <string id="BirthdayParty_Event_Msg_1D}{heroName} presented {goldGiven} gold, increasing {influenceGain} influence post-bandit victory." />
+    <string id="BirthdayParty_Event_Msg_1E}{heroName} contributed {goldGiven} gold, earning {influenceGain} influence for overcoming bandits." />
     
     <!--BirthdayParty - Log Messages - Event 2-->
-    <string id="BirthdayParty_Event_Msg_2A}{heroName} offered {goldGiven} to the girl." />
-    <string id="BirthdayParty_Event_Msg_2B}{heroName} presented {goldGiven} to the girl." />
-    <string id="BirthdayParty_Event_Msg_2C}{heroName} handed {goldGiven} to the girl." />
-    <string id="BirthdayParty_Event_Msg_2D}{heroName} bestowed {goldGiven} upon the girl." />
-    <string id="BirthdayParty_Event_Msg_2E}{heroName} donated {goldGiven} to the girl." />
+    <string id="BirthdayParty_Event_Msg_2A}{heroName} offered {goldGiven} gold to the girl." />
+    <string id="BirthdayParty_Event_Msg_2B}{heroName} presented {goldGiven} gold to the girl." />
+    <string id="BirthdayParty_Event_Msg_2C}{heroName} handed {goldGiven} gold to the girl." />
+    <string id="BirthdayParty_Event_Msg_2D}{heroName} bestowed {goldGiven} gold upon the girl." />
+    <string id="BirthdayParty_Event_Msg_2E}{heroName} donated {goldGiven} gold to the girl." />
     
     <!--BirthdayParty - Log Messages - Event 3-->
     <string id="BirthdayParty_Event_Msg_3A}{heroName}'s party ignored the birthday celebrations." />
@@ -2226,14 +2226,27 @@
     <!--WanderingLivestock - Outcomes-->
     <string id="WanderingLivestock_Event_Choice_1" text="Who could say no to such a delicious -- I mean, reasonable proposition? You end up in possession of {sheepCount} sheep{cowText}" />
     <string id="WanderingLivestock_Event_Choice_2" text="The last thing you need right now is to tend to livestock, so you leave them." />
+
+
     
-    
+    <!--
+    ******************************************************************************
+    *                               BirdSong Event                               *
+    ******************************************************************************
+    -->
 
     <!--BirdSong Event-->
     <string id="BirdSongs_Title" text="Bird Songs" />
     <string id="BirdSongs_Event_Text" text="This day has been blessed by the beautiful melodies of birds singing songs. Silence falls over your ranks as the relaxing sounds of nature's choir brings a sense of joy to your men. This will surely boost their morale." />
     <string id="BirdSongs_Event_Button_Text" text="Done" />
 
+    
+    
+    <!--
+    ******************************************************************************
+    *                               BottomsUp Event                              *
+    ******************************************************************************
+    -->
 
     <!--BottomsUp Event-->
     <string id="BottomsUp_Title" text="Bottoms Up" />
@@ -2248,8 +2261,7 @@
     <!--BottomsUp - Outcomes-->
     <string id="BottomsUp_Event_Choice_1" text="You walk over to the boy and place a large mug on the table.  His eyes light up, followed by a cold hard stare as he grabs the handle and clears his throat. You hear patrons begin placing bets on who will win, adding to a victor's pot - winner takes 20%. A young maiden comes to your side and begins counting down. \n\nThree!  Two!  One!  Drink! \n\nThe boy raises his mug quickly and begins chugging as fast as he can, while you just stand there smiling, looking around. You can hear your men laughing in the background as you boast your lack of urgency. When the boy is about half way finished you finally take your mug and begin drinking. Within seconds you slam the mug back on the table, empty. The young man realizes you have already finished and gasps for air. His cheeks turn red as the whole tavern erupts in laughter. You see the shame in his eyes, so you grab his hand and raise it to the air, ensuring no hard feelings as you buy him another drink." />
     <string id="BottomsUp_Event_Choice_2" text="You look up at your men and give a little smirk, knowing full well you could have crushed this boy's dreams but sometimes it's best to let others have their moment." />
-
-
+    
     <!--BottomsUp - Event Buttons-->
     <string id="BottomsUp_Event_Button_Text_1" text="Choose" />
     <string id="BottomsUp_Event_Button_Text_2" text="Done" />
@@ -2258,6 +2270,12 @@
     <string id="BottomsUp_Event_Msg_1" text="You won! Earning {gold} gold!" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                                Courier Event                               *
+    ******************************************************************************
+    -->
 
     <!--Courier Event-->
     <string id="Courier_Title" text="A Courier Arrives" />
@@ -2265,6 +2283,12 @@
     <string id="Courier_Event_Button_Text" text="Accept" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                               Dysentery Event                              *
+    ******************************************************************************
+    -->
 
     <!--Dysentery Event-->
     <string id="Dysentery_Title" text="Dysentery" />
@@ -2273,6 +2297,12 @@
     <string id="Dysentery_Event_Msg_1" text="{totalvictims} troops have dysentery!" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                              DreadedSweats Event                           *
+    ******************************************************************************
+    -->
 
     <!--DreadedSweats Event-->
     <string id="DreadedSweats_Title" text="The Dreaded Sweat" />
@@ -2280,6 +2310,13 @@
     <string id="DreadedSweats_Event_Button_Text" text="Done" />
     <string id="DreadedSweats_Event_Msg_1" text="{totalvictims} troops have the Dreaded Sweats!" />
 
+    
+    
+    <!--
+    ******************************************************************************
+    *                           TravellingMerchant Event                         *
+    ******************************************************************************
+    -->
 
     <!--TravellingMerchant-->
     <string id="TravellingMerchant_Title" text="Travelling Merchant" />
@@ -2322,6 +2359,12 @@
     <string id="TravellingMerchant_Event_Msg_4" text="You subdued the merchant" />
 
 
+    
+    <!--
+    ******************************************************************************
+    *                                Refugees Event                               *
+    ******************************************************************************
+    -->
 
     <!--Refugees-->
     <string id="Refugees_Title" text="Refugees" />
@@ -2346,8 +2389,14 @@
     <string id="Refugees_Event_Msg_3" text="You have taken the refugees prisoner." />
     <string id="Refugees_Event_Msg_4" text="You have ignored the refugees." />
 
+
     
-    
+    <!--
+    ******************************************************************************
+    *                              CompanionAdmire                               *
+    ******************************************************************************
+    -->
+
     <!--Companion Admire-->
     <string id="CompanionAdmire_Title" text="Companion Admiration" />
     <string id="CompanionAdmire_Event_Text1" text="While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor to the {clan} clan in any way {gender} can." />
@@ -2360,16 +2409,28 @@
     <string id="CompanionAdmire_Event_Msg_3" text="Your relationship with {surgeon} has improved." />
     <string id="CompanionAdmire_Event_Msg_4" text="Your relationship with {engineer} has improved." />
 
+
     
-    
+    <!--
+    ******************************************************************************
+    *                                ArmyInvite                                  *
+    ******************************************************************************
+    -->
+
     <!--Army Invite-->
     <string id="ArmyInvite_Title" text="Army Invitation" />
     <string id="ArmyInvite_Event_Text" text="A messenger from {ArmyLeader} has arrived inviting {player} to join {gender} army located near {settlement}." />
     <string id="ArmyInvite_Event_Button_Text" text="Done" />
-    
-	
-    
-	<!--Feast-->
+
+
+
+    <!--
+    ******************************************************************************
+    *                                    Feast                                   *
+    ******************************************************************************
+    -->
+
+    <!--Feast-->
     <!--Good Relation-->
     <string id="Feast_Title" text="Feast Invitation" />
     <string id="Feast_Event_Description1" text="While in {settlement} you are approached by an envoy from {title} {targetLord} requesting your presence for a feast." />
@@ -2475,37 +2536,96 @@
 
 
 
-    <!--Secrets of Steel - Event-->
-    <string id="SecretsOfSteel_Title" text="Secrets Of Steel" />
-    <string id="SecretsOfSteel_Event_Desc" text="While you party is travelling near {closestSettlement}, you come across a secluded forge with an old blacksmith in it. You hear him calling out to you so you decide to check what he wants. He explains to you that he once was one of the greatest blacksmiths in all of Calradia, but now he has become way to old to work alone. He explains to you that he had an apprentice, but he left a few days ago and said he would never come back. He also explains that he has an order to fill, but he cannot do it without help. He looks you straight in the eyes and asks if you could consider helping an old man on his final order. He also explains that you will be well rewarded. What do you do ?" />
+    <!--
+    ******************************************************************************
+    *                                SecretsOfSteel                              *
+    ******************************************************************************
+    -->
     
-    <!--Secrets of Steel - Options-->
+    <!--SecretsOfSteel Event Titles-->
+    <string id="SecretsOfSteel_Title_A" text="Secrets Of Steel" />
+    <string id="SecretsOfSteel_Title_B" text="Forging the Future" />
+    <string id="SecretsOfSteel_Title_C" text="The Steelmaker's Secret" />
+    <string id="SecretsOfSteel_Title_D" text="Anvil and Mysteries" />
+    <string id="SecretsOfSteel_Title_E" text="Legends of the Forge" />
+    <string id="SecretsOfSteel_Title_F" text="The Hidden Alloy" />
+    <string id="SecretsOfSteel_Title_G" text="Mastering Metalcraft" />
+    <string id="SecretsOfSteel_Title_H" text="The Lost Forge" />
+    <string id="SecretsOfSteel_Title_I" text="Mysteries of the Blacksmith" />
+    <string id="SecretsOfSteel_Title_J" text="Crafts of Iron and Fire" />
+
+    <!--SecretsOfSteel Event Descriptions-->
+    <string id="SecretsOfSteel_Event_Desc_A" text="While your party is travelling near {closestSettlement}, you come across a secluded forge with an old blacksmith in it. You hear him calling out to you, so you decide to check what he wants. He explains to you that he once was one of the greatest blacksmiths in all of Calradia, but now he has become way too old to work alone. He explains that he had an apprentice, but they left a few days ago, vowing never to return. He also explains that he has an order to fill but cannot do it without help. He looks you straight in the eyes and asks if you could consider helping an old man complete his final order. He promises a generous reward for your assistance. What do you do?" />
+    <string id="SecretsOfSteel_Event_Desc_B" text="Your journey near {closestSettlement} leads you to a hidden forge, where an elderly blacksmith beckons you closer. Once renowned as one of the greatest smiths in Calradia, he now struggles with his craft due to his advanced age. He tells you about his apprentice, who recently left under bitter circumstances, leaving him alone with an unfinished order. The old man pleads for your help, promising a worthwhile reward. Will you lend your skills to aid him in his time of need?" />
+    <string id="SecretsOfSteel_Event_Desc_C" text="Travelling through the lands near {closestSettlement}, you stumble upon a small forge tucked away in the wilderness. An old blacksmith greets you, his hands trembling as he explains his plight. Once a master of his trade, he now faces the challenge of completing an urgent order without assistance. His apprentice has abandoned him, leaving him desperate and alone. He offers a reward in exchange for your help, his voice tinged with both hope and despair. What is your decision?" />
+    <string id="SecretsOfSteel_Event_Desc_D" text="Near {closestSettlement}, you discover a forge hidden among the trees, its chimney puffing faint smoke. An elderly blacksmith emerges, calling out to you with a weary yet determined expression. He shares the tale of his once-glorious career, now reduced to solitude after his apprentice’s unexpected departure. With an important commission to complete and no means to do so alone, he implores your help. In return, he promises to reward you handsomely. Will you step in to aid this once-great craftsman?" />
+    <string id="SecretsOfSteel_Event_Desc_E" text="While traversing the lands near {closestSettlement}, you come across an aging blacksmith working in a secluded forge. He calls out to you, his voice heavy with urgency. As you approach, he recounts his story of being one of Calradia’s finest blacksmiths, now unable to continue his craft due to his failing strength. His apprentice has deserted him, and he is unable to complete a critical order alone. The old man begs for your assistance, promising a generous reward for your efforts. How will you respond?" />
+
+    <!--SecretsOfSteel - Event Choices-->
     <string id="SecretsOfSteel_Event_Option_1" text="Decline" />
-    <string id="SecretsOfSteel_Event_Option_1_Hover" text="You cannot assist him.{option1AppendedText}" />
+    <string id="SecretsOfSteel_Event_Option_1_Hover" text="You cannot assist him" />
     <string id="SecretsOfSteel_Event_Option_2" text="[Smithing] Accept" />
-    <string id="SecretsOfSteel_Event_Option_2_Hover" text="Agree to help him.{smithingAppendedText}" />
+    <string id="SecretsOfSteel_Event_Option_2_Hover" text="Agree to help him. {smithingAppendedText}" />
 
-    <!--Secrets of Steel - Appended Texts-->
-    <string id="SecretsOfSteel_Skill_Check_Disable_Appended_Text" text="**Skill checks are disabled**" />
-    <string id="SecretsOfSteel_Smithing_Appended_Text" text="[Smithing - lvl 100]" />
-    <string id="SecretsOfSteel_Option1_Appended_Text" text=" Maybe if you were better in Smithing you could." />
-
-    <!--Secrets of Steel - Outcomes-->
-    <string id="SecretsOfSteel_Event_Choice_1" text="You tell him that you are unable to help him. He looks back to you and smiles and says that he understands. He then gets up, enters the house and closes the door. You and your men proceed to leave." />
-    <string id="SecretsOfSteel_Event_Choice_2_Outcome_1" text="You agree to help him. You send your men to {closestSettlement} and tells them to wait for you there. You and the blacksmith gets to work. The hours pass but after some time you are ready to start tempering your blades. You heat the first one and lower it into the oil. You hear the metal clinging and making a lot of noise under the oil. You pull it up only to realize the entire blade is cracked and useless. You try again, but same result. And again, but same result again and before you know it you've ruined all of your blades. You walk over to the blacksmith and apologize for you bad work. To your surprise he just smiles at you and says that he appreciated the help nonetheless. He informs you to take some charcoal with you as a payment as he does not have any gold. You pick up {randomCharcoal} pieces of charcoal and stuff them in your satchel. You and the blacksmith then part ways." />
-    <string id="SecretsOfSteel_Event_Choice_2_Outcome_2" text="You agree to help him. You send your men to {closestSettlement} and tells them to wait for you there. You and the blacksmith gets to work. The hours pass but after some time you have all your blades tempered and you are halfway through the sharpening of the blades. The blacksmith comes over to you and pick up one of the sharpened blades. He thoroughly inspects the blade. Suddenly he tell you to stop. He informs you that something is wrong with the sharpening of the blades. He informs you that he will take over the finishing of the blades as you have done all the hard work. He also informs you to take some pieces of steel with you as a payment as he does not have any gold. You pick up {randomSteel} pieces of steel and stuff them in your satchel. You and the blacksmith then part ways." />
-    <string id="SecretsOfSteel_Event_Choice_2_Outcome_3" text="You agree to help him. You send your men to {closestSettlement} and tells them to wait for you there. You and the blacksmith gets to work. The hours pass but after some time you have all your blades tempered and you are halfway through the sharpening of the blades. The blacksmith comes over to you and pick up one of the sharpened blades. He thoroughly inspects the blade. He informs you that your work is excellent. He puts the blade back down and help you finish. After a few more hours you are finally done. The blacksmith tells you that he does not know how he can ever repay your kindness. You tell him you were glad to help him. He informs you to take some pieces of Fine Steel and some pieces of Thamaskene Steel with you as a payment as he does not have any gold. You pick up {randomFineSteel} pieces of Fine Steel and {randomThamaskeneSteel} pieces of Thamaskene Steel and stuff them in your satchel. You and the blacksmith then part ways." />
-    
-    <!--Secrets of Steel - Event Buttons-->
+    <!--SecretsOfSteel - Event Buttons-->
     <string id="SecretsOfSteel_Event_Button_Text_1" text="Choose" />
     <string id="SecretsOfSteel_Event_Button_Text_2" text="Done" />
 
-    <!--Secrets of Steel - Log Messages-->
-    <string id="SecretsOfSteel_Event_Msg_1" text="{heroName} declined to help the old blacksmith." />
-    <string id="SecretsOfSteel_Event_Msg_2" text="{heroName} agreed to help the blacksmith, but destroyed all the blades during the tempering process." />
-    <string id="SecretsOfSteel_Event_Msg_3" text="{heroName} agreed to help the blacksmith, but made mistakes during the sharpening." />
-    <string id="SecretsOfSteel_Event_Msg_4" text="{heroName} agreed to help the blacksmith and they successfully made all the blades." />
+    <!--SecretsOfSteel - Event 1-->
+    <string id="SecretsOfSteel_Event_Choice_1A" text="You tell him that you are unable to help him. He looks back to you and smiles and says that he understands. He then gets up, enters the house, and closes the door. You and your men proceed to leave." />
+    <string id="SecretsOfSteel_Event_Choice_1B" text="You decline his request, explaining that you are pressed for time and cannot assist. The old blacksmith nods in quiet acceptance, rises from his seat, and retreats into the forge. Without another word, you and your party continue on your journey." />
+    <string id="SecretsOfSteel_Event_Choice_1C" text="You apologize and tell him you cannot offer any help. The blacksmith sighs but forces a weak smile, muttering that he understands. He walks back into his home, closing the door behind him. You and your men leave, the sound of the forge fading in the distance." />
+    <string id="SecretsOfSteel_Event_Choice_1D" text="You explain that your journey cannot be delayed and politely refuse his plea for help. The blacksmith gives you a resigned nod, quietly thanking you for at least listening. He turns and disappears into the shadows of his forge. Your party resumes its travels without another glance back." />
+    <string id="SecretsOfSteel_Event_Choice_1E" text="You shake your head, expressing regret that you cannot help him. The blacksmith smiles faintly, his eyes reflecting both disappointment and understanding. Without a word, he steps inside and shuts the door, leaving you and your men to carry on your way." />
 
+    <!--SecretsOfSteel - Event 2A-->
+    <string id="SecretsOfSteel_Event_Choice_2AA" text="You agree to help him. You send your men to {closestSettlement} and tell them to wait for you there. You and the blacksmith get to work. The hours pass, but after some time, you are ready to start tempering your blades. You heat the first one and lower it into the oil. You hear the metal clinging and making a lot of noise under the oil. You pull it up only to realize the entire blade is cracked and useless. You try again, but same result. And again, but same result again and before you know it, you've ruined all of your blades. You walk over to the blacksmith and apologize for your bad work. To your surprise, he just smiles at you and says that he appreciated the help nonetheless. He informs you to take some charcoal with you as payment as he does not have any gold. You pick up {randomCharcoal} pieces of charcoal and stuff them in your satchel. You and the blacksmith then part ways." />
+    <string id="SecretsOfSteel_Event_Choice_2AB" text="You decide to assist him, sending your men ahead to {closestSettlement}. Together, you and the blacksmith begin the meticulous process of forging the blades. As the hours wear on, the forge grows hotter, and finally, it is time to temper the blades. The first blade cracks as it cools in the oil, and so does the second. Despite your best efforts, each attempt results in failure. Frustrated, you apologize to the blacksmith for wasting his materials. He simply chuckles and assures you that your effort means more than the outcome. He hands you {randomCharcoal} pieces of charcoal, saying it is all he can offer. You accept his gift and bid him farewell." />
+    <string id="SecretsOfSteel_Event_Choice_2AC" text="Agreeing to help, you send your men to wait for you at {closestSettlement} and join the blacksmith in his forge. The day stretches long as you hammer and shape the metal, only for each blade to crack during tempering. Your inexperience shows, and you cannot produce a single usable piece. Ashamed, you apologize to the old man. Instead of scolding you, he thanks you for the company and offers you {randomCharcoal} pieces of charcoal as a token of gratitude. Grateful for his understanding, you take the charcoal and leave, pondering the blacksmith's patience." />
+    <string id="SecretsOfSteel_Event_Choice_2AD" text="You agree to assist and dismiss your men to {closestSettlement}, then roll up your sleeves to join the blacksmith. Hours of intense labor lead to the moment of truth— tempering the blades. Unfortunately, every attempt ends with the metal cracking, each blade ruined. Embarrassed, you admit your failure, but the blacksmith waves it off with a warm smile. He hands you {randomCharcoal} pieces of charcoal as thanks for your effort. You accept the modest reward, parting ways with the old smith and leaving the forge behind." />
+    <string id="SecretsOfSteel_Event_Choice_2AE" text="You decide to help the blacksmith, sending your men ahead to {closestSettlement} while you stay behind. The day is spent at the forge, hammering and shaping metal. When it comes time to temper the blades, each one cracks under the heat and oil. Frustrated and defeated, you apologize profusely, but the old blacksmith merely smiles and thanks you for trying. He offers you {randomCharcoal} pieces of charcoal as a token of gratitude. You accept the humble gift, say your farewells, and rejoin your men, wiser from the experience." />
+
+    <!--SecretsOfSteel - Event 2B-->
+    <string id="SecretsOfSteel_Event_Choice_2BA" text="You agree to help him. You send your men to {closestSettlement} and tell them to wait for you there. You and the blacksmith get to work. The hours pass, and eventually, you manage to temper all the blades and begin sharpening them. The blacksmith picks up one of the blades and examines it closely. He then tells you to stop, pointing out flaws in your sharpening technique. Grateful for your efforts, he assures you that he will finish the work himself. As a token of appreciation, he hands you {randomSteel} pieces of steel, apologizing for not having gold to offer. You thank him, pack the steel into your satchel, and part ways." />
+    <string id="SecretsOfSteel_Event_Choice_2BB" text="Agreeing to help, you send your men ahead to {closestSettlement} while you assist the blacksmith. Together, you temper all the blades and begin the sharpening process. After inspecting one of the blades, the blacksmith gently stops you, pointing out issues with the edge work. He praises your efforts on the hard labor and insists on taking over the finishing touches. As a reward, he gives you {randomSteel} pieces of steel, explaining it is all he can spare. You accept the gift, bid him farewell, and rejoin your men." />
+    <string id="SecretsOfSteel_Event_Choice_2BC" text="You agree to stay behind and help while your men head to {closestSettlement}. After hours of intense work, the blades are tempered, and you begin sharpening them. The blacksmith examines your work and politely points out errors in the sharpening process. He thanks you for handling the heavy lifting and assures you that he will complete the blades himself. For your help, he gives you {randomSteel} pieces of steel as payment. You gratefully accept the steel and leave the forge with a sense of accomplishment." />
+    <string id="SecretsOfSteel_Event_Choice_2BD" text="You stay to help the blacksmith, sending your men ahead to {closestSettlement}. After tempering the blades, you begin the task of sharpening them. The blacksmith inspects one of the blades and kindly corrects your technique. He decides to take over the final steps of the process and thanks you for your labor. He offers you {randomSteel} pieces of steel in lieu of gold as a reward for your effort. You pack the steel and say your goodbyes, leaving him to finish the work on his own." />
+    <string id="SecretsOfSteel_Event_Choice_2BE" text="You decide to assist, asking your men to wait for you at {closestSettlement}. You spend hours tempering and sharpening blades with the blacksmith. When he inspects your sharpening, he notices imperfections and decides to complete the final steps himself. He expresses gratitude for your hard work and rewards you with {randomSteel} pieces of steel, apologizing for not having gold. You accept the gift, thank him for the opportunity, and set off to rejoin your party." />
+
+    <!--SecretsOfSteel - Event 2C-->
+    <string id="SecretsOfSteel_Event_Choice_2CA" text="You agree to help him. You send your men to {closestSettlement} and tell them to wait for you there. You and the blacksmith get to work. The hours pass, and eventually, all the blades are tempered, and you are midway through sharpening them. The blacksmith inspects one of the blades and compliments your exceptional craftsmanship. Together, you finish the remaining blades. Grateful for your assistance, the blacksmith hands you {randomFineSteel} pieces of Fine Steel and {randomThamaskeneSteel} pieces of Thamaskene Steel as a reward, apologizing for not having gold. You thank him for the opportunity to help and part ways, satisfied with your work." />
+    <string id="SecretsOfSteel_Event_Choice_2CB" text="Agreeing to help, you send your men ahead to {closestSettlement} and stay to assist the blacksmith. Hours of focused labor lead to perfectly tempered blades, and you begin sharpening them. The blacksmith picks up one of the blades and praises your work, saying it is as fine as any he has ever seen. Together, you finish the task, and the old smith expresses his deep gratitude. As payment, he gives you {randomFineSteel} pieces of Fine Steel and {randomThamaskeneSteel} pieces of Thamaskene Steel. You accept the reward and leave with a sense of accomplishment." />
+    <string id="SecretsOfSteel_Event_Choice_2CC" text="You decide to help and ask your men to wait for you at {closestSettlement}. After hours of hard work, the blades are tempered, and you are halfway through sharpening them when the blacksmith inspects one of your finished pieces. He smiles warmly, complimenting your excellent craftsmanship. With his help, the task is completed, and the blacksmith thanks you profusely, offering {randomFineSteel} pieces of Fine Steel and {randomThamaskeneSteel} pieces of Thamaskene Steel as a reward. You bid him farewell, pleased with the outcome." />
+    <string id="SecretsOfSteel_Event_Choice_2CD" text="You stay behind to assist the blacksmith, sending your men to wait at {closestSettlement}. Together, you spend hours working the forge, tempering and sharpening the blades. As you near the end of your task, the blacksmith inspects one of the finished blades and declares your work exceptional. He helps you complete the final steps and rewards you with {randomFineSteel} pieces of Fine Steel and {randomThamaskeneSteel} pieces of Thamaskene Steel. With heartfelt thanks exchanged, you part ways, leaving the forge behind." />
+    <string id="SecretsOfSteel_Event_Choice_2CE" text="You agree to assist, sending your men to {closestSettlement} and dedicating your time to the blacksmith. Together, you temper the blades and begin sharpening them. The blacksmith carefully examines your work and praises the quality of your craftsmanship, saying it rivals his own. After a few more hours of work, the task is complete. Grateful beyond words, he offers you {randomFineSteel} pieces of Fine Steel and {randomThamaskeneSteel} pieces of Thamaskene Steel as a token of his appreciation. You accept the reward and leave, knowing you have made a difference." />
+
+    <!--SecretsOfSteel - Log Messages - Event 1-->
+    <string id="SecretsOfSteel_Event_Msg_1A" text="{heroName} declined to help the old blacksmith." />
+    <string id="SecretsOfSteel_Event_Msg_1B" text="{heroName} refused the blacksmith’s request for assistance and left the forge." />
+    <string id="SecretsOfSteel_Event_Msg_1C" text="{heroName} chose not to assist the blacksmith and departed." />
+    <string id="SecretsOfSteel_Event_Msg_1D" text="{heroName} rejected the blacksmith's plea for help, leaving him to his work." />
+    <string id="SecretsOfSteel_Event_Msg_1E" text="{heroName} turned down the blacksmith’s request and moved on." />
+
+    <!--SecretsOfSteel - Log Messages - Event 2A-->
+    <string id="SecretsOfSteel_Event_Msg_2AA" text="{heroName} tried to help the blacksmith but destroyed all the blades during tempering." />
+    <string id="SecretsOfSteel_Event_Msg_2AB" text="{heroName} assisted the blacksmith, but all the blades cracked in the tempering process." />
+    <string id="SecretsOfSteel_Event_Msg_2AC" text="{heroName} failed to temper the blades, ruining all of them in the process." />
+    <string id="SecretsOfSteel_Event_Msg_2AD" text="{heroName} attempted to help but ended up ruining every blade during tempering." />
+    <string id="SecretsOfSteel_Event_Msg_2AE" text="{heroName} agreed to assist the blacksmith, but their efforts left all the blades destroyed." />
+
+    <!--SecretsOfSteel - Log Messages - Event 2B-->
+    <string id="SecretsOfSteel_Event_Msg_2BA" text="{heroName} helped the blacksmith, but mistakes during sharpening rendered the blades imperfect." />
+    <string id="SecretsOfSteel_Event_Msg_2BB" text="{heroName} assisted the blacksmith but made errors in sharpening the blades." />
+    <string id="SecretsOfSteel_Event_Msg_2BC" text="{heroName} worked with the blacksmith, but the sharpening process left the blades flawed." />
+    <string id="SecretsOfSteel_Event_Msg_2BD" text="{heroName} tried to sharpen the blades, but mistakes marred the final product." />
+    <string id="SecretsOfSteel_Event_Msg_2BE" text="{heroName} helped temper the blades, but their sharpening mistakes left them unfinished." />
+
+    <!--SecretsOfSteel - Log Messages - Event 2C-->
+    <string id="SecretsOfSteel_Event_Msg_2CA" text="{heroName} successfully worked with the blacksmith to complete all the blades." />
+    <string id="SecretsOfSteel_Event_Msg_2CB" text="{heroName} collaborated with the blacksmith, and together they finished all the blades." />
+    <string id="SecretsOfSteel_Event_Msg_2CC" text="{heroName} and the blacksmith completed the blades without any issues." />
+    <string id="SecretsOfSteel_Event_Msg_2CD" text="{heroName} assisted the blacksmith, and their combined efforts produced perfect blades." />
+    <string id="SecretsOfSteel_Event_Msg_2CE" text="{heroName} worked alongside the blacksmith, resulting in a flawless set of blades." />
     
     
     <!--
@@ -2514,11 +2634,41 @@
      ******************************************************************************
      -->
     
-    <!--Poisoned Wine - Event-->
-    <string id="PoisonedWine_Title" text="Poisoned Wine" />
-    <string id="PoisonedWine_Event_Text" text="Late in the night your decide to throw a party to raise troop morale. Drinks are overflowing, hunger is satiated, and some troops have started games such as arm wrestling and cards. Everything seems to be going as planned as the hours pass by into the night. Soon however, you wished you hadn't counted your chickens before they hatched.\n\nYour stomach starts churning and you hear a commotion on the other side of camp. Your men have started hurling the content of their stomach across the ground. Some are clutching their stomachs, and even a few are crying as they beg for it to stop. Your face goes pale as you realize, you've been poisoned.\n\nQuestions rush through your head. Who could have done it? When? But whether it was because of all of the questions or the poison, your head begins to spin. Unfortunately, this was a moment you knew you were going to hate. The last thing you see before you join your troops with vomiting, is a handful of men, not moving. You only hope you and the rest of your men are not so unlucky." />
-    <string id="PoisonedWine_Event_Button_Text" text="Continue" />
-    <string id="PoisonedWine_Event_Msg" text="{heroName} lost {menKilled} men and {menHurt} men got sick after drinking poisoned wine." />
+    <!--PoisonedWine Event Titles-->
+    <string id="PoisonedWine_Title_A" text="Poisoned Wine" />
+    <string id="PoisonedWine_Title_B" text="The Bitter Sip" />
+    <string id="PoisonedWine_Title_C" text="Venom in the Chalice" />
+    <string id="PoisonedWine_Title_D" text="A Toast to Treachery" />
+    <string id="PoisonedWine_Title_E" text="Deadly Vintage" />
+    <string id="PoisonedWine_Title_F" text="Tainted Spirits" />
+    <string id="PoisonedWine_Title_G" text="The Fatal Drink" />
+    <string id="PoisonedWine_Title_H" text="Vengeance in a Bottle" />
+    <string id="PoisonedWine_Title_I" text="The Deadly Toast" />
+    <string id="PoisonedWine_Title_J" text="Wine of Betrayal" />
+
+    <!--PoisonedWine Event Texts-->
+    <string id="PoisonedWine_Event_Text_A" text="Late into the evening, you decide to host a celebration to boost troop morale. Drinks are overflowing, hunger is satiated, and some troops have started games such as arm wrestling and cards. Everything seems perfect until your stomach begins to churn, and a commotion erupts on the far side of the camp.&#xA;&#xA;Your men are doubled over in pain, some vomiting uncontrollably, others writhing on the ground in agony. A sinking realization hits you—you've been poisoned. Panic sets in as questions swirl in your mind: Who did this? Why? But soon your thoughts blur, and darkness edges into your vision. The last thing you see are motionless bodies among your men. You can only hope the poison won't claim more lives." />
+    <string id="PoisonedWine_Event_Text_B" text="As night falls, you throw a lively party to lift your men’s spirits. The camp buzzes with activity—drinks flow, food is devoured, and cheers ring out from games of skill and chance. Just when you think the night couldn't be better, a wave of nausea grips you, and cries of distress erupt from the crowd.&#xA;&#xA;Your men are collapsing, clutching their stomachs, some unable to stop vomiting. The realization hits hard: the wine is poisoned. As the chaos spreads, your head spins with questions and fear. Before you lose consciousness, you catch a glimpse of lifeless figures scattered across the ground. You pray the rest of your men will survive." />
+    <string id="PoisonedWine_Event_Text_C" text="The evening begins with joy and celebration. Your men, eager for a reprieve, dive into the feast and drink with abandon. The air is filled with laughter, friendly banter, and the clinking of cups. But as the night deepens, something feels wrong. Your stomach churns violently, and the sounds of celebration turn to screams and retching.&#xA;&#xA;Men collapse around you, their faces twisted in pain, some lying motionless. You stumble as dizziness takes over, and the horrifying truth dawns on you—you’ve been poisoned. The camp descends into chaos as your vision fades. The last thing you see is the lifeless stare of fallen soldiers." />
+    <string id="PoisonedWine_Event_Text_D" text="A night of revelry was supposed to bring cheer to the camp. Food and wine flowed as your troops enjoyed games and camaraderie under the moonlight. But joy turns to horror when men start collapsing, clutching their stomachs in agony.&#xA;&#xA;You feel the poison’s grip tightening in your own gut as dizziness overtakes you. Panic spreads as vomiting, cries, and still bodies replace laughter. As your vision fades, you curse the unseen hand responsible for this treachery. Only time will tell how many will survive this night of betrayal." />
+    <string id="PoisonedWine_Event_Text_E" text="The camp is alive with laughter and celebration. Wine flows freely, and the men seem happier than they’ve been in weeks. But as the night deepens, a sinister turn of events unfolds. Your stomach churns violently, and soon you hear groans and cries from all around the camp.&#xA;&#xA;The horrifying realization dawns—your entire party has been poisoned. Men collapse, their pain evident as they clutch their stomachs or vomit uncontrollably. Before darkness takes you, you notice several figures lying unnaturally still. This night of celebration has become a nightmare." />
+    <string id="PoisonedWine_Event_Text_F" text="A night of drinking and games seemed like the perfect way to boost morale. The camp is alive with energy, and spirits are high. But all too soon, the atmosphere changes. Pain grips your stomach, and chaos erupts as your men fall ill, some writhing in agony while others remain ominously still.&#xA;&#xA;The realization strikes you—you’ve been poisoned. The questions flood in, but the answers elude you as the poison takes hold. Before losing consciousness, you witness the horrifying toll the treachery has taken on your men." />
+    <string id="PoisonedWine_Event_Text_G" text="The celebration begins with laughter, food, and wine. The camp feels alive with joy as men share stories and enjoy a rare moment of peace. But the good cheer is short-lived. A wave of sickness spreads through the camp, and soon cries of pain replace the laughter.&#xA;&#xA;Your stomach twists in agony, and dizziness sets in. The camp descends into chaos as men vomit, collapse, and cry out. The grim reality hits—you’ve been poisoned. As you struggle to remain conscious, the sight of motionless bodies haunts you." />
+    <string id="PoisonedWine_Event_Text_H" text="You throw a feast to reward your men, hoping to lift their morale. The night begins with songs and cheer, but it doesn’t last. Your stomach twists painfully, and you notice men falling to their knees, clutching their stomachs or vomiting violently.&#xA;&#xA;The realization is chilling—you’ve all been poisoned. The chaos around you intensifies as the poison spreads its grip. Darkness creeps into your vision as your strength fades. The last thing you see is the lifeless bodies of your comrades, a haunting reminder of this act of betrayal." />
+    <string id="PoisonedWine_Event_Text_I" text="The night is filled with laughter, music, and celebration as your men enjoy the feast you’ve arranged. But the joy turns to panic when sickness spreads through the camp. Your own stomach churns, and cries of pain echo around you.&#xA;&#xA;The wine has been poisoned, and the effects are devastating. Men collapse, some vomiting, others lying completely still. As the poison takes hold of you, your thoughts are consumed with questions of who would do this and why. The sight of your fallen comrades is the last thing you see before darkness claims you." />
+    <string id="PoisonedWine_Event_Text_J" text="A night meant for celebration becomes a night of terror. The wine flows freely, and your men’s spirits are high, but the joy is short-lived. Your stomach tightens painfully, and soon you hear the sounds of distress from all around the camp.&#xA;&#xA;Your men are falling, some vomiting, others crying out in agony. The realization that the wine is poisoned fills you with dread. As you succumb to the effects, your vision blurs, and you see the lifeless forms of your comrades scattered across the ground." />
+
+    <!--PoisonedWine - Log Messages-->
+    <string id="PoisonedWine_Event_Msg_1A" text="{heroName} lost {menKilled} men, and {menHurt} men were sickened by poisoned wine." />
+    <string id="PoisonedWine_Event_Msg_1B" text="After drinking poisoned wine, {heroName} lost {menKilled} men, and {menHurt} were left ill." />
+    <string id="PoisonedWine_Event_Msg_1C" text="{heroName}'s celebration turned tragic with {menKilled} men dead and {menHurt} men falling ill from poisoned wine." />
+    <string id="PoisonedWine_Event_Msg_1D" text="A night of revelry ended in tragedy as {heroName} lost {menKilled} men and saw {menHurt} others fall ill." />
+    <string id="PoisonedWine_Event_Msg_1E" text="The poisoned wine cost {heroName} dearly, with {menKilled} men dead and {menHurt} men suffering sickness." />
+    <string id="PoisonedWine_Event_Msg_1F" text="{heroName} counted {menKilled} dead and {menHurt} sick after the poisoned wine incident." />
+    <string id="PoisonedWine_Event_Msg_1G" text="The poisoned wine led to {menKilled} deaths and {menHurt} cases of sickness in {heroName}'s camp." />
+    <string id="PoisonedWine_Event_Msg_1H" text="The revelry turned to horror as {heroName} lost {menKilled} men and tended to {menHurt} others who fell ill." />
+    <string id="PoisonedWine_Event_Msg_1I" text="A tragic turn of events left {heroName} with {menKilled} men dead and {menHurt} men incapacitated by poisoned wine." />
+    <string id="PoisonedWine_Event_Msg_1J" text="{heroName} mourned the loss of {menKilled} men and the illness of {menHurt} more after the poisoned wine disaster." />
 
     
     
@@ -2534,6 +2684,7 @@
     <string id="Engineering_Appended_Text" text="[Engineering - lvl {minEngineeringLevel}]" />
     <string id="TwoHanded_Appended_Text" text="[Two-Handed - lvl {minTwoHandedLevel}]" />
     <string id="Charm_Appended_Text" text="[Charm - lvl {minCharmLevel}]" />
+    <string id="Smithing_Appended_Text" text="[Charm - lvl {minCharmLevel}]" />
     
     
     <!--

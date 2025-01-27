@@ -68,11 +68,19 @@ namespace Bannerlord.RandomEvents.Settings
         
         public BirthdayPartyData BirthdayPartyData { get; } = new BirthdayPartyData("BirthdayParty", 0.5f);
         
+        public BloodTollData BloodTollData { get; } = new BloodTollData("BloodToll", 0.5f);
+        
+        public CostOfBetrayalData CostOfBetrayalData { get; } = new CostOfBetrayalData("CostOfBetrayal", 0.5f);
+        
+        //public DesecratedAltarData DesecratedAltarData { get; } = new DesecratedAltarData("DesecratedAltar", 0.5f);
+        
         public DuelData DuelData { get; } = new DuelData("Duel", 0.35f);
         
         public FallenSoldierFamilyData FallenSoldierFamilyData { get; } = new FallenSoldierFamilyData("FallenSoldierFamily", 0.4f);
         
         public FishingSpotData FishingSpotData { get; } = new FishingSpotData("FishingSpot", 0.5f);
+        
+        public FleeingFateData FleeingFateData { get; } = new FleeingFateData("FleeingFate", 0.5f);
         
         public HuntingTripData HuntingTripData { get; } = new HuntingTripData("HuntingTrip", 0.5f);
         
@@ -88,6 +96,8 @@ namespace Bannerlord.RandomEvents.Settings
         
         public PassingCometData PassingCometData { get; } = new PassingCometData("PassingComet", 0.125f);
         
+        public PriceOfRebellionData PriceOfRebellionData { get; } = new PriceOfRebellionData("PriceOfRebellion", 0.5f);
+        
         public RedMoonData RedMoonData { get; } = new RedMoonData("RedMoon", 0.25f);
         
         public RobberyData RobberyData { get; } = new RobberyData("Robbery", 0.5f);
@@ -101,7 +111,7 @@ namespace Bannerlord.RandomEvents.Settings
         public TravellersData TravellersData { get; } = new TravellersData("Travellers", 0.5f);
         
         public UnexpectedWeddingData UnexpectedWeddingData { get; } = new UnexpectedWeddingData("UnexpectedWedding", 0.25f);
-        
+
         public ViolatedGirlData ViolatedGirlData { get; } = new ViolatedGirlData("ViolatedGirl", 0.25f);
         
         #endregion
@@ -141,17 +151,7 @@ namespace Bannerlord.RandomEvents.Settings
         public PoisonedWineData PoisonedWineData { get; } = new PoisonedWineData("PoisonedWine", 0.4f);
 
         #endregion
-
         
-        #region AiEvents
-
-        public FleeingFateData FleeingFateData { get; } = new FleeingFateData("FleeingFate", 0.5f);
-        
-        public CostOfBetrayalData CostOfBetrayalData { get; } = new CostOfBetrayalData("CostOfBetrayal", 0.5f);
-        
-        public PriceOfRebellionData PriceOfRebellionData { get; } = new PriceOfRebellionData("PriceOfRebellion", 0.5f);
-
-        #endregion
         
     }
 }

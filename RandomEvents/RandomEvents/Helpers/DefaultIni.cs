@@ -143,10 +143,23 @@ MinGoldLooted = 25
 MaxGoldLooted = 250
 MinRogueryLevel = 125
 
+[BloodToll]
+EventDisabled = false
+MinRogueryLevel = 125
+MinGoldLoot = 2500
+MaxGoldLoot = 12500
+MinRandomXP = 250
+MaxRandomXP = 3500
+MinRenownLost = 10
+MaxRenownLost = 50
+
 [CostOfBetrayal]
 EventDisabled = false
 MinBaseMoraleLoss = 15
 MaxBaseMoraleLoss = 25
+
+[DesecratedAltar]
+EventDisabled = false
 
 [Duel]
 EventDisabled = false
