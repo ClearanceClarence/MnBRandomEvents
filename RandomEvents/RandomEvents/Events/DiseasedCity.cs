@@ -64,7 +64,7 @@ namespace Bannerlord.RandomEvents.Events
 
 				Hero highestMedicineHero = null;
 
-				if (plaguedSettlement.Town.Governor != null)
+				if (plaguedSettlement.Town != null && plaguedSettlement.Town.Governor != null)
 				{
 					highestMedicineHero = plaguedSettlement.Town.Governor;
 				}
@@ -104,23 +104,30 @@ namespace Bannerlord.RandomEvents.Events
 		{
 			try
 			{
-				onEventCompleted.Invoke();
+				if (onEventCompleted != null)
+				{
+					onEventCompleted.Invoke();
+				}
+				else
+				{
+					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n { ex.StackTrace}");
+				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
 			}
 		}
 
 		private static Settlement GetPlaguedSettlement()
 		{
-			if (MobileParty.MainParty.CurrentSettlement != null)
+			if (MobileParty.MainParty.CurrentSettlement != null && MobileParty.MainParty.CurrentSettlement.IsTown)
 			{
 				// If the player is in a settlement, use this one for the event so there's a higher chance a medic will help
 				return MobileParty.MainParty.CurrentSettlement;
 			}
 
-			var eligibleSettlements = Hero.MainHero.Clan.Settlements.Where(s => s.IsTown || s.IsCastle).ToList();
+			var eligibleSettlements = Hero.MainHero.Clan.Settlements.Where(s => s.IsTown).ToList();
 
 			// Randomly pick one of the eligible settlements
 			var index = MBRandom.RandomInt(0, eligibleSettlements.Count);

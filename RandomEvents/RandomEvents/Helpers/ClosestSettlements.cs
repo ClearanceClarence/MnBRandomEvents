@@ -21,12 +21,25 @@ namespace Bannerlord.RandomEvents.Helpers
         {
             try
             {
+                if (heroParty == null)
+                {
+                    MessageBox.Show("Hero party is null in GetClosestSettlement.");
+                    return null;
+                }
+
                 var settlements = Settlement.FindAll(condition).ToList();
+
+                if (settlements.Count == 0)
+                {
+                    MessageBox.Show("No settlements found matching the condition.");
+                    return null;
+                }
+
                 return settlements.MinBy(settlement => heroParty.GetPosition().DistanceSquared(settlement.GetPosition()));
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error when trying to find the closest settlement :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                MessageBox.Show($"Error when trying to find the closest settlement:\n\n{ex.Message}\n\n{ex.StackTrace}");
                 return null;
             }
         }

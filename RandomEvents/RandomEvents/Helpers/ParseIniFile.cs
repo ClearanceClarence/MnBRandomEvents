@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
 using TaleWorlds.Library;
 
@@ -7,7 +8,7 @@ namespace Bannerlord.RandomEvents.Helpers
     /// <summary>
     /// Provides methods to parse and manage the INI configuration file for random events.
     /// </summary>
-    public abstract class ParseIniFile
+    public static class ParseIniFile
     {
         /// <summary>
         /// Retrieves the path to the configuration file. If the file does not exist, a default one is created.
@@ -18,13 +19,20 @@ namespace Bannerlord.RandomEvents.Helpers
         public static string GetTheConfigFile()
         {
             var strExeFilePath = Assembly.GetExecutingAssembly().Location;
+            if (string.IsNullOrEmpty(strExeFilePath))
+            {
+                throw new InvalidOperationException("Unable to determine executing assembly path.");
+            }
+
             var strWorkPath = Path.GetDirectoryName(strExeFilePath);
-            // ReSharper disable once AssignNullToNotNullAttribute
-            var finalPath = Path.GetFullPath(Path.Combine(strWorkPath, @"..\..\ModuleData\RandomEvents_EventConfiguration.ini"));
+            var finalPath = Path.GetFullPath(Path.Combine(strWorkPath, "..", "..", "ModuleData", "RandomEvents_EventConfiguration.ini"));
 
             if (!File.Exists(finalPath))
             {
-                InformationManager.DisplayMessage(new InformationMessage("Random Events ini file not found, Generating a new one.", RandomEventsSubmodule.Ini_Color));
+                InformationManager.DisplayMessage(new InformationMessage(
+                    "Random Events INI file not found. Generating a new one.",
+                    RandomEventsSubmodule.Ini_Color
+                ));
 
                 CreateDefaultIniFile(finalPath);
             }

@@ -82,6 +82,13 @@ namespace Bannerlord.RandomEvents.Events
 			var msid = new MultiSelectionInquiryData(eventTitle, eventDescription, inquiryElements, false, 1, 1, eventButtonText1, null, 
 				elements => 
 				{
+					
+					if (elements == null || elements.Count == 0 || elements[0] == null)
+					{
+						MessageBox.Show($"No selection made for \"{randomEventData.eventType}\" event.");
+						return;
+					}
+					
 					switch ((string)elements[0].Identifier)
 					{
 						case "a":
@@ -113,11 +120,18 @@ namespace Bannerlord.RandomEvents.Events
 		{
 			try
 			{
-				onEventCompleted.Invoke();
+				if (onEventCompleted != null)
+				{
+					onEventCompleted.Invoke();
+				}
+				else
+				{
+					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n { ex.StackTrace}");
+				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
 			}
 		}
 	}

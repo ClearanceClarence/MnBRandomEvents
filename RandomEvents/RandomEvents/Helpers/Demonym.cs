@@ -11,16 +11,20 @@ namespace Bannerlord.RandomEvents.Helpers
     public static class Demonym
     {
         /// <summary>
-        /// Retrieves the demonym (either as a noun or adjective) for a given culture.
+        /// Retrieves the demonym (noun or adjective) for a given culture.
         /// </summary>
-        /// <param name="culture">String - The culture identifier (e.g., "Empire", "Vlandia").</param>
-        /// <param name="noun">Bool - If <c>true</c>, returns the noun form (e.g., "a Vlandian"); otherwise, returns the adjective form (e.g., "Vlandian").</param>
+        /// <param name="culture">The culture identifier (e.g., "Empire", "Vlandia").</param>
+        /// <param name="useNounForm">
+        /// If <c>true</c>, returns a noun form with article (e.g., "a Vlandian"); 
+        /// otherwise returns an adjective (e.g., "Vlandian").
+        /// </param>
         /// <returns>
-        /// A string representing the demonym for the specified culture, or "Imperial" (default) if the culture is unrecognized.
+        /// The localized demonym string, or "Imperial" if the culture is unrecognized.
         /// </returns>
-        public static string GetTheDemonym(string culture, bool noun)
+        public static string GetTheDemonym(string culture, bool useNounForm)
         {
-            var citizenName = noun ? culture switch
+            return useNounForm
+                ? culture switch
                 {
                     "Empire" => new TextObject("{=Demonym_Empire_Noun}an Imperial").ToString(),
                     "Vlandia" => new TextObject("{=Demonym_Vlandia_Noun}a Vlandian").ToString(),
@@ -40,8 +44,6 @@ namespace Bannerlord.RandomEvents.Helpers
                     "Khuzait" => new TextObject("{=Demonym_Khuzait}Khuzait").ToString(),
                     _ => new TextObject("{=Demonym_Default}Imperial").ToString()
                 };
-
-            return citizenName;
         }
     }
 }

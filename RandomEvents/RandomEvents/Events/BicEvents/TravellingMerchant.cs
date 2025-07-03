@@ -322,20 +322,27 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 		{
 			try
 			{
-				onEventCompleted.Invoke();
+				if (onEventCompleted != null)
+				{
+					onEventCompleted.Invoke();
+				}
+				else
+				{
+					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n { ex.StackTrace}");
+				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
 			}
 		}
 	}
 
 
-	public class TravellingmerchantData : RandomEventData
+	public class TravellingMerchantData : RandomEventData
 	{
 
-		public TravellingmerchantData(string eventType, float chanceWeight) : base(eventType, chanceWeight)
+		public TravellingMerchantData(string eventType, float chanceWeight) : base(eventType, chanceWeight)
 		{
 
 		}

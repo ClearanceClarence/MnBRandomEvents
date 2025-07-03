@@ -3022,7 +3022,14 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 		{
 			try
 			{
-				onEventCompleted.Invoke();
+				if (onEventCompleted != null)
+				{
+					onEventCompleted.Invoke();
+				}
+				else
+				{
+					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+				}
 			}
 			catch (Exception ex)
 			{

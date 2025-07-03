@@ -139,7 +139,7 @@ namespace Bannerlord.RandomEvents.Settings
         
         public RefugeesData RefugeesData { get; } = new RefugeesData("Refugees", 0.3f);
         
-        public TravellingmerchantData TravellingMerchantData { get; } = new TravellingmerchantData("TravellingMerchant", 0.3f);
+        public TravellingMerchantData TravellingMerchantData { get; } = new TravellingMerchantData("TravellingMerchant", 0.3f);
         
         #endregion
 

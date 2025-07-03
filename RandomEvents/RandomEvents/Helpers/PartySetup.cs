@@ -59,64 +59,112 @@ namespace Bannerlord.RandomEvents.Helpers
         }
 
         /// <summary>
-        /// Creates a bandit party with a specified culture near the main player's party.
+        /// Creates a bandit party near the main player's party with a specified or fallback culture.
         /// </summary>
-        /// <param name="cultureObjectId">Optional string - The culture ID of the bandit party. Defaults to the closest hideout's culture if null.</param>
-        /// <param name="partyName">Optional string - The name of the bandit party. If null, a default name is used.</param>
+        /// <param name="cultureObjectId">
+        /// Optional. The string ID of the desired <see cref="CultureObject"/> to use for the bandit party.
+        /// If null or invalid, the system will attempt to use the closest hideout's culture.
+        /// If that fails, it will repeatedly try known fallback cultures until a valid combination is found.
+        /// </param>
+        /// <param name="partyName">
+        /// Optional. The display name of the created party. If null, a name is automatically generated
+        /// based on the selected culture.
+        /// </param>
         /// <returns>
-        /// A new <see cref="MobileParty"/> representing the bandit party, or <c>null</c> if creation fails.
+        /// A <see cref="MobileParty"/> instance representing the bandit party. Returns <c>null</c> if no valid
+        /// culture/template/clan combination could be found, or if hideout data is invalid.
         /// </returns>
+        /// <remarks>
+        /// This method is resilient to missing data and will try up to 100 times to find a valid combination
+        /// of <see cref="CultureObject"/>, <see cref="PartyTemplateObject"/>, and <see cref="Clan"/> before giving up.
+        /// The party is spawned near the main player’s position, and initialized using the matching template and hideout.
+        /// </remarks>
+
         public static MobileParty CreateBanditParty(string cultureObjectId = null, string partyName = null)
+{
+    MobileParty banditParty = null;
+
+    try
+    {
+        var hideouts = Settlement.FindAll(s => s.IsHideout && s.Hideout != null).ToList();
+        var closestHideout = hideouts
+            .MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
+
+        if (closestHideout == null || closestHideout.Hideout == null)
         {
-            MobileParty banditParty = null;
-
-            try
-            {
-                var hideouts = Settlement.FindAll(s => s.IsHideout).ToList();
-                var closestHideout = hideouts.MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
-
-                var banditCultureObject = cultureObjectId != null ? MBObjectManager.Instance.GetObject<CultureObject>(cultureObjectId) : closestHideout.Culture;
-
-                partyName ??= $"{banditCultureObject.Name} (Random Event)";
-
-                var partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
-
-                var matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
-
-                if (matchedClan == null)
-                {
-                    var cultures = new List<string> { "Vlandia", "westernEmpire", "easternEmpire", "northernEmpire", "Khuzait", "Aserai", "Sturgia", "Battania" };
-
-                    var randomCulture = cultures[MBRandom.RandomInt(cultures.Count)];
-
-                    banditCultureObject = MBObjectManager.Instance.GetObject<CultureObject>(randomCulture);
-                    partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
-                    matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
-
-                    if (matchedClan == null)
-                    {
-                        MessageBox.Show($"Error: No matching clan found even with '{randomCulture}' culture.");
-                        return null;
-                    }
-                }
-
-                banditParty = BanditPartyComponent.CreateBanditParty(
-                    $"randomevent_{banditCultureObject.StringId}_{MBRandom.RandomInt(int.MaxValue)}",
-                    matchedClan,
-                    closestHideout.Hideout, false);
-
-                var partyNameTextObject = new TextObject(partyName);
-
-                banditParty.InitializeMobilePartyAroundPosition(partyTemplate, MobileParty.MainParty.Position2D, 0.2f, 0.1f, 20);
-                banditParty.SetCustomName(partyNameTextObject);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error while trying to create a mobile bandit party :\n\n {ex.Message} \n\n {ex.StackTrace}");
-            }
-
-            return banditParty;
+            MessageBox.Show("No valid hideout found nearby.");
+            return null;
         }
+
+        CultureObject banditCultureObject = null;
+        PartyTemplateObject partyTemplate = null;
+        Clan matchedClan = null;
+
+        // Try the requested culture first
+        if (!string.IsNullOrEmpty(cultureObjectId))
+        {
+            banditCultureObject = MBObjectManager.Instance.GetObject<CultureObject>(cultureObjectId);
+            if (banditCultureObject != null)
+            {
+                partyTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{banditCultureObject.StringId}_template");
+                matchedClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == partyTemplate);
+            }
+        }
+
+        // Keep trying random fallback cultures until we find one that works
+        var fallbackCultures = new List<string>
+        {
+            "Vlandia", "westernEmpire", "easternEmpire", "northernEmpire",
+            "Khuzait", "Aserai", "Sturgia", "Battania"
+        };
+
+        int safetyLimit = 100; // prevent infinite loop
+        while ((matchedClan == null || partyTemplate == null) && safetyLimit-- > 0)
+        {
+            string fallbackId = fallbackCultures[MBRandom.RandomInt(fallbackCultures.Count)];
+            var fallbackCulture = MBObjectManager.Instance.GetObject<CultureObject>(fallbackId);
+            if (fallbackCulture == null)
+                continue;
+
+            var fallbackTemplate = MBObjectManager.Instance.GetObject<PartyTemplateObject>($"{fallbackCulture.StringId}_template");
+            if (fallbackTemplate == null)
+                continue;
+
+            var fallbackClan = Clan.BanditFactions.FirstOrDefault(clan => clan.DefaultPartyTemplate == fallbackTemplate);
+            if (fallbackClan != null)
+            {
+                banditCultureObject = fallbackCulture;
+                partyTemplate = fallbackTemplate;
+                matchedClan = fallbackClan;
+            }
+        }
+
+        if (matchedClan == null || partyTemplate == null)
+        {
+            MessageBox.Show("Could not find a working fallback culture/clan/template even after multiple tries.");
+            return null;
+        }
+
+        partyName ??= $"{banditCultureObject.Name} (Random Event)";
+        var partyNameTextObject = new TextObject(partyName);
+
+        banditParty = BanditPartyComponent.CreateBanditParty(
+            $"randomevent_{banditCultureObject.StringId}_{MBRandom.RandomInt(int.MaxValue)}",
+            matchedClan,
+            closestHideout.Hideout,
+            false);
+
+        banditParty.InitializeMobilePartyAroundPosition(partyTemplate, MobileParty.MainParty.Position2D, 0.2f, 0.1f, 20);
+        banditParty.SetCustomName(partyNameTextObject);
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"Error while trying to create a mobile bandit party :\n\n {ex.Message} \n\n {ex.StackTrace}");
+    }
+
+    return banditParty;
+}
+
 
         /// <summary>
         /// Adds random units from a specified or default culture to a party.
