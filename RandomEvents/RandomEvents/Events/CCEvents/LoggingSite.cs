@@ -57,7 +57,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
         public override bool CanExecuteEvent()
         {
 
-            return HasValidEventData() && MobileParty.MainParty.MemberRoster.TotalRegulars >= maxSoldiersToGo;
+            return HasValidEventData() && MobileParty.MainParty.MemberRoster.TotalRegulars >= maxSoldiersToGo  && MobileParty.MainParty.CurrentSettlement == null;
         }
 
         public override void StartEvent()

@@ -233,8 +233,6 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                     }, null, null);
 
                 MBInformationManager.ShowMultiSelectionInquiry(msid, true);
-
-                StopEvent();
             }
             
             StopEvent();

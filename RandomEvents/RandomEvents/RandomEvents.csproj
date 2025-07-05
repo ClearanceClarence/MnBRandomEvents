@@ -56,6 +56,9 @@
     <Reference Include="TaleWorlds.ObjectSystem">
       <HintPath>TaleWorlds.ObjectSystem.dll</HintPath>
     </Reference>
+    <Reference Include="TaleWorlds.SaveSystem">
+      <HintPath>TaleWorlds.SaveSystem.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Events\AheadOfTime.cs" />
