@@ -114,7 +114,7 @@ MaxLoot = 10000
 
 [AFlirtatiousEncounter]
 EventDisabled = false
-MinWomanAge = 20
+MinWomanAge = 18
 MaxWomanAge = 45
 MinRelationshipIncrease = 5.0
 MaxRelationshipIncrease = 10.0

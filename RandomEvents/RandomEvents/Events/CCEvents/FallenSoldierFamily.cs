@@ -53,7 +53,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
 
         public override bool CanExecuteEvent()
         {
-            return HasValidEventData() && MobileParty.MainParty.CurrentSettlement != null && (MobileParty.MainParty.CurrentSettlement.IsTown || MobileParty.MainParty.CurrentSettlement.IsVillage)  && MobileParty.MainParty.MemberRoster.TotalRegulars >= 100;
+            return HasValidEventData() && (MobileParty.MainParty.CurrentSettlement.IsTown || MobileParty.MainParty.CurrentSettlement.IsVillage) && MobileParty.MainParty.MemberRoster.TotalRegulars >= 100;
         }
 
         public override void StartEvent()

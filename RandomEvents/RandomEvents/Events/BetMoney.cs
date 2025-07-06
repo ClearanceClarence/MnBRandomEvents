@@ -45,7 +45,7 @@ namespace Bannerlord.RandomEvents.Events
 		
 		public override bool CanExecuteEvent()
 		{
-			return HasValidEventData() && MobileParty.MainParty.MemberRoster.TotalRegulars > 0;
+			return HasValidEventData();
 		}
 
 		public override void StartEvent()

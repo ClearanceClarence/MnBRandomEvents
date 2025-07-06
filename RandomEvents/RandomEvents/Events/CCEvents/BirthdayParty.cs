@@ -73,8 +73,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
 
         public override bool CanExecuteEvent()
         {
-            return HasValidEventData() && MobileParty.MainParty.MemberRoster.TotalRegulars >= maxYourMenAttending &&
-                   Hero.MainHero.Gold > maxGoldGiven;
+            return HasValidEventData() && MobileParty.MainParty.MemberRoster.TotalRegulars >= maxYourMenAttending && MobileParty.MainParty.CurrentSettlement == null && Hero.MainHero.Gold > maxGoldGiven;
         }
 
         public override void StartEvent()

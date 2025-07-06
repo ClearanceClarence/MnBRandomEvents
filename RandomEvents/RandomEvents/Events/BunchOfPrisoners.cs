@@ -54,6 +54,12 @@ namespace Bannerlord.RandomEvents.Events
 		{
 			var prisonerAmount = MBRandom.RandomInt(minPrisonerGain, maxPrisonerGain);
 			var settlement = GetRandomSettlement();
+			
+			if (settlement == null)
+			{
+				StopEvent();
+				return;
+			}
 
 			var prisoners = PartySetup.CreateBanditParty();
 			prisoners.MemberRoster.Clear();

@@ -335,6 +335,8 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                         case "a":
                             InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionAText, true, false, eventButtonText2, null, null, null), true);
                             InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color_MED_Outcome));
+                            
+                            Hero.MainHero.ChangeHeroGold(+goldReward);
                             break;
                         
                         case "b":
@@ -350,6 +352,8 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                         case "d":
                             InformationManager.ShowInquiry(new InquiryData(eventTitle,eventOptionDText, true, false, eventButtonText2, null, null, null), true);
                             InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color_MED_Outcome));
+                            
+                            Hero.MainHero.ChangeHeroGold(+goldReward);
                             break;
                         
                         case "e":

@@ -35,9 +35,9 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             minCharmLevel = ConfigFile.ReadInteger("AFlirtatiousEncounter", "MinCharmLevel");
             
             //Overrides the input
-            if (minWomanAge < 16)
+            if (minWomanAge < 18)
             {
-                minWomanAge = 16;
+                minWomanAge = 18;
             }
         }
 
