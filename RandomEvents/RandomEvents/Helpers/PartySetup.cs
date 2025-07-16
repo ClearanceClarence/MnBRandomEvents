@@ -90,7 +90,7 @@ namespace Bannerlord.RandomEvents.Helpers
         var closestHideout = hideouts
             .MinBy(s => MobileParty.MainParty.GetPosition().DistanceSquared(s.GetPosition()));
 
-        if (closestHideout == null || closestHideout.Hideout == null)
+        if (closestHideout?.Hideout == null)
         {
             MessageBox.Show("No valid hideout found nearby.");
             return null;
@@ -118,10 +118,11 @@ namespace Bannerlord.RandomEvents.Helpers
             "Khuzait", "Aserai", "Sturgia", "Battania"
         };
 
-        int safetyLimit = 100; // prevent infinite loop
+        var safetyLimit = 100; // prevent infinite loop
+        
         while ((matchedClan == null || partyTemplate == null) && safetyLimit-- > 0)
         {
-            string fallbackId = fallbackCultures[MBRandom.RandomInt(fallbackCultures.Count)];
+            var fallbackId = fallbackCultures[MBRandom.RandomInt(fallbackCultures.Count)];
             var fallbackCulture = MBObjectManager.Instance.GetObject<CultureObject>(fallbackId);
             if (fallbackCulture == null)
                 continue;
@@ -166,42 +167,89 @@ namespace Bannerlord.RandomEvents.Helpers
 }
 
 
-        /// <summary>
-        /// Adds random units from a specified or default culture to a party.
-        /// </summary>
-        /// <param name="party">The <see cref="MobileParty"/> to add units to.</param>
-        /// <param name="numberToAdd">The number of units to add.</param>
-        /// <param name="overrideCulture">Optional <see cref="CultureObject"/> to override the party's culture.</param>
-        public static void AddRandomCultureUnits(MobileParty party, int numberToAdd, CultureObject overrideCulture = null)
+/// <summary>
+/// Adds random units from a specified or default culture to a party.
+/// </summary>
+/// <param name="party">
+/// The <see cref="MobileParty"/> to add units to. If <c>null</c>, the method will abort.
+/// </param>
+/// <param name="numberToAdd">The number of units to add.</param>
+/// <param name="overrideCulture">
+/// Optional <see cref="CultureObject"/> to override the party's culture.
+/// If invalid or no units are found, a fallback culture will be used.
+/// </param>
+public static void AddRandomCultureUnits(MobileParty party, int numberToAdd, CultureObject overrideCulture = null)
+{
+    try
+    {
+        if (party == null)
         {
-            try
+            MessageBox.Show("AddRandomCultureUnits: party parameter was null.");
+            return;
+        }
+
+        var culture = overrideCulture ?? party.Party?.Culture;
+
+        var characterList = culture?.IsBandit == true
+            ? GetBanditCharacters(culture)
+            : GetMainCultureCharacters(culture);
+
+        var fallbackCultures = new List<string>
+        {
+            "Vlandia", "westernEmpire", "easternEmpire", "northernEmpire",
+            "Khuzait", "Aserai", "Sturgia", "Battania"
+        };
+
+        var safetyLimit = 50;
+        
+        while ((characterList == null || characterList.Count == 0) && safetyLimit-- > 0)
+        {
+            var fallbackId = fallbackCultures[MBRandom.RandomInt(fallbackCultures.Count)];
+            var fallbackCulture = MBObjectManager.Instance.GetObject<CultureObject>(fallbackId);
+            characterList = fallbackCulture?.IsBandit == true
+                ? GetBanditCharacters(fallbackCulture)
+                : GetMainCultureCharacters(fallbackCulture);
+        }
+
+        if (characterList == null || characterList.Count == 0)
+        {
+            // Final forced fallback
+            culture = MBObjectManager.Instance.GetObject<CultureObject>("Vlandia");
+            characterList = culture?.IsBandit == true
+                ? GetBanditCharacters(culture)
+                : GetMainCultureCharacters(culture);
+        }
+
+        if (characterList == null || characterList.Count == 0)
+        {
+            MessageBox.Show("Failed to find any units for any culture. Aborting unit addition.");
+            return;
+        }
+
+        var spawnNumbers = new int[characterList.Count];
+        var currentSpawned = 0;
+
+        while (currentSpawned < numberToAdd)
+        {
+            var randomIndex = MBRandom.RandomInt(0, characterList.Count);
+            spawnNumbers[randomIndex]++;
+            currentSpawned++;
+        }
+
+        for (var i = 0; i < characterList.Count; i++)
+        {
+            var character = characterList[i];
+            if (character != null && spawnNumbers[i] > 0)
             {
-                var partyCultureObject = overrideCulture ?? party.Party.Culture;
-
-                var characterObjectList = partyCultureObject.IsBandit ? GetBanditCharacters(partyCultureObject) : GetMainCultureCharacters(partyCultureObject);
-
-                var spawnNumbers = new int[characterObjectList.Count];
-                var currentSpawned = 0;
-
-                while (currentSpawned < numberToAdd)
-                {
-                    var randomInt = MBRandom.RandomInt(0, spawnNumbers.Length);
-                    spawnNumbers[randomInt]++;
-                    currentSpawned++;
-                }
-
-                for (var i = 0; i < characterObjectList.Count; i++)
-                {
-                    var characterObject = characterObjectList[i];
-                    if (characterObject != null)
-                        party.AddElementToMemberRoster(characterObject, spawnNumbers[i]);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error while trying to add random culture units :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                party.AddElementToMemberRoster(character, spawnNumbers[i]);
             }
         }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"Error while trying to add random culture units:\n\n {ex.Message} \n\n {ex.StackTrace}");
+    }
+}
 
         /// <summary>
         /// Retrieves a list of bandit character objects for a given culture.

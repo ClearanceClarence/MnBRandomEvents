@@ -109,7 +109,6 @@
     <Compile Include="Events\CommunityEvents\PoisonedWine.cs" />
     <Compile Include="Events\CommunityEvents\SecretsOfSteel.cs" />
     <Compile Include="Events\DiseasedCity.cs" />
-    <Compile Include="Events\EagerTroops.cs" />
     <Compile Include="Events\ExoticDrinks.cs" />
     <Compile Include="Events\FantasticFighters.cs" />
     <Compile Include="Events\FoodFight.cs" />

@@ -25,8 +25,6 @@ namespace Bannerlord.RandomEvents.Settings
         
         public DiseasedCityData DiseasedCityData { get; } = new DiseasedCityData("DiseasedCity", 0.5f);
         
-        public EagerTroopsData EagerTroopsData { get; } = new EagerTroopsData("EagerTroops", 0.5f);
-        
         public ExoticDrinksData ExoticDrinksData { get; } = new ExoticDrinksData("ExoticDrinks", 0.5f);
         
         public FantasticFightersData FantasticFightersData { get; } = new FantasticFightersData("FantasticFighters", 0.5f);
