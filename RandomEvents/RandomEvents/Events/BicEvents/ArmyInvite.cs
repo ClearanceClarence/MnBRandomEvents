@@ -10,6 +10,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events.BicEvents
 {
@@ -38,7 +39,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 		{
 			if (Clan.PlayerClan.Kingdom != null)
 			{
-				var Lords = Clan.PlayerClan.Kingdom.Lords.ToList();
+				var Lords = Clan.PlayerClan.Kingdom.AliveLords.ToList();
 				var Generals = Lords.Where(lord => lord == lord.PartyBelongedTo?.Army?.ArmyOwner).ToList();
 				if (Generals.Count == 0)
 					return false;
@@ -49,7 +50,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 
 		public override void StartEvent()
 		{
-			var Lords = Clan.PlayerClan.Kingdom.Lords.ToList();
+			var Lords = Clan.PlayerClan.Kingdom.AliveLords.ToList();
 			var Generals = Lords.Where(lord => lord == lord.PartyBelongedTo?.Army?.ArmyOwner).ToList();
 			var random = new Random();
 			var index = random.Next(Generals.Count);
@@ -62,7 +63,7 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 			var playerName = Hero.MainHero.Name;
 
 			var settlements = Settlement.FindAll(s => s.IsTown || s.IsCastle || s.IsVillage).ToList();
-			var closestSettlement = settlements.MinBy(s => ArmyLeader.GetPosition().DistanceSquared(s.GetPosition()));
+			var closestSettlement = settlements.MinBy(s => ArmyLeader.GetPositionAsVec3().DistanceSquared(s.GetPosition()));
 
 			var eventTitle = new TextObject("{=ArmyInvite_Title}Army Invitation").ToString();
 			
@@ -91,12 +92,12 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 				}
 				else
 				{
-					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+					MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
 				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+				MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
 			}
 		}
 	}

@@ -9,6 +9,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events.BicEvents
 {
@@ -154,12 +155,12 @@ namespace Bannerlord.RandomEvents.Events.BicEvents
 				}
 				else
 				{
-					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+					MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
 				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+				MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
 			}
 		}
 	}

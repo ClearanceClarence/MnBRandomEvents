@@ -9,6 +9,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
 
 namespace Bannerlord.RandomEvents.Events.CommunityEvents
@@ -181,7 +182,7 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
                                 InformationManager.DisplayMessage(new InformationMessage(eventMsg2C, RandomEventsSubmodule.Msg_Color_POS_Outcome));
                                 break;
                             default:
-                                MessageBox.Show($"Error while selecting option for \"{randomEventData.eventType}\"");
+                                MessageManager.DisplayMessage($"Error while selecting option for \"{randomEventData.eventType}\"");
                                 break;
                         }
                     }, null, null);
@@ -199,7 +200,7 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
+                MessageManager.DisplayMessage(
                     $"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows;
 using Bannerlord.RandomEvents.Helpers;
 using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
@@ -8,6 +7,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events
 {
@@ -102,7 +102,8 @@ namespace Bannerlord.RandomEvents.Events
 							bool success = randFloat <= successChance;
 
 							if (success)
-								LiquidChanges();
+								
+								HelperFunctions.AssignRandomSkillXp(250, 3500);
 							else
 								InformationManager.ShowInquiry(new InquiryData(eventTitle, eventNothingHappens, true, false, eventButtonText2, null, null, null), true);
 							
@@ -111,7 +112,7 @@ namespace Bannerlord.RandomEvents.Events
 							InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOutcome2, true, false, eventButtonText2, null, null, null), true);
 							break;
 						default:
-							MessageBox.Show($"Error while selecting option for \"{randomEventData.eventType}\"");
+							MessageManager.DisplayMessage($"Error while selecting option for \"{randomEventData.eventType}\"");
 							break;
 					}
 				}, null, null);
@@ -131,27 +132,13 @@ namespace Bannerlord.RandomEvents.Events
 				}
 				else
 				{
-					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+					MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
 				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+				MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
 			}
-		}
-		
-		void LiquidChanges()
-		{
-			int xpReceived = MBRandom.RandomInt(minXp, maxXp);
-
-			var attributes = AttributeHelper.GetAllAttributes();
-
-			var index = MBRandom.RandomInt(0, attributes.Count -1);
-
-			//Set skill xp
-			var skillIndex = MBRandom.RandomInt(0, attributes[index].Skills.Count - 1);
-			Hero.MainHero.HeroDeveloper.AddSkillXp(attributes[index].Skills[skillIndex], xpReceived);
-			InformationManager.DisplayMessage(new InformationMessage($"{attributes[index].Skills[skillIndex].Name} received {xpReceived.ToString()}xp!", RandomEventsSubmodule.Msg_Color_POS_Outcome));
 		}
 	}
 

@@ -16,7 +16,7 @@ namespace Bannerlord.RandomEvents.Settings
                 return skillChecks;
             }
         }
-        
+
         public abstract class SupernaturalEvents
         {
             public static bool IsDisabled()
@@ -28,7 +28,7 @@ namespace Bannerlord.RandomEvents.Settings
                 return SupernaturalEvents;
             }
         }
-        
+
         public abstract class SciFiEvents
         {
             public static bool IsDisabled()
@@ -40,7 +40,7 @@ namespace Bannerlord.RandomEvents.Settings
                 return SciFiEvents;
             }
         }
-        
+
         public abstract class Basic
         {
             public static int GetMinimumInGameHours()
@@ -51,7 +51,7 @@ namespace Bannerlord.RandomEvents.Settings
 
                 return MinimumInGameHours != 0 ? MinimumInGameHours : 24;
             }
-            
+
             public static int GetMinimumRealMinutes()
             {
                 var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());
@@ -60,7 +60,7 @@ namespace Bannerlord.RandomEvents.Settings
 
                 return MinimumRealMinutes != 0 ? MinimumRealMinutes : 5;
             }
-            
+
             public static int GetMaximumRealMinutes()
             {
                 var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());
@@ -69,7 +69,7 @@ namespace Bannerlord.RandomEvents.Settings
 
                 return MaximumRealMinutes != 0 ? MaximumRealMinutes : 30;
             }
-            
+
             public static int GetLevelXpMultiplier()
             {
                 var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());

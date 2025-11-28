@@ -8,6 +8,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events.CCEvents
 {
@@ -57,7 +58,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             
             var soldiersInvestigating = MBRandom.RandomInt(minSoldiersToDisappear, maxSoldiersToDisappear);
             
-            MobileParty.MainParty.MemberRoster.KillNumberOfNonHeroTroopsRandomly(soldiersInvestigating);
+            MobileParty.MainParty.MemberRoster.RemoveNumberOfNonHeroTroopsRandomly(soldiersInvestigating);
             
             var eventPt1 =new TextObject(EventTextHandler.GetRandomEventPart1())
                 .SetTextVariable("closestSettlement", closestSettlement)
@@ -94,12 +95,12 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 }
                 else
                 {
-                    MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+                    MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
         

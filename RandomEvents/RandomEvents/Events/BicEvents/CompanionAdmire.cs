@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Windows;
 using Bannerlord.RandomEvents.Helpers;
 using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
@@ -8,606 +7,671 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events.BicEvents
 {
-	public sealed class CompanionAdmire : BaseEvent
-	{
-		private readonly bool eventDisabled;
-		
-		public CompanionAdmire() : base(ModSettings.RandomEvents.CompanionAdmireData)
+    public sealed class CompanionAdmire : BaseEvent
+    {
+        private readonly bool eventDisabled;
+
+        public CompanionAdmire() : base(ModSettings.RandomEvents.CompanionAdmireData)
         {
-	        var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());
-            
-	        eventDisabled = ConfigFile.ReadBoolean("CompanionAdmire", "EventDisabled");
-	        
-		}
+            var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());
 
-		public override void CancelEvent()
-		{
-		}
-		
-		private bool HasValidEventData()
-		{
-			return eventDisabled == false;
-		}
+            eventDisabled = ConfigFile.ReadBoolean("CompanionAdmire", "EventDisabled");
+        }
 
-		public override bool CanExecuteEvent()
-		{
-			return HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null && MobileParty.MainParty.EffectiveScout != Hero.MainHero
-				&& MobileParty.MainParty.IsDisorganized == false && Clan.PlayerClan.Renown >= 500 ||
-				HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null && MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero
-				&& MobileParty.MainParty.IsDisorganized == false && Clan.PlayerClan.Renown >= 500 ||
-				HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null && MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero
-				&& MobileParty.MainParty.IsDisorganized == false && Clan.PlayerClan.Renown >= 500 ||
-				HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null && MobileParty.MainParty.EffectiveEngineer != Hero.MainHero
-				&& MobileParty.MainParty.IsDisorganized == false && Clan.PlayerClan.Renown >= 500;
-		}
+        public override void CancelEvent()
+        {
+        }
 
-		public override void StartEvent()
-		{
-			var dice = MBRandom.RandomInt(1, 4);
+        private bool HasValidEventData()
+        {
+            return !eventDisabled;
+        }
 
-			//Profession----------
-			var scout = MobileParty.MainParty.EffectiveScout;
-			var quartermaster = MobileParty.MainParty.EffectiveQuartermaster;
-			var engineer = MobileParty.MainParty.EffectiveEngineer;
-			var surgeon = MobileParty.MainParty.EffectiveSurgeon;
-			
-			//Profession Name ----
-			var scoutName = MobileParty.MainParty.EffectiveScout.Name;
-			var quartermasterName = MobileParty.MainParty.EffectiveQuartermaster.Name;
-			var engineerName = MobileParty.MainParty.EffectiveEngineer.Name;
-			var surgeonName = MobileParty.MainParty.EffectiveSurgeon.Name;
-			//--------------------
+        public override bool CanExecuteEvent()
+        {
+            return (HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null &&
+                    MobileParty.MainParty.EffectiveScout != Hero.MainHero
+                    && !MobileParty.MainParty.IsDisorganized && Clan.PlayerClan.Renown >= 500) ||
+                   (HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null &&
+                    MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero
+                    && !MobileParty.MainParty.IsDisorganized && Clan.PlayerClan.Renown >= 500) ||
+                   (HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null &&
+                    MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero
+                    && !MobileParty.MainParty.IsDisorganized && Clan.PlayerClan.Renown >= 500) ||
+                   (HasValidEventData() && MobileParty.MainParty.CurrentSettlement == null &&
+                    MobileParty.MainParty.EffectiveEngineer != Hero.MainHero
+                    && !MobileParty.MainParty.IsDisorganized && Clan.PlayerClan.Renown >= 500);
+        }
 
-			var clanName = Clan.PlayerClan.Name;
-			var closestSettlement = ClosestSettlements.GetClosestAny(MobileParty.MainParty).ToString();
-			
-			Hero.MainHero.AddSkillXp(DefaultSkills.Leadership, 50);
-			Hero.MainHero.AddSkillXp(DefaultSkills.Charm, 30);
+        public override void StartEvent()
+        {
+            var dice = MBRandom.RandomInt(1, 4);
 
-			var eventButtonText = new TextObject("{=CompanionAdmire_Event_Button_Text}Done").ToString();
+            //Profession----------
+            var scout = MobileParty.MainParty.EffectiveScout;
+            var quartermaster = MobileParty.MainParty.EffectiveQuartermaster;
+            var engineer = MobileParty.MainParty.EffectiveEngineer;
+            var surgeon = MobileParty.MainParty.EffectiveSurgeon;
 
-			//Event Messages____________
-			var eventMsg1 = new TextObject("{=CompanionAdmire_Event_Msg_1}Your relationship with {scout) has improved.")
-			.SetTextVariable("scout", scoutName)
-			.ToString();
-			
-			var eventMsg2 = new TextObject("{=CompanionAdmire_Event_Msg_2}Your relationship with {quartermaster) has improved.")
-			.SetTextVariable("quartermaster", quartermasterName)
-			.ToString();
-			
-			var eventMsg3 = new TextObject("{=CompanionAdmire_Event_Msg_3}Your relationship with {surgeon) has improved.")
-			.SetTextVariable("surgeon", surgeonName)
-			.ToString();
-			
-			var eventMsg4 = new TextObject("{=CompanionAdmire_Event_Msg_4}Your relationship with {engineer) has improved.")
-			.SetTextVariable("engineer", engineerName)
-			.ToString();
+            //Profession Name ----
+            var scoutName = MobileParty.MainParty.EffectiveScout.Name;
+            var quartermasterName = MobileParty.MainParty.EffectiveQuartermaster.Name;
+            var engineerName = MobileParty.MainParty.EffectiveEngineer.Name;
+            var surgeonName = MobileParty.MainParty.EffectiveSurgeon.Name;
+            //--------------------
 
+            var clanName = Clan.PlayerClan.Name;
+            var closestSettlement = ClosestSettlements.GetClosestAny(MobileParty.MainParty).ToString();
 
+            Hero.MainHero.AddSkillXp(DefaultSkills.Leadership, 50);
+            Hero.MainHero.AddSkillXp(DefaultSkills.Charm, 30);
 
-			//----------------------------------------------- 1 ------------------------------
-			if (dice == 1)
-			{
-				#region Scout
-				if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
-				{
+            var eventButtonText = new TextObject("{=CompanionAdmire_Event_Button_Text}Done").ToString();
 
-					var CompanionIsFemale = scout.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+            //Event Messages____________
+            var eventMsg1 = new TextObject("{=CompanionAdmire_Event_Msg_1}Your relationship with {scout) has improved.")
+                .SetTextVariable("scout", scoutName)
+                .ToString();
 
-					var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
+            var eventMsg2 =
+                new TextObject("{=CompanionAdmire_Event_Msg_2}Your relationship with {quartermaster) has improved.")
+                    .SetTextVariable("quartermaster", quartermasterName)
+                    .ToString();
 
-					var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+            var eventMsg3 =
+                new TextObject("{=CompanionAdmire_Event_Msg_3}Your relationship with {surgeon) has improved.")
+                    .SetTextVariable("surgeon", surgeonName)
+                    .ToString();
 
-					var eventOption1 = new TextObject(
-							"{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("scout", scoutName)
-						.SetTextVariable("gender", gender)
-						.ToString();
-
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
-
-					InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-					
-				}
-				#endregion
-				//--------------------------
-				#region Quartermaster
-				else if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
-				{
-
-					var CompanionIsFemale = quartermaster.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
-
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
-
-					var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
-
-					var eventOption2 = new TextObject(
-							"{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("quartermaster", quartermasterName)
-						.SetTextVariable("gender", gender)
-						.ToString();
-
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+            var eventMsg4 =
+                new TextObject("{=CompanionAdmire_Event_Msg_4}Your relationship with {engineer) has improved.")
+                    .SetTextVariable("engineer", engineerName)
+                    .ToString();
 
 
-				}
-				#endregion
-				//--------------------------
-				#region Surgeon
-				else if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
-				{
-					var CompanionIsFemale = surgeon.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+            //----------------------------------------------- 1 ------------------------------
+            if (dice == 1)
+            {
+                #region Scout
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
+                if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
+                {
+                    var CompanionIsFemale = scout.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
 
-					var eventOption3 = new TextObject(
-							"{=CompanionAdmire_Event_Text3}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("surgeon", surgeonName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                    var eventOption1 = new TextObject(
+                            "{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("scout", scoutName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
 
-				}
-				#endregion
-				//-------------------------
-				#region Engineer
-				else if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
-				{
-					var CompanionIsFemale = engineer.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
+                #endregion
 
-					var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                //--------------------------
 
-					var eventOption4 = new TextObject(
-							"{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("engineer", engineerName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                #region Quartermaster
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-				}
-				#endregion
+                else if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
+                {
+                    var CompanionIsFemale = quartermaster.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-			}
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
+
+                    var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+
+                    var eventOption2 = new TextObject(
+                            "{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("quartermaster", quartermasterName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
+
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
+
+                #endregion
+
+                //--------------------------
+
+                #region Surgeon
+
+                else if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
+                {
+                    var CompanionIsFemale = surgeon.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
+
+                    var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+
+                    var eventOption3 = new TextObject(
+                            "{=CompanionAdmire_Event_Text3}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("surgeon", surgeonName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
+
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
+
+                #endregion
+
+                //-------------------------
+
+                #region Engineer
+
+                else if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
+                {
+                    var CompanionIsFemale = engineer.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
+
+                    var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+
+                    var eventOption4 = new TextObject(
+                            "{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("engineer", engineerName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
+
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
+
+                #endregion
+            }
             //----------------------------------------------- 2 ------------------------------
             else if (dice == 2)
             {
-				#region Quartermaster
-				if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
-				{
-					var CompanionIsFemale = quartermaster.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                #region Quartermaster
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
+                if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
+                {
+                    var CompanionIsFemale = quartermaster.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
 
-					var eventOption2 = new TextObject(
-							"{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("quartermaster", quartermasterName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                    var eventOption2 = new TextObject(
+                            "{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("quartermaster", quartermasterName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-				}
-				#endregion
+                #endregion
 
-				#region Surgeon
-				else if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
-				{
-					var CompanionIsFemale = surgeon.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                #region Surgeon
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
+                else if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
+                {
+                    var CompanionIsFemale = surgeon.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
 
-					var eventOption3 = new TextObject(
-							"{=CompanionAdmire_Event_Tex3t}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("surgeon", surgeonName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-				}
-				#endregion
+                    var eventOption3 = new TextObject(
+                            "{=CompanionAdmire_Event_Tex3t}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("surgeon", surgeonName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-				#region Engineer
-				else if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
-				{
-					var CompanionIsFemale = engineer.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
+                #endregion
 
-					var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                #region Engineer
 
-					var eventOption4 = new TextObject(
-							"{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("engineer", engineerName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                else if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
+                {
+                    var CompanionIsFemale = engineer.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
 
-				}
-				#endregion
+                    var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-				#region Scout
-				else if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
-				{
+                    var eventOption4 = new TextObject(
+                            "{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("engineer", engineerName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-					var CompanionIsFemale = scout.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
+                #endregion
 
-					var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                #region Scout
 
-					var eventOption1 = new TextObject(
-							"{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("scout", scoutName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                else if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
+                {
+                    var CompanionIsFemale = scout.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
+                    var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
 
-					InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                    var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-				}
-				#endregion
+                    var eventOption1 = new TextObject(
+                            "{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("scout", scoutName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-			}
-			//----------------------------------------------- 3 ------------------------------
-			else if (dice == 3)
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
+
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
+
+                #endregion
+            }
+            //----------------------------------------------- 3 ------------------------------
+            else if (dice == 3)
             {
-				#region Surgeon
-				if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
-				{
-					var CompanionIsFemale = surgeon.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                #region Surgeon
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
+                if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
+                {
+                    var CompanionIsFemale = surgeon.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
 
-					var eventOption3 = new TextObject(
-							"{=CompanionAdmire_Event_Text3}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("surgeon", surgeonName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                    var eventOption3 = new TextObject(
+                            "{=CompanionAdmire_Event_Text3}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("surgeon", surgeonName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-				}
-				#endregion
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-				#region Engineer
-				else if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
-				{
-					var CompanionIsFemale = engineer.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                #endregion
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
+                #region Engineer
 
-					var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                else if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
+                {
+                    var CompanionIsFemale = engineer.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventOption4 = new TextObject(
-							"{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("engineer", engineerName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-				}
-				#endregion
+                    var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-				#region Scout
-				else if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
-				{
-					var CompanionIsFemale = scout.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    var eventOption4 = new TextObject(
+                            "{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("engineer", engineerName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-					var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                #endregion
 
-					var eventOption1 = new TextObject(
-							"{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("scout", scoutName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                #region Scout
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
+                else if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
+                {
+                    var CompanionIsFemale = scout.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-				}
-				#endregion
+                    var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
 
-				#region Quartermaster
-				else if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
-				{
-					var CompanionIsFemale = quartermaster.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
+                    var eventOption1 = new TextObject(
+                            "{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("scout", scoutName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-					var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
 
-					var eventOption2 = new TextObject(
-							"{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("quartermaster", quartermasterName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                #endregion
 
-				}
-				#endregion
+                #region Quartermaster
 
-			}
-			//----------------------------------------------- 4 ------------------------------
-			else if (dice == 4)
+                else if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
+                {
+                    var CompanionIsFemale = quartermaster.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
+
+                    var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+
+                    var eventOption2 = new TextObject(
+                            "{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("quartermaster", quartermasterName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
+
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
+
+                #endregion
+            }
+            //----------------------------------------------- 4 ------------------------------
+            else if (dice == 4)
             {
-				#region Engineer
-				if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
-				{
-					var CompanionIsFemale = engineer.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                #region Engineer
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
+                if (MobileParty.MainParty.EffectiveEngineer != Hero.MainHero)
+                {
+                    var CompanionIsFemale = engineer.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveEngineer);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveEngineer, relation + 15);
 
-					var eventOption4 = new TextObject(
-							"{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("engineer", engineerName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var eventTitle4 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-				}
-				#endregion
+                    var eventOption4 = new TextObject(
+                            "{=CompanionAdmire_Event_Text4}While travelling near {closestsettlement} your engineer, {engineer}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{engineer} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("engineer", engineerName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-				#region Scout
-				else if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
-				{
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle4, eventOption4, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var CompanionIsFemale = scout.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                #endregion
 
-					var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
+                #region Scout
 
-					var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                else if (MobileParty.MainParty.EffectiveScout != Hero.MainHero)
+                {
+                    var CompanionIsFemale = scout.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-					var eventOption1 = new TextObject("{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("scout", scoutName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                    var scoutRelation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveScout);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveScout, scoutRelation + 15);
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
+                    var eventTitle = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
-				}
-				#endregion
+                    var eventOption1 = new TextObject(
+                            "{=CompanionAdmire_Event_Text1}While travelling near {closestsettlement} your scout, {scout}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{scout} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("scout", scoutName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-				#region Quartermaster
-				else if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
-				{
-					var CompanionIsFemale = quartermaster.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color));
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle, eventOption1, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                #endregion
 
-					var eventOption2 = new TextObject(
-							"{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("quartermaster", quartermasterName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                #region Quartermaster
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                else if (MobileParty.MainParty.EffectiveQuartermaster != Hero.MainHero)
+                {
+                    var CompanionIsFemale = quartermaster.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-				}
-				#endregion
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveQuartermaster);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveQuartermaster, relation + 15);
 
-				#region Surgeon
-				else if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
-				{
-					var CompanionIsFemale = surgeon.IsFemale;
-					var CompanionGender = CompanionIsFemale ? "female" : "male";
-					var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
+                    var eventTitle2 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
 
-					var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
-					Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
+                    var eventOption2 = new TextObject(
+                            "{=CompanionAdmire_Event_Text2}While travelling near {closestsettlement} your quartermaster, {quartermaster}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{quartermaster} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("quartermaster", quartermasterName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
 
-					var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle2, eventOption2, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
 
-					var eventOption3 = new TextObject(
-							"{=CompanionAdmire_Event_Text3}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
-							" to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
-							" to the {clan} clan in any way {gender} can.")
-						.SetTextVariable("closestsettlement", closestSettlement)
-						.SetTextVariable("clan", clanName)
-						.SetTextVariable("surgeon", surgeonName)
-						.SetTextVariable("gender", gender)
-						.ToString();
+                #endregion
 
-					InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
-					InformationManager.ShowInquiry(new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null), true);
-					StopEvent();
+                #region Surgeon
 
-				}
-				#endregion
+                else if (MobileParty.MainParty.EffectiveSurgeon != Hero.MainHero)
+                {
+                    var CompanionIsFemale = surgeon.IsFemale;
+                    var CompanionGender = CompanionIsFemale ? "female" : "male";
+                    var gender = GenderAssignment.GetTheGenderAssignment(CompanionGender, false, "subjective");
 
-			}
+                    var relation = Hero.MainHero.GetRelation(MobileParty.MainParty.EffectiveSurgeon);
+                    Hero.MainHero.SetPersonalRelation(MobileParty.MainParty.EffectiveSurgeon, relation + 15);
+
+                    var eventTitle3 = new TextObject("{=CompanionAdmire_Title}Companion Admiration").ToString();
+
+                    var eventOption3 = new TextObject(
+                            "{=CompanionAdmire_Event_Text3}While travelling near {closestsettlement} your surgeon, {surgeon}, approaches you for a chat. Casual conversation soon turns to a more serious matter in regards" +
+                            " to the party and its future. \n\n{surgeon} wants you to know {gender} admires your leadership and looks forward to celebrating the many future victories along your side. Lastly noting {gender} is determined to bring honor" +
+                            " to the {clan} clan in any way {gender} can.")
+                        .SetTextVariable("closestsettlement", closestSettlement)
+                        .SetTextVariable("clan", clanName)
+                        .SetTextVariable("surgeon", surgeonName)
+                        .SetTextVariable("gender", gender)
+                        .ToString();
+
+                    InformationManager.DisplayMessage(
+                        new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color));
+                    InformationManager.ShowInquiry(
+                        new InquiryData(eventTitle3, eventOption3, true, false, eventButtonText, null, null, null),
+                        true);
+                    StopEvent();
+                }
+
+                #endregion
+            }
+        }
 
 
-		}
+        private void StopEvent()
+        {
+            try
+            {
+                if (onEventCompleted != null)
+                    onEventCompleted.Invoke();
+                else
+                    MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+            }
+            catch (Exception ex)
+            {
+                MessageManager.DisplayMessage(
+                    $"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+            }
+        }
+    }
 
+    public class CompanionAdmireData : RandomEventData
+    {
+        public CompanionAdmireData(string eventType, float chanceWeight) : base(eventType, chanceWeight)
+        {
+        }
 
-		private void StopEvent()
-		{
-			try
-			{
-				if (onEventCompleted != null)
-				{
-					onEventCompleted.Invoke();
-				}
-				else
-				{
-					MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
-			}
-		}
-	}
-
-	public class CompanionAdmireData : RandomEventData
-	{
-
-		public CompanionAdmireData(string eventType, float chanceWeight) : base(eventType, chanceWeight)
-		{
-
-		}
-
-		public override BaseEvent GetBaseEvent()
-		{
-			return new CompanionAdmire();
-		}
-	}
+        public override BaseEvent GetBaseEvent()
+        {
+            return new CompanionAdmire();
+        }
+    }
 }

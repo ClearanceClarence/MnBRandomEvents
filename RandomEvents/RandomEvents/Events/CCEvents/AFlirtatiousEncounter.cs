@@ -9,8 +9,10 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
+using TaleWorlds.Diamond;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events.CCEvents
 {
@@ -227,7 +229,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
 
                                 break;
                             default:
-                                MessageBox.Show($"Error while selecting option for \"{randomEventData.eventType}\"");
+                                MessageManager.DisplayMessage($"Error while selecting option for \"{randomEventData.eventType}\"");
                                 break;
                         }
                     }, null, null);
@@ -248,12 +250,12 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 }
                 else
                 {
-                    MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+                    MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
 

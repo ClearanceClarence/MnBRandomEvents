@@ -4,12 +4,16 @@ using System.Windows;
 using Bannerlord.RandomEvents.Helpers;
 using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
+using SandBox.GauntletUI;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.GameState;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
+using TaleWorlds.ScreenSystem;
 
 namespace Bannerlord.RandomEvents.Events.CCEvents
 {
@@ -143,8 +147,6 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                             
                             Hero.MainHero.AddSkillXp(DefaultSkills.Leadership, 30);
                             Hero.MainHero.AddSkillXp(DefaultSkills.Steward, 20);
-                            
-                            GiveOneRandomRecruitFromClosestCulture();
 
                             break;
                         
@@ -153,8 +155,6 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                             
                             Hero.MainHero.AddSkillXp(DefaultSkills.Leadership, 20);
                             Hero.MainHero.AddSkillXp(DefaultSkills.Steward, 30);
-                            
-                            GiveOneRandomRecruitFromClosestCulture();
 
                             break;
                         
@@ -173,7 +173,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                             
                             break;
                         default:
-                            MessageBox.Show($"Error while selecting option for \"{randomEventData.eventType}\"");
+                            MessageManager.DisplayMessage($"Error while selecting option for \"{randomEventData.eventType}\"");
                             break;
                     }
                 },
@@ -182,34 +182,6 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
             MBInformationManager.ShowMultiSelectionInquiry(msid, true);
 
             StopEvent();
-        }
-
-        private static void GiveOneRandomRecruitFromClosestCulture()
-        {
-            var closestSettlementCulture = ClosestSettlements.GetClosestAny(MobileParty.MainParty).Culture.ToString();
-
-            var CultureDemonym = Demonym.GetTheDemonym(closestSettlementCulture, false);
-            
-            var troopRoster = TroopRoster.CreateDummyTroopRoster();
-
-            // ReSharper disable once ForeachCanBePartlyConvertedToQueryUsingAnotherGetEnumerator
-            foreach (var characterObject in CharacterObject.All)
-            {
-                if (characterObject.StringId.Contains("recruit") &&
-                    !characterObject.StringId.Contains("vigla")
-                    && characterObject.Culture.ToString() == closestSettlementCulture ||
-                    (characterObject.StringId.Contains("footman") &&
-                     !characterObject.StringId.Contains("vlandia")
-                     && !characterObject.StringId.Contains("aserai") &&
-                     characterObject.Culture.ToString() == closestSettlementCulture) ||
-                    (characterObject.StringId.Contains("volunteer")
-                     && characterObject.StringId.Contains("battanian") &&
-                     characterObject.Culture.ToString() == closestSettlementCulture))
-                {
-                    troopRoster.AddToCounts(characterObject, 1);
-                }
-            }
-            PartyScreenManager.OpenScreenAsReceiveTroops(troopRoster, leftPartyName: new TextObject("{CultureDemonym} Volunteer").SetTextVariable("CultureDemonym", CultureDemonym));
         }
 
         private void StopEvent()
@@ -222,12 +194,12 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 }
                 else
                 {
-                    MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+                    MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
         

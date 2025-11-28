@@ -10,6 +10,7 @@ using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
 
 namespace Bannerlord.RandomEvents.Events.CCEvents
@@ -176,8 +177,8 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                                 InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionAText, true, false, eventButtonText2, null, null, null), true);
                                 
                                 MobileParty.MainParty.ItemRoster.AddToCounts(meat, meatFromHorse);
-                                MobileParty.MainParty.MemberRoster.KillNumberOfNonHeroTroopsRandomly(menDied);
-                                MobileParty.MainParty.MemberRoster.WoundNumberOfTroopsRandomly(menWounded);
+                                MobileParty.MainParty.MemberRoster.RemoveNumberOfNonHeroTroopsRandomly(menDied);
+                                MobileParty.MainParty.MemberRoster.WoundNumberOfNonHeroTroopsRandomly(menWounded);
                                 
                                 InformationManager.DisplayMessage(new InformationMessage(eventMsg1, RandomEventsSubmodule.Msg_Color_MED_Outcome));
                                 break;
@@ -185,8 +186,8 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                                 InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionBText, true, false, eventButtonText2, null, null, null), true);
                                 
                                 MobileParty.MainParty.ItemRoster.AddToCounts(meat, meatFromHorse);
-                                MobileParty.MainParty.MemberRoster.KillNumberOfNonHeroTroopsRandomly(menDied);
-                                MobileParty.MainParty.MemberRoster.WoundNumberOfTroopsRandomly(menWounded);
+                                MobileParty.MainParty.MemberRoster.RemoveNumberOfNonHeroTroopsRandomly(menDied);
+                                MobileParty.MainParty.MemberRoster.WoundNumberOfNonHeroTroopsRandomly(menWounded);
                                 
                                 InformationManager.DisplayMessage(new InformationMessage(eventMsg2, RandomEventsSubmodule.Msg_Color_MED_Outcome));
                                 break;
@@ -194,7 +195,7 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                                 InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionCText, true, false, eventButtonText2, null, null, null), true);
                                 
                                 MobileParty.MainParty.ItemRoster.AddToCounts(meat, meatFromHorse);
-                                MobileParty.MainParty.MemberRoster.WoundNumberOfTroopsRandomly(menWounded);
+                                MobileParty.MainParty.MemberRoster.WoundNumberOfNonHeroTroopsRandomly(menWounded);
                                 
                                 InformationManager.DisplayMessage(new InformationMessage(eventMsg3, RandomEventsSubmodule.Msg_Color_MED_Outcome));
                                 break;
@@ -202,13 +203,13 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                                 InformationManager.ShowInquiry(new InquiryData(eventTitle, eventOptionDText, true, false, eventButtonText2, null, null, null), true);
                                 
                                 MobileParty.MainParty.ItemRoster.AddToCounts(meat, meatFromHorse);
-                                MobileParty.MainParty.MemberRoster.KillNumberOfNonHeroTroopsRandomly(menDied);
-                                MobileParty.MainParty.MemberRoster.WoundNumberOfTroopsRandomly(menWounded);
+                                MobileParty.MainParty.MemberRoster.RemoveNumberOfNonHeroTroopsRandomly(menDied);
+                                MobileParty.MainParty.MemberRoster.WoundNumberOfNonHeroTroopsRandomly(menWounded);
                                 
                                 InformationManager.DisplayMessage(new InformationMessage(eventMsg4, RandomEventsSubmodule.Msg_Color_NEG_Outcome));
                                 break;
                             default:
-                                MessageBox.Show($"Error while selecting option for \"{randomEventData.eventType}\"");
+                                MessageManager.DisplayMessage($"Error while selecting option for \"{randomEventData.eventType}\"");
                                 break;
                         }
                     }, null, null);
@@ -230,12 +231,12 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 }
                 else
                 {
-                    MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+                    MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
         

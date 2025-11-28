@@ -4,6 +4,7 @@ using System.Windows;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Helpers
 {
@@ -23,7 +24,7 @@ namespace Bannerlord.RandomEvents.Helpers
             {
                 if (heroParty == null)
                 {
-                    MessageBox.Show("Hero party is null in GetClosestSettlement.");
+                    MessageManager.DisplayMessage("Hero party is null in GetClosestSettlement.");
                     return null;
                 }
 
@@ -31,15 +32,15 @@ namespace Bannerlord.RandomEvents.Helpers
 
                 if (settlements.Count == 0)
                 {
-                    MessageBox.Show("No settlements found matching the condition.");
+                    MessageManager.DisplayMessage("No settlements found matching the condition.");
                     return null;
                 }
 
-                return settlements.MinBy(settlement => heroParty.GetPosition().DistanceSquared(settlement.GetPosition()));
+                return settlements.MinBy(settlement => heroParty.GetPositionAsVec3().DistanceSquared(settlement.GetPosition()));
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error when trying to find the closest settlement:\n\n{ex.Message}\n\n{ex.StackTrace}");
+                MessageManager.DisplayMessage($"Error when trying to find the closest settlement:\n\n{ex.Message}\n\n{ex.StackTrace}");
                 return null;
             }
         }

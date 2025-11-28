@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
-using System.Windows;
 using Bannerlord.RandomEvents.Helpers;
 using Bannerlord.RandomEvents.Settings;
 using TaleWorlds.CampaignSystem;
@@ -16,31 +15,31 @@ namespace Bannerlord.RandomEvents
     {
         //Mod Loaded Color
         public static readonly Color Ini_Color = Color.FromUint(7194750);
-        
+
         public static readonly Color Msg_Color = Color.FromUint(11846692);
-        
+
         //Green
         public static readonly Color Msg_Color_POS_Outcome = Color.FromUint(1999945);
-        
+
         //Yellow
         public static readonly Color Msg_Color_MED_Outcome = Color.FromUint(13937677);
-        
+
         //Orange
         public static readonly Color Msg_Color_NEG_Outcome = Color.FromUint(15092249);
-        
+
         //Evil
         public static readonly Color Msg_Color_EVIL_Outcome = Color.FromUint(13840175);
-        
+
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             ModSettings.LoadRandomEventSettings();
 
             var events = HelperFunctions.CountRandomEvents();
-            
+
             var initMsg = new TextObject("Successfully loaded 'RandomEvents' with {events} events.")
                 .SetTextVariable("events", events)
                 .ToString();
-            
+
             //Many mods use this. Nice way to tell if a mod is loaded correctly
             InformationManager.DisplayMessage(new InformationMessage(initMsg, Ini_Color));
         }
@@ -50,16 +49,17 @@ namespace Bannerlord.RandomEvents
             base.OnGameStart(game, gameStarterObject);
 
             if (!(game.GameType is Campaign)) return;
-            
-            CampaignGameStarter gameInitializer = (CampaignGameStarter)gameStarterObject;
-            
+
+            var gameInitializer = (CampaignGameStarter)gameStarterObject;
+
             try
             {
                 gameInitializer.AddBehavior(new RandomEventBehavior());
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while initialising RandomEvents :\n\n {ex.Message} \n\n { ex.StackTrace}");
+                MessageManager.DisplayMessage(
+                    $"Error while initialising RandomEvents :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
     }

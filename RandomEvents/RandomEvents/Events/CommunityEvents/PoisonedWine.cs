@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows;
 using Bannerlord.RandomEvents.Helpers;
 using Bannerlord.RandomEvents.Settings;
 using Ini.Net;
@@ -9,22 +8,23 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 
 namespace Bannerlord.RandomEvents.Events.CommunityEvents
 {
     public sealed class PoisonedWine : BaseEvent
     {
         private readonly bool eventDisabled;
-        private readonly int minSoldiersToDie;
         private readonly int maxSoldiersToDie;
-        private readonly int minSoldiersToHurt;
         private readonly int maxSoldiersToHurt;
+        private readonly int minSoldiersToDie;
+        private readonly int minSoldiersToHurt;
 
 
         public PoisonedWine() : base(ModSettings.RandomEvents.PoisonedWineData)
         {
             var ConfigFile = new IniFile(ParseIniFile.GetTheConfigFile());
-			
+
             eventDisabled = ConfigFile.ReadBoolean("PoisonedWine", "EventDisabled");
             minSoldiersToDie = ConfigFile.ReadInteger("PoisonedWine", "MinSoldiersToDie");
             maxSoldiersToDie = ConfigFile.ReadInteger("PoisonedWine", "MaxSoldiersToDie");
@@ -38,20 +38,18 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
 
         private bool HasValidEventData()
         {
-            if (eventDisabled == false)
-            {
+            if (!eventDisabled)
                 if (minSoldiersToDie != 0 || maxSoldiersToDie != 0 || minSoldiersToHurt != 0 || maxSoldiersToHurt != 0)
-                {
                     return true;
-                }
-            }
+
             return false;
         }
 
 
         public override bool CanExecuteEvent()
         {
-            return HasValidEventData() &&  MobileParty.MainParty.MemberRoster.TotalRegulars >= maxSoldiersToDie + 10 && MobileParty.MainParty.CurrentSettlement == null;
+            return HasValidEventData() && MobileParty.MainParty.MemberRoster.TotalRegulars >= maxSoldiersToDie + 10 &&
+                   MobileParty.MainParty.CurrentSettlement == null;
         }
 
         public override void StartEvent()
@@ -61,26 +59,28 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
             var menKilled = MBRandom.RandomInt(minSoldiersToDie, maxSoldiersToDie);
 
             var menHurt = MBRandom.RandomInt(minSoldiersToHurt, maxSoldiersToHurt);
-            
+
             var eventTitle = new TextObject(EventTextHandler.GetRandomEventTitle()).ToString();
-            
+
             var eventText = new TextObject(EventTextHandler.GetRandomEventOutcomes()).ToString();
-            
+
             var eventButtonText = new TextObject("{=PoisonedWine_Event_Button_Text}Continue").ToString();
-            
-            var eventMsg =new TextObject(EventTextHandler.GetRandomEventMessage1())
+
+            var eventMsg = new TextObject(EventTextHandler.GetRandomEventMessage1())
                 .SetTextVariable("heroName", heroName)
                 .SetTextVariable("menKilled", menKilled)
                 .SetTextVariable("menHurt", menHurt)
                 .ToString();
-            
-            InformationManager.ShowInquiry(new InquiryData(eventTitle, eventText, true, false, eventButtonText, null, null, null), true);
-             
-            MobileParty.MainParty.MemberRoster.KillNumberOfNonHeroTroopsRandomly(menKilled);
-            MobileParty.MainParty.MemberRoster.WoundNumberOfTroopsRandomly(menHurt);
-            
-            InformationManager.DisplayMessage(new InformationMessage(eventMsg, RandomEventsSubmodule.Msg_Color_NEG_Outcome));
-            
+
+            InformationManager.ShowInquiry(
+                new InquiryData(eventTitle, eventText, true, false, eventButtonText, null, null, null), true);
+
+            MobileParty.MainParty.MemberRoster.RemoveNumberOfNonHeroTroopsRandomly(menKilled);
+            MobileParty.MainParty.MemberRoster.WoundNumberOfNonHeroTroopsRandomly(menHurt);
+
+            InformationManager.DisplayMessage(new InformationMessage(eventMsg,
+                RandomEventsSubmodule.Msg_Color_NEG_Outcome));
+
             StopEvent();
         }
 
@@ -92,15 +92,15 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
+                MessageManager.DisplayMessage(
                     $"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
-        
+
         private static class EventTextHandler
         {
             private static readonly Random random = new Random();
-            
+
             private static readonly List<string> eventTitles = new List<string>
             {
                 "{=PoisonedWine_Title_A}Poisoned Wine",
@@ -114,7 +114,7 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
                 "{=PoisonedWine_Title_I}The Deadly Toast",
                 "{=PoisonedWine_Title_J}Wine of Betrayal"
             };
-            
+
             private static readonly List<string> eventOutcomes = new List<string>
             {
                 // Event Text A
@@ -180,7 +180,7 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
                 "crying out in agony. The realization that the wine is poisoned fills you with dread. As you succumb to the effects, your vision blurs, and you see the lifeless " +
                 "forms of your comrades scattered across the ground."
             };
-            
+
             private static readonly List<string> eventMsg1 = new List<string>
             {
                 "{=PoisonedWine_Event_Msg_1A}{heroName} lost {menKilled} men, and {menHurt} men were sickened by poisoned wine.",
@@ -194,19 +194,19 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
                 "{=PoisonedWine_Event_Msg_1I}A tragic turn of events left {heroName} with {menKilled} men dead and {menHurt} men incapacitated by poisoned wine.",
                 "{=PoisonedWine_Event_Msg_1J}{heroName} mourned the loss of {menKilled} men and the illness of {menHurt} more after the poisoned wine disaster."
             };
-            
+
             public static string GetRandomEventTitle()
             {
                 var index = random.Next(eventTitles.Count);
                 return eventTitles[index];
             }
-            
+
             public static string GetRandomEventOutcomes()
             {
                 var index = random.Next(eventOutcomes.Count);
                 return eventOutcomes[index];
             }
-            
+
             public static string GetRandomEventMessage1()
             {
                 var index = random.Next(eventMsg1.Count);
@@ -218,7 +218,6 @@ namespace Bannerlord.RandomEvents.Events.CommunityEvents
 
     public class PoisonedWineData : RandomEventData
     {
-
         public PoisonedWineData(string eventType, float chanceWeight) : base(eventType,
             chanceWeight)
         {

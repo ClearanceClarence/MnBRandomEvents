@@ -8,6 +8,7 @@ using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
+using TaleWorlds.MountAndBlade;
 using TaleWorlds.ObjectSystem;
 
 namespace Bannerlord.RandomEvents.Events.CCEvents
@@ -145,12 +146,12 @@ namespace Bannerlord.RandomEvents.Events.CCEvents
                 }
                 else
                 {
-                    MessageBox.Show($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
+                    MessageManager.DisplayMessage($"onEventCompleted was null while stopping \"{randomEventData.eventType}\" event.");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
+                MessageManager.DisplayMessage($"Error while stopping \"{randomEventData.eventType}\" event :\n\n {ex.Message} \n\n {ex.StackTrace}");
             }
         }
         
